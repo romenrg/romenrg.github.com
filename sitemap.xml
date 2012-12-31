@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>
+            http://romenrg.github.com/blog/2012/06/09/giving-octopress-a-shot-for-this-new-blog/
+        </loc>
+        <lastmod>2012-06-10T13:58:35+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://romenrg.github.com/blog/2012/08/17/the-front-end-engineer-role/</loc>
+        <lastmod>2012-08-19T20:32:09+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://romenrg.github.com/about/</loc>
+        <lastmod>2012-08-19T14:30:13+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://romenrg.github.com/blog/archives/</loc>
+        <lastmod>2012-08-19T20:32:09+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://romenrg.github.com/</loc>
+        <lastmod>2012-08-19T20:32:09+01:00</lastmod>
+    </url>
+</urlset>
