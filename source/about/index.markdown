@@ -1,0 +1,12 @@
+---
+layout: page
+title: "about me"
+date: 2012-06-10 13:12
+comments: true
+sharing: true
+footer: true
+---
+ <p>My name is Romén Rodríguez Gil. I'm a computer engineer graduated from the University of La Laguna (Teneriffe, Spain), where I obtained both my degree and my M. Sc in computer engineering, obtaining also in both cases the best academic record award.</p>
+  <p>I have collaborated in research projects through the University of La Laguna, having been analyst and the main developer of the educational web platform Ematic. Currently I'm working as an analyst/programmer in <a href="http://www.arte-consultores.com">Arte Consultores</a>, mainly dedicated to the Stat4you project as a front-end engineer.</p>
+  <p>My entrepreneurial spirit involves me in many personal projects, such as Sigecu CMS or <a href="http://www.turawetproject.org">Turawet</a>. This latter project, which began as my end of master's project, won a finalist award in the entrepreneurs contest "Conocer es valer" (Knowing is worth) in 2011.</p>
+  <p>So far, this professional path has made me specialize in the web applications development, with technologies like HTML5, CSS3, JavaScript, jQuery, Backbone, Underscore, Bootstrap, Highcharts, D3js, Java, Spring MVC, Python and Django, among others.</p>
