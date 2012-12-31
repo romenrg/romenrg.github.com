@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[blog.romenrg.es]]></title>
+  <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://romenrg.github.com/atom.xml" rel="self"/>
   <link href="http://romenrg.github.com/"/>
-  <updated>2012-08-19T20:32:17+01:00</updated>
+  <updated>2012-12-31T13:53:43+00:00</updated>
   <id>http://romenrg.github.com/</id>
   <author>
-    <name><![CDATA[Romén Rodríguez]]></name>
+    <name><![CDATA[Your Name]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
