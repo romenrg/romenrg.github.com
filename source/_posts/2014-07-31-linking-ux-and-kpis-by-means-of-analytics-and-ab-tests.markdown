@@ -7,9 +7,9 @@ categories:
 ---
 <p>Thanks to my experience as Entrepreneur and Product Manager, I realized long ago about something that is totally counterintuitive for many other software engineers. This realization is that, when developing a software product, our main focus should always be sales. Always. Sales. I know that probably too many people have said that already, but it is so true that it is worth saying it once more, specially for my software mates: <em>"when developing a software product our main focus should always be sales"</em>.</p>
 
-<p>However, that statement is too generic. Most people already know that selling is important... But how can we sell more? Well, experience tells me that in order to increase sales, the first thing you will probably need are many more visits (and getting those visits is way more complicated than it seems). However, that is only the beginning. Once you get enough visits and you validate most of your product main hypotheses, the next step is <em>converting most of those visits into customers</em>. Here is where both <em>User Experience</em> and <em>KPIs (Key Performance Indicators)</em> become probably the most important areas for product management.</p>
-
 <img src="/images/sales.jpg" />
+
+<p>However, that statement is too generic. Most people already know that selling is important... But how can we sell more? Well, experience tells me that in order to increase sales, the first thing you will probably need are many more visits (and getting those visits is way more complicated than it seems). However, that is only the beginning. Once you get enough visits and you validate most of your product main hypotheses, the next step is <em>converting most of those visits into customers</em>. Here is where both <em>User Experience</em> and <em>KPIs (Key Performance Indicators)</em> become probably the most important areas for product management.</p>
 
 <!-- More -->
 

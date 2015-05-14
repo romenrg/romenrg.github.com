@@ -1,12 +1,18 @@
 ---
 layout: page
 title: "about me"
-date: 2012-06-10 13:12
+date: 2015-03-10 13:12
 comments: true
 sharing: true
 footer: true
 ---
- <p>My name is Romén Rodríguez Gil. I'm a computer engineer graduated from the University of La Laguna (Teneriffe, Spain), where I obtained both my degree and my M. Sc in computer engineering, obtaining also in both cases the best academic record award.</p>
-  <p>I have collaborated in research projects through the University of La Laguna, having been analyst and the main developer of the educational web platform Ematic. Currently I'm working as an analyst/programmer in <a href="http://www.arte-consultores.com">Arte Consultores</a>, mainly dedicated to the Stat4you project as a front-end engineer.</p>
-  <p>My entrepreneurial spirit involves me in many personal projects, such as Sigecu CMS or <a href="http://www.turawetproject.org">Turawet</a>. This latter project, which began as my end of master's project, won a finalist award in the entrepreneurs contest "Conocer es valer" (Knowing is worth) in 2011.</p>
-  <p>So far, this professional path has made me specialize in the web applications development, with technologies like HTML5, CSS3, JavaScript, jQuery, Backbone, Underscore, Bootstrap, Highcharts, D3js, Java, Spring MVC, Python and Django, among others.</p>
+
+  <p>My name is Romén Rodríguez Gil. I live in the beautiful island of Tenerife (Spain) . I am a Software Engineer, UX Researcher and Internet Entrepreneur.</p>
+  <p>You can contact me or read more about me either in <a href="http://www.linkedin.com/in/romenrg/en"LinkedIn>LinkedIn</a> or <a href="http://www.twitter.com/romenrg">Twitter</a>. However, below you will find a short bio:</p>
+ <p>I studied in the University of La Laguna (Tenerife, Spain) both my B.Eng and my M.Eng in Computer Science & Engineering, obtaining in both cases the Highest GPA Award. Since I finished my studies I have kept collaborating with this university in several research projects, including some related to one of the startups I have led: <a href="https://www.vocabularynotebook.com">Vocabulary Notebook</a>. Besides, in 2014 I was hired by this university to give a course about User Experience and Web Analytics, and previously, in 2011, I was also hired as analyst and the main developer of the educational web platform Ematic.</p>
+  <p> I have also worked as Analyst and Front-End Engineer at <a href="http://www.arte-consultores.com">Arte Consultores</a>, a software company focused on eGovernment and Statistics Software. There I worked in several projects, such as <a href="http://www.stat4you.com">Stat4you</a>.</p>
+  <p>My entrepreneurial spirit has always involved me in many personal projects, such as Sigecu CMS or <a href="http://www.turawetproject.org">Turawet</a>.</p>
+  <p> This entrepreneurial spirit was taken to the next level when I founded <a href="http://www.langproving.com">Langproving</a> and started leading our product <a href="https://www.vocabularynotebook.com">Vocabulary Notebook</a>. With this latter project we were awarded several prizes from Spanish and European institutions, participated as speakers in several international events, published research in different journals about education and reached more than 25 000 users in 130 countries. It was an amazing experience.</p>
+  <p>I have also been Lead UX Engineer and Product Manager of <a href="http://www.gaming.tv">Gaming TV</a> and Software Engineer at <a href="http://www.guud.tv">Guud</a>.</p>
+  <p>I also give courses and talks about Entrepreneurship, Lean Startup, UX and Web Analytics, mainly in the University of La Laguna.</p>
+  <p>So far, this professional path has made me specialize in different roles such as: "Product Manager", "User Experience Lead" or "Front-End Engineer", although I am always willing to learn and embrace new challenges.</p>

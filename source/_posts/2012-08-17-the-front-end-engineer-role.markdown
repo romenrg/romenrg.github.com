@@ -12,13 +12,13 @@ categories:
 
 <p>Although the quote above seems quite obvious, often developers and managers tend to forget or underestimate the importance of user interfaces, blinded by the complexity of the back-ends of the applications. This blindness has led many projects to failure, but fortunately this is starting to change.</p>
 
-<p>In order to continue highlighting the importance of user interfaces, there is another quote from Linus Torvalds on this topic which I also fully agree with: <em>“In many cases, the user interface to a program is the most important part for a commercial company: whether the programs works correctly or not seems to be secondary.”</em>.</p>
-
-<p>Quite often, traditional developers teams give priority to the development of new and complex features (which mostly will never be used by the majority of end-users) instead of spending the time in the creation a friendly and easy to use interface. This frequently results in a hard-to-use application with a lot of functionalities that will never be used due to the poor user experience caused by its unfriendly interface. Thereby, many projects meet with failure due to usability issues rather than lack of functionalities, as Linus Torvalds said.</p>
+<p>In order to continue highlighting the importance of user interfaces, there is another quote from Linus Torvalds on this topic which I also fully agree with: <em>“In many cases, the user interface to a program is the most important part for a commercial company: whether the programs works correctly or not seems to be secondary”</em>.</p>
 
 <img src="http://blog.romenrg.es/images/angry.jpg" />
 
-<br/>
+<!-- More -->
+
+<p>Quite often, traditional developers teams give priority to the development of new and complex features (which mostly will never be used by the majority of end-users) instead of spending the time in the creation a friendly and easy to use interface. This frequently results in a hard-to-use application with a lot of functionalities that will never be used due to the poor user experience caused by its unfriendly interface. Thereby, many projects meet with failure due to usability issues rather than lack of functionalities, as Linus Torvalds said.</p>
 
 <p>But… <em>What is exactly the interface?</em> And, <em>who develops it?</em> For many years there hasn’t been a figure in the development process dedicated exclusively to interfaces. Usually there was only the general concept of developer or programmer, who sometimes coded the business logic or the services, while in other occasions had to control user events or choose the color of the buttons and the way the information had to be displayed.</p>
 
