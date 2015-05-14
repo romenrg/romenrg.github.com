@@ -11,17 +11,17 @@ categories:
 
 <p>The images below are screenshots of the filters initially released in Stat4you:</p>
 
-<img src="http://blog.romenrg.es/images/s4y_table_filter.png" />
+<img src="/images/s4y_table_filter.png" />
 
 <p><em>The image above shows the filters available for the tables in the initial alpha version of the platform. The blue elements represent the containers of the dimensions which, in this case, have been also placed in a particular way to help the user understand the position in which every dimension will appear. The white elements represent the dimensions whilst the orange ones represent the categories of each dimension.</em></p>
 
 <!-- More -->
 
-<img src="http://blog.romenrg.es/images/s4y_table_filter2.png" />
+<img src="/images/s4y_table_filter2.png" />
 
 <p><em>In this image, the categories of one of the dimensions have been unfolded, this way the user can see all the categories available for a particular dimension, not only the previewed ones that can be seen without clicking in the right arrow. Also, it can be seen that the "Periodos" dimension has been moved to fixed (by doing drag and drop). This means that this dimension has been set to a specific category, which by default was the first one.</em></p>
 
-<img src="http://blog.romenrg.es/images/s4y_barAndLine_filter.png" />
+<img src="/images/s4y_barAndLine_filter.png" />
 
 <p><em>Finally, there were also filters for the charts. Opposed to the table, in this case all the dimensions were displayed horizontally. The white text over the blue background indicated the position in which the dimension was going to appear if placed there (in the x-axis, in the columns...).</em></p>
 
@@ -35,15 +35,15 @@ categories:
 
 <p>The result of these changes can be seen in the following images:</p>
 
-<img src="http://blog.romenrg.es/images/s4y_table_filter_new.png" />
+<img src="/images/s4y_table_filter_new.png" />
 
 <p><em>In this first image, the main changes were the labels indicating the positions in which dimensions could be placed and the width of the fixed position box, that now occupied the 100% of the available width.</em></p>
 
-<img src="http://blog.romenrg.es/images/s4y_table_filters2_new.png" />
+<img src="/images/s4y_table_filters2_new.png" />
 
 <p><em>In this case, some changes can be seen: For the fixed dimensions now the selected category is visible at every moment, preventing the users from unfolding the dimension to know which one the selected category is. In addition, a search box has been introduced to search within the categories of a dimension, making it much easier to find a particular category. Moreover, the 'x' that was placed at the top right position of the unfolded box was removed and replaced by an 'accept' button at the bottom right corner. In our experience, this change that forced users to accept the changes in order to close the unfolded categories, helped them to realize that the changes made are always going to be persisted. Before this change was made, some users had the sensation that when the 'x' was clicked, it was going to undo the changes.</em></p>
 
-<img src="http://blog.romenrg.es/images/s4y_barAndLine_filters_new.png" />
+<img src="/images/s4y_barAndLine_filters_new.png" />
 
 <p><em>For the charts, the main change were the labels and shapes of the position boxes. The new interface seems to make the available options of edition easier to understand for users. Besides, it mantains greater uniformity with the tables filters.</em></p>
 

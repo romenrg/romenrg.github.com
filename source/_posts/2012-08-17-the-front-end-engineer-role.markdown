@@ -14,7 +14,7 @@ categories:
 
 <p>In order to continue highlighting the importance of user interfaces, there is another quote from Linus Torvalds on this topic which I also fully agree with: <em>“In many cases, the user interface to a program is the most important part for a commercial company: whether the programs works correctly or not seems to be secondary”</em>.</p>
 
-<img src="http://blog.romenrg.es/images/angry.jpg" />
+<img src="/images/angry.jpg" />
 
 <!-- More -->
 
@@ -33,7 +33,7 @@ categories:
 <p>About the old concept of designer, Rob Larsen says: <em>“The general trend of the front end engineering spectrum is expanding away from this type of role”</em> mainly due to the importance of javascript.</p>
 
 
-<img title="The front-end layers" src="http://blog.romenrg.es/images/applicationLayers3.png" />
+<img title="The front-end layers" src="/images/applicationLayers3.png" />
 
 <p>In the image above, we can see the distribution of tasks between front-end and back-end in a web application. In the case of the front-end I have separated it in two columns: on the right side we have the traditional web application (where the presentation code is in the server) and in the left side we have the modern concept (with javascript controllers in the client side).</p>
 
