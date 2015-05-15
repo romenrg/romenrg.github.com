@@ -3,7 +3,8 @@ layout: post
 title: "Linking UX and Conversions by means of analytics and A/B tests"
 date: 2014-07-31 19:03
 comments: true
-categories: 
+categories: [UX, Teaching]
+description: Measuring the effect of UI changes using web analytics is key to be aware of the how Design, Usability, Marketing, Psychology and Engineering affect UX.  
 ---
 <p>Thanks to my experience as Entrepreneur and Product Manager, I realized long ago about something that is totally counterintuitive for many other software engineers. This realization is that, when developing a software product, our main focus should always be sales. Always. Sales. I know that probably too many people have said that already, but it is so true that it is worth saying it once more, specially for my software mates: <em>"when developing a software product our main focus should always be sales"</em>.</p>
 

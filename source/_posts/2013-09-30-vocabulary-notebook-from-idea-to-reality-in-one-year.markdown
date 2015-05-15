@@ -3,7 +3,8 @@ layout: post
 title: "Vocabulary Notebook: From Idea to Reality in one year"
 date: 2013-09-30 13:59
 comments: true
-categories: 
+categories: [Entrepreneurship]
+description: During one year running a startup we have put into practice key concepts like "Lean Startup", the importance of "getting out of the building" or pivoting  
 ---
 <p>The 8th of September 2012 I started to work intensively in an idea I called Vocabulary Notebook. With that idea I was planning to solve a problem that myself and many other english students experience while learning vocabulary. It has already been a year since then and that idea is now a real platform used by thousands of students and teachers around the world. I must say that I’m quite proud of what we have achieved during this year, both as an entrepreneur and as an engineer. Although I don’t have much free time now, I have forced myself to write this post to summarize what has happened around Vocabulary Notebook during this year, from idea to reality. Since there are so many things that have happened, I’m afraid this post is going to be quite long, but I think that the anniversary deserves it.</p>
 

@@ -3,7 +3,8 @@ layout: post
 title: "Why copywriting is key to UX: We increased conversions by 26% just changing some text"
 date: 2014-09-17 12:16
 comments: true
-categories: 
+categories: [UX]
+description: Copy has a huge impact on User Experience. As a experiment, we made a few changes to the text of our sign-up form and conversions increased significantly
 ---
 Too often people tend to think that UX is just art: Flat design, Modern UI and animations... But art represents only a tiny part of the User Experience. Some developers go one step further and think that it also implies strong technical skills (to achieve a good performance, proper-functioning software, etc). However, that is still a very narrow perspective of User / Customer Experience. 
 
@@ -33,13 +34,13 @@ But… How can we know if a particular text is better than another? Well, let yo
 
 <h2>Our experiment: Changing text in the sign-up form</h2>
 
-Fortunately, in <a href="https://www.vocabularynotebook.com">Vocabulary Notebook</a> we have used Web Analytics and A/B Tests extensively, so we can prove the importance of copywriting in User Experience (and in conversions) by means of one of our experiments.
+Fortunately, in <a href="http://www.vocabularynotebook.com">Vocabulary Notebook</a> we have used Web Analytics and A/B Tests extensively, so we can prove the importance of copywriting in User Experience (and in conversions) by means of one of our experiments.
 
 <h3>Sign up page: Old version</h3>
 
 <img src="/images/screenshot_old_signup.png" alt="Screenshot of the Old sign-up form of Vocabulary Notebook" />
 
-This screen used to be our sign-up page for <a href="https://www.vocabularynotebook.com">Vocabulary Notebook</a>. As you can see, the page was quite simple. There is a navigation bar on top, a title and a form with its confirmation button.
+This screen used to be our sign-up page for <a href="http://www.vocabularynotebook.com">Vocabulary Notebook</a>. As you can see, the page was quite simple. There is a navigation bar on top, a title and a form with its confirmation button.
 
 The main title was making it clear that you could start using our platform for free. Moreover, the purpose of the secondary title was to remind you that you were about to create a new individual account. Below, a form with three fields: email, password and name. Finally, there was a call-to-action button at the bottom-right corner just saying "try it now". 
 

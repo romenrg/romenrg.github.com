@@ -3,7 +3,8 @@ layout: post
 title: "Improving the UI to achieve a better UX: My experience in Stat4you"
 date: 2013-01-02 17:29
 comments: true
-categories: 
+categories: [UX]
+description: Real case-study of the Stat4you project in which minor UI changes achieved major improvements in User Experience (UX) according to users feedback 
 ---
 <p>I had this article started but uncompleted since September 2012, and as a New Year’s Resolution for 2013 I decided to finish it.</p>
 
