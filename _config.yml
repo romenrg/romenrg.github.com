@@ -1,4 +1,4 @@
-# ----------------------- #
+  # ----------------------- #
 #      Main Configs       #
 # ----------------------- #
 
@@ -7,7 +7,7 @@ title: Blog @romenrg
 subtitle: Thoughts, experiments and ideas about Software, Internet and Entrepreneurship.
 author: Romén Rodríguez
 simple_search: http://google.com/search
-description: Personal Blog of Romen Rodriguez. All my thoughts, experiments and ideas about IT, software, User Experience, Technology Entrepreneurship and product management.
+description: Personal Blog of Romen Rodriguez. All my thoughts, experiments and ideas about IT, software, User Experience, Technology Entrepreneurship and Product Management.
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
