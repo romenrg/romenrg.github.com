@@ -4,7 +4,7 @@ title: "10+1 Valuable Lessons I Learned From My Failed Startup"
 date: 2015-03-17 19:53
 comments: true
 categories: [Entrepreneurship, Teaching]
-description: Being Founder and CEO of a tech startup involves failing constantly and learning very valuable lessons / tips that will increase chances of success later. 
+description: "Being Founder and CEO of a tech startup involves failing constantly and learning very valuable lessons / tips that will increase chances of success later" 
 ---
 <p style="text-align: right;"><em>...That I will take into account for the next one.</em></p>
 

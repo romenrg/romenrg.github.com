@@ -4,7 +4,7 @@ title: "About UX in Modern Web Interfaces and Backbone.js: Choropleth Maps"
 date: 2013-07-27 17:27
 comments: true
 categories: [Front-End, UX]
-description: How we built the choropleth maps of Stat4you: a single-page Backbone.js app that provides a quick response to user interaction, improving user experience.
+description: "How we built the choropleth maps of Stat4you: a single-page Backbone.js app that provides a quick response to user interaction, improving user experience"
 ---
 <p>I would like to start this post anouncing that this month I am leaving <a href="http://www.arte-consultores.com">Arte Consultores Tecnológicos</a>, after one year and seven months working there as an Analyst/Programmer (Front-end Engineer). I have made this decision because right now I need to devote myself exclusively to Langproving, which is in need of my full atention at this critical moment in which our MPV is finished and we have to market it to validate our business model.</p>
 

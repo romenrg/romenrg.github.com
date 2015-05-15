@@ -4,7 +4,7 @@ title: "Why copywriting is key to UX: We increased conversions by 26% just chang
 date: 2014-09-17 12:16
 comments: true
 categories: [UX]
-description: Copy has a huge impact on User Experience. As a experiment, we made a few changes to the text of our sign-up form and conversions increased significantly
+description: "Copy has a huge impact on User Experience. As a experiment, we made a few changes to the text of our sign-up form and conversions increased significantly"
 ---
 Too often people tend to think that UX is just art: Flat design, Modern UI and animations... But art represents only a tiny part of the User Experience. Some developers go one step further and think that it also implies strong technical skills (to achieve a good performance, proper-functioning software, etc). However, that is still a very narrow perspective of User / Customer Experience. 
 
