@@ -81,7 +81,7 @@ As you will see, in the first few sprints there is usually some error when compa
 
 At this stage it is important to mention that having a fair [Definition of Done](https://www.scrumalliance.org/community/articles/2008/september/what-is-definition-of-done-\(dod\)) is key to success, although it is beyond the scope of this article.
 
-###2.5 After a few sprints you will know the Velocity of the team, therefore being able to estimate when will the backlog be finished
+###2.5 After a few sprints you will be able to accurately estimate release dates, based on Team Velocity
 
 Once a few sprints have passed you will realize that, if story-points estimates are kept consistent, the team usually achieves a similar number of story points per sprint.
 
