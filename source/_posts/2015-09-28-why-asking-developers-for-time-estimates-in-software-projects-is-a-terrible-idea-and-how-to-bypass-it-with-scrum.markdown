@@ -54,7 +54,7 @@ Not asking anything to developers yet; no coding. Sit down with some stakeholder
 
 So, once you have enough information about the product and the market that you are able to design an MVP, try to describe the most important features the product should have (as [User Stories](https://www.scrumalliance.org/community/articles/2010/april/new-to-user-stories)) and prioritize them when creating the Product Backlog. Since User Stories are about functionality, wireframes are usually very good help. They can be added as part of the Acceptance Criteria of the User Stories.
 
-My favourite tool for managing Scrum is [Jira Agile](https://es.atlassian.com/software/jira/agile), which includes a great backlog-management tool. However, there are many other tools available, including [Trello](https://trello.com/), which I also use as a kanban board for smaller projects. For wireframing, there are also many good tools available. One of my favourites is [WireframeSketcher](http://wireframesketcher.com/), due to its IDE and CVS integration. [Balsamiq](https://balsamiq.com/) and [Moqups](https://moqups.com/) are great alternatives too.
+My favourite tool for managing Scrum is [Jira](https://es.atlassian.com/software/jira/agile), which includes a great backlog-management tool. However, there are many other tools available, including [Trello](https://trello.com/), which I also use as a kanban board for smaller projects. For wireframing, there are also many good tools available. One of my favourites is [WireframeSketcher](http://wireframesketcher.com/), due to its IDE and CVS integration. [Balsamiq](https://balsamiq.com/) and [Moqups](https://moqups.com/) are great alternatives too.
 
 After creating the initial Product Backlog, you will have a much clearer picture of the MVP you are going to build and therefore, you will be in a better position to present it to developers.
 
@@ -86,7 +86,7 @@ Once a few sprints have passed you will realize that, if story-points estimates 
 
 Since you are doing your job of keeping the backlog updated, prioritized and estimated in story points by the development team, you will able to forecast when a particular story will be finished.
 
-<em>An example will make it clearer:</em>
+<em>An **example** will make it clearer:</em>
 
 Let’s say the Development Team completes <em>50 points per sprint</em> and <em>each sprint takes 15 days</em>. If you want to know when will a particular User Story be finished, all you need to do is to count the number of story points that are above it, plus its story points. Let’s say <em>User Story X has 160 points above and it has 8 points itself</em>. This means that it will be finished in 168 story points. Since in each sprint the team is completing approximately 50 points and since team estimates are consistent, the story you are looking for will be finished in 4 sprints time, <em>which means 2 months.</em>
 
