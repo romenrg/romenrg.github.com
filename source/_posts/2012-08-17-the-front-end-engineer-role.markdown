@@ -3,7 +3,7 @@ layout: post
 title: "The Front-end engineer role"
 date: 2012-08-17 20:27
 comments: true
-categories: [Front-End]
+categories: [Front-End, Software Development]
 description: "The Front-End Engineer role has become vital to develop modern web apps. Apart from client-side javascript code, work may include API design, HTML and CSS"
 ---
 
