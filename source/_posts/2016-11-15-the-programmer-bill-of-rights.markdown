@@ -10,15 +10,17 @@ description: "There are at least 10 basic rights, fundamental to the quality of 
 
 <img src="/images/two_monitors_unsplash.jpg" alt="Picture of a programmers desk with two monitors, one of them showing code" />
 
-Sadly, ten years later, many companies still deny these basic rights to their developers, even though the business case for these six points is absolutely proved.
+Sadly, ten years later, many companies still deny these basics to their developers, even though the business case for these six points is absolutely proved.
 
-In this article, not only would I like to update the original 6 rights, providing further evidence of their importance; but also I would like to extend the list. Based on my experience during the last 10 years, I will propose 4 new fundamentals that I consider absolutelly necessary for the daily work of any programmer, developer or software engineer. Let's get started:
+In this article, not only would I like to update the original 6 principles, providing further evidence of their importance; but also I would like to extend the list. Based on my experience during the last 10 years, I will propose 4 new fundamentals that I consider absolutelly necessary for the daily work of any programmer, developer or software engineer. Let's get started:
 
 <!-- More -->
 
 ## 10 Fundamental Programmer Rights (6 + 4)
 
-### The 6 Original Rights
+It is worth mentioning that, despite the headline, this article does not refer to general Labor Rights, since those are usually well-known and its compliance is required by law. This article focuses only on aspects that are specific to programming, aspects that are usually not regulated, but have a huge impact in our daily work.
+
+### The 6 Original Rights proposed by Jeff
 
 
 1. **Every programmer shall have two decent monitors**. <br/>
@@ -42,7 +44,7 @@ For this claim, the same as in the “fast PC” sections has happened. Apart fr
 6. **Every programmer shall have quiet working conditions**. <br/>
 This is a tricky one. Nowadays most offices are open-plan. Moreover, collaboration is encouraged in agile teams. All this makes it difficult to keep quiet working conditions for us to concentrate. Many [relevant people in the industry are raising concerns about this](https://twitter.com/jasonfried/status/794212152206729216). However, [there are some things we can do](https://hbr.org/2015/03/stop-noise-from-ruining-your-open-office), such as having (and using) meeting rooms, having white noise generators to mask voices, wearing headphones to concentrate (which I usually do) and/or use an indicator to show coworkers if you can or cannot be interrupted. Even though many jobs require concentration, getting to “flow state” is vital to accomplish most programming tasks, as Jeff mentions.
 
-### The 4 New Rights
+### My 4 Proposed Additions
 
 7. **Every programmer shall be free to choose her preferred IDE**. <br/>
 In the past it was common to have the build and/or deploy process of the application being developed attached to the IDE (usually by means of a plugin). Fortunately, nowadays the use of build tools has become mainstream, making our build processes IDE-independent. For example, in the Java community, build tools like maven or gradle make it possible for developers in a team to use different IDEs such as Eclipse, Intellij IDEA or any other editors, without any problems of collaboration. They just need to use a version control system (such as Subversion or Git) to share changes and a build tool to generate artifacts. In such environment, forcing developers to use an standardized IDE seems to be only a poor resource of old-school managers used to the “command-and-control” approach to impose their rule. That imposition can only cause a low morale among team members, decrease motivation and cause brain drain in the team, since many talented developers will leave to a more open-minded company.
@@ -68,7 +70,7 @@ Unfortunately, there are some companies in which, even today, these rights are b
 
 >But that’s not all of it. Usually, when an old-school command-and-control minded manager violates these rights, violates many of them, since they are all tightly-linked and it is all about mindset and company culture.
 
->In this particular case, this very manager was also forcing developers to use a three-year-outdated version of Netbeans as IDE, with no front-end support. And, by the way, he had also decided to forbid admin rights to programmers in their own machines... So you see, three basics at once. Not to mention that micro-management was also one of the company core values.
+>In this particular case, this very manager was also forcing developers to use a three-year-outdated version of Netbeans as IDE, with no front-end support (significantly diminishing their productivity). And, by the way, he had also decided to forbid admin rights to programmers in their own machines (making their daily work absurdly complicated)... So you see, three basics at once. Not to mention that micro-management was also one of the company core values. The micro-manager used to interrupt programmers every hour to closely control their tasks, taking away all the autonomy and long-term vision from the developer.
 
 >If you find yourself in a case like this one, my advice cannot be clearer: there are many companies that will be glad to provide the tools you need to achieve the best results in your daily work, so don’t wait anymore, move on. No one should work for a tyrant like that.
 
