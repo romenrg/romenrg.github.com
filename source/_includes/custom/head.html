@@ -4,7 +4,7 @@
     <meta property="twitter:url" content="{% if canonical %}{{ canonical }}{% else %}{{ site.url }}{% endif %}">
     <meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="twitter:description" content="{{ description | strip_html | condense_spaces | truncate:200 }}">
-    <meta property="twitter:image:src" content="http://blog.romenrg.es/images/twitter.jpg">
+    {% if page.twitterimg %}<meta property="twitter:image:src" content="http://blog.romenrg.es{{ page.twitterimg }}">{% else %}<meta property="twitter:image:src" content="http://blog.romenrg.es/images/twitter.jpg">{% endif %}
 {% endif %}
 <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">

@@ -4,7 +4,9 @@ title: "The Programmer Bill Of Rights, Revisited"
 date: 2016-11-15 18:34
 comments: true
 categories: [Software Development, Management, Entrepreneurship]
-description: "There are at least 10 basic rights, fundamental to the quality of work life for a software developer" 
+description: "There are at least 10 basic rights, fundamental to the quality of work life for a software developer"
+keywords: programming, rights, best practices, monitors, autonomy
+twitterimg: "/images/two_monitors_unsplash.jpg"
 ---
 10 years ago, [Jeff Atwood](https://en.wikipedia.org/wiki/Jeff_Atwood) wrote an article he titled [The Programmer Bill of Rights](https://blog.codinghorror.com/the-programmers-bill-of-rights/). In that article he described 6 fundamentals that companies should provide for programmers to be successful and work to their full potential, thus maximizing their productivity.
 
