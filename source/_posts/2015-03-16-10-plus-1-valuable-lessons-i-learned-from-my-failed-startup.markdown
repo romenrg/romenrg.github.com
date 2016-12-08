@@ -5,6 +5,8 @@ date: 2015-03-17 19:53
 comments: true
 categories: [Entrepreneurship, Teaching]
 description: "Being Founder and CEO of a tech startup involves failing constantly and learning very valuable lessons / tips that will increase chances of success later" 
+keywords: failures, entrepreneurship, startups, lessons learned
+twitterimg: "/images/nomad_wide_800pxwidth.png"
 ---
 <p style="text-align: right;"><em>...That I will take into account for the next one.</em></p>
 

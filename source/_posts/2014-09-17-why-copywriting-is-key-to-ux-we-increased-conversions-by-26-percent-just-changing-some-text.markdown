@@ -5,6 +5,8 @@ date: 2014-09-17 12:16
 comments: true
 categories: [UX]
 description: "Copy has a huge impact on User Experience. As a experiment, we made a few changes to the text of our sign-up form and conversions increased significantly"
+keywords: ux, user experience, research, A/B testing, usability, ux research, interfaces
+twitterimg: "/images/copywriting_writing_machine.jpg"
 ---
 Too often people tend to think that UX is just art: Flat design, Modern UI and animations... But art represents only a tiny part of the User Experience. Some developers go one step further and think that it also implies strong technical skills (to achieve a good performance, proper-functioning software, etc). However, that is still a very narrow perspective of User / Customer Experience. 
 

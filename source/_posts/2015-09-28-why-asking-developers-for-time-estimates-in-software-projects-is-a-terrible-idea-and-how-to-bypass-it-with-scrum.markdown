@@ -5,6 +5,8 @@ date: 2015-09-28 11:17
 comments: true
 categories: [Management, Entrepreneurship]
 description: "Time Estimates in Software Projects fail dramatically. Using story points based on effort to calculate Team Velocity is a much more reliable approach" 
+keywords: estimates, software, development, velocity, scrum, agile, story points, effort points, projects, deadlines
+twitterimg: "/images/scrum_software_estimates_reverse_engineering_pixabay.jpg"
 ---
 I have worked in many software projects, having been lucky to be in the initial team of several software products. Besides, having acted both as a Developer and as a Product Manager has allowed me to have a wider view of what usually causes most friction between business and engineering: time estimates.
 
