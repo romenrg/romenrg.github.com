@@ -1,8 +1,9 @@
 ---
 layout: page
-title: "about me"
+title: "About me"
 date: 2015-03-10 13:12
 comments: true
+description: "Lifelong Learner, Software Engineer and Internet Entrepreneur. In this blog I publish my thoughts, experiments and ideas about software, internet and entrepreneurship. Looking at peopleware, the human side of technology."
 sharing: true
 footer: true
 ---
