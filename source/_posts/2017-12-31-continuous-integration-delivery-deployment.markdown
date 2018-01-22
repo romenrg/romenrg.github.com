@@ -8,7 +8,7 @@ description: "Continuous integration, continuous delivery, and continuous deploy
 keywords: continuous integration, continuous deployment, continuous delivery, agile, devops, software, production
 twitterimg: "/images/two_paths_fork_unsplash.jpg"
 ---
-Continuous integration, continuous delivery, and continuous deployment are key modern practices in software development that share a main goal: make deployments safer, making them much more predictable, automated, faster, and less error prone. But, do you really know the differences between the three?
+Continuous Integration, Continuous Delivery, and Continuous Deployment are key modern practices in software development that share a main goal: make deployments safer, making them much more predictable, automated, faster, and less error prone. But, do you really know the differences between the three?
 
 <img src="/images/two_paths_fork_unsplash.jpg" alt="Picture of a fork in the trail in a forest, leading to two alternative paths" />
 
@@ -48,11 +48,15 @@ Once the extended Continuous Integration is set, the last stage is to automate t
 
 *Difference between Continuous Delivery and Continuous Deployment*
 
-As can be seen in the image above, if we decide to enhance the pipeline so that once the Continuous Integration stages are completed the new artifact is automatically deployed to production, we talk about **Continuous Deployment**. On the other hand, if we decide to require a human action in order to proceed with the automated deployment, we are talking about **Continuous Delivery**. The difference is subtle. In both cases the deployment process is automated, but with Continuous Delivery there is a button that a human has to click in order to start the automated deployment process.
+[Continuous Delivery was described by Jez Humble](https://continuousdelivery.com/), its first proponent, as *"the ability to get changes of all types [...] into production, or into the hands of users, safely and quickly in a sustainable way"*. **Continuous Delivery does not necessarily involve deployment to production on every change**. We just need to ensure that our code is always in a deployable state. On the other hand, Continuous Deployment, however, does require every change to be always deployed automatically.
+
+Thus, as can be seen in the image above, if we decide to enhance the pipeline so that once the Continuous Integration stages are completed the new artifact is automatically deployed to production, we talk about **Continuous Deployment**. On the other hand, if we manage to automate everything, but decide to require a human action in order to proceed with the deployment of the new version, we are talking about **Continuous Delivery**. The difference is subtle, but it has huge implications, making each technique appropriate for different situations, as we will see below.
+
+If you need some other references, appart from this article, to be convinced about this difference, notice that a few years ago [Puppet published a similar comparison](https://puppet.com/blog/continuous-delivery-vs-continuous-deployment-what-s-diff) in their blog. Also, [Atlassian has published a longer article](https://www.atlassian.com/continuous-delivery/ci-vs-ci-vs-cd) on the topic. I hope these articles help clarify these concepts, avoiding the current confusion with them.
 
 ### When is Continuous Deployment recommended and when should we opt for Continuous Delivery?
 
-Continuous Deployment is usually great for B2C products. In fact, consumer companies such as [Facebook or Netflix follow this approach](https://research.fb.com/publications/continuous-deployment-at-facebook-and-oanda/), deploying small changes several times a day to production.
+In general, **Continuous Deployment is great for B2C products**. In fact, consumer companies such as [Facebook or Netflix follow this approach](https://research.fb.com/publications/continuous-deployment-at-facebook-and-oanda/), deploying small changes several times a day to production.
 
 However, **in B2B projects as well as in government projects**, there is **often** some bureaucracy regarding the need for approvals in order to deploy new features to production. In most cases the changes affect people in other areas or departments that have to adapt processes, learn to use the new features or adapt their own software that consumes our API. In these cases, applying Continuous Deployment could make other software crash, prevent people from doing their job or even lead to economic and legal issues. That is why for these cases, **Continuous Delivery is the technique of choice**, as is our case in Platino. As mentioned before, in Continuous Delivery we also automate all the process, but we provide a human control to proceed with the deployment to production, thus controlling when is the new version released.
 
