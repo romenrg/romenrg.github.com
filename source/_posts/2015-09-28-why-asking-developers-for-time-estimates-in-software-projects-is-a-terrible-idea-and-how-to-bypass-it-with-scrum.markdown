@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why asking developers for time estimates in Software Projects is a terrible idea and how to bypass it with Scrum"
-seo_title: "Alternatives To Time Estimates In Software Development"
+seo_title: "How To Avoid Time Estimates In Software Development"
 date: 2015-09-28 11:17
 comments: true
 categories: [Management, Entrepreneurship]
