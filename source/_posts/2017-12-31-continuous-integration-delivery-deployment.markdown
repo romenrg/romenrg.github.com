@@ -8,7 +8,7 @@ description: "Continuous integration, continuous delivery, and continuous deploy
 keywords: continuous integration, continuous deployment, continuous delivery, agile, devops, software, production
 twitterimg: "/images/two_paths_fork_unsplash.jpg"
 ---
-Continuous Integration, Continuous Delivery, and Continuous Deployment are key modern practices in software development that share a main goal: make deployments safer, making them much more predictable, automated, faster, and less error prone. But, do you really know the differences between the three?
+Continuous Integration, Continuous Delivery, and Continuous Deployment are key modern practices in software development that share a main goal: achieve safer deployments. This includes using automation to make them much more predictable, faster and less error prone. But, do you really know the differences between the three?
 
 <img src="/images/two_paths_fork_unsplash.jpg" alt="Picture of a fork in the trail in a forest, leading to two alternative paths" />
 
@@ -16,7 +16,7 @@ The aim of this article is to help clarify what do these techniques mean and hig
 
 <!-- More -->
 
-During this year I have been deeply involved in the topic, since I have been working on setting up Continuous Integration and Continuous Delivery in [Platino](http://www.gobiernodecanarias.org/platino/), which is a big government project that has been around for 10 years. In this time I have realized that, despite the importance of these practices, many professionals in the industry still miss the differences between the three, often talking about them instinctively in conversations, which creates much confusion.
+During this year I have been deeply involved in the topic, since I have been working on setting up Continuous Integration and Continuous Delivery in [Platino](http://www.gobiernodecanarias.org/platino/), which is a big government project that has been around for almost 10 years and is composed of more than 50 web services. In this year I have realized that, despite the importance of these practices, many professionals in the industry still miss the differences between the three, often talking about them instinctively in conversations, which creates much confusion.
 
 ## Continuous Integration
 
@@ -34,7 +34,7 @@ The idea behind this daily integrations to the mainline was to reduce the integr
 
 *Example of two developers applying the original concept of Continuous Integration, integrating every change into the mainline. As before, squares represent commits and circles represent merges, which are much simpler now, due to the high frequency of integration.*
 
-However, although this original proposal has value on itself, **more recently the definition of Continuous Integration has been broadened**, now often implying the existence of a CI Server (such as [Jenkins](https://jenkins-ci.org/)) that, once a new change is made to the mainline of the CVS, executes a [Continuous Integration Pipeline](https://jenkins.io/doc/book/pipeline/). These pipelines are formed of different stages that usually include at least the compilation of the source code and the execution of unit tests. Nonetheless, in many cases other stages such as packaging, execution of integration / end-to-end tests and static code analysis are also included in these Continuous Integration Pipelines.
+However, although this original proposal has value on itself, **more recently the definition of Continuous Integration has been broadened**. Now it often implies the existence of a CI Server (such as [Jenkins](https://jenkins-ci.org/)) that, once a new change is made to the mainline of the CVS, executes a [Continuous Integration Pipeline](https://jenkins.io/doc/book/pipeline/). These pipelines are formed of different stages executed sequentially on every integraton. [As Martin Fowler states](https://www.martinfowler.com/articles/continuousIntegration.html), each integration is verified by an automated build to detect integration errors as quickly as possible. These builds include at least the compilation of the source code and the execution of unit tests, although in many cases other stages such as packaging, execution of integration / end-to-end tests and static code analysis are also included in these Continuous Integration Pipelines.
 
 In this extended definition, the pipeline can either finish successfully or a failure can be produced in any of the stages (tests failing, static analysis not passing a defined threshold….). Usually, in the event of a failure an email is sent to the person that created the last commit (probably the one causing the failure). In order to really get the benefits of Continuous Integration, it should be a priority for the team to keep the Continuous Integration status *green* (passing) instead of *red* (failing), fixing any problem as soon as it appears.
 
@@ -48,9 +48,9 @@ Once the extended Continuous Integration is set, the last stage is to automate t
 
 *Difference between Continuous Delivery and Continuous Deployment*
 
-[Continuous Delivery was described by Jez Humble](https://continuousdelivery.com/), its first proponent, as *"the ability to get changes of all types [...] into production, or into the hands of users, safely and quickly in a sustainable way"*. **Continuous Delivery does not necessarily involve deployment to production on every change**. We just need to ensure that our code is always in a deployable state. On the other hand, Continuous Deployment, however, does require every change to be always deployed automatically.
+[Continuous Delivery was described by Jez Humble](https://continuousdelivery.com/), as *"the ability to get changes of all types [...] into production, or into the hands of users, safely and quickly in a sustainable way"*. **Continuous Delivery does not necessarily involve deployment to production on every change**. We just need to ensure that our code is always in a deployable state. On the other hand, Continuous Deployment, however, does require every change to be always deployed automatically.
 
-Thus, as can be seen in the image above, if we decide to enhance the pipeline so that once the Continuous Integration stages are completed the new artifact is automatically deployed to production, we talk about **Continuous Deployment**. On the other hand, if we manage to automate everything, but decide to require a human action in order to proceed with the deployment of the new version, we are talking about **Continuous Delivery**. The difference is subtle, but it has huge implications, making each technique appropriate for different situations, as we will see below.
+Thus, as can be seen in the image above, if we decide to enhance the pipeline so that, once the Continuous Integration stages are completed, the new artifact is automatically deployed to production, we talk about **Continuous Deployment**. On the other hand, if we manage to automate everything, but decide to require a human aproval in order to proceed with the deployment of the new version, we are talking about **Continuous Delivery**. The difference is subtle, but it has huge implications, making each technique appropriate for different situations, as we will see below.
 
 If you need some other references, appart from this article, to be convinced about this difference, notice that a few years ago [Puppet published a similar comparison](https://puppet.com/blog/continuous-delivery-vs-continuous-deployment-what-s-diff) in their blog. Also, [Atlassian has published a longer article](https://www.atlassian.com/continuous-delivery/ci-vs-ci-vs-cd) on the topic. I hope these articles help clarify these concepts, avoiding the current confusion with them.
 
