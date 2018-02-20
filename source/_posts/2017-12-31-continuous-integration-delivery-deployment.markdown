@@ -8,7 +8,7 @@ description: "Continuous integration, continuous delivery, and continuous deploy
 keywords: continuous integration, continuous deployment, continuous delivery, agile, devops, software, production
 twitterimg: "/images/two_paths_fork_unsplash.jpg"
 ---
-Continuous Integration, Continuous Delivery, and Continuous Deployment are key modern practices in software development that share a main goal: achieve safer deployments. This includes using automation to make them much more predictable, faster and less error prone. But, do you really know the differences between the three?
+Continuous Integration, Continuous Delivery, and Continuous Deployment are key modern practices in software development that share two main goals: to deploy more frequently and more safely. These processes take advantage of automation to assess the quality and correctness of the new software and to make deployments much more predictable, faster and less error prone. But... Do you really know the differences between the three?
 
 <img src="/images/two_paths_fork_unsplash.jpg" alt="Picture of a fork in the trail in a forest, leading to two alternative paths" />
 
@@ -16,11 +16,11 @@ The aim of this article is to help clarify what do these techniques mean and hig
 
 <!-- More -->
 
-During this year I have been deeply involved in the topic, since I have been working on setting up Continuous Integration and Continuous Delivery in [Platino](http://www.gobiernodecanarias.org/platino/), which is a big government project that has been around for almost 10 years and is composed of more than 50 web services. In this year I have realized that, despite the importance of these practices, many professionals in the industry still miss the differences between the three, often talking about them instinctively in conversations, which creates much confusion.
+During this year I have been deeply involved in the topic, since I have been working on setting up Continuous Integration and Continuous Delivery in [Platino](http://www.gobiernodecanarias.org/platino/), which is a big government project that has been around for almost 10 years and is composed of more than 50 web services. In this year I have realized that, despite the importance of these practices, many professionals in the industry still miss the differences between the three, often talking about them indistinctly in conversations, which creates much confusion.
 
 ## Continuous Integration
 
-The concept of Continuous Integration (CI) was originally proposed by Grady Booch in 1991 and later integrated into [Extreme Programming](http://www.extremeprogramming.org/). From then on, specially thanks to the movement for [Agile Software Development](http://agilemanifesto.org/) as well as [DevOps culture](https://www.atlassian.com/devops), the technique has been widely adopted in the industry.
+The concept of Continuous Integration (CI) was originally proposed by Grady Booch in 1991 and later integrated into [Extreme Programming](http://www.extremeprogramming.org/). From then on, specially thanks to the [Agile Software Development](http://agilemanifesto.org/) movement (as well as [DevOps culture](https://www.atlassian.com/devops)), the technique has been widely adopted in the industry.
 
 Originally, the concept of Continuous Integration was associated exclusively with Control Version Systems (CVS). It was first described as integrating developers work (their working copies or branches) to the mainline (the *trunk* in subversion or the *master* branch in git) at least once a day.
 
