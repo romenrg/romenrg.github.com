@@ -16,7 +16,9 @@ The aim of this article is to help clarify what do these techniques mean and hig
 
 <!-- More -->
 
-During this year I have been deeply involved in the topic, since I have been working on setting up Continuous Integration and Continuous Delivery in [Platino](http://www.gobiernodecanarias.org/platino/), which is a big government project that has been around for almost 10 years and is composed of more than 50 web services. In this year I have realized that, despite the importance of these practices, many professionals in the industry still miss the differences between the three, often talking about them indistinctly in conversations, which creates much confusion.
+During this year I have been deeply involved in the topic, since I have been working on setting up Continuous Integration and Continuous Delivery in [Platino](http://www.gobiernodecanarias.org/platino/), which is a big government project that has been around for almost 10 years. Platino receives tens of millions of requests every month and has a considerable codebase, being composed of more than 50 web services and 9 web applications, deployed in different containers.
+
+In this time I have realized that, despite the importance of these practices, many professionals in the industry still miss the differences between the three, often talking about them indistinctly in conversations, which creates a lot of confusion. So, let's check the differences:
 
 ## Continuous Integration
 
