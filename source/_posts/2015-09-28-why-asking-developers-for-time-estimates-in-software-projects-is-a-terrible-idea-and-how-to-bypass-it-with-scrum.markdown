@@ -53,9 +53,9 @@ If you have a team of professional and commited developers, they will be doing t
 
 That being said, even if you use fixed-price contracts (or <em>"fixed-everything"</em> contracts), the approach I will describe below will help you minimize problems, by following an iterative and incremental development process. With this approach, your team will always work in the most important features, releasing an incremental version of the product every few weeks. By doing this, you will always have working software to ship to your customer. If the deadline arrives and the project is not finished, at least the X more important features will be developed. And working software will be available. Moreover, if you manage to involve your customer in the process, you will benefit from showing her the incremental releases. Among other things, you will get valuable feedback, anticipate changes and build trust. Therefore, customer relationships will improve and contract changes will become easier to deal with. Nonetheless, the best part of this approach is that you will also be able to calculate more-realistic release dates, without asking developers for time estimates.
 
-##2. The solution: Calculating release dates based on Team Velocity, using Story Points and following Scrum
+##2. The solution: Combine Scrum with effort-based story points to calculate Team Velocity and Release Dates
 
-So, as a manager, how can Scrum and Story Points help you?
+So, as a manager, how can Scrum and effort-based Story Points help you?
 
 Unfortunately, Scrum has become kind of a buzzword in the last few years and many people in the software industry say they use Scrum when in reality they are not following many of the key principles... If you are new to Scrum, I encourage you to read [The Scrum Guide](http://www.scrumguides.org/) which is a fantastic 16-pages document written by the creators of the framework describing its principles. Also, if you are new to User Stories, [here](https://www.scrumalliance.org/community/articles/2010/april/new-to-user-stories) you can find a great article comparing User Stories, use cases and requirements. Too tired to read? Then a good alternative are these [great videos about the scrum framework](http://scrumtrainingseries.com/).
 
@@ -71,7 +71,7 @@ My favourite tool for managing Scrum is [Jira](https://es.atlassian.com/software
 
 After creating the initial Product Backlog, you will have a much clearer picture of the MVP you are going to build and therefore, you will be in a better position to present it to developers.
 
-###2.2. Estimating all User Stories in the backlog based on effort points
+###2.2. Estimate all User Stories in the backlog based on effort points
 
 Once you have created your initial Product Backlog and prioritized the User Stories, it is time to have the first Product Backlog Refinement meeting with the Scrum Team (which includes the Development Team). Our goal would be to estimate all User Stories in the Backlog, but instead of time we will be using effort points. Each User Story will have X points. A common approach is to use the Fibonacci scale for those points.
 
