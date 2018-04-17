@@ -5,7 +5,7 @@ seo_title: "How To Avoid Time Estimates In Software Development"
 date: 2015-09-28 11:17
 comments: true
 categories: [Management, Entrepreneurship]
-description: "Time estimates in software projects fail dramatically, due to the high uncertainty that exists in many aspects of software development. In contrast, using story points based on effort to calculate "team velocity" allows us to forecast delivery dates indirectly, avoiding misunderstandings" 
+description: "Time estimates in software projects fail dramatically, due to the high uncertainty that exists in many aspects of software development. In contrast, using story points based on effort to calculate "team velocity" allows us to forecast delivery dates indirectly, avoiding misunderstandings."
 keywords: estimates, software, development, velocity, scrum, agile, story points, effort points, projects, deadlines
 twitterimg: "/images/scrum_software_estimates_reverse_engineering_pixabay.jpg"
 ---
