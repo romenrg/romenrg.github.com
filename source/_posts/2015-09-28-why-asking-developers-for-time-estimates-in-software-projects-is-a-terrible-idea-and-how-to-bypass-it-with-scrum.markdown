@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Why asking developers for time estimates in Software Projects is a terrible idea and how to bypass it with Scrum"
+title: "Why asking software developers for time estimates is a terrible idea and how to bypass it"
 seo_title: "How To Avoid Time Estimates In Software Development"
 date: 2015-09-28 11:17
 comments: true
 categories: [Management, Entrepreneurship]
-description: "Time Estimates in Software Projects fail dramatically. Using story points based on effort to calculate Team Velocity is a much more reliable approach" 
+description: "Time estimates in software projects fail dramatically, due to the high uncertainty that exists in many aspects of software development. In contrast, using story points based on effort to calculate "team velocity" allows us to forecast delivery dates indirectly, avoiding misunderstandings" 
 keywords: estimates, software, development, velocity, scrum, agile, story points, effort points, projects, deadlines
 twitterimg: "/images/scrum_software_estimates_reverse_engineering_pixabay.jpg"
 ---
-I have worked in many software projects, having been lucky to be in the initial team of several software products. Besides, having acted both as a Developer and as a Product Manager has allowed me to have a wider view of what usually causes most friction between business and engineering: time estimates.
+I have worked in many software projects and have been lucky to be in the initial team of several software products. Besides, having acted both as a Developer and as a Product Manager has allowed me to have a wider view of what usually causes most friction between business and engineering: time estimates.
 
 <img src="/images/scrum_software_estimates_reverse_engineering_pixabay.jpg" alt="Picture of a woman pointing to her watch as if you were late. Typical management or customer reaction to delayed software projects" />
 
@@ -49,17 +49,17 @@ Most managers and salespeople love this approach. For them it is so simple... To
 
 Well, now that you know that having accurate time estimates for software projects is simply not possible, as a manager you can [choose more realistic contract approaches](https://www.youtube.com/playlist?list=PLhE6PVDdZ3dLSS42FLcwYLcH3pldS71MT), or you can [assume the risks of doing fixed-everything contracts](http://blog.salsitasoft.com/why-we-dont-do-fixed-price-software-projects/), based on those more-than-likely-wrong time estimates. But if you choose the latter, don’t blame developers when deadlines are not met.
 
-If you have a team of professional and commited developers, they will be doing their best all the time, trying to do things as quickly as they can (as [@dhh](https://twitter.com/dhh) says, [ASAP is implied](https://twitter.com/dhh/status/584745462445518848)). Sadly, too many times managers end up using the whip to make developers achieve the impossible. At the end, the imposible is not achieved, software quality goes down because of the rush (causing more delays due to constant bugfixing and poor code-maintainability), team morale is almost cero, everyone suffers burnout and the customer gets angry. Nobody wins.
+If you have a team of professional and commited developers, they will be doing their best all the time, trying to do things as quickly as they can (as [@dhh](https://twitter.com/dhh) says, [ASAP is implied](https://twitter.com/dhh/status/584745462445518848)). Sadly, too many times managers end up using the whip to make developers achieve the impossible. At the end, the imposible is not achieved, software quality goes down because of the rush (causing more delays due to constant bugfixing and poor code-maintainability), team morale is almost zero, everyone suffers burnout and the customer gets angry. Nobody wins.
 
 That being said, even if you use fixed-price contracts (or <em>"fixed-everything"</em> contracts), the approach I will describe below will help you minimize problems, by following an iterative and incremental development process. With this approach, your team will always work in the most important features, releasing an incremental version of the product every few weeks. By doing this, you will always have working software to ship to your customer. If the deadline arrives and the project is not finished, at least the X more important features will be developed. And working software will be available. Moreover, if you manage to involve your customer in the process, you will benefit from showing her the incremental releases. Among other things, you will get valuable feedback, anticipate changes and build trust. Therefore, customer relationships will improve and contract changes will become easier to deal with. Nonetheless, the best part of this approach is that you will also be able to calculate more-realistic release dates, without asking developers for time estimates.
 
-##2. The solution: Calculating release dates based on (project-dependant) Team Velocity with Scrum
+##2. The solution: Calculating release dates based on Team Velocity, using Story Points and following Scrum
 
-So, as a manager, how can Scrum help you?
+So, as a manager, how can Scrum and Story Points help you?
 
 Unfortunately, Scrum has become kind of a buzzword in the last few years and many people in the software industry say they use Scrum when in reality they are not following many of the key principles... If you are new to Scrum, I encourage you to read [The Scrum Guide](http://www.scrumguides.org/) which is a fantastic 16-pages document written by the creators of the framework describing its principles. Also, if you are new to User Stories, [here](https://www.scrumalliance.org/community/articles/2010/april/new-to-user-stories) you can find a great article comparing User Stories, use cases and requirements. Too tired to read? Then a good alternative are these [great videos about the scrum framework](http://scrumtrainingseries.com/).
 
-Once familiar to the Scrum Framework, all we need to do to get much more accurate time estimates for our software project, is to follow 4 simple steps that I will describe below. If you follow these steps properly, you will get infinitely more accurate time estimates than the ones you may get by asking developers. And what is even better, you will be able to rearrange the pending features (adding, removing or moving them) and get approximate release dates automatically.
+Once familiar to the Scrum Framework, all we need to do to get more accurate time estimates for our software project, is to follow 4 simple steps that I will describe below. If you follow these steps properly, you will get more accurate time estimates than the ones you may get by asking developers, besides avoiding all the misunderstandings time estimates create. And what is even better, you will be able to rearrange the pending features (adding, removing or moving them) and get approximate release dates automatically.
 
 ###2.1. Create a Product Backlog with User Stories as a first step
 
@@ -83,32 +83,32 @@ If in the future new User Stories appear (<em>they will</em>), all you will have
 
 ###2.3. Keep effort-based estimates time-independent
 
-Even though in Agile Methodologies time estimates are usually replaced by effort points (using scales such as Fibonacci or t-shirt sizes), some managers simply establish a link from those points or sizes to "their equivalent" in time, and they usually do that publicly, which means that everybody goes back to time estimates; thus ruining the whole thing again and making developers hate agile too (even though what they hate is a bad implementation of agile methodologies). <em>The key of using an effort-based system for story points is precisely to keep estimates separated from time</em>. The relative "effort" of a task is a much easier concept to analyze for developers, especially when comparing the different User Stories of a project.
+Even though agile implementations usually replace time estimates by effort points (using scales such as Fibonacci or t-shirt sizes), some managers simply establish a link from those points or sizes to "their equivalent" in time. They usually do that publicly, which means that everybody goes back to time estimates, thus ruining the whole thing again and making developers hate agile too (even though what they hate is a bad implementation of agile frameworks). <em>The key of using an effort-based system for story points is precisely to keep estimates separated from time</em>. The relative "effort" of a task is a much easier concept to analyze for developers, especially when comparing the different User Stories of a project.
 
 ###2.4. In the first few sprints Team Velocity and Capacity are yet unknown
 
 When planning a sprint, the team will pick User Stories from the top of the backlog until they consider it is enough work for the sprint. Then, during the sprint review you will discover whether all user stories were completed as expected or if there were some changes (e.g. the team was not able to complete all the user stories, or by constrast, all stories were completed early and some more were added to the sprint).
 
-As you will see, in the first few sprints there is usually some error when comparing what the team planned to achieve and what it did actually achieve. However, this error will become smaller and smaller over time, achieving a constant speed or Team Velocity (measured in story-points per sprint).
+As you will see, in the first few sprints there are usually some differences when comparing what the team planned to achieve and what it did actually achieve. However, this error tends to become smaller and smaller over time, achieving a similar Team Velocity in every sprint (measured in story-points completed per sprint).
 
 At this stage it is important to mention that having a fair [Definition of Done](https://www.scrumalliance.org/community/articles/2008/september/what-is-definition-of-done-\(dod\)) is key to success, although it is beyond the scope of this article.
 
 ###2.5 After a few sprints you will be able to accurately estimate release dates, based on Team Velocity
 
-Once a few sprints have passed you will realize that, if story-points estimates are kept consistent, the team usually achieves a similar number of story points per sprint.
+Once a few sprints have passed you will realize that, if story-point estimates are kept consistent, the team usually achieves a similar number of story points per sprint.
 
 Since you are doing your job of keeping the backlog updated, prioritized and estimated in story points by the development team, you will able to forecast when a particular story will be finished.
 
 <em>An **example** will make it clearer:</em>
 
-Let’s say the Development Team completes <em>50 points per sprint</em> and <em>each sprint takes 15 days</em>. If you want to know when will a particular User Story be finished, all you need to do is to count the number of story points that are above it, plus its story points. Let’s say <em>User Story X has 160 points above and it has 8 points itself</em>. This means that it will be finished in 168 story points. Since in each sprint the team is completing approximately 50 points and since team estimates are consistent, the story you are looking for will be finished in 4 sprints time, <em>which means 2 months.</em>
+Let’s say the Development Team completes <em>50 points per sprint</em> and <em>each sprint takes 15 days</em>. If you want to know when will a particular User Story be finished, all you need to do is to count the number of story points that are above it, plus its own story points. Let’s say <em>User Story X has 160 points above and it has 8 points itself</em>. This means that it will be finished in 168 story points. Since in each sprint the team is completing approximately 50 points and since team estimates are consistent, the story you are looking for will be finished in about 4 sprints time, <em>which means 2 months.</em>
 
 The same process can be applied to know when will the whole project be finished, just taking the last User Story you have in the backlog for the calculations explained before.
 
 ## Conclusion
 
-With this management approach you will get really accurate time estimates without asking for them; you will keep team morale high, avoid burnout and improve productivity. Besides, you will be able to automatically forecast the impact of changes in the timing of the project. 
+Although there is no silver bullet in software estimation, with this management approach you will get time estimates without asking for them; you will keep team morale high, avoid burnout and improve productivity. Besides, you will be able to automatically forecast the impact of changes in the timing of the project. 
 
-This solution contributes to improve business-engineering relationship and trust; improve software quality and reduce costs in the long-run. Besides, if you involve customers in the process, customer relationships and trust may improve considerably; making it easier for both parties to deal with change, preventing many deadline-related conflicts.
+This solution contributes to improve business-engineering relationship, improve software quality and reduce costs in the long-run. Besides, if you involve customers in the process, customer understanding and trust may improve considerably, making it easier for both parties to deal with change, preventing many deadline-related conflicts.
 
 Now, join the conversation: How do you deal with time estimates in your company?
