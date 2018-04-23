@@ -5,8 +5,8 @@ seo_title: "How To Avoid Time Estimates In Software Development"
 date: 2015-09-28 11:17
 comments: true
 categories: [Management, Entrepreneurship]
-description: "Time estimates in software projects fail dramatically, due to the high uncertainty that exists in many aspects of software development. In contrast, using story points based on effort to calculate 'team velocity' allows us to forecast delivery dates indirectly, avoiding misunderstandings."
-keywords: estimates, software, development, velocity, scrum, agile, story points, effort points, projects, deadlines
+description: "Time estimates in software projects fail dramatically, due to the high uncertainty that exists in many aspects of software development. However, using story points based on effort to calculate 'team velocity' allows us to forecast delivery dates indirectly, avoiding misunderstandings."
+keywords: estimates, software development, velocity, scrum, agile, story points, effort points, projects, deadlines, software estimates, software estimation, delivery date, software projects, time estimates, delays
 twitterimg: "/images/scrum_software_estimates_reverse_engineering_pixabay.jpg"
 ---
 I have worked in many software projects and have been lucky to be in the initial team of several software products. Besides, having acted both as a Developer and as a Product Manager has allowed me to have a wider view of what usually causes most friction between business and engineering: time estimates.
@@ -23,7 +23,7 @@ However, using Scrum properly (along with some XP practices) we can avoid the un
 
 The topic of delay and over-budget in the software industry has been widely discussed, including reports such as [this one](https://hbr.org/2011/09/why-your-it-project-may-be-riskier-than-you-think/ar) by Harvard Business Review, later commented in this [InfoQ post](http://www.infoq.com/news/2011/10/risky-it-projects). A conclusion of this report is: <em>“If you want to avoid the slow death caused by IT projects you must be prepared not only to spend 400% more than planned on the project, but to reap only 25% of the expected benefits. If you keep this in mind you can possibly prevent a company from being killed by an IT project”</em>.
 
-Moreover, since 1994 [Standish Group](http://standishgroup.com/) has been releasing their [CHAOS Reports](http://blog.standishgroup.com/post/50) every year. These reports are a relevant snapshot of the state of the software development industry. [The last CHAOS Report (2015)](http://www.infoq.com/articles/standish-chaos-2015), shows that <em>even nowadays, only 29% of Software Projects are successful (defined as on-time, on-budget and with a satisfactory result)</em>. This report highlights one of the key variables affecting success rates: the approach used to manage projects (Agile vs Waterfall). <em>Agile Methodologies showed a 39% ratio of successful projects, while Waterfall only 11%</em>. This seems to be closely related to the way in which we deal with estimates and changes in each case.
+Moreover, since 1994 [Standish Group](http://standishgroup.com/) has been releasing their [CHAOS Reports](http://blog.standishgroup.com/post/50) every year. These reports are a relevant snapshot of the state of the software development industry. [The last CHAOS Report (2015)](http://www.infoq.com/articles/standish-chaos-2015), shows that <em>even nowadays, only 29% of Software Projects are successful (defined as on-time, on-budget and with a satisfactory result)</em>. This report highlights one of the key variables affecting success rates: the approach used to manage projects (Agile vs Waterfall). <em>Agile approaches showed a 39% ratio of successful projects, while Waterfall only 11%</em>. This seems to be closely related to the way in which we deal with estimates and changes in each case.
 
 ###1.1. Let’s assume we never know how long it’s going to take
 
@@ -35,7 +35,7 @@ Moreover, [in this Hacker News thread](https://news.ycombinator.com/item?id=5596
 
 There is an increasing tendency among developers against giving estimates in software projects (see [#NoEstimates](https://twitter.com/hashtag/NoEstimates)). To a certain extent this makes total sense, since time estimates have been proved to fail dramatically in the industry ([especially for tasks that take more than a day](https://coding.abel.nu/2012/06/programmer-time-translation-table/) to complete). Besides, developers are usually the ones paying the bill of a failed estimate, by working long hours and suffering great stress due to management pressure to meet deadlines. This usually leads to poor team morale, friction, loss of credibility and many other problems, as described in detail by Richard Clayton in his article “[Software Estimation is a losing game](https://rclayton.silvrback.com/software-estimation-is-a-losing-game)”.
 
-On the other hand, since I have been manager and CEO apart from developer, I know how useful would time estimates be from the business side (either to calculate costs for a customer that wants a fixed-price contract; or to ourselves, to plan marketing actions, meetings, etc...). <em>However, we must asume that calculating accurate time estimates for software projects is simply not possible</em>. Putting pressure on developers to give us time estimates will simply make them lie to us, giving an estimate that is going to be dreadfully wrong. As we have explained before, <em>they just don’t know how long is it going to take</em>.
+On the other hand, since I have been manager and CEO apart from developer, I know how useful would time estimates be from the business side (either to calculate costs for a customer that wants a fixed-price contract; or to ourselves, to plan marketing actions, meetings, etc...). <em>However, we must asume that calculating accurate time estimates for software projects is simply not possible</em>. Putting pressure on developers to give us time estimates will simply make them lie to us, giving a virtually random estimate that is going to be dreadfully wrong. As we have explained before, <em>they just don’t know how long it is going to take</em>.
 
 I guess I don't need to mention that, if developers are not able to give us an accurate time estimate for a software project to be finished in; managers (with no technical background or having spent the last few years out of development) are much worse at it.
 
@@ -73,13 +73,13 @@ After creating the initial Product Backlog, you will have a much clearer picture
 
 ###2.2. Estimate all User Stories in the backlog based on effort points
 
-Once you have created your initial Product Backlog and prioritized the User Stories, it is time to have the first Product Backlog Refinement meeting with the Scrum Team (which includes the Development Team). Our goal would be to estimate all User Stories in the Backlog, but instead of time we will be using effort points. Each User Story will have X points. A common approach is to use the Fibonacci scale for those points.
+Once you have created your initial Product Backlog and prioritized User Stories, it is time to have the first Product Backlog Refinement meeting with the Scrum Team (which includes the Development Team). Our goal would be to estimate all User Stories in the Backlog, but instead of time we will be using effort points. Each User Story will have X points. A common approach is to use the Fibonacci scale for those points.
 
-Since it is very important to be consistent when estimating User Stories I usually encourage the team to <em>find the easiest User Story in the backlog and give it a 1 and then find the hardest one and give it either a 13 or a 21</em>. That way you have created the team’s effort scale, making it easier to estimate the remaining User Stories based on a scale that is totally dependent on the project.
+Since it is very important to be consistent when estimating User Stories, I usually encourage the team to <em>find the easiest User Story in the backlog and give it a 1 and then find the hardest one and give it either a 13 or a 21</em>. That way you have created the team’s effort scale, making it easier to estimate the remaining User Stories based on a scale that is totally dependent on the project.
 
-“Wait! But this numbers are not useful for me!”, a manager said. Hold on, they definitely are. For now they tell you which are the easiest User Stories and which ones are the hardest. But even better, in a few sprints they will help you calculate when will the project be finished or when will a specific User Story be done, according to its place in the backlog. And this estimate will be a much more precise that any you could have ever got from asking developers for time estimates.
+“Wait! But this numbers are not useful for me!”, a manager said. Hold on, they definitely are. For now they tell you which are the easiest User Stories and which ones are the hardest. But even better, in a few sprints they will help you estimate when might the project be finished or when will a specific User Story probably be done, according to its place in the backlog. And this estimate will be much more precise than any you could have ever got from asking developers for time estimates.
 
-If in the future new User Stories appear (<em>they will</em>), all you will have to do is to add them to the backlog, placing them according to their relative priority compared to the rest of the stories; and save a day during the sprint to conduct the Backlog Refinement Meeting, when the new stories will be estimated. The most important task of the Product Owner (that would be your role in Scrum) is to keep the backlog updated, estimated and prioritized, in order to make it useful to predict release dates.
+If in the future new User Stories appear (<em>they will</em>), all you will have to do is to add them to the backlog, placing them according to their relative priority compared to the rest of the stories; and save a day during the sprint to conduct the Backlog Refinement Meeting, when the new stories will be estimated. The most important task of the Product Owner (that would be your role in Scrum) is to keep the backlog updated, estimated and prioritized; in order to make it useful to predict possible release dates.
 
 ###2.3. Keep effort-based estimates time-independent
 
@@ -93,7 +93,7 @@ As you will see, in the first few sprints there are usually some differences whe
 
 At this stage it is important to mention that having a fair [Definition of Done](https://www.scrumalliance.org/community/articles/2008/september/what-is-definition-of-done-\(dod\)) is key to success, although it is beyond the scope of this article.
 
-###2.5 After a few sprints you will be able to accurately estimate release dates, based on Team Velocity
+###2.5 After a few sprints you will be able to estimate release dates, based on Team Velocity
 
 Once a few sprints have passed you will realize that, if story-point estimates are kept consistent, the team usually achieves a similar number of story points per sprint.
 
@@ -101,13 +101,13 @@ Since you are doing your job of keeping the backlog updated, prioritized and est
 
 <em>An **example** will make it clearer:</em>
 
-Let’s say the Development Team completes <em>50 points per sprint</em> and <em>each sprint takes 15 days</em>. If you want to know when will a particular User Story be finished, all you need to do is to count the number of story points that are above it, plus its own story points. Let’s say <em>User Story X has 160 points above and it has 8 points itself</em>. This means that it will be finished in 168 story points. Since in each sprint the team is completing approximately 50 points and since team estimates are consistent, the story you are looking for will be finished in about 4 sprints time, <em>which means 2 months.</em>
+Let’s say the Development Team completes <em>about 50 points per sprint</em> and <em>each sprint takes 15 days</em>. If you want to know when will a particular User Story be finished, all you need to do is to count the number of story points that are above it, plus its own story points. Let’s say <em>User Story X has 160 points above and it has 8 points itself</em>. This means that it will be finished in 168 story points. Since in each sprint the team is completing approximately 50 points and since team estimates are consistent, the story you are looking for will be finished in about 4 sprints time, <em>which means 2 months.</em>
 
-The same process can be applied to know when will the whole project be finished, just taking the last User Story you have in the backlog for the calculations explained before.
+The same process can be applied to guess when could the whole project be finished, just taking the last User Story you have in the backlog for the calculations explained before.
 
 ## Conclusion
 
-Although there is no silver bullet in software estimation, with this management approach you will get time estimates without asking for them; you will keep team morale high, avoid burnout and improve productivity. Besides, you will be able to automatically forecast the impact of changes in the timing of the project. 
+There is no silver bullet in software estimation. However, if you need to prepare marketing actions or respond to a customer, you will probably need at least a rough idea of delivery dates. Following the management approach described in this article, you will get time estimates without asking for them; you will keep team morale high, avoid burnout and improve productivity. Besides, you will be able to automatically forecast the impact of changes in the timing of the project.
 
 This solution contributes to improve business-engineering relationship, improve software quality and reduce costs in the long-run. Besides, if you involve customers in the process, customer understanding and trust may improve considerably, making it easier for both parties to deal with change, preventing many deadline-related conflicts.
 
