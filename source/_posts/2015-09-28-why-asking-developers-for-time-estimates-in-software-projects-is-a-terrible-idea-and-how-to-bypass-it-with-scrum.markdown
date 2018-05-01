@@ -120,5 +120,6 @@ Now, join the conversation: How do you deal with time estimates in your company?
 <div class="revisions">
   <h2>Significant revisions</h2>
   <p><em>01 May 2018</em>: Added references to 6-week-cycles followed by Basecamp and Buffer. Also, replaced the term "sprint" by "cycle", which seems more appropriate to encourage working at a sustainable pace.</p>
+  <p><em>17 April 2018</em>: Improving title and meta description.</p>
   <p><em>28 September 2015</em>: Original version published.</p>
 </div>
