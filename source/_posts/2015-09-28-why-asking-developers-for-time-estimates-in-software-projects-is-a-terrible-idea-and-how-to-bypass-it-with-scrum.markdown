@@ -108,7 +108,11 @@ Since you have been doing your job of keeping the backlog updated, prioritized a
 
 <em>An **example** will make it clearer:</em>
 
-Let’s say the Development Team completes <em>about 50 points per cycle</em> and <em>each cycle takes 15 days</em>. If you want to know when will a particular User Story be finished, all you need to do is to count the number of story points that are above it, plus its own story points. Let’s say <em>User Story X has 160 points above and it has 8 points itself</em>. This means that it will be finished in 168 story points. Since in each cycle the team is completing approximately 50 points and since team estimates are consistent, the story you are looking for will be finished in about 4 cycles time, <em>which means 2 months.</em>
+_Let’s say our development team is applying the strategy described in this post. It is completing about 25 points per cycle and each cycle is 15 days long. If you want to know when will a particular user story be finished, all you need to do is count the number of story points that are above it in the backlog, add its own story points and do some simple math:_
+
+<a href="/images/story_points_estimates_backlog_example.png"><img src="/images/story_points_estimates_backlog_example.png" alt="Example showing a backlog with story points, estimated based on effort; team velocity, cycle time and a forecast for a particular story" /></a>
+
+_In this example, user story X has 52 points above it in the backlog and has 5 points itself. This means a total of 57 story points have to be completed for story X to be finished. Since in each cycle the team is completing approximately 25 points, the story you are looking for will probably be finished in 3 cycles time, meaning it would be deployed in about 45 days._
 
 The same process can be applied to guess when could the whole project be finished, just taking the last user story you have in the backlog for the calculations explained before.
 
@@ -122,7 +126,8 @@ Now, join the conversation: How do you deal with time estimates in your company?
 
 <div class="revisions">
   <h2>Significant revisions</h2>
-  <p><em>2018, May 01</em>: Added references to 6-week-cycles followed by Basecamp and Buffer. Also, replaced the term "sprint" by "cycle", which seems more appropriate to encourage working at a sustainable pace.</p>
+  <p><em>2018, May 06</em>: Added an image to the example and improved its description.</p>
+  <p><em>2018, May 01</em>: References to 6-week-cycles followed by Basecamp and Buffer are included. Also, replaced the term "sprint" by "cycle", which seems more appropriate to encourage working at a sustainable pace.</p>
   <p><em>2018, Apr 17</em>: Improving title and meta description.</p>
   <p><em>2015, Sep 28</em>: Original version published.</p>
 </div>
