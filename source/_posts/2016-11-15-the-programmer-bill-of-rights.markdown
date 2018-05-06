@@ -2,6 +2,7 @@
 layout: post
 title: "The Programmer Bill Of Rights, Revisited"
 date: 2016-11-15 18:34
+updated: 2018-05-06 15:15
 comments: true
 categories: [Software Development, Management, Entrepreneurship]
 description: "There are at least 10 basic rights, fundamental to the quality of work life for a software developer"
@@ -78,3 +79,8 @@ As any other creative process, programming requires autonomy. That is why agile 
 
 As an ending to this article, I would like to borrow the last paragraph from Jeff’s article: “The few basic rights we're asking for are easy. They aren't extravagant demands. They're fundamental to the quality of work life for a software developer. If the company you work for isn't getting it right, making it right is neither expensive nor difficult. **Demand your rights as a programmer!** And remember: you can either change your company, or you can *change your company*”.
 
+<div class="revisions">
+  <h2>Significant revisions</h2>
+  <p><em>2018, Apr 27</em>: Clarified the last two 'rights', improving grammar and style. Minor corrections in the example section were also included.</p>
+  <p><em>2016, Nov 15</em>: Original version published.</p>
+</div>
