@@ -3,6 +3,7 @@ layout: post
 title: "Why asking software developers for time estimates is a terrible idea and how to bypass it"
 seo_title: "How To Avoid Time Estimates In Software Development"
 date: 2015-09-28 11:17
+updated: 2018-05-06 15:09
 comments: true
 categories: [Management, Entrepreneurship]
 description: "Time estimates in software projects fail dramatically, due to the high uncertainty that exists in many aspects of software development. However, using story points based on effort to calculate 'team velocity' allows us to forecast delivery dates indirectly, avoiding misunderstandings."
@@ -119,7 +120,7 @@ Now, join the conversation: How do you deal with time estimates in your company?
 
 <div class="revisions">
   <h2>Significant revisions</h2>
-  <p><em>01 May 2018</em>: Added references to 6-week-cycles followed by Basecamp and Buffer. Also, replaced the term "sprint" by "cycle", which seems more appropriate to encourage working at a sustainable pace.</p>
-  <p><em>17 April 2018</em>: Improving title and meta description.</p>
-  <p><em>28 September 2015</em>: Original version published.</p>
+  <p><em>2018, May 01</em>: Added references to 6-week-cycles followed by Basecamp and Buffer. Also, replaced the term "sprint" by "cycle", which seems more appropriate to encourage working at a sustainable pace.</p>
+  <p><em>2018, Apr 17</em>: Improving title and meta description.</p>
+  <p><em>2015, Sep 28</em>: Original version published.</p>
 </div>

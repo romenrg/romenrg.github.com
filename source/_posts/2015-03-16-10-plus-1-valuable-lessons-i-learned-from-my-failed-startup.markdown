@@ -2,6 +2,7 @@
 layout: post
 title: "10+1 Valuable Lessons I Learned From My Failed Startup"
 date: 2015-03-17 19:53
+updated: 2018-05-01 20:14
 comments: true
 categories: [Entrepreneurship, Teaching]
 description: "Being a founder of an early-stage tech startup involves lots of uncertainties. Bad decisions may reduce our chances of success. In this article I share 10 valuable lessons I learned during the two years I led Vocabulary Notebook, my failed startup. By reading it I hope you may avoid some of the mistakes I made." 

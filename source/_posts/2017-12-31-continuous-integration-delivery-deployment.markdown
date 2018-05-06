@@ -2,6 +2,7 @@
 layout: post
 title: "Continuous Integration, Delivery and Deployment: Key Differences"
 date: 2017-12-31 18:46
+updated: 2018-02-20 18:05
 comments: true
 categories: [Software Development, DevOps, Management]
 description: "Continuous integration, continuous delivery, and continuous deployment are key modern practices in software development to achieve safer deployments."
