@@ -40,7 +40,7 @@ On the other hand, since I have been manager and CEO apart from developer, I kno
 
 I guess I don't need to mention that, if developers are not able to give us an accurate time estimate for a software project to be finished in; managers (with no technical background or having spent the last few years out of development) are much worse at it.
 
-So, at this point, as a manager it is worth taking some time to think if we really need to estimate the whole project (or backlog). Maybe we could follow an alternative approach, especially if we own the product we are building. For instance, some innovative companies, such as [Basecamp](https://m.signalvnoise.com/how-we-set-up-our-work-cbce3d3d9cae) or [Buffer](https://open.buffer.com/6-week-cycles/) are avoiding long term planning and estimation by working on 6-week-cycles. They always focus on the most valuable user stories, adjusting scope to make sure a releaseable version is ready at the end of the cycle.
+So, at this point, as a manager it is worth taking some time to think if we really need to estimate the whole project (or backlog). Maybe we could follow an alternative approach, especially if we own the product we are building. For instance, some innovative companies, such as [Basecamp](https://m.signalvnoise.com/how-we-set-up-our-work-cbce3d3d9cae) or [Buffer](https://open.buffer.com/6-week-cycles/) are avoiding long term planning and estimation by working on 6-week cycles. They always focus on the most valuable user stories, adjusting scope to make sure a releaseable version is ready at the end of the cycle.
 
 ###1.3 The role of evil contracts
 
@@ -127,7 +127,7 @@ Now, join the conversation: How do you deal with time estimates in your company?
 <div class="revisions">
   <h2>Significant revisions</h2>
   <p><em>2018, May 06</em>: Added an image to the example and improved its description.</p>
-  <p><em>2018, May 01</em>: References to 6-week-cycles followed by Basecamp and Buffer are included. Also, replaced the term "sprint" by "cycle", which seems more appropriate to encourage working at a sustainable pace.</p>
+  <p><em>2018, May 01</em>: References to 6-week cycles followed by Basecamp and Buffer are included. Also, replaced the term "sprint" by "cycle", which seems more appropriate to encourage working at a sustainable pace.</p>
   <p><em>2018, Apr 17</em>: Improving title and meta description.</p>
   <p><em>2015, Sep 28</em>: Original version published.</p>
 </div>
