@@ -110,7 +110,7 @@ Since you have been doing your job of keeping the backlog updated, prioritized a
 
 _Let’s say our development team is applying the strategy described in this post. It is completing about 25 points per cycle and each cycle is 15 days long. If you want to know when will a particular user story be finished, all you need to do is count the number of story points that are above it in the backlog, add its own story points and do some simple math:_
 
-<a href="/images/story_points_estimates_backlog_example.png"><img src="/images/story_points_estimates_backlog_example.png" alt="Example showing a backlog with story points, estimated based on effort; team velocity, cycle time and a forecast for a particular story" /></a>
+<a href="/images/story_points_estimates_backlog_example.png"><img src="/images/story_points_estimates_backlog_example.png" alt="Example showing a backlog with story points, estimated based on effort; team velocity, cycle duration and a forecast for a particular story" /></a>
 
 _In this example, user story X has 52 points above it in the backlog and has 5 points itself. This means a total of 57 story points have to be completed for story X to be finished. Since in each cycle the team is completing approximately 25 points, the story you are looking for will probably be finished in 3 cycles time, meaning it would be deployed in about 45 days._
 
