@@ -3,7 +3,7 @@ layout: post
 title: "Why asking software developers for time estimates is a terrible idea and how to bypass it"
 seo_title: "How To Avoid Time Estimates In Software Development"
 date: 2015-09-28 11:17
-updated: 2018-05-06 15:09
+updated: 2018-05-07 20:50
 comments: true
 categories: [Management, Entrepreneurship]
 description: "Time estimates in software projects fail dramatically, due to the high uncertainty that exists in many aspects of software development. However, using story points based on effort to calculate 'team velocity' allows us to forecast delivery dates indirectly, avoiding misunderstandings."
@@ -62,7 +62,7 @@ So, if you are still forced to provide long term release dates, an alternative w
 
 Unfortunately, Scrum has become kind of a buzzword in the last few years and many people in the software industry say they use Scrum when in reality they are not following many of the key principles... If you are new to Scrum, I encourage you to read [The Scrum Guide](http://www.scrumguides.org/) which is a fantastic 16-pages document written by the creators of the framework describing its principles. You can also find information on XP practices [here](http://www.extremeprogramming.org/rules.html). Too tired to read? Then a good alternative are these [great videos about the scrum framework](http://scrumtrainingseries.com/).
 
-Although I think Scrum is a great framework for software development, I agree with [Jason Fried](https://twitter.com/jasonfried/status/700746928020176896) and [some others](http://www.agile-doctor.com/2016/03/10/maybe-time-stop-using-word-sprint/) that are showing concerns about the word 'sprint'. As they have highlighted, it can be misinterpreted, leading to behaviors that go against sustainable development, a core [agile principle](http://agilemanifesto.org/principles.html). For that reason, in this article I have decided to use the word "cycle" instead.
+Although I think Scrum is a great framework for software development, I agree with [Jason Fried](https://twitter.com/jasonfried/status/700746928020176896) and [some others](http://www.agile-doctor.com/2016/03/10/maybe-time-stop-using-word-sprint/) that are showing *concerns about the word 'sprint'*. As they have highlighted, it can be misinterpreted, leading to behaviors that go against sustainable development, a core [agile principle](http://agilemanifesto.org/principles.html). For that reason, in this article *I have decided to use the word "cycle" instead.*
 
 Having these definitions are clear, all we need to do to get more accurate time estimates for our software project, is to follow 4 simple steps that I will describe below. If you follow these steps properly, you will get more accurate time estimates than the ones you may get by asking developers, besides avoiding all the misunderstandings time estimates create. And what is even better, you will be able to rearrange the pending features (adding, removing or moving them) and get approximate release dates automatically.
 
@@ -94,7 +94,7 @@ Even though agile implementations usually replace time estimates by effort point
 
 ###2.4. In the first few cycles Team Velocity is yet unknown
 
-When planning a cycle, the team will pick user stories from the top of the backlog until they consider it is enough work for the cycle. Then, during the cycle review you will discover whether all user stories were completed as expected or if there were some changes (e.g. the team was not able to complete all the user stories, or by constrast, all stories were completed early and some more were added to the cycle).
+When planning a cycle *(sprint)*, the team will pick user stories from the top of the backlog until they consider it is enough work for the cycle. Then, during the cycle review you will discover whether all user stories were completed as expected or if there were some changes (e.g. the team was not able to complete all the user stories, or by constrast, all stories were completed early and some more were added to the cycle).
 
 As you will see, in the first few cycles there are usually some differences when comparing what the team planned to achieve and what it did actually achieve. However, this error tends to become smaller over time, achieving a similar pace, measured in number of story-points completed per cycle. This metric is what we usually know as Team Velocity.
 
@@ -102,7 +102,7 @@ It is important to mention that having a fair [Definition of Done](https://www.s
 
 ###2.5 After a few cycles you will be able to estimate release dates, based on Team Velocity
 
-So, once a few cycles have passed you will realize that, if story-point estimates are kept consistent, the team usually achieves a similar number of story points per cycle (Team Velocity).
+So, once a few cycles *(sprints)* have passed you will realize that, if story-point estimates are kept consistent, the team usually achieves a similar number of story points per cycle (Team Velocity).
 
 Since you have been doing your job of keeping the backlog updated, prioritized and estimated in story points by the development team, you will able to forecast when a particular story will be finished.
 
