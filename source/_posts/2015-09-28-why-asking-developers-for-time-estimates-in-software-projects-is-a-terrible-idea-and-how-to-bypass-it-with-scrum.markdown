@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why asking software developers for time estimates is a terrible idea and how to bypass it"
-seo_title: "How To Avoid Time Estimates In Software Development"
+seo_title: " Why Asking Software Developers for Time Estimates Is a Terrible Idea"
 date: 2015-09-28 11:17
 updated: 2018-05-07 20:50
 comments: true
