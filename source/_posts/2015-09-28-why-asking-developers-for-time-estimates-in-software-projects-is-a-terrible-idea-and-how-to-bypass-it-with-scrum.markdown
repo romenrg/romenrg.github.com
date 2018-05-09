@@ -3,7 +3,7 @@ layout: post
 title: "Why asking software developers for time estimates is a terrible idea and how to bypass it"
 seo_title: " Why Asking Software Developers for Time Estimates Is a Terrible Idea"
 date: 2015-09-28 11:17
-updated: 2018-05-07 20:50
+updated: 2018-05-09 18:30
 comments: true
 categories: [Management, Entrepreneurship]
 description: "Time estimates in software projects fail dramatically, due to the high uncertainty that exists in many aspects of software development. However, using story points based on effort to calculate 'team velocity' allows us to forecast delivery dates indirectly, avoiding misunderstandings."
@@ -80,7 +80,7 @@ After creating the initial Product Backlog, you will have a much clearer picture
 
 Once you have created your initial Product Backlog and prioritized User Stories, it is time to have the first Product Backlog Refinement meeting with the Scrum Team (which includes the Development Team). Our goal would be to estimate all User Stories in the Backlog, but instead of time we will be using effort points. Each user story will have X points. A common approach is to use the Fibonacci scale for those points.
 
-Since it is very important to be consistent when estimating user stories, I usually encourage the team to <em>find the easiest user story in the backlog and give it a 1 and then find the hardest one and give it either a 13 or a 21</em>. That way you have created the team’s effort scale, making it easier to estimate the remaining user stories based on a scale that is totally dependent on the project. At this stage, it is also important to have a shared [Definition of Done](https://www.scrumalliance.org/community/articles/2008/september/what-is-definition-of-done-\(dod\)), to make sure all team members know all the tasks required for a story to be "done".
+Since it is very important to be consistent when estimating user stories, I usually encourage the team to <em>find the easiest user story in the backlog and give it a 1 and then find the hardest one and give it either a 13 or a 21</em>. That way you have created the team’s effort scale, making it easier to estimate the remaining user stories based on a scale that is totally dependent on the project.
 
 “But those effort-points are not useful for me!”, a manager said. Please, hold on. They definitely are. For now they tell you which are the easiest user stories and which ones are the hardest. But even better, in a few cycles they will help you estimate when might the project be finished or when will a specific user story probably be done, according to its place in the backlog. And this estimate will be much more precise than any you could get from asking developers for time estimates.
 
@@ -94,7 +94,9 @@ Even though agile implementations usually replace time estimates by effort point
 
 ###2.4. In the first few cycles Team Velocity is yet unknown
 
-When planning a cycle *(sprint)*, the team will pick user stories from the top of the backlog until they consider it is enough work for the cycle. Then, during the cycle review you will discover whether all user stories were completed as expected or if there were some changes (e.g. the team was not able to complete all user stories, or by constrast, all stories were completed early and some more were added to the cycle).
+When planning a cycle *(sprint)*, the team will pick user stories from the top of the backlog until they consider it is enough work for the cycle.  At this stage, having a shared [Definition of Done](https://www.scrumalliance.org/community/articles/2008/september/what-is-definition-of-done-\(dod\)), can help to make sure all team members are aware of all the tasks that have to be completed for a story to be considered "done".
+
+Then, during the cycle review you will discover whether all user stories were completed as expected or if there were some changes (e.g. the team was not able to complete all user stories, or by constrast, all stories were completed early and some more were added to the cycle).
 
 As you will see, in the first few cycles there are usually some differences when comparing what the team planned to achieve and what it did actually achieve. However, this error tends to become smaller over time, achieving a similar pace, measured in number of story-points completed per cycle. This metric is what we usually know as Team Velocity.
 
