@@ -78,11 +78,11 @@ After creating the initial Product Backlog, you will have a much clearer picture
 
 ###2.2. Estimate all User Stories in the backlog based on effort points
 
-Once you have created your initial Product Backlog and prioritized User Stories, it is time to have the first Product Backlog Refinement meeting with the Scrum Team (which includes the Development Team). Our goal would be to estimate all User Stories in the Backlog, but instead of time we will be using effort points. Each User Story will have X points. A common approach is to use the Fibonacci scale for those points.
+Once you have created your initial Product Backlog and prioritized User Stories, it is time to have the first Product Backlog Refinement meeting with the Scrum Team (which includes the Development Team). Our goal would be to estimate all User Stories in the Backlog, but instead of time we will be using effort points. Each user story will have X points. A common approach is to use the Fibonacci scale for those points.
 
-Since it is very important to be consistent when estimating User Stories, I usually encourage the team to <em>find the easiest User Story in the backlog and give it a 1 and then find the hardest one and give it either a 13 or a 21</em>. That way you have created the team’s effort scale, making it easier to estimate the remaining User Stories based on a scale that is totally dependent on the project.
+Since it is very important to be consistent when estimating user stories, I usually encourage the team to <em>find the easiest user story in the backlog and give it a 1 and then find the hardest one and give it either a 13 or a 21</em>. That way you have created the team’s effort scale, making it easier to estimate the remaining user stories based on a scale that is totally dependent on the project. At this stage, it is also important to have a shared [Definition of Done](https://www.scrumalliance.org/community/articles/2008/september/what-is-definition-of-done-\(dod\)), to make sure all team members know all the tasks required for a story to be "done".
 
-“Wait! But this numbers are not useful for me!”, a manager said. Hold on, they definitely are. For now they tell you which are the easiest user stories and which ones are the hardest. But even better, in a few cycles they will help you estimate when might the project be finished or when will a specific user story probably be done, according to its place in the backlog. And this estimate will be much more precise than any you could get from asking developers for time estimates.
+“But those effort-points are not useful for me!”, a manager said. Please, hold on. They definitely are. For now they tell you which are the easiest user stories and which ones are the hardest. But even better, in a few cycles they will help you estimate when might the project be finished or when will a specific user story probably be done, according to its place in the backlog. And this estimate will be much more precise than any you could get from asking developers for time estimates.
 
 If in the future new user stories appear (<em>they will</em>), all you will have to do is to add them to the backlog, placing them according to their relative priority compared to the rest; and save some time to conduct a Backlog Refinement Meeting, in which the new stories will be estimated. The most important task of the Product Owner (that would be your role in Scrum) is to keep the backlog updated, estimated and prioritized; in order to make it useful to predict possible release dates.
 
@@ -94,17 +94,17 @@ Even though agile implementations usually replace time estimates by effort point
 
 ###2.4. In the first few cycles Team Velocity is yet unknown
 
-When planning a cycle *(sprint)*, the team will pick user stories from the top of the backlog until they consider it is enough work for the cycle. Then, during the cycle review you will discover whether all user stories were completed as expected or if there were some changes (e.g. the team was not able to complete all the user stories, or by constrast, all stories were completed early and some more were added to the cycle).
+When planning a cycle *(sprint)*, the team will pick user stories from the top of the backlog until they consider it is enough work for the cycle. Then, during the cycle review you will discover whether all user stories were completed as expected or if there were some changes (e.g. the team was not able to complete all user stories, or by constrast, all stories were completed early and some more were added to the cycle).
 
 As you will see, in the first few cycles there are usually some differences when comparing what the team planned to achieve and what it did actually achieve. However, this error tends to become smaller over time, achieving a similar pace, measured in number of story-points completed per cycle. This metric is what we usually know as Team Velocity.
 
-It is important to mention that having a fair [Definition of Done](https://www.scrumalliance.org/community/articles/2008/september/what-is-definition-of-done-\(dod\)) is key to avoid misunderstandings, although it is beyond the scope of this article.
+It is worth highlighting the importance of minimizing changes related to team members (such as replacing some or changing their dedication). Any change of this sort will have a significant impact on velocity, which would undermine our capacity to forecast release dates.
 
 ###2.5 After a few cycles you will be able to estimate release dates, based on Team Velocity
 
-So, once a few cycles *(sprints)* have passed you will realize that, if story-point estimates are kept consistent, the team usually achieves a similar number of story points per cycle (Team Velocity).
+So, once a few cycles *(sprints)* have passed, you will realize that if the team and its story-point estimates have remained consistent, the number of story points being completed per cycle (Team Velocity) is similar.
 
-Since you have been doing your job of keeping the backlog updated, prioritized and estimated in story points by the development team, you will able to forecast when a particular story will be finished.
+Since you have been doing your job of keeping the backlog updated, prioritized and estimated in story points, now you will able to forecast when will a particular story be finished.
 
 <em>An **example** will make it clearer:</em>
 
