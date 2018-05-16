@@ -8,7 +8,7 @@ sharing: true
 footer: true
 ---
 
-  <p>My name is Romén Rodríguez-Gil and I live in the beautiful island of <a href="http://en.wikipedia.org/wiki/Tenerife">Tenerife</a> (Spain). Besides being a Software Engineer and Internet Entrepreneur, I am a Lifelong Learner who seeks continuous improvement and looks at the human side of technology.</p>
+  <p>My name is Romén Rodríguez-Gil and I live in the beautiful island of <a href="http://en.wikipedia.org/wiki/Tenerife">Tenerife</a> (Spain). Besides being a Software Engineer and Internet Entrepreneur, I am a Lifelong Learner who seeks continuous improvement and cares about the human side of technology.</p>
 
   <p>The digital world has fascinated me since I was very young. Professionally, I have been working in the software industry for more than a decade, wearing many different hats. As a software engineer, I have worked on many different products, teams and technologies. As a manager and entrepreneur, I have led several multidisciplinary teams and worked on business development, innovation management, user experience and digital marketing, <a href="http://www.romenrg.com/blog/2015/03/17/10-plus-1-valuable-lessons-i-learned-from-my-failed-startup/">learning very valuable lessons</a>. Thanks to these varied experiences I have developed a 360-degree view of the digital industry.</p>
 
