@@ -3,7 +3,7 @@ layout: post
 title: "Why asking software developers for time estimates is a terrible idea and how to bypass it"
 seo_title: "Why Asking for Time Estimates in Software Projects Is a Terrible Idea"
 date: 2015-09-28 11:17
-updated: 2018-05-09 18:30
+updated: 2018-05-17 20:30
 comments: true
 categories: [Management, Entrepreneurship]
 description: "Time estimates in software projects fail dramatically, due to the high uncertainty that exists in many aspects of software development. However, using story points based on effort to calculate 'team velocity' allows us to forecast delivery dates indirectly, avoiding misunderstandings."
@@ -68,13 +68,13 @@ Having these definitions clear, all you need to do to get more accurate release 
 
 ###2.1. Create a Product Backlog with User Stories as a first step
 
-Not asking anything to developers yet; no coding. Sit down with your product team, potential users or customers and try to describe what you think the product should be, according to what you know for now. Creating some [simple wireframes](http://designmodo.com/wireframing-prototyping-mockuping/), discussing them lightly and iterating a bit over them is usually the best way. But keep it simple. As an advocate of Lean Startup myself, I know that it is impossible to know all the features or details of a product at the beginning. This exercise will simply help you do some customer discovery, clarify your initial hypotheses and come up with a few user stories that define an MVP <em>(Minimum Viable Product)</em> that you will be able to release quickly to keep learning about the business, following an iterative and incremental development process.
+Not asking anything to developers yet; no coding. Sit down with your product team, potential users or customers and try to describe what you think the product should be, according to what you have learned so far. If you haven't done it yet, creating some [simple wireframes](http://designmodo.com/wireframing-prototyping-mockuping/), discussing them lightly and iterating a bit over them is usually the best way to start. But keep it simple, following [Lean Startup](http://theleanstartup.com/principles) advice. This exercise will help you with [customer discovery](https://steveblank.com/2014/06/28/customer-discovery-the-search-for-productmarket-fit-2-minutes-to-see-why/), clarifying your initial hypotheses.
 
-So, once you have enough information about the product and the market that you are able to design an MVP, try to describe the most important features the product should have (as [User Stories](https://www.scrumalliance.org/community/articles/2010/april/new-to-user-stories)) and prioritize them when creating the Product Backlog. Since User Stories are about functionality, wireframes are usually very good help. They can be added as part of the Acceptance Criteria of user stories.
+So, once you have enough information about the product and its market to do so, define some core [User Stories](https://www.scrumalliance.org/community/articles/2010/april/new-to-user-stories) and prioritize them, creating a Product Backlog for your <em>Minimum Viable Product</em> (MVP). It should represent a basic version that you are able to release quickly, to get feedback from the market and keep learning and adapting, following an iterative and incremental development process. Since user stories are about functionality, wireframes are usually very good help. They can be added as part of their Acceptance Criteria.
 
 My favourite tool for managing Scrum is [Jira](https://es.atlassian.com/software/jira/agile), which includes a great backlog-management tool. However, there are many other tools available, including [Trello](https://trello.com/), which I also use as a kanban board for smaller projects. For wireframing, there are also many good tools available. One of my favourites is [WireframeSketcher](http://wireframesketcher.com/), due to its IDE and CVS integration. [Balsamiq](https://balsamiq.com/) and [Moqups](https://moqups.com/) are great alternatives too.
 
-After creating the initial Product Backlog, you will have a much clearer picture of the MVP you are going to build and therefore, you will be in a better position to present it to developers.
+After creating the initial Product Backlog, you will have a much clearer picture of the MVP you are going to build; therefore, you will be in a better position to present it to developers.
 
 ###2.2. Estimate all User Stories in the backlog based on effort points
 
@@ -84,23 +84,23 @@ Since it is very important to be consistent when estimating user stories, I usua
 
 “But those effort-points are not useful for me!”, a manager said. Please, hold on. They definitely are. For now they tell you which are the easiest user stories and which ones are the hardest. But even better, in a few cycles they will help you estimate when might the project be finished or when will a specific user story probably be done, according to its place in the backlog. And this estimate will be much more precise than any you could get from asking developers for time estimates.
 
-If in the future new user stories appear (<em>they will</em>), all you will have to do is to add them to the backlog, placing them according to their relative priority compared to the rest; and save some time to conduct a Backlog Refinement Meeting, in which the new stories will be estimated. The most important task of the Product Owner (that would be your role in Scrum) is to keep the backlog updated, estimated and prioritized; in order to make it useful to predict possible release dates.
+If in the future new user stories appear *(they will)*, all you have to do is add them to the backlog, placing them according to their relative priority compared to the rest; and save some time to conduct a backlog refinement meeting, in which the new stories will be estimated. The most important task of the Product Owner (your role in Scrum) is to keep the backlog updated, estimated and prioritized; in order to make it useful to predict possible release dates.
 
 ###2.3. Keep effort-based estimates time-independent
 
 Even though agile implementations usually replace time estimates by effort points (using scales such as Fibonacci or t-shirt sizes), some managers simply establish a link from those points or sizes to "their equivalent" in time. And they usually do that publicly, which means that everybody goes back to time estimates, thus ruining the whole thing again and making developers hate agile too (even though what they hate is a bad implementation of agile frameworks).
 
-<em>The key of using an effort-based system for story points is precisely to keep estimates separated from time</em>. The relative "effort" of a task is a much easier concept to analyze for developers, especially when comparing different user stories of a project. Moreover, estimating effort instead of time prevents common conflicts, mostly related to considering time estimates a "contract". As we have seen before, developers simply cannot estimate how long a software project is going to take. Linking effort points to their "time equivalent" will only lead to poor team morale, friction and false expectations, as we have seen before. Avoid that. There is another way to get to time estimates, indirectly!
+<em>The key of using an effort-based system for story points is precisely to keep estimates separated from time</em>. The relative "effort" of a task is a much easier concept to analyze for developers, especially when comparing different user stories of a project. Moreover, estimating effort instead of time prevents common conflicts, mostly related to considering time estimates a "contract". As we have seen before, developers simply cannot estimate how long a software project is going to take. Linking effort points to their "time equivalent" will only lead to poor team morale, friction and false expectations, as we have seen before. Avoid that. There is another way to get to time estimates: indirectly!
 
 ###2.4. In the first few cycles Team Velocity is yet unknown
 
-When planning a cycle *(sprint)*, the team will pick user stories from the top of the backlog until they consider it is enough work for the cycle.  At this stage, having a shared [Definition of Done](https://www.scrumalliance.org/community/articles/2008/september/what-is-definition-of-done-\(dod\)), can help to make sure all team members are aware of all the tasks that have to be completed for a story to be considered "done".
+When planning a cycle *(sprint)*, the team will pick user stories from the top of the backlog until they consider it is enough work for the new cycle. Having a shared [Definition of Done](https://www.scrumalliance.org/community/articles/2008/september/what-is-definition-of-done-\(dod\)) can help planning, making sure all team members are aware of all the tasks that have to be completed for each story to be "done".
 
 Then, during the cycle review you will discover whether all user stories were completed as expected or if there were some changes (e.g. the team was not able to complete all user stories, or by constrast, all stories were completed early and some more were added to the cycle).
 
-As you will see, in the first few cycles there are usually some differences when comparing what the team planned to achieve and what it did actually achieve. However, this error tends to become smaller over time, achieving a similar pace, measured in number of story-points completed per cycle. This metric is what we usually know as Team Velocity.
+As you will see, in the first few cycles there are usually some differences when comparing what the team planned to achieve and what it did actually achieve. However, this error tends to become smaller over time, achieving a similar pace, measured in number of story-points completed per cycle. This metric is often referred to as *Team Velocity*.
 
-It is worth highlighting the importance of minimizing changes related to team members (such as replacing some or changing their dedication). Any change of this sort will have a significant impact on velocity, which would undermine our capacity to forecast release dates.
+It is worth highlighting the importance of minimizing changes related to team members (eg. replacing someone or changing her dedication). Any change of this sort will have a significant impact on velocity, which would undermine our capacity to forecast release dates.
 
 ###2.5 After a few cycles you will be able to estimate release dates, based on Team Velocity
 
@@ -122,7 +122,7 @@ The same process can be applied to guess when could the whole project be finishe
 
 There is no silver bullet in software estimation. However, if you need to prepare marketing actions or respond to a customer, you will probably need at least a rough idea of delivery dates. Following the management approach described in this article, you will get time estimates without asking for them; you will keep team morale high, avoid burnout and improve productivity. Besides, you will be able to automatically forecast the impact of changes in the timing of the project.
 
-This solution contributes to improve business-engineering relationship, improve software quality and reduce costs in the long-run. Besides, if you involve customers in the process, customer understanding and trust may improve considerably, making it easier for both parties to deal with change, preventing many deadline-related conflicts.
+This solution contributes to improve business-engineering relationship, improve software quality and reduce costs in the long-run. Besides, if you involve customers in the process, their understanding and trust may improve considerably, making it easier for both parties to deal with change, preventing many deadline-related conflicts.
 
 Now, join the conversation: How do you deal with time estimates in your company?
 
