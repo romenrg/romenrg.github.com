@@ -13,7 +13,7 @@ Continuous Integration, Continuous Delivery, and Continuous Deployment are key m
 
 <img src="/images/two_paths_fork_unsplash.jpg" alt="Picture of a fork in the trail in a forest, leading to two alternative paths" />
 
-The aim of this article is to help clarify what do these techniques mean and highlight the benefits each one provides. We will also analyze which one should we choose depending on the circumstances.
+The aim of this article is to help clarify what do these techniques mean and highlight the benefits each one provides. We will also analyze which one should be chosen depending on the circumstances.
 
 <!-- More -->
 
@@ -25,7 +25,7 @@ In this time I have realized that, despite the importance of these practices, ma
 
 The concept of Continuous Integration (CI) was originally proposed by Grady Booch in 1991 and later integrated into [Extreme Programming](http://www.extremeprogramming.org/). From then on, specially thanks to the [Agile Software Development](http://agilemanifesto.org/) movement (as well as [DevOps culture](https://www.atlassian.com/devops)), the technique has been widely adopted in the industry.
 
-Originally, the concept of Continuous Integration was associated exclusively with Control Version Systems (CVS). It was first described as integrating developers work (their working copies or branches) to the mainline (the *trunk* in subversion or the *master* branch in git) at least once a day.
+Originally, the concept of Continuous Integration was associated exclusively with Control Version Systems (CVS). It was first described as integrating developers work (their working copies or branches) to the mainline (*trunk* in subversion or *master* branch in git) at least once a day.
 
 The idea behind this daily integrations to the mainline was to reduce the integration problems usually caused by the complexity of merging the work of developers that have been working isolatedly for a while. By integrating daily or after each commit, the complexity of the merge process is drastically reduced, as can be seen in the following example:
 
@@ -45,7 +45,7 @@ Following this approach, automated builds with several checks are performed to o
 
 ## Continuous Delivery vs Continuous Deployment
 
-Once the extended Continuous Integration is set, the last stage is to automate the deployment to production. Here is where the Continuous Delivery & Continuous Deployment approaches differ.
+Once the extended Continuous Integration is set, the last stage is to automate deployment to production. Here is where the Continuous Delivery & Continuous Deployment approaches differ.
 
 <a href="/images/continuous_delivery_vs_deployment.png"><img src="/images/continuous_delivery_vs_deployment.png" alt="Diagram showing usual stages of Continuous Integration and the differences between Continuous Delivery and Continuous Deployment" /></a>
 
@@ -59,10 +59,10 @@ If you need some other references, appart from this article, to be convinced abo
 
 ### When is Continuous Deployment recommended and when should we opt for Continuous Delivery?
 
-In general, **Continuous Deployment is great for B2C products**. In fact, consumer companies such as [Facebook or Netflix follow this approach](https://research.fb.com/publications/continuous-deployment-at-facebook-and-oanda/), deploying small changes several times a day to production.
+In general, **Continuous Deployment is great for B2C products**, since as consumers we are used to the constant change of software products, usually assuming their changes without major problems. In fact, consumer companies such as [Facebook or Netflix follow this approach](https://research.fb.com/publications/continuous-deployment-at-facebook-and-oanda/), deploying small changes several times a day to production.
 
-However, **in B2B projects as well as in government projects**, there is **often** some bureaucracy regarding the need for approvals in order to deploy new features to production. In most cases the changes affect people in other areas or departments that have to adapt processes, learn to use the new features or adapt their own software that consumes our API. In these cases, applying Continuous Deployment could make other software crash, prevent people from doing their job or even lead to economic and legal issues. That is why for these cases, **Continuous Delivery is the technique of choice**, as is our case in Platino. Following this approach we also automate the whole the process, but we provide human control to proceed with the deployment to production, thus controlling when the new version is released.
+However, **in B2B products as well as in government projects**, it is **often** necessary to include human control to activate deployments to production. In these cases, our changes may affect people and processes in other companies or departments, making it important for us to announce release dates with enough time, so everybody is able to update their processes, learn to use the new features we are about to release or even adapt their software to our API changes. In this context, applying Continuous Deployment (deploying automatically every change to production) could make other software crash, prevent people from doing their job or even lead to economic and legal issues. That is why for these cases, in which we have to set a fixed deploy date, **Continuous Delivery is the technique of choice**, as is our case in Platino. Following this approach we can also automate the whole process, but we provide human control to execute deployments to production, thus controlling when the new version is released.
 
 ## Go ahead!
 
-As mentioned above, these processes are key elements in modern-day software development and provide a significant competitive advantage to software companies applying them. As we have seen above, depending on the software being developed and its usage, we may not be able to opt for Continuous Deployment, being Continuous Delivery the alternative of choice. However, Continuous Integration is the essential practice that serves as a basis for the other two, making it the preferred choice to begin with.
+As mentioned above, these processes are key elements in modern-day software development and provide a significant competitive advantage to software companies applying them. As we have seen above, depending on the software being developed and its usage, we may not be able to opt for Continuous Deployment, being Continuous Delivery the alternative of choice. However, Continuous Integration is the essential practice that serves as a basis for the other two, making it the preferred choice to start off with.
