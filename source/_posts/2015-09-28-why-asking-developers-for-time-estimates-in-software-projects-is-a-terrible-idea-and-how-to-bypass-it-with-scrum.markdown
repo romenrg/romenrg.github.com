@@ -84,7 +84,7 @@ Since it is very important to be consistent when estimating user stories, I usua
 
 “But those effort-points are not useful for me!”, a manager said. Please, hold on. They definitely are. For now they tell you which are the easiest user stories and which ones are the hardest. But even better, in a few cycles they will help you estimate when might the project be finished or when will a specific user story probably be done, according to its place in the backlog. And this estimate will be much more precise than any you could get from asking developers for time estimates.
 
-If in the future new user stories appear *(they will)*, all you have to do is add them to the backlog, placing them according to their relative priority compared to the rest; and save some time to conduct a backlog refinement meeting, in which the new stories will be estimated. The most important task of the Product Owner (your role in Scrum) is to keep the backlog updated, estimated and prioritized; in order to make it useful to predict possible release dates.
+If in the future new user stories appear *(they will)*, all you have to do is add them to the backlog, placing them according to their relative priority compared to the rest; and save some time to conduct a backlog refinement meeting, in which the new stories will be estimated. The most important task of the Product Owner (your role in Scrum) is to keep the backlog updated, estimated and prioritized; in order to make it useful for predicting possible release dates.
 
 ###2.3. Keep effort-based estimates time-independent
 
