@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+    <title>Improving the UI to achieve a better UX: My experience in Stat4you - Blog @romenrg</title>
+  
+
+  <meta name="author" content="Romén Rodríguez-Gil">
+
+  
+  <meta name="description" content="Real case-study of the Stat4you project in which minor UI changes achieved major improvements in User Experience (UX) according to users feedback">
+  <meta name="keywords" content="agile, agile software development, software development, software engineering, scrum, peopleware, noestimates, estimates, noprojects, digital entrepreneurship, management, leadership, continuous integration, continuous delivery, continuous deployment, software projects, user experience, programming, startups">
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Blog @romenrg" type="application/atom+xml">
+  
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="romenrg">
+    <meta property="twitter:url" content="http://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you/">
+    <meta property="twitter:title" content="Improving the UI to achieve a better UX: My experience in Stat4you">
+    <meta property="twitter:description" content="Real case-study of the Stat4you project in which minor UI changes achieved major improvements in User Experience (UX) according to users feedback">
+    <meta property="twitter:image:src" content="http://www.romenrg.com/images/twitter.jpg">
+
+<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="https://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34189452-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Blog @romenrg</a></h1>
+  
+    <h2>Thoughts and experiences; about Software, Internet and Entrepreneurship.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.romenrg.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Improving the UI to Achieve a Better UX: My Experience in Stat4you</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-02T17:29:00+00:00" pubdate data-updated="true">Jan 2<span>nd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I had this article started but uncompleted since September 2012, and as a New Year’s Resolution for 2013 I decided to finish it.</p>
+
+
+
+
+<p>Back then, I had been working for some months as a Front-end engineer in <a href="http://www.stat4you.com">Stat4you</a>. In the early summer we were in a hurry to finish the alpha version of the platform, so we released it without paying too much atention to the details. A feature that was included in this release were the filters for the charts, by means of which users were able to change the positions of the dimensions and also to enable and disable the categories of those dimensions, thus changing the chart being displayed.</p>
+
+
+
+
+<p>The images below are screenshots of the filters initially released in Stat4you:</p>
+
+
+<p><img src="/images/s4y_table_filter.png" /></p>
+
+<p><em>The image above shows the filters available for the tables in the initial alpha version of the platform. The blue elements represent the containers of the dimensions which, in this case, have been also placed in a particular way to help the user understand the position in which every dimension will appear. The white elements represent the dimensions whilst the orange ones represent the categories of each dimension.</em></p>
+
+
+
+
+<!-- More -->
+
+
+<p><img src="/images/s4y_table_filter2.png" /></p>
+
+<p><em>In this image, the categories of one of the dimensions have been unfolded, this way the user can see all the categories available for a particular dimension, not only the previewed ones that can be seen without clicking in the right arrow. Also, it can be seen that the &#8220;Periodos&#8221; dimension has been moved to fixed (by doing drag and drop). This means that this dimension has been set to a specific category, which by default was the first one.</em></p>
+
+
+<p><img src="/images/s4y_barAndLine_filter.png" /></p>
+
+<p><em>Finally, there were also filters for the charts. Opposed to the table, in this case all the dimensions were displayed horizontally. The white text over the blue background indicated the position in which the dimension was going to appear if placed there (in the x-axis, in the columns&#8230;).</em></p>
+
+
+
+
+<p>As you could guess, this filters were kind of messy for the users. It was a quick design created in a hurry by us (developers) to launch the initial version of the product; so we made the mistake of not taking into account the user experience as much as we should have, although it was a MVP and was going to be improved in the near future.</p>
+
+
+
+
+<p>The days following the launch of the alpha version of Stat4you we had some feedback from visitors, and a portion of the negative feedback was regarding the filters, which appeared to be (as you can guess) confusing and difficult to use, causing a poor user experience. Hence, we decided to improve the user interface to achieve a better acceptance.</p>
+
+
+
+
+<p>To improve the filters we run some usability tests. In my case, I asked for the favor to some friends and family and started the experiment. In this experiment I asked them to access to some datasets within the platform and, once the dataset was accessed, I encouraged them to change the displayed chart or table to achieve a particular visualization (fixing dimensions, disabling some categories of other dimensions and changing their positions). As other users had reported before, the results were poor. It was difficult for them to achieve the changes I requested, but I got tons of information about the improvements needed: such as a search box for the categories, a better indication of the positions in which dimensions could be placed or a visible indication of which was the selected category in the fixed dimensions.</p>
+
+
+
+
+<p>Once these improvements were identified all we had to do was to develop them,knowing that those functionalities were the real needs of the users.</p>
+
+
+
+
+<p>The result of these changes can be seen in the following images:</p>
+
+
+<p><img src="/images/s4y_table_filter_new.png" /></p>
+
+<p><em>In this first image, the main changes were the labels indicating the positions in which dimensions could be placed and the width of the fixed position box, that now occupied the 100% of the available width.</em></p>
+
+
+<p><img src="/images/s4y_table_filters2_new.png" /></p>
+
+<p><em>In this case, some changes can be seen: For the fixed dimensions now the selected category is visible at every moment, preventing the users from unfolding the dimension to know which one the selected category is. In addition, a search box has been introduced to search within the categories of a dimension, making it much easier to find a particular category. Moreover, the &#8216;x&#8217; that was placed at the top right position of the unfolded box was removed and replaced by an &#8216;accept&#8217; button at the bottom right corner. In our experience, this change that forced users to accept the changes in order to close the unfolded categories, helped them to realize that the changes made are always going to be persisted. Before this change was made, some users had the sensation that when the &#8216;x&#8217; was clicked, it was going to undo the changes.</em></p>
+
+
+<p><img src="/images/s4y_barAndLine_filters_new.png" /></p>
+
+<p><em>For the charts, the main change were the labels and shapes of the position boxes. The new interface seems to make the available options of edition easier to understand for users. Besides, it mantains greater uniformity with the tables filters.</em></p>
+
+
+
+
+<p>After these changes, we obtained positive feedback from users, and in the usability tests conducted afterwards, the user experience improved significantly. Firstly we had developed a UI without testing it with real users and when we released the product, the user experience with the filters was poor; we had to conduct some tests once it was in production, detect the problems users were having and then rewrite the interface and re-launch the product with the improved filters.</p>
+
+
+
+
+<p>In conclusion, what I learned back then was something that I already knew, but sometimes with the rush and the misunderstandings of what a MVP actually is, we tend to forget: When designing user interfaces it is really important to prototype first, do some usability testings with the prototype and improve user interfaces by means of users feedback. Then, once these first steps are finished, it is time to implement the tested solution. This way, it will take more time to launch, but it ensures us to achieve a good user experience since the launch day, avoiding the extra time and cost of rebuilding the feature afterwards. It could seem faster to design and implement a simple UI without usability testing and user feedback, but it will have the drawback of causing a worse user experience and, in the long run, it will probably cost more (time and money) in order to rebuild the UI to achieve a better UX.</p>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Romén Rodríguez-Gil</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-02T17:29:00+00:00" pubdate data-updated="true">Jan 2<span>nd</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/ux/'>UX</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you/" data-via="romenrg" data-counturl="http://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/08/17/the-front-end-engineer-role/" title="Previous Post: The Front-end engineer role">&laquo; The Front-end engineer role</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/07/27/about-modern-and-usable-web-interfaces-with-backbonejs-and-d3js-choropleth-maps/" title="Next Post: About UX in Modern Web Interfaces and Backbone.js: Choropleth Maps">About UX in Modern Web Interfaces and Backbone.js: Choropleth Maps &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2017/12/31/continuous-integration-delivery-deployment/">Continuous Integration, Delivery and Deployment: Key Differences</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/11/15/the-programmer-bill-of-rights/">The Programmer Bill Of Rights, Revisited</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum/">Why asking software developers for time estimates is a terrible idea and how to bypass it</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/17/10-plus-1-valuable-lessons-i-learned-from-my-failed-startup/">10+1 Valuable Lessons I Learned From My Failed Startup</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/17/why-copywriting-is-key-to-ux-we-increased-conversions-by-26-percent-just-changing-some-text/">Why copywriting is key to UX: We increased conversions by 26% just changing some text</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>About Me</h1>
+
+  <p>My name is Romén Rodríguez-Gil. I'm a Lifelong Learner who seeks continuous improvement and cares about the human side of technology.</p>
+
+  <p>As a Software Engineer and Internet Entrepreneur I have worked in several software companies, research teams and startups, wearing many different hats.</p>
+
+  <p>Thanks to the Internet I have learned much of what I know. In return, with this blog I try to make my little contribution, hoping to help somebody else.</p>
+
+  <a href="/about/index.html">Read more about me</a>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <a class="twitter-timeline" data-chrome="nofooter transparent noheader" data-tweet-limit="3" href="https://twitter.com/romenrg">Tweets by romenrg</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></section>
+  <a href="https://twitter.com/romenrg" class="twitter-follow-button" data-show-count="false">Follow @romenrg</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2018 - Romén Rodríguez-Gil -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'romenrgblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you/';
+        var disqus_url = 'http://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'https://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'https://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

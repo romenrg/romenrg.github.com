@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Software Development | Blog @romenrg]]></title>
+  <link href="http://www.romenrg.com/blog/categories/software-development/atom.xml" rel="self"/>
+  <link href="http://www.romenrg.com/"/>
+  <updated>2018-05-28T19:56:02+01:00</updated>
+  <id>http://www.romenrg.com/</id>
+  <author>
+    <name><![CDATA[Romén Rodríguez-Gil]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Continuous Integration, Delivery and Deployment: Key Differences]]></title>
+    <link href="http://www.romenrg.com/blog/2017/12/31/continuous-integration-delivery-deployment/"/>
+    <updated>2017-12-31T18:46:00+00:00</updated>
+    <id>http://www.romenrg.com/blog/2017/12/31/continuous-integration-delivery-deployment</id>
+    <content type="html"><![CDATA[<p>Continuous Integration, Continuous Delivery, and Continuous Deployment are key modern practices in software development that share two main goals: to deploy more frequently and more safely. These processes take advantage of automation to assess the quality and correctness of the new software and to make deployments much more predictable, faster and less error prone. But... Do you really know the differences between the three?</p>
+
+<p><img src="http://www.romenrg.com/images/two_paths_fork_unsplash.jpg" alt="Picture of a fork in the trail in a forest, leading to two alternative paths" /></p>
+
+<p>The aim of this article is to help clarify what do these techniques mean and highlight the benefits each one provides. We will also analyze which one should be chosen depending on the circumstances.</p>
+
+<!-- More -->
+
+
+<p>During this year I have been deeply involved in the topic, since I have been working on setting up Continuous Integration and Continuous Delivery in <a href="http://www.gobiernodecanarias.org/platino/">Platino</a>, which is a big government project that has been around for almost 10 years. Platino receives tens of millions of requests every month and has a considerable codebase, being composed of more than 50 web services and 9 web applications, deployed in different containers.</p>
+
+<p>In this time I have realized that, despite the importance of these practices, many professionals in the industry still miss the differences between the three, often talking about them indistinctly in conversations, which creates a lot of confusion. So, let's check the differences:</p>
+
+<h2>Continuous Integration</h2>
+
+<p>The concept of Continuous Integration (CI) was originally proposed by Grady Booch in 1991 and later integrated into <a href="http://www.extremeprogramming.org/">Extreme Programming</a>. From then on, specially thanks to the <a href="http://agilemanifesto.org/">Agile Software Development</a> movement (as well as <a href="https://www.atlassian.com/devops">DevOps culture</a>), the technique has been widely adopted in the industry.</p>
+
+<p>Originally, the concept of Continuous Integration was associated exclusively with Version Control Systems (VCS). It was described as integrating developers' work (their working copies or branches) to the mainline (<em>trunk</em> in subversion or <em>master</em> branch in git) at least once a day.</p>
+
+<p>The idea behind these daily integrations to the mainline is to reduce integration problems, which are usually caused by the complexity of merging the work of developers that have been working isolatedly for a while. By integrating daily or after each commit, the complexity of the merge process is drastically reduced, as can be seen in the following example:</p>
+
+<p><a href="http://www.romenrg.com/images/branches_without_ci.png"><img src="http://www.romenrg.com/images/branches_without_ci.png" alt="Image of two developers working isolatedly over time, creating several commits before merging" /></a></p>
+
+<p><em>Example of two developers creating several commits in their corresponding branches before merging. Squares represent commits and the circle represents the big merge that has to be made at the end.</em></p>
+
+<p><a href="http://www.romenrg.com/images/branches_ci.png"><img src="http://www.romenrg.com/images/branches_ci.png" alt="Image of two developers applying continuous integration, integrating each change into the mainline" /></a></p>
+
+<p><em>Example of two developers applying the original concept of Continuous Integration, integrating every change into the mainline. As before, squares represent commits and circles represent merges, which are much simpler now, due to the high frequency of integration.</em></p>
+
+<p>However, although this original proposal has value on itself, <strong>more recently the definition of Continuous Integration has been broadened</strong>. Nowadays it often implies the existence of a CI Server (such as <a href="https://jenkins-ci.org/">Jenkins</a>) that, once a new change is made to the mainline of the VCS, executes a <a href="https://jenkins.io/doc/book/pipeline/">Continuous Integration Pipeline</a>. These pipelines are formed of different stages, executed sequentially on every integraton. Their goal, <a href="https://www.martinfowler.com/articles/continuousIntegration.html">as Martin Fowler states</a>, is <strong>to verify every integration with an automated build</strong>, to detect integration errors as quickly as possible. These builds include at least the compilation of the source code and the execution of unit tests, although in many cases other stages such as packaging, execution of integration / end-to-end tests and static code analysis are also included in these Continuous Integration Pipelines.</p>
+
+<p>In this extended definition, the pipeline can either finish successfully or a failure can be produced in any of the stages (tests failing, static analysis not passing a defined threshold….). Usually, in the event of a failure an email is sent to the person that created the last commit (probably the one causing the failure). In order to really get the benefits of Continuous Integration, it should be a priority for the team to keep the Continuous Integration status <em>green</em> (passing) instead of <em>red</em> (failing), fixing any problem as soon as it is detected.</p>
+
+<p>Following this approach, automated builds with several checks are performed to our code every time we integrate changes, allowing us to detect any issues in an early stage. <strong>This quick detection of problems makes fixing them much cheaper than in traditional approaches</strong>. Formerly, detection used to occur much later, often during QA or deployment phases, and many times in production, after having deployed. In those cases, days, weeks or even months have passed and developers have switched context, making it difficult for them to remember the particular cases they were working on when the problem was produced. Moreover, the higher pressure for deployment deadlines at those later stages usually leads to poorer solutions, that not only hinder code quality (reducing its readability and mantainability) but also tend to introduce new bugs.</p>
+
+<h2>Continuous Delivery vs Continuous Deployment</h2>
+
+<p>Once the extended Continuous Integration is set, we may decide to continue making deployments faster and safer. The next step would be automating deployments to production. Here is where the two remaining techniques (Continuous Delivery and Continuous Deployment) subtly differ, as can be see in the following diagram:</p>
+
+<p><a href="http://www.romenrg.com/images/continuous_delivery_vs_deployment.png"><img src="http://www.romenrg.com/images/continuous_delivery_vs_deployment.png" alt="Diagram showing usual stages of Continuous Integration and the differences between Continuous Delivery and Continuous Deployment" /></a></p>
+
+<p><em>Difference between Continuous Delivery and Continuous Deployment</em></p>
+
+<p><a href="https://continuousdelivery.com/">Continuous Delivery was described by Jez Humble</a>, as <em>"the ability to get changes of all types [...] into production, or into the hands of users, safely and quickly in a sustainable way"</em>. <strong>Continuous Delivery does not necessarily involve deployment to production on every change</strong>. We just need to ensure that our code is always in a deployable state. On the other hand, Continuous Deployment, however, does require every change to be always deployed automatically.</p>
+
+<p>Thus, as can be seen in the image above, if we decide to enhance the pipeline so that, once the Continuous Integration stages are completed, the new artifact is automatically deployed to production, we talk about <strong>Continuous Deployment</strong>. On the other hand, if we manage to automate everything, but decide to require a human approval in order to proceed with the deployment of the new version, we are talking about <strong>Continuous Delivery</strong>. The difference is subtle, but it has huge implications, making each technique appropriate for different situations, as we will see below.</p>
+
+<p>If you need some other references, appart from this article, to be convinced about this difference, notice that a few years ago <a href="https://puppet.com/blog/continuous-delivery-vs-continuous-deployment-what-s-diff">Puppet published a similar comparison</a> in their blog. Also, <a href="https://www.atlassian.com/continuous-delivery/ci-vs-ci-vs-cd">Atlassian has published a longer article</a> on the topic. I hope these articles help clarify these concepts, avoiding the current confusion with them.</p>
+
+<h3>When is Continuous Deployment recommended and when should we opt for Continuous Delivery?</h3>
+
+<p>In general, <strong>Continuous Deployment is great for B2C products</strong>, since as consumers we are used to the constant change of software products, usually assuming their changes without major problems. In fact, consumer companies such as <a href="https://research.fb.com/publications/continuous-deployment-at-facebook-and-oanda/">Facebook or Netflix follow this approach</a>, deploying small changes several times a day to production.</p>
+
+<p>However, <strong>in B2B products as well as in government projects</strong>, it is <strong>often</strong> necessary to include human control to activate deployments to production. In these cases, our changes may affect people and processes in other companies or departments, making it important for us to announce release dates with enough time, so everybody is able to update their processes, learn to use the new features we are about to release or even adapt their software to our API changes. In this context, applying Continuous Deployment (deploying automatically every change to production) could make other software crash, prevent people from doing their job or even lead to economic and legal issues. That is why for these cases, in which we have to set a fixed deploy date, <strong>Continuous Delivery is the technique of choice</strong>, as is our case in Platino. Following this approach we can also automate the whole process, but we provide human control to execute deployments to production, thus controlling when the new version is released.</p>
+
+<h2>Go ahead!</h2>
+
+<p>As mentioned above, these processes are key elements in modern-day software development and provide a significant competitive advantage to software companies applying them. As we have seen above, depending on the software being developed and its usage, we may not be able to opt for Continuous Deployment, being Continuous Delivery the alternative of choice. However, Continuous Integration is the essential practice that serves as a basis for the other two, making it the preferred choice to start off with.</p>
+
+<div class="revisions">
+  <h2>Significant revisions</h2>
+  <p><em>2018, May 26</em>: Improving overall style, rephrasing last section and adding a better description.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Programmer Bill Of Rights, Revisited]]></title>
+    <link href="http://www.romenrg.com/blog/2016/11/15/the-programmer-bill-of-rights/"/>
+    <updated>2016-11-15T18:34:00+00:00</updated>
+    <id>http://www.romenrg.com/blog/2016/11/15/the-programmer-bill-of-rights</id>
+    <content type="html"><![CDATA[<p>10 years ago, <a href="https://en.wikipedia.org/wiki/Jeff_Atwood">Jeff Atwood</a> wrote an article he titled <a href="https://blog.codinghorror.com/the-programmers-bill-of-rights/">The Programmer Bill of Rights</a>. In that article he described 6 fundamentals that companies should provide for programmers to be successful and work to their full potential, thus maximizing their productivity.</p>
+
+<p><img src="http://www.romenrg.com/images/two_monitors_unsplash.jpg" alt="Picture of a programmers desk with two monitors, one of them showing code" /></p>
+
+<p>Sadly, ten years later, many companies still deny these basics to their developers, even though the business case for these six points is absolutely proved.</p>
+
+<p>In this article, not only would I like to update the original 6 principles, providing further evidence of their importance; but also I would like to extend the list. Based on my experience during the last 10 years, I will propose 4 new fundamentals that I consider absolutelly necessary for the daily work of any programmer, developer or software engineer. Let's get started:</p>
+
+<!-- More -->
+
+
+<h2>10 Fundamental Programmer Rights (6 + 4)</h2>
+
+<p>It is worth mentioning that, despite the headline, <em>this article does not refer to general Labor Rights, since those are usually well-known and its compliance is required by law. This article focuses only on aspects that are specific to software development</em>, aspects that are usually not regulated, but have a huge impact on programmers' daily work.</p>
+
+<h3>The 6 Original Rights proposed by Jeff</h3>
+
+<ol>
+<li><p><strong>Every programmer shall have two decent monitors</strong>. <br/>
+Apart from the scientific studies Jeff linked in his article in 2006, <a href="http://techreport.com/news/14343/more-bigger-monitors-boost-productivity-says-study">many others have emerged more recently</a>, proving the productivity benefits of having two monitors while programming. <a href="http://www.computerweekly.com/news/2240088457/Multiple-monitors-boost-productivity-by-355">Some studies even suggest having three monitors</a>.
+However, I have met some engineers that prefer to choose one big (27”) monitor rather than two smaller ones; and that should definitely be OK if that is her preferred set-up. <em>The key here is that companies should be wise enough to provide developers with the tools they need to take their productivity to the maximum.</em>
+Also, developers working on User Interfaces and graphic designers care a lot about other characteristics such as colors or bright; so again, it is not just about the screen size, it is about taking your employee into account when providing the tools he needs to perform his job in the best possible way.
+How is it possible that some companies do not pay attention to this at all? As many people pointed out in <a href="http://developers.slashdot.org/story/11/05/16/1957210/do-developers-really-need-a-second-monitor">this slashdot discussion about the topic</a>, the cost of a decent monitor may be around $150 - $200 nowadays. That is a ridiculous amount compared to <a href="http://money.usnews.com/careers/best-jobs/software-developer/salary">the salary of a developer</a>… So it cannot be about the money; since we know that the productivity increase would pay off in just a few days. Sadly, refusals from management to provide the right tools to employees are a clear sign of toxic management or toxic company culture and <a href="#toxic-management-denying-rights">if you find yourself in that situation, you should consider looking for a new job <em>ASAP</em></a>.</p></li>
+<li><p><strong>Every programmer shall have a fast PC</strong>. <br/>
+Although this claim still makes total sense, I think this one is one of the easiest-to-get for management and non-tech people, since everybody has suffered a slow pc and can relate to it more easily. However, I have seen cases in which developers have to connect to a remote machine using a remote desktop. This may cause some performance issues, as well as other problems such as non-functioning shortcuts or hardware compatibility problems. Unless there is a very clear reason to use a Remote Desktop, it should be avoided. As Jeff stated 10 years ago, every developer should have a fast computer that allows her to do all she needs to get her job done.</p></li>
+<li><p><strong>Every programmer shall have their choice of mouse and keyboard</strong>. <br/>
+To be honest, I’m not especially picky with mouse and keyboard, but some developers are… So if you are a manager and one of your developers complains about his keyboard and mouse… Do not waste any time thinking, we are probably talking about less than $50 here. It’s not worth discussing. If his choices are very specific or expensive, at least allow him to bring his own keyboard and mouse from home. Diversity in a company is enriching, so don’t try to treat all your employees as if they were clones.</p></li>
+<li><p><strong>Every programmer shall have a comfortable chair</strong>. <br/>
+I hope this is obvious to everybody in 2016. <a href="http://ergo.human.cornell.edu/AHTutorials/chairch.html">Having an ergonomic chair and sitting correctly is a health issue</a>. In fact, many countries have already created <a href="http://www.hse.gov.uk/pubns/priced/hsg57.pdf">health-and-safety regulations for office chairs</a>. Moreover, money is not a big deal either now, since <a href="http://www.ikea.com/us/en/catalog/products/00103102/">there are good chairs for $200</a>. Also, it is worth mentioning that in recent years the <a href="http://ergonomics.about.com/od/office/a/Benefits-of-a-Standing-Desk.htm">benefits of standing desks</a> have become popular, so it could be something to consider. Once again, when it comes to the tools to be used on a daily basis at work, like chairs, the best approach would be to involve employees in the decision. We all may have different preferences, based on our height, weight, back problems, etc…</p></li>
+<li><p><strong>Every programmer shall have a fast internet connection</strong>. <br/>
+For this claim, the same as in the “fast PC” sections has happened. Apart from the widespread access to broadband internet at low prices; services like Youtube, Netflix, online games and Skype/Hangouts video-calls have made us a great favour. Thanks to them many non-technical managers have realised about the importance of a fast internet connection, making it a default in most companies.</p></li>
+<li><p><strong>Every programmer shall have quiet working conditions</strong>. <br/>
+This is a tricky one. Nowadays most offices are open-plan. Moreover, collaboration is encouraged in agile teams. All this makes it difficult to keep quiet working conditions for us to concentrate. Many <a href="https://twitter.com/jasonfried/status/794212152206729216">relevant people in the industry are raising concerns about this</a>. However, <a href="https://hbr.org/2015/03/stop-noise-from-ruining-your-open-office">there are some things we can do</a>, such as having (and using) meeting rooms, having white noise generators to mask voices, wearing headphones to concentrate (which I usually do) and/or use an indicator to show coworkers if you can or cannot be interrupted. Even though many jobs require concentration, getting to “flow state” is vital to accomplish most programming tasks, as Jeff mentions.</p></li>
+</ol>
+
+
+<h3>My 4 Proposed Additions</h3>
+
+<ol>
+<li><p><strong>Every programmer shall be free to choose her preferred IDE</strong>. <br/>
+In the past it was common to have the build and/or deploy process of the application being developed attached to the IDE (usually by means of a plugin). Fortunately, nowadays the use of build tools has become mainstream, making our build processes IDE-independent. For example, in the Java community, build tools like maven or gradle make it possible for developers in a team to use different IDEs such as Eclipse, Intellij IDEA or any other editors, without any problems of collaboration. They just need to use a version control system (such as Subversion or Git) to share changes and a build tool to generate artifacts. In such environment, forcing developers to use an standardized IDE seems to be only a poor resource of old-school managers used to the “command-and-control” approach to impose their rule. That imposition can only cause a low morale among team members, decrease motivation and cause brain drain in the team, since many talented developers will leave to a more open-minded company.</p></li>
+<li><p><strong>Every programmer shall have admin rights on his computer</strong>. <br/>
+Last year I was introduced to a company that had recently been created with the idea to enter in the software development market. However, I was utterly surprised when I got to know that this company didn’t allow developers to have admin rights in their computers. This is pure nonsense. <a href="https://stackoverflow.com/a/701361">As this fantastic answer in Stack Overflow states</a>, developers in their daily work need to install software for different development purposes (editors, servers, databases, API clients...), they need to change different system configurations for different purposes and, most importantly, they need to be comfortable at work in order to give the best of themselves. Restricting admin rights to developers will only lead to a high turnover rate, inability to retain competent people, poor morale and poor quality delivery. Probably, <a href="http://stackoverflow.com/questions/701214/should-developers-have-administrator-permissions-on-their-pc#comment526142_701214">as this other comment states</a>, "if you walk into a job as a developer and find you have no admin rights in your machine, the best choice is to not come back the next day".</p></li>
+<li><p><strong>Every programmer shall have access to the big picture</strong>. <br/>
+Sometimes programmers are not presented with the big picture of the system they are contributing to build, but instead they are given small tasks to do, with narrow descriptions. In those cases, they often do not have direct access to the product owner nor the end users of the software they are working on. This usually causes trouble, since many wrong decisions can be made and many misconceptions can be created. To design software that can evolve properly in the desired direction, developers should understand the big picture, the whole system that is being built, not only the small task that has been assigned to them at one point. Moreover, developers should be free to ask as many functional questions as they need, so they can make the right design decisions and write software that can evolve as expected, avoiding later problems.</p></li>
+<li><p><strong>Every programmer shall have autonomy in his daily work</strong>. <br/>
+As any other creative process, programming requires autonomy. That is why agile frameworks, like <a href="https://en.wikipedia.org/wiki/Scrum_(software_development)">Scrum</a>, propose planning work for periods of a week, 15 days or a month; so developers can organize themselves in between. Daily meetings can help detect and resolve problems, as well as keep the development team in sync; but freedom for each contributor to organize his workday without suffering micromanagement should be preserved. The need for autonomy also applies to the programming process, where creativity is key to problem-solving. Some developers prefer to solve a task by creating some tests first, others build a monolithic function and then refactor it, others start by understanding the existing codebase and doing some diagrams... Any of these approaches should be respected, as long as basic agreements of the team (e.g. <em>"definition of done"</em>) and quality standards (e.g. <em>minimum code coverage</em>) are met.</p></li>
+</ol>
+
+
+<p><em>What do you think about these additions? Please, join the conversation!</em> <br/> <em>Are these rights being respected at your company?</em></p>
+
+<blockquote><h3><a name="toxic-management-denying-rights">A real case of toxic management denying many of these rights</a></h3>
+
+<p>Unfortunately, there are companies that keep denying many of these basics today.</p>
+
+<p>I recently saw a case in which a manager refused to replace a defective monitor with obvious flickering problems to an employee (even though flickering may cause dizziness, fatigue and headaches). This very manager was also forcing programmers to work with only one squared 19” monitor (for no reason). He firmly refused to buy second monitors and even forbade some developers to bring a second monitor from their homes… Does it make any sense? However, this guy had two wide monitors in his desk, of course. I guess he just wanted to show that there was a big difference between him and his “subordinates”, who had to be controlled and treated like clones.</p>
+
+<p>As with any other of these rights, a reluctance to provide programmers with two monitors not only shows that your manager or the company board do not care about your opinions or comfort; they don’t even care about productivity. It is definitely a red flag. Taking into account the ridiculously small cost of monitors nowadays, even worrying about it shows a clear case of being “penny wise, pound foolish”.</p>
+
+<p>But that’s not all of it. Usually, when an old-school command-and-control minded manager is violating one of these basics, is probably violating many others, since they are all tightly-linked and it is all about mindset and company culture.</p>
+
+<p>In this particular case, this very manager was also forcing developers to use a three-year-outdated version of Netbeans as IDE, with no front-end support (significantly diminishing their productivity). And, by the way, he had also decided to forbid admin rights to programmers in their own machines (making their daily work absurdly complicated)... So you see, three basics at once. Not to mention that micro-management was also one of the company core values. The micro-manager used to interrupt programmers every hour to closely control their tasks, taking away all the autonomy and long-term vision from the developer.</p>
+
+<p>If you find yourself in a case like this one, my advice cannot be clearer: there are many companies that will be glad to provide the tools you need to achieve the best results in your daily work, so don’t wait anymore, move on. No one should work for a tyrant like that.</p></blockquote>
+
+<p>As an ending to this article, I would like to borrow the last paragraph from Jeff’s article: “The few basic rights we're asking for are easy. They aren't extravagant demands. They're fundamental to the quality of work life for a software developer. If the company you work for isn't getting it right, making it right is neither expensive nor difficult. <strong>Demand your rights as a programmer!</strong> And remember: you can either change your company, or you can <em>change your company</em>”.</p>
+
+<div class="revisions">
+  <h2>Significant revisions</h2>
+  <p><em>2018, Apr 27</em>: Clarified the last two 'rights', improving grammar and style. Minor corrections in the example section were also included.</p>
+  <p><em>2016, Nov 15</em>: Original version published.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Front-end engineer role]]></title>
+    <link href="http://www.romenrg.com/blog/2012/08/17/the-front-end-engineer-role/"/>
+    <updated>2012-08-17T20:27:00+01:00</updated>
+    <id>http://www.romenrg.com/blog/2012/08/17/the-front-end-engineer-role</id>
+    <content type="html"><![CDATA[<p>The Front-end engineer is a relatively recent role in software development, but its importance is growing everyday as the importance of Javascript does. I've been working as a front-end engineer in the <a href="http://www.stat4you.com">Stat4you</a> project since January and in this article I will try to describe this role, emphasize its importance and highlight the differences that the introduction of Javascript has brought to the development of the front-end of web applications.</p>
+
+
+
+
+<p>I would like to introduce this article with a quote from the human-computer interaction expert Jeff Raskin that summarizes quite clearly the importance of software interfaces from the perspective of users. It reads: <em>“As far as the customer is concerned, the interface is the product”</em>.</p>
+
+
+
+
+<p>Although the quote above seems quite obvious, often developers and managers tend to forget or underestimate the importance of user interfaces, blinded by the complexity of the back-ends of the applications. This blindness has led many projects to failure, but fortunately this is starting to change.</p>
+
+
+
+
+<p>In order to continue highlighting the importance of user interfaces, there is another quote from Linus Torvalds on this topic which I also fully agree with: <em>“In many cases, the user interface to a program is the most important part for a commercial company: whether the programs works correctly or not seems to be secondary”</em>.</p>
+
+
+<p><img src="http://www.romenrg.com/images/angry.jpg" /></p>
+
+<!-- More -->
+
+
+
+
+<p>Quite often, traditional developers teams give priority to the development of new and complex features (which mostly will never be used by the majority of end-users) instead of spending the time in the creation a friendly and easy to use interface. This frequently results in a hard-to-use application with a lot of functionalities that will never be used due to the poor user experience caused by its unfriendly interface. Thereby, many projects meet with failure due to usability issues rather than lack of functionalities, as Linus Torvalds said.</p>
+
+
+
+
+<p>But… <em>What is exactly the interface?</em> And, <em>who develops it?</em> For many years there hasn’t been a figure in the development process dedicated exclusively to interfaces. Usually there was only the general concept of developer or programmer, who sometimes coded the business logic or the services, while in other occasions had to control user events or choose the color of the buttons and the way the information had to be displayed.</p>
+
+
+
+
+<p>It is true that it has been years since there is also a role related somehow with interfaces. It is called the designer, but usually this role is related to someone with an artistic background, most of the time it is someone who works fine creating images with Photoshop, but with little or none technical knowledge about HTML, CSS and Javascript. This kind of professional cannot be considered a Front end engineer. It is just a graphic designer.</p>
+
+
+
+
+<p>Working on this article I found an <a href="http://htmlcssjavascript.com/web/the-front-end-engineering-spectrum-the-three-generic-types-of-front-end-engineers/">interesting categorization</a> done by Rob Larsen in which he describes three profiles of front-end engineers: “the creative” (who would be probably a designer with HTML and CSS skills), “the coder” (who would be a javascript programmer, also strong at CSS and HTML but probably weak at design) and there a last one, named “the core” (this would be somewhere in the middle of the other two).</p>
+
+
+
+
+<p>The profiles defined above are rather wide, but I find them quite accurate. In my case, due to my programmer background and these last months focused on javascript I fit probably better into “the coder” although I see something of me in “the core” profile. Probably I was in this profile years ago, before studying at university, when I was interested in the web in general and I started learning both design and programming by myself. Then, at university I started to learn more about programming and I became more “coder”.</p>
+
+
+
+
+<p>Reading <a href="http://htmlcssjavascript.com/web/the-front-end-engineering-spectrum-the-roles/">another post</a> of Rob Larsen in which he describes the different front-end roles, I found his <strong>description of a “Front end developer”</strong>. He defines it as someone who is “responsible for HTML, CSS and JavaScript templates and prototypes at the beginning of development and remains heavily involved with the integration and QA phases of a site build. This person is solely focused on the presentation layer. While one might occasionally help out with tasks on either the design side or the server side, 95% of the work done in this role is in the narrow band defined above.”. He also says that this role is for a “core” or a “coder” who is happy to focus in javascript as his main programming language. I think that in the project I'm working on right now I fit in this description of front-end engineer fairly well.</p>
+
+
+
+
+<p>About the old concept of designer, Rob Larsen says: <em>“The general trend of the front end engineering spectrum is expanding away from this type of role”</em> mainly due to the importance of javascript.</p>
+
+
+<p><img title="The front-end layers" src="http://www.romenrg.com/images/applicationLayers3.png" /></p>
+
+<p>In the image above, we can see the distribution of tasks between front-end and back-end in a web application. In the case of the front-end I have separated it in two columns: on the right side we have the traditional web application (where the presentation code is in the server) and in the left side we have the modern concept (with javascript controllers in the client side).</p>
+
+
+
+
+<p>Nowadays with the growing importance of Javascript and the single-page applications, the controllers of the web applications are being moved to the client using javascript MVC frameworks such as Backbone.js, with the goal of providing a more fluid user experience akin to a desktop application. In our case, we have thinned the server side significantly with this approach. The server side provides a REST API from which the client consumes the services. The client sends AJAX requests to the API and the server sends JSON responses with the information required. </p>
+
+
+
+
+<p>Thus, in our case the information processing and the built of the web interface are done in the client side by the front-end engineer, using Javascript for the behavior and HTML and CSS for the markup and styles. For us this has been possible and maintainable thanks to the help of many frameworks, libraries and tools such as Backbonejs, Underscorejs, jQuery, D3js, Highcharts, Jasmine, Handlebars, Less and the Google Chrome Inspector for debugging. Surely, I would write about some of them in more detail in future.</p>
+
+
+
+
+<br />
+
+
+
+
+<p>So, in conclusion, front-end engineering is not designing, even though the design is a part of the front-end of an application. A front-end engineer must be someone focused on the presentation layer, mainly responsible for HTML, CSS and JavaScript templates and prototypes even though might occasionally help out with tasks on either the design side or the server side. With the growing importance of Javascript and the help of frameworks and libraries the controllers are being moved to the client side and being written in Javascript, leading the front-end engineers to focus on this programming language.</p>
+
+
+
+]]></content>
+  </entry>
+  
+</feed>

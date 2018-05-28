@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Front-End | Blog @romenrg]]></title>
+  <link href="http://www.romenrg.com/blog/categories/front-end/atom.xml" rel="self"/>
+  <link href="http://www.romenrg.com/"/>
+  <updated>2018-05-28T19:56:02+01:00</updated>
+  <id>http://www.romenrg.com/</id>
+  <author>
+    <name><![CDATA[Romén Rodríguez-Gil]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[About UX in Modern Web Interfaces and Backbone.js: Choropleth Maps]]></title>
+    <link href="http://www.romenrg.com/blog/2013/07/27/about-modern-and-usable-web-interfaces-with-backbonejs-and-d3js-choropleth-maps/"/>
+    <updated>2013-07-27T17:27:00+01:00</updated>
+    <id>http://www.romenrg.com/blog/2013/07/27/about-modern-and-usable-web-interfaces-with-backbonejs-and-d3js-choropleth-maps</id>
+    <content type="html"><![CDATA[<p>I would like to start this post anouncing that this month I am leaving <a href="http://www.arte-consultores.com">Arte Consultores Tecnológicos</a>, after one year and seven months working there as an Analyst/Programmer (Front-end Engineer). I have made this decision because right now I need to devote myself exclusively to Langproving, which is in need of my full atention at this critical moment in which our MPV is finished and we have to market it to validate our business model.</p>
+
+
+
+
+<p>In this period of time working at Arte Consultores, I have improved significantly as an engineer. I have learnt a lot. Fortunately, I have had the great pleasure to work closely with my workmate and friend <a href="http://www.axelhzf.com">Axel Hernández</a>, who I admire for his ability to constantly learn new technologies and for being always aware of all the new trends in software development. I'm proud to say that I have learned a lot from him. I would like to think — actually, I hope — that he has also learned something from me too while we have been working together.</p>
+
+
+
+
+<p>One of the most valuable things I learned working at Arte was related to writing modern and usable web interfaces, not only with CSS3 animations or HTML5 new attributes and tags; but also with Javascript. In the last few years Javascript has grown up and become one of the keys of the evolution of the web. Many Javascript frameworks have emerged, ranging from those regarding DOM manipulation (jQuery) to others built to reproduce the model-view-controller (MVC) pattern in the client side, such as <a href="http://www.backbonejs.org">Backbone.js</a>. For more than a year I have been using Backbone to create Single-page applications that provide a quick response to user interaction, without the need to re-render the full page from the server as we were used to; thus improving sifnificantly the user experience (UX).</p>
+
+
+<p><img src="http://www.romenrg.com/images/js_html_css.png" /></p>
+
+<!-- More -->
+
+
+
+
+<h2>Choropleth Maps</h2>
+
+
+
+
+<p>In the following example we have a choropleth map from <a href="http://www.stat4you.com">Stat4you</a> in which the unemployment rate in the different regions of Spain is shown. The darker the colour, the higher the unemployment is. I have picked this dataset randomly, but it is worth mentioning that it shows a sad reality of Spain's economic crisis.</p>
+
+
+<p><img src="http://www.romenrg.com/images/maps_initial.png" /></p>
+
+<p><em>We can see different elements in the map with which several actions can be performed. Firstly, we have the map itself, which happens to be a SVG vectorial image. Secondly, we have a zoom bar that has two different buttons (+ and -) and also has a draggable element that allows us to decrease or increase the zoom — as you may notice, it must be somehow synchronized with the + and - buttons —. Aditionally, we can use the mouse wheel to zoom in and out (as we can do in Google Maps). We can also click on a particular region of the map to zoom in and center the display on it; and we can click in the button above the zoom seciton to zoom out, going back to the original zoom and position of the map. We have also a leyend section, which indicates the ranges covered by each colour in the map. Finally, we have the ranges bar, which has a draggable element in the middle that can be used to increase or decrease the number of ranges to be used. It is also possible to click on the bar itself to increase or decrease the number of ranges. Clicking in the right side increases by one the number or ranges and clicking in the left side decreases the number of ranges in the same amount (the draggable selector will be moved automatically).</em></p>
+
+
+
+
+<p>As it can be seen, there are many elements that interact with each other. Since this is a Backbone application, everything runs on the client side. The server only loads the initial data, sends it to the client browser and then it is no needed any more. Only if the data to be displayed changes, an AJAX call is made to the server to bring new data, but not to reload the page. Anyway, this AJAX calls are beyond the scope of this post. We will focus on the interaction among the described controls of the map, which are mapped to diferent views in our MVC pattern implementation, all of them linked by a model.</p>
+
+
+<p><img src="http://www.romenrg.com/images/maps_initial_ranges.png" /></p>
+
+<p><em>In this new image we have just moved the ranges selector two positions to the left. This has caused automatically two changes in other elements, besides the changes in the ranges selector itself. On the one hand, the leyend has changed. The ranges have been re-calculated and now they are just three, instead of the initial five. Moreover, the map has been redrawed and some regions have changed their colour, since now the ranges are different and the unemployment rates of the regions are grouped diferently.</em></p>
+
+
+<p><img src="http://www.romenrg.com/images/maps_initial_clickzoom.png" /></p>
+
+<p><em>In this case, we have clicked in the autonomous city of Ceuta. When clicking in a region, as well as when we use the mouse wheel, the zoom changes. We have zoomed in to the best level of zoom in order to see the selected region properly (this is done automatically when clicking in a particular region). Moreover, the map is now centered in the selected region. As we can see, besides the changes in the map, the zoom controls have also changed. The selector is now stuck to the top, stating that the maximum level of zoom is being used.</em></p>
+
+
+
+
+<p>As you can see, there are several actions that affect different elements of the maps. All of them are being performed in the client side, in the user's browser, thanks to Javascript and, in this case, thanks to the use of Backbone MVC Framework too. To display each element we have used different <a href="http://www.handlebars.com">Handlebars</a> templates. For the special case of the SVG maps, it is worth mentioning that they are being displayed by using another Javascript library called <a href="http://www.d3js.org">D3js</a>, which provides poweful visualization components and tools for manipulating documents based on data.</p>
+
+
+
+
+<p>To clearify how an MVC pattern can be implemented for this sample case by using Backbone framework, the following diagram has been made.</p>
+
+
+<p><img src="http://www.romenrg.com/images/maps_mvc_sinplified.png" /></p>
+
+<p><em>In the diagram we have represented the User Actions, the Map Model, the different Views for each section and a Map class that could be integrated in the MapContainerView if desired. Aditionally, the HTML / SVG code to be displayed in each case is stored in Handlebars templates and it is loaded in the "render" methods of its corresponding view. During execution, every action of the user triggers an event that is captured by the Map Model. Then, the model preforms different actions depending on the behavior of the user, and once it finishes, changes in some of its attributes are made. When the model is changed, new events are fired. Each view is listening to the events triggered by the model that are associated with it, thus being able to re-render itself if needed. Moreover, in case some mayor changes that require all elements to re-render are made, the render method of the MapContainerView will be called, which will execute each element's render in turn.</em></p>
+
+
+
+
+<p>In summary, as I mentioned before, Javascrip MVC frameworks are quite powerful and lead to faster websites in which no communication with the server is needed in order to perform changes related to user actions, unless those actions require new data to be received. Definitely, the development of web interfaces combining the power of Javascript (jQuery, Backbone...) with the new animations and attributes of CSS3 and HTML5 provide us the great technical tools that have led to a new revolution of web interfaces. Moreover, if we combine these powerful tools with the implementation of design patterns such as Responsive Web Design, Graceful Degradation and Progressive Enhancement while following a User-centered design, we can achieve an amazing user experience and a great satisfaction from our customers.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Front-end engineer role]]></title>
+    <link href="http://www.romenrg.com/blog/2012/08/17/the-front-end-engineer-role/"/>
+    <updated>2012-08-17T20:27:00+01:00</updated>
+    <id>http://www.romenrg.com/blog/2012/08/17/the-front-end-engineer-role</id>
+    <content type="html"><![CDATA[<p>The Front-end engineer is a relatively recent role in software development, but its importance is growing everyday as the importance of Javascript does. I've been working as a front-end engineer in the <a href="http://www.stat4you.com">Stat4you</a> project since January and in this article I will try to describe this role, emphasize its importance and highlight the differences that the introduction of Javascript has brought to the development of the front-end of web applications.</p>
+
+
+
+
+<p>I would like to introduce this article with a quote from the human-computer interaction expert Jeff Raskin that summarizes quite clearly the importance of software interfaces from the perspective of users. It reads: <em>“As far as the customer is concerned, the interface is the product”</em>.</p>
+
+
+
+
+<p>Although the quote above seems quite obvious, often developers and managers tend to forget or underestimate the importance of user interfaces, blinded by the complexity of the back-ends of the applications. This blindness has led many projects to failure, but fortunately this is starting to change.</p>
+
+
+
+
+<p>In order to continue highlighting the importance of user interfaces, there is another quote from Linus Torvalds on this topic which I also fully agree with: <em>“In many cases, the user interface to a program is the most important part for a commercial company: whether the programs works correctly or not seems to be secondary”</em>.</p>
+
+
+<p><img src="http://www.romenrg.com/images/angry.jpg" /></p>
+
+<!-- More -->
+
+
+
+
+<p>Quite often, traditional developers teams give priority to the development of new and complex features (which mostly will never be used by the majority of end-users) instead of spending the time in the creation a friendly and easy to use interface. This frequently results in a hard-to-use application with a lot of functionalities that will never be used due to the poor user experience caused by its unfriendly interface. Thereby, many projects meet with failure due to usability issues rather than lack of functionalities, as Linus Torvalds said.</p>
+
+
+
+
+<p>But… <em>What is exactly the interface?</em> And, <em>who develops it?</em> For many years there hasn’t been a figure in the development process dedicated exclusively to interfaces. Usually there was only the general concept of developer or programmer, who sometimes coded the business logic or the services, while in other occasions had to control user events or choose the color of the buttons and the way the information had to be displayed.</p>
+
+
+
+
+<p>It is true that it has been years since there is also a role related somehow with interfaces. It is called the designer, but usually this role is related to someone with an artistic background, most of the time it is someone who works fine creating images with Photoshop, but with little or none technical knowledge about HTML, CSS and Javascript. This kind of professional cannot be considered a Front end engineer. It is just a graphic designer.</p>
+
+
+
+
+<p>Working on this article I found an <a href="http://htmlcssjavascript.com/web/the-front-end-engineering-spectrum-the-three-generic-types-of-front-end-engineers/">interesting categorization</a> done by Rob Larsen in which he describes three profiles of front-end engineers: “the creative” (who would be probably a designer with HTML and CSS skills), “the coder” (who would be a javascript programmer, also strong at CSS and HTML but probably weak at design) and there a last one, named “the core” (this would be somewhere in the middle of the other two).</p>
+
+
+
+
+<p>The profiles defined above are rather wide, but I find them quite accurate. In my case, due to my programmer background and these last months focused on javascript I fit probably better into “the coder” although I see something of me in “the core” profile. Probably I was in this profile years ago, before studying at university, when I was interested in the web in general and I started learning both design and programming by myself. Then, at university I started to learn more about programming and I became more “coder”.</p>
+
+
+
+
+<p>Reading <a href="http://htmlcssjavascript.com/web/the-front-end-engineering-spectrum-the-roles/">another post</a> of Rob Larsen in which he describes the different front-end roles, I found his <strong>description of a “Front end developer”</strong>. He defines it as someone who is “responsible for HTML, CSS and JavaScript templates and prototypes at the beginning of development and remains heavily involved with the integration and QA phases of a site build. This person is solely focused on the presentation layer. While one might occasionally help out with tasks on either the design side or the server side, 95% of the work done in this role is in the narrow band defined above.”. He also says that this role is for a “core” or a “coder” who is happy to focus in javascript as his main programming language. I think that in the project I'm working on right now I fit in this description of front-end engineer fairly well.</p>
+
+
+
+
+<p>About the old concept of designer, Rob Larsen says: <em>“The general trend of the front end engineering spectrum is expanding away from this type of role”</em> mainly due to the importance of javascript.</p>
+
+
+<p><img title="The front-end layers" src="http://www.romenrg.com/images/applicationLayers3.png" /></p>
+
+<p>In the image above, we can see the distribution of tasks between front-end and back-end in a web application. In the case of the front-end I have separated it in two columns: on the right side we have the traditional web application (where the presentation code is in the server) and in the left side we have the modern concept (with javascript controllers in the client side).</p>
+
+
+
+
+<p>Nowadays with the growing importance of Javascript and the single-page applications, the controllers of the web applications are being moved to the client using javascript MVC frameworks such as Backbone.js, with the goal of providing a more fluid user experience akin to a desktop application. In our case, we have thinned the server side significantly with this approach. The server side provides a REST API from which the client consumes the services. The client sends AJAX requests to the API and the server sends JSON responses with the information required. </p>
+
+
+
+
+<p>Thus, in our case the information processing and the built of the web interface are done in the client side by the front-end engineer, using Javascript for the behavior and HTML and CSS for the markup and styles. For us this has been possible and maintainable thanks to the help of many frameworks, libraries and tools such as Backbonejs, Underscorejs, jQuery, D3js, Highcharts, Jasmine, Handlebars, Less and the Google Chrome Inspector for debugging. Surely, I would write about some of them in more detail in future.</p>
+
+
+
+
+<br />
+
+
+
+
+<p>So, in conclusion, front-end engineering is not designing, even though the design is a part of the front-end of an application. A front-end engineer must be someone focused on the presentation layer, mainly responsible for HTML, CSS and JavaScript templates and prototypes even though might occasionally help out with tasks on either the design side or the server side. With the growing importance of Javascript and the help of frameworks and libraries the controllers are being moved to the client side and being written in Javascript, leading the front-end engineers to focus on this programming language.</p>
+
+
+
+]]></content>
+  </entry>
+  
+</feed>

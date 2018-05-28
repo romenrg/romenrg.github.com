@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: UX | Blog @romenrg]]></title>
+  <link href="http://www.romenrg.com/blog/categories/ux/atom.xml" rel="self"/>
+  <link href="http://www.romenrg.com/"/>
+  <updated>2018-05-28T19:56:02+01:00</updated>
+  <id>http://www.romenrg.com/</id>
+  <author>
+    <name><![CDATA[Romén Rodríguez-Gil]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Why copywriting is key to UX: We increased conversions by 26% just changing some text]]></title>
+    <link href="http://www.romenrg.com/blog/2014/09/17/why-copywriting-is-key-to-ux-we-increased-conversions-by-26-percent-just-changing-some-text/"/>
+    <updated>2014-09-17T12:16:00+01:00</updated>
+    <id>http://www.romenrg.com/blog/2014/09/17/why-copywriting-is-key-to-ux-we-increased-conversions-by-26-percent-just-changing-some-text</id>
+    <content type="html"><![CDATA[<p>Too often people tend to think that UX is just art: Flat design, Modern UI and animations... But art represents only a tiny part of the User Experience. Some developers go one step further and think that it also implies strong technical skills (to achieve a good performance, proper-functioning software, etc). However, that is still a very narrow perspective of User / Customer Experience.</p>
+
+<p><img src="http://www.romenrg.com/images/copywriting_writing_machine.jpg" alt="Picture of a man using a writing machine and smoking with a pipe" /></p>
+
+<p>Some of us have realized that UX is not just how beautiful our product looks or how amazing its performance is. There are several other fields that are crucial when trying to achieve a great experience for our users, as you will see in this post. And if I had to choose just one field that is definitely key to UX, it would be <em>Psychology</em>.</p>
+
+<!-- More -->
+
+
+
+
+<h2>User Experience and feelings</h2>
+
+
+<p>User Experience is all about feelings. A beautiful interface will trigger interest and catch attention. But, what happens once a beautiful interface has catched user's attention? The user will keep looking around, interacting with our site or product. At this stage, if the user does not manage to use it properly, she will lose interest, no matter the fancy animations and the great performance.</p>
+
+<p>Usability is sometimes an enemy of art. Underlining a link could be hard to accept for a designer, but it is proved that users look for an underlined text when they are looking for a link. By not underlining links, designers could worsen user's experience. Actually, what usability is all about is sticking to the standards and making things as clear and easy to use as possible.</p>
+
+<p>However, when we talk about Customer Experience there is another key element to take into account. Since you want your visitor to <em>buy something</em>, your purpose is to guide her experience to a particular action. So, apart from design, engineering and usability; there is another key element which is vital in this case: <em>copywriting</em>.</p>
+
+<h2>Copywriting has a huge impact in User Experience</h2>
+
+
+<p>It could sound obvious, but 90% of the web is text. When a user is engaged with a nice-looking site that works properly, she will try to perform several actions. By this time, our site has to be usable, but above all, our site must guide her to perform the actions we want her to perform (such as signing up). And we have to tell her <em>what to do and why</em>, usually via text.</p>
+
+<p>In a Landing page this type of text is obviously related to marketing, but once the user has become a customer and is using our product, choosing the right text is just about psychology. We are trying to help our users to perform tasks using our product with the less pain possible; so they don't get frustrated and they enjoy the experience as much as possible.</p>
+
+<p>Whether it is in a Landing Page or in an actual Product, copy has a huge impact on User's Experience. However, designers and developers tend to underestimate the importance of text.</p>
+
+<p>But… How can we know if a particular text is better than another? Well, let your users tell you. Tracking user actions, measuring and testing are also key elements to achieve a great UX.</p>
+
+<h2>Our experiment: Changing text in the sign-up form</h2>
+
+
+<p>Fortunately, in <a href="http://www.vocabularynotebook.com">Vocabulary Notebook</a> we have used Web Analytics and A/B Tests extensively, so we can prove the importance of copywriting in User Experience (and in conversions) by means of one of our experiments.</p>
+
+<h3>Sign up page: Old version</h3>
+
+
+<p><img src="http://www.romenrg.com/images/screenshot_old_signup.png" alt="Screenshot of the Old sign-up form of Vocabulary Notebook" /></p>
+
+<p>This screen used to be our sign-up page for <a href="http://www.vocabularynotebook.com">Vocabulary Notebook</a>. As you can see, the page was quite simple. There is a navigation bar on top, a title and a form with its confirmation button.</p>
+
+<p>The main title was making it clear that you could start using our platform for free. Moreover, the purpose of the secondary title was to remind you that you were about to create a new individual account. Below, a form with three fields: email, password and name. Finally, there was a call-to-action button at the bottom-right corner just saying "try it now".</p>
+
+<p>We used to think that this version was pretty simple and clear. However, there was a lot of room for improvement.</p>
+
+<p><em>With this version, our conversion rate (percentage of visitors to our landing page that were becoming registered users) used to be around 3,26%. However, there are some previous steps to get to this page, so if we focus only on those users were arriving to this sign-up page, our analytics say that 63% of them was completing and submitting the sign-up form.</em></p>
+
+<h3>Sign up page: New version</h3>
+
+
+<p><img src="http://www.romenrg.com/images/screenshot_new_signup.png" alt="Screenshot of the New sign-up form of Vocabulary Notebook" /></p>
+
+<p>Simple changes, right? Well, I can tell that our users have found those changes to be big enough to make a significant difference in our metrics.</p>
+
+<p>The first change is related to the main title. We decided to move the spotlight from the concept “free” to "it's real quick". It is well known that many users get scared when they see a sign-up form. It is a barrier to entry for them. However, removing the sign up was not an option for us, so we focused on trying to convince them by saying that the sign-up process was going be over very quickly.</p>
+
+<p>In this main title we also mention that you will be creating your “personal account”, so there was no need to keep that information in the secondary title anymore. Thus, we decided to also use this secondary title to encourage users to fill the form, focusing on how short it is: “only three fields”.</p>
+
+<p>As you can see, we also made two changes in the form itself. We decided to move the email to the second place, since we had the impression that people are more likely to provide an email than a password at that stage. Apart from moving the password request to the third place, we decided to remove the verification. We provide a "forgot your password" option for recovery, so there is no need to make the form longer with that verification.
+Finally, we decided to make the CTA (call-to-action) stronger, to convince you to keep going. That is why not only we let you know that by clicking it you can "start now", but we also remind you that it will be "<em>free</em>" (at least for now).</p>
+
+<h2>The results</h2>
+
+
+<p>Now that you have seen the changes we made, you may be thinking that they are minor and that there shouldn't be a big difference, since we just changed some text. However, you should already be aware of the importance of copywriting in UX.</p>
+
+<p>Believe it or not, the new version has a conversion rate around 4,10% (percentage of visitors to our landing page becoming registered users). <strong>This means that conversion rate increased by 26%</strong> (from 3,26% to 4,10%), which I consider a huge increase given the "minor changes" we made.</p>
+
+<p>Taking into account only the users that were actually arriving to the sign-up page, <strong>the rate went from 63% of them filling the form in the old version, to 80% of them in the new version</strong>; which is a significant improvement.</p>
+
+<p>Since the sign-up form is the last step in our conversion funnel, this change does not have further consequences along the funnel. However, doing small changes in previous stages of the funnel can have a much bigger impact on conversions. In a future post I will describe another experiment we conducted where we optimized a previous step in the conversion funnel. It was also a small detail, but a small improvement in conversions at the beginning of the funnel has much bigger consequences than at the end of it, as we will see. For now, I can only say that after this other change we increased conversions from the 4,10% (rate mentioned above as the result of this experiment), to a 6,74%, which is our current conversion rate for individual users visiting our landing page. If you are curious about this other experiment, stay tuned! I will post about it soon.</p>
+
+<p>In summary, UX is a complex discipline where several knowledge areas merge. Sometimes, trying to improve User Experience we make big changes that involve design, animations, performance… Changes that may take days of work. However, we should not forget the importance of copywriting. It could improve UX significantly with much less effort.</p>
+
+<p>As Jeff Gothelf states <em>"<a href="http://www.jeffgothelf.com/blog/the-secret-weapon-of-ux-copywriting/#sthash.asXhCmK5.dpbs">copywriting could be considered the secret weapon of UX</a>"</em>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Linking UX and Conversions by means of analytics and A/B tests]]></title>
+    <link href="http://www.romenrg.com/blog/2014/07/31/linking-ux-and-kpis-by-means-of-analytics-and-ab-tests/"/>
+    <updated>2014-07-31T19:03:00+01:00</updated>
+    <id>http://www.romenrg.com/blog/2014/07/31/linking-ux-and-kpis-by-means-of-analytics-and-ab-tests</id>
+    <content type="html"><![CDATA[<p>Thanks to my experience as Entrepreneur and Product Manager, I realized long ago about something that is totally counterintuitive for many other software engineers. This realization is that, when developing a software product, our main focus should always be sales. Always. Sales. I know that probably too many people have said that already, but it is so true that it is worth saying it once more, specially for my software mates: <em>"when developing a software product our main focus should always be sales"</em>.</p>
+
+
+<p><img src="http://www.romenrg.com/images/sales.jpg" /></p>
+
+<p>However, that statement is too generic. Most people already know that selling is important... But how can we sell more? Well, experience tells me that in order to increase sales, the first thing you will probably need are many more visits (and getting those visits is way more complicated than it seems). However, that is only the beginning. Once you get enough visits and you validate most of your product main hypotheses, the next step is <em>converting most of those visits into customers</em>. Here is where both <em>User Experience</em> and <em>KPIs (Key Performance Indicators)</em> become probably the most important areas for product management.</p>
+
+
+
+
+<!-- More -->
+
+
+
+
+<h2>User Experience and Conversion Rates</h2>
+
+
+
+
+<p>Every entrepreneur wants to convert visits into paying customers. There will be KPIs that you will probably always be checking, expecting them to improve. This KPIs could be "Signup rate" (from visits) or "Free to Premium rate" (the percentage of users becoming premium after being free users (in case you have some sort of free trial). <em>Conversion Rates</em> are very important business metrics, but improving those KPIs has to do with a few more things than just business. Particularly, the User or Customer Experience (UX / CX) is one of the most important factors in this task.</p>
+
+
+
+
+<p>I always define <em<strong>User Experience</strong> as a discipline in which Design, Usability, Marketing, Psychology and Engineering merge</em>. Are you wondering why? Did you think that UX was just "beautiful design"? Well... I have learnt that your experience while using a product is affected of course by the aesthetics (art and design), but also by the easier it is to use it (usability), the story it tells you (marketing), the way it engages you (psychology) and last but not least, "the engines", that is, the technology that makes the product actually work and perform properly (engineering).</p>
+
+
+
+
+<p>Once you agree with this definition of User Experience, linking it with conversion rates is rather easy... The better the UX in our Landing page is, the better the signup rate will be. In the same sense, the better the UX in our free version of the product is, the better the "Free to Premium" conversion rate will be.</p>
+
+
+
+
+<h2>But... Is it easy to constantly improve UX in our software products?</h2>
+
+
+
+
+<p>To be perfectly honest, no. Improving UX constantly is really complicated. And actually one of the most difficult parts is subjectivity, because this are the sort of tasks in which everyone in the team wants to have a say. One day everyone wants to change the text of the main headline to their own "best" option, wasting a lot of hours in useless discussions where nobody agrees. Another day some engineer named Joe says "it is imposible" to a new important feature coming from business that may be an important source of income because it will imply a few changes in "his" domain objects and he thinks it is not worth it. The same day, the back-end engineer that is temporarily working in the UI development, named Jane, decides to use red for the main CTA because is her favourite color, although most people associate it with "danger" and thus, will reduce the click rate... Do these situations sound familiar to you?
+
+<p>I have seen this behaviors several times in several different software companies and I have realized that they are caused mainly because two reasons: 1) most companies do not value User Experience as much as they should and 2) most companies are lacking data that would slap the corresponding people in the face and lead to the right changes to really improve UX.</p>
+
+<h2>"If we have data lets look at data, if what we have are opinions, lets go with mine" - Jim Barksdale</h2>
+
+<p>In my experience as CEO of <a href="http://www.langproving.com">Langproving</a> and Product Manager of <a href="https://www.vocabularynotebook.com">Vocabulary Notebook</a> I have followed this quote as much as possible to avoid those discussions. To base our decisions in data, we have used both Web Analytics (tracking all the actions / events of our users) and A/B Tests (to compare objectively two versions of a portion of our product). To gather data and create our experiments we have used Google Analytics extensively. It has been a <em>fantastic</em> experience that has helped us, among other things, to <em> significantly improve our conversion rates</em>, as you can see <a href="http://www.slideshare.net/romenrg/curso-ux-tenerife-no-maltrates-a-tus-usuarios-fg-ull-da-5-experimentos-reales-la-experiencia-de-vocabulary-notebook">here</a>. Besides, those useless discussions mentioned above do not happen anymore in our company. Now we look at data. We listen to what our users say and we choose what <em>they</em> like the most.</p>
+
+<p>Regarding the link with the results of some of our experiments, it is worth mentioning that recently I gave a course at <a href="www.fg.ull.es">Fundación General Universidad de La Laguna</a> exactly about this topic (UX + Web Analytics). In this course, we had a first part focused on User Experience and a second part focused on Data (including our own experiments as examples). All the slides of the course are available (in spanish) in the following links. However, keep in mind that they are just slides that I created as visual support for my lectures during the course. They are not a book. This means that since they were intended to be seen along with my comments and explanations, they do not have much text and thus, sometimes can be a bit difficult to follow on your own.</p>
+
+<h2>Slides of my course about UX and Web Analytics</h2>
+<ul>
+<h3>Part One: User Experience and User Interface development</h3>
+<li><a href="http://www.slideshare.net/romenrg/curso-ux-tenerife-no-maltrates-a-tus-usuarios">Introduction to the course</a></li>
+<li><a href="http://www.slideshare.net/romenrg/curso-ux-fgullromenrg4coding">Boilerplate and tools for students</a></li>
+<li><a href="http://www.slideshare.net/romenrg/curso-ux-tenerife-no-maltrates-a-tus-usuarios-fg-ull-da-2-peores-y-mejores-prcticas-en-ux">Worse and Better UX real cases</a></li>
+<li><a href="http://www.slideshare.net/romenrg/curso-ux-tenerife-no-maltrates-a-tus-usuarios-fg-ull-da-3-responsive-web-design-rwd-mobile-ux">Mobile UX real cases</a></li>
+<li><a href=http://www.slideshare.net/romenrg/curso-ux-fgullromenrg5recursosyayudaproyecto">Useful resources for developing software UIs</a></li>
+</ul>
+<ul>
+<h3>Part Two: Web Analytics and A/B Testing</h3>
+<li><a href="http://www.slideshare.net/romenrg/curso-ux-tenerife-no-maltrates-a-tus-usuarios-fg-ull-da-4-introduccin-al-ab-testing-con-google-analytics">Intro to A/B Testing with Google Analytics</a></li>
+<li><a href="http://www.slideshare.net/romenrg/langproving-vocabulary-notebook-concurso-emprendedor-xxi">Intro to Vocabulary Notebook</a></li>
+<li><a href=http://www.slideshare.net/romenrg/curso-ux-tenerife-no-maltrates-a-tus-usuarios-fg-ull-da-5-experimentos-reales-la-experiencia-de-vocabulary-notebook"">Real UX experiments with Vocabulary Notebook</a></li>
+</ul>
+<ul>
+<h3>Part Three: Additional material</h3>
+<li><a href="http://www.slideshare.net/romenrg/curso-ux-tenerife-no-maltrates-a-tus-usuarios-fg-ull-da-5">Some keys to face-to-face usability testing</a></li>
+<li><a href="http://www.slideshare.net/romenrg/curso-ux-tenerife-no-maltrates-a-tus-usuarios-fg-ull-da-5-testing-automatizado-de-interfaces-web">UI automated testing</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[About UX in Modern Web Interfaces and Backbone.js: Choropleth Maps]]></title>
+    <link href="http://www.romenrg.com/blog/2013/07/27/about-modern-and-usable-web-interfaces-with-backbonejs-and-d3js-choropleth-maps/"/>
+    <updated>2013-07-27T17:27:00+01:00</updated>
+    <id>http://www.romenrg.com/blog/2013/07/27/about-modern-and-usable-web-interfaces-with-backbonejs-and-d3js-choropleth-maps</id>
+    <content type="html"><![CDATA[<p>I would like to start this post anouncing that this month I am leaving <a href="http://www.arte-consultores.com">Arte Consultores Tecnológicos</a>, after one year and seven months working there as an Analyst/Programmer (Front-end Engineer). I have made this decision because right now I need to devote myself exclusively to Langproving, which is in need of my full atention at this critical moment in which our MPV is finished and we have to market it to validate our business model.</p>
+
+
+
+
+<p>In this period of time working at Arte Consultores, I have improved significantly as an engineer. I have learnt a lot. Fortunately, I have had the great pleasure to work closely with my workmate and friend <a href="http://www.axelhzf.com">Axel Hernández</a>, who I admire for his ability to constantly learn new technologies and for being always aware of all the new trends in software development. I'm proud to say that I have learned a lot from him. I would like to think — actually, I hope — that he has also learned something from me too while we have been working together.</p>
+
+
+
+
+<p>One of the most valuable things I learned working at Arte was related to writing modern and usable web interfaces, not only with CSS3 animations or HTML5 new attributes and tags; but also with Javascript. In the last few years Javascript has grown up and become one of the keys of the evolution of the web. Many Javascript frameworks have emerged, ranging from those regarding DOM manipulation (jQuery) to others built to reproduce the model-view-controller (MVC) pattern in the client side, such as <a href="http://www.backbonejs.org">Backbone.js</a>. For more than a year I have been using Backbone to create Single-page applications that provide a quick response to user interaction, without the need to re-render the full page from the server as we were used to; thus improving sifnificantly the user experience (UX).</p>
+
+
+<p><img src="http://www.romenrg.com/images/js_html_css.png" /></p>
+
+<!-- More -->
+
+
+
+
+<h2>Choropleth Maps</h2>
+
+
+
+
+<p>In the following example we have a choropleth map from <a href="http://www.stat4you.com">Stat4you</a> in which the unemployment rate in the different regions of Spain is shown. The darker the colour, the higher the unemployment is. I have picked this dataset randomly, but it is worth mentioning that it shows a sad reality of Spain's economic crisis.</p>
+
+
+<p><img src="http://www.romenrg.com/images/maps_initial.png" /></p>
+
+<p><em>We can see different elements in the map with which several actions can be performed. Firstly, we have the map itself, which happens to be a SVG vectorial image. Secondly, we have a zoom bar that has two different buttons (+ and -) and also has a draggable element that allows us to decrease or increase the zoom — as you may notice, it must be somehow synchronized with the + and - buttons —. Aditionally, we can use the mouse wheel to zoom in and out (as we can do in Google Maps). We can also click on a particular region of the map to zoom in and center the display on it; and we can click in the button above the zoom seciton to zoom out, going back to the original zoom and position of the map. We have also a leyend section, which indicates the ranges covered by each colour in the map. Finally, we have the ranges bar, which has a draggable element in the middle that can be used to increase or decrease the number of ranges to be used. It is also possible to click on the bar itself to increase or decrease the number of ranges. Clicking in the right side increases by one the number or ranges and clicking in the left side decreases the number of ranges in the same amount (the draggable selector will be moved automatically).</em></p>
+
+
+
+
+<p>As it can be seen, there are many elements that interact with each other. Since this is a Backbone application, everything runs on the client side. The server only loads the initial data, sends it to the client browser and then it is no needed any more. Only if the data to be displayed changes, an AJAX call is made to the server to bring new data, but not to reload the page. Anyway, this AJAX calls are beyond the scope of this post. We will focus on the interaction among the described controls of the map, which are mapped to diferent views in our MVC pattern implementation, all of them linked by a model.</p>
+
+
+<p><img src="http://www.romenrg.com/images/maps_initial_ranges.png" /></p>
+
+<p><em>In this new image we have just moved the ranges selector two positions to the left. This has caused automatically two changes in other elements, besides the changes in the ranges selector itself. On the one hand, the leyend has changed. The ranges have been re-calculated and now they are just three, instead of the initial five. Moreover, the map has been redrawed and some regions have changed their colour, since now the ranges are different and the unemployment rates of the regions are grouped diferently.</em></p>
+
+
+<p><img src="http://www.romenrg.com/images/maps_initial_clickzoom.png" /></p>
+
+<p><em>In this case, we have clicked in the autonomous city of Ceuta. When clicking in a region, as well as when we use the mouse wheel, the zoom changes. We have zoomed in to the best level of zoom in order to see the selected region properly (this is done automatically when clicking in a particular region). Moreover, the map is now centered in the selected region. As we can see, besides the changes in the map, the zoom controls have also changed. The selector is now stuck to the top, stating that the maximum level of zoom is being used.</em></p>
+
+
+
+
+<p>As you can see, there are several actions that affect different elements of the maps. All of them are being performed in the client side, in the user's browser, thanks to Javascript and, in this case, thanks to the use of Backbone MVC Framework too. To display each element we have used different <a href="http://www.handlebars.com">Handlebars</a> templates. For the special case of the SVG maps, it is worth mentioning that they are being displayed by using another Javascript library called <a href="http://www.d3js.org">D3js</a>, which provides poweful visualization components and tools for manipulating documents based on data.</p>
+
+
+
+
+<p>To clearify how an MVC pattern can be implemented for this sample case by using Backbone framework, the following diagram has been made.</p>
+
+
+<p><img src="http://www.romenrg.com/images/maps_mvc_sinplified.png" /></p>
+
+<p><em>In the diagram we have represented the User Actions, the Map Model, the different Views for each section and a Map class that could be integrated in the MapContainerView if desired. Aditionally, the HTML / SVG code to be displayed in each case is stored in Handlebars templates and it is loaded in the "render" methods of its corresponding view. During execution, every action of the user triggers an event that is captured by the Map Model. Then, the model preforms different actions depending on the behavior of the user, and once it finishes, changes in some of its attributes are made. When the model is changed, new events are fired. Each view is listening to the events triggered by the model that are associated with it, thus being able to re-render itself if needed. Moreover, in case some mayor changes that require all elements to re-render are made, the render method of the MapContainerView will be called, which will execute each element's render in turn.</em></p>
+
+
+
+
+<p>In summary, as I mentioned before, Javascrip MVC frameworks are quite powerful and lead to faster websites in which no communication with the server is needed in order to perform changes related to user actions, unless those actions require new data to be received. Definitely, the development of web interfaces combining the power of Javascript (jQuery, Backbone...) with the new animations and attributes of CSS3 and HTML5 provide us the great technical tools that have led to a new revolution of web interfaces. Moreover, if we combine these powerful tools with the implementation of design patterns such as Responsive Web Design, Graceful Degradation and Progressive Enhancement while following a User-centered design, we can achieve an amazing user experience and a great satisfaction from our customers.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Improving the UI to achieve a better UX: My experience in Stat4you]]></title>
+    <link href="http://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you/"/>
+    <updated>2013-01-02T17:29:00+00:00</updated>
+    <id>http://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you</id>
+    <content type="html"><![CDATA[<p>I had this article started but uncompleted since September 2012, and as a New Year’s Resolution for 2013 I decided to finish it.</p>
+
+
+
+
+<p>Back then, I had been working for some months as a Front-end engineer in <a href="http://www.stat4you.com">Stat4you</a>. In the early summer we were in a hurry to finish the alpha version of the platform, so we released it without paying too much atention to the details. A feature that was included in this release were the filters for the charts, by means of which users were able to change the positions of the dimensions and also to enable and disable the categories of those dimensions, thus changing the chart being displayed.</p>
+
+
+
+
+<p>The images below are screenshots of the filters initially released in Stat4you:</p>
+
+
+<p><img src="http://www.romenrg.com/images/s4y_table_filter.png" /></p>
+
+<p><em>The image above shows the filters available for the tables in the initial alpha version of the platform. The blue elements represent the containers of the dimensions which, in this case, have been also placed in a particular way to help the user understand the position in which every dimension will appear. The white elements represent the dimensions whilst the orange ones represent the categories of each dimension.</em></p>
+
+
+
+
+<!-- More -->
+
+
+<p><img src="http://www.romenrg.com/images/s4y_table_filter2.png" /></p>
+
+<p><em>In this image, the categories of one of the dimensions have been unfolded, this way the user can see all the categories available for a particular dimension, not only the previewed ones that can be seen without clicking in the right arrow. Also, it can be seen that the "Periodos" dimension has been moved to fixed (by doing drag and drop). This means that this dimension has been set to a specific category, which by default was the first one.</em></p>
+
+
+<p><img src="http://www.romenrg.com/images/s4y_barAndLine_filter.png" /></p>
+
+<p><em>Finally, there were also filters for the charts. Opposed to the table, in this case all the dimensions were displayed horizontally. The white text over the blue background indicated the position in which the dimension was going to appear if placed there (in the x-axis, in the columns...).</em></p>
+
+
+
+
+<p>As you could guess, this filters were kind of messy for the users. It was a quick design created in a hurry by us (developers) to launch the initial version of the product; so we made the mistake of not taking into account the user experience as much as we should have, although it was a MVP and was going to be improved in the near future.</p>
+
+
+
+
+<p>The days following the launch of the alpha version of Stat4you we had some feedback from visitors, and a portion of the negative feedback was regarding the filters, which appeared to be (as you can guess) confusing and difficult to use, causing a poor user experience. Hence, we decided to improve the user interface to achieve a better acceptance.</p>
+
+
+
+
+<p>To improve the filters we run some usability tests. In my case, I asked for the favor to some friends and family and started the experiment. In this experiment I asked them to access to some datasets within the platform and, once the dataset was accessed, I encouraged them to change the displayed chart or table to achieve a particular visualization (fixing dimensions, disabling some categories of other dimensions and changing their positions). As other users had reported before, the results were poor. It was difficult for them to achieve the changes I requested, but I got tons of information about the improvements needed: such as a search box for the categories, a better indication of the positions in which dimensions could be placed or a visible indication of which was the selected category in the fixed dimensions.</p>
+
+
+
+
+<p>Once these improvements were identified all we had to do was to develop them,knowing that those functionalities were the real needs of the users.</p>
+
+
+
+
+<p>The result of these changes can be seen in the following images:</p>
+
+
+<p><img src="http://www.romenrg.com/images/s4y_table_filter_new.png" /></p>
+
+<p><em>In this first image, the main changes were the labels indicating the positions in which dimensions could be placed and the width of the fixed position box, that now occupied the 100% of the available width.</em></p>
+
+
+<p><img src="http://www.romenrg.com/images/s4y_table_filters2_new.png" /></p>
+
+<p><em>In this case, some changes can be seen: For the fixed dimensions now the selected category is visible at every moment, preventing the users from unfolding the dimension to know which one the selected category is. In addition, a search box has been introduced to search within the categories of a dimension, making it much easier to find a particular category. Moreover, the 'x' that was placed at the top right position of the unfolded box was removed and replaced by an 'accept' button at the bottom right corner. In our experience, this change that forced users to accept the changes in order to close the unfolded categories, helped them to realize that the changes made are always going to be persisted. Before this change was made, some users had the sensation that when the 'x' was clicked, it was going to undo the changes.</em></p>
+
+
+<p><img src="http://www.romenrg.com/images/s4y_barAndLine_filters_new.png" /></p>
+
+<p><em>For the charts, the main change were the labels and shapes of the position boxes. The new interface seems to make the available options of edition easier to understand for users. Besides, it mantains greater uniformity with the tables filters.</em></p>
+
+
+
+
+<p>After these changes, we obtained positive feedback from users, and in the usability tests conducted afterwards, the user experience improved significantly. Firstly we had developed a UI without testing it with real users and when we released the product, the user experience with the filters was poor; we had to conduct some tests once it was in production, detect the problems users were having and then rewrite the interface and re-launch the product with the improved filters.</p>
+
+
+
+
+<p>In conclusion, what I learned back then was something that I already knew, but sometimes with the rush and the misunderstandings of what a MVP actually is, we tend to forget: When designing user interfaces it is really important to prototype first, do some usability testings with the prototype and improve user interfaces by means of users feedback. Then, once these first steps are finished, it is time to implement the tested solution. This way, it will take more time to launch, but it ensures us to achieve a good user experience since the launch day, avoiding the extra time and cost of rebuilding the feature afterwards. It could seem faster to design and implement a simple UI without usability testing and user feedback, but it will have the drawback of causing a worse user experience and, in the long run, it will probably cost more (time and money) in order to rebuild the UI to achieve a better UX.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

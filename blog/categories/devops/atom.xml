@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: DevOps | Blog @romenrg]]></title>
+  <link href="http://www.romenrg.com/blog/categories/devops/atom.xml" rel="self"/>
+  <link href="http://www.romenrg.com/"/>
+  <updated>2018-05-28T19:56:02+01:00</updated>
+  <id>http://www.romenrg.com/</id>
+  <author>
+    <name><![CDATA[Romén Rodríguez-Gil]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Continuous Integration, Delivery and Deployment: Key Differences]]></title>
+    <link href="http://www.romenrg.com/blog/2017/12/31/continuous-integration-delivery-deployment/"/>
+    <updated>2017-12-31T18:46:00+00:00</updated>
+    <id>http://www.romenrg.com/blog/2017/12/31/continuous-integration-delivery-deployment</id>
+    <content type="html"><![CDATA[<p>Continuous Integration, Continuous Delivery, and Continuous Deployment are key modern practices in software development that share two main goals: to deploy more frequently and more safely. These processes take advantage of automation to assess the quality and correctness of the new software and to make deployments much more predictable, faster and less error prone. But... Do you really know the differences between the three?</p>
+
+<p><img src="http://www.romenrg.com/images/two_paths_fork_unsplash.jpg" alt="Picture of a fork in the trail in a forest, leading to two alternative paths" /></p>
+
+<p>The aim of this article is to help clarify what do these techniques mean and highlight the benefits each one provides. We will also analyze which one should be chosen depending on the circumstances.</p>
+
+<!-- More -->
+
+
+<p>During this year I have been deeply involved in the topic, since I have been working on setting up Continuous Integration and Continuous Delivery in <a href="http://www.gobiernodecanarias.org/platino/">Platino</a>, which is a big government project that has been around for almost 10 years. Platino receives tens of millions of requests every month and has a considerable codebase, being composed of more than 50 web services and 9 web applications, deployed in different containers.</p>
+
+<p>In this time I have realized that, despite the importance of these practices, many professionals in the industry still miss the differences between the three, often talking about them indistinctly in conversations, which creates a lot of confusion. So, let's check the differences:</p>
+
+<h2>Continuous Integration</h2>
+
+<p>The concept of Continuous Integration (CI) was originally proposed by Grady Booch in 1991 and later integrated into <a href="http://www.extremeprogramming.org/">Extreme Programming</a>. From then on, specially thanks to the <a href="http://agilemanifesto.org/">Agile Software Development</a> movement (as well as <a href="https://www.atlassian.com/devops">DevOps culture</a>), the technique has been widely adopted in the industry.</p>
+
+<p>Originally, the concept of Continuous Integration was associated exclusively with Version Control Systems (VCS). It was described as integrating developers' work (their working copies or branches) to the mainline (<em>trunk</em> in subversion or <em>master</em> branch in git) at least once a day.</p>
+
+<p>The idea behind these daily integrations to the mainline is to reduce integration problems, which are usually caused by the complexity of merging the work of developers that have been working isolatedly for a while. By integrating daily or after each commit, the complexity of the merge process is drastically reduced, as can be seen in the following example:</p>
+
+<p><a href="http://www.romenrg.com/images/branches_without_ci.png"><img src="http://www.romenrg.com/images/branches_without_ci.png" alt="Image of two developers working isolatedly over time, creating several commits before merging" /></a></p>
+
+<p><em>Example of two developers creating several commits in their corresponding branches before merging. Squares represent commits and the circle represents the big merge that has to be made at the end.</em></p>
+
+<p><a href="http://www.romenrg.com/images/branches_ci.png"><img src="http://www.romenrg.com/images/branches_ci.png" alt="Image of two developers applying continuous integration, integrating each change into the mainline" /></a></p>
+
+<p><em>Example of two developers applying the original concept of Continuous Integration, integrating every change into the mainline. As before, squares represent commits and circles represent merges, which are much simpler now, due to the high frequency of integration.</em></p>
+
+<p>However, although this original proposal has value on itself, <strong>more recently the definition of Continuous Integration has been broadened</strong>. Nowadays it often implies the existence of a CI Server (such as <a href="https://jenkins-ci.org/">Jenkins</a>) that, once a new change is made to the mainline of the VCS, executes a <a href="https://jenkins.io/doc/book/pipeline/">Continuous Integration Pipeline</a>. These pipelines are formed of different stages, executed sequentially on every integraton. Their goal, <a href="https://www.martinfowler.com/articles/continuousIntegration.html">as Martin Fowler states</a>, is <strong>to verify every integration with an automated build</strong>, to detect integration errors as quickly as possible. These builds include at least the compilation of the source code and the execution of unit tests, although in many cases other stages such as packaging, execution of integration / end-to-end tests and static code analysis are also included in these Continuous Integration Pipelines.</p>
+
+<p>In this extended definition, the pipeline can either finish successfully or a failure can be produced in any of the stages (tests failing, static analysis not passing a defined threshold….). Usually, in the event of a failure an email is sent to the person that created the last commit (probably the one causing the failure). In order to really get the benefits of Continuous Integration, it should be a priority for the team to keep the Continuous Integration status <em>green</em> (passing) instead of <em>red</em> (failing), fixing any problem as soon as it is detected.</p>
+
+<p>Following this approach, automated builds with several checks are performed to our code every time we integrate changes, allowing us to detect any issues in an early stage. <strong>This quick detection of problems makes fixing them much cheaper than in traditional approaches</strong>. Formerly, detection used to occur much later, often during QA or deployment phases, and many times in production, after having deployed. In those cases, days, weeks or even months have passed and developers have switched context, making it difficult for them to remember the particular cases they were working on when the problem was produced. Moreover, the higher pressure for deployment deadlines at those later stages usually leads to poorer solutions, that not only hinder code quality (reducing its readability and mantainability) but also tend to introduce new bugs.</p>
+
+<h2>Continuous Delivery vs Continuous Deployment</h2>
+
+<p>Once the extended Continuous Integration is set, we may decide to continue making deployments faster and safer. The next step would be automating deployments to production. Here is where the two remaining techniques (Continuous Delivery and Continuous Deployment) subtly differ, as can be see in the following diagram:</p>
+
+<p><a href="http://www.romenrg.com/images/continuous_delivery_vs_deployment.png"><img src="http://www.romenrg.com/images/continuous_delivery_vs_deployment.png" alt="Diagram showing usual stages of Continuous Integration and the differences between Continuous Delivery and Continuous Deployment" /></a></p>
+
+<p><em>Difference between Continuous Delivery and Continuous Deployment</em></p>
+
+<p><a href="https://continuousdelivery.com/">Continuous Delivery was described by Jez Humble</a>, as <em>"the ability to get changes of all types [...] into production, or into the hands of users, safely and quickly in a sustainable way"</em>. <strong>Continuous Delivery does not necessarily involve deployment to production on every change</strong>. We just need to ensure that our code is always in a deployable state. On the other hand, Continuous Deployment, however, does require every change to be always deployed automatically.</p>
+
+<p>Thus, as can be seen in the image above, if we decide to enhance the pipeline so that, once the Continuous Integration stages are completed, the new artifact is automatically deployed to production, we talk about <strong>Continuous Deployment</strong>. On the other hand, if we manage to automate everything, but decide to require a human approval in order to proceed with the deployment of the new version, we are talking about <strong>Continuous Delivery</strong>. The difference is subtle, but it has huge implications, making each technique appropriate for different situations, as we will see below.</p>
+
+<p>If you need some other references, appart from this article, to be convinced about this difference, notice that a few years ago <a href="https://puppet.com/blog/continuous-delivery-vs-continuous-deployment-what-s-diff">Puppet published a similar comparison</a> in their blog. Also, <a href="https://www.atlassian.com/continuous-delivery/ci-vs-ci-vs-cd">Atlassian has published a longer article</a> on the topic. I hope these articles help clarify these concepts, avoiding the current confusion with them.</p>
+
+<h3>When is Continuous Deployment recommended and when should we opt for Continuous Delivery?</h3>
+
+<p>In general, <strong>Continuous Deployment is great for B2C products</strong>, since as consumers we are used to the constant change of software products, usually assuming their changes without major problems. In fact, consumer companies such as <a href="https://research.fb.com/publications/continuous-deployment-at-facebook-and-oanda/">Facebook or Netflix follow this approach</a>, deploying small changes several times a day to production.</p>
+
+<p>However, <strong>in B2B products as well as in government projects</strong>, it is <strong>often</strong> necessary to include human control to activate deployments to production. In these cases, our changes may affect people and processes in other companies or departments, making it important for us to announce release dates with enough time, so everybody is able to update their processes, learn to use the new features we are about to release or even adapt their software to our API changes. In this context, applying Continuous Deployment (deploying automatically every change to production) could make other software crash, prevent people from doing their job or even lead to economic and legal issues. That is why for these cases, in which we have to set a fixed deploy date, <strong>Continuous Delivery is the technique of choice</strong>, as is our case in Platino. Following this approach we can also automate the whole process, but we provide human control to execute deployments to production, thus controlling when the new version is released.</p>
+
+<h2>Go ahead!</h2>
+
+<p>As mentioned above, these processes are key elements in modern-day software development and provide a significant competitive advantage to software companies applying them. As we have seen above, depending on the software being developed and its usage, we may not be able to opt for Continuous Deployment, being Continuous Delivery the alternative of choice. However, Continuous Integration is the essential practice that serves as a basis for the other two, making it the preferred choice to start off with.</p>
+
+<div class="revisions">
+  <h2>Significant revisions</h2>
+  <p><em>2018, May 26</em>: Improving overall style, rephrasing last section and adding a better description.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

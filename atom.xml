@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Blog @romenrg]]></title>
+  <link href="http://www.romenrg.com/atom.xml" rel="self"/>
+  <link href="http://www.romenrg.com/"/>
+  <updated>2018-05-28T19:56:02+01:00</updated>
+  <id>http://www.romenrg.com/</id>
+  <author>
+    <name><![CDATA[Romén Rodríguez-Gil]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Continuous Integration, Delivery and Deployment: Key Differences]]></title>
+    <link href="http://www.romenrg.com/blog/2017/12/31/continuous-integration-delivery-deployment/"/>
+    <updated>2017-12-31T18:46:00+00:00</updated>
+    <id>http://www.romenrg.com/blog/2017/12/31/continuous-integration-delivery-deployment</id>
+    <content type="html"><![CDATA[<p>Continuous Integration, Continuous Delivery, and Continuous Deployment are key modern practices in software development that share two main goals: to deploy more frequently and more safely. These processes take advantage of automation to assess the quality and correctness of the new software and to make deployments much more predictable, faster and less error prone. But&#8230; Do you really know the differences between the three?</p>
+
+<p><img src="http://www.romenrg.com/images/two_paths_fork_unsplash.jpg" alt="Picture of a fork in the trail in a forest, leading to two alternative paths" /></p>
+
+<p>The aim of this article is to help clarify what do these techniques mean and highlight the benefits each one provides. We will also analyze which one should be chosen depending on the circumstances.</p>
+
+<!-- More -->
+
+
+<p>During this year I have been deeply involved in the topic, since I have been working on setting up Continuous Integration and Continuous Delivery in <a href="http://www.gobiernodecanarias.org/platino/">Platino</a>, which is a big government project that has been around for almost 10 years. Platino receives tens of millions of requests every month and has a considerable codebase, being composed of more than 50 web services and 9 web applications, deployed in different containers.</p>
+
+<p>In this time I have realized that, despite the importance of these practices, many professionals in the industry still miss the differences between the three, often talking about them indistinctly in conversations, which creates a lot of confusion. So, let&#8217;s check the differences:</p>
+
+<h2>Continuous Integration</h2>
+
+<p>The concept of Continuous Integration (CI) was originally proposed by Grady Booch in 1991 and later integrated into <a href="http://www.extremeprogramming.org/">Extreme Programming</a>. From then on, specially thanks to the <a href="http://agilemanifesto.org/">Agile Software Development</a> movement (as well as <a href="https://www.atlassian.com/devops">DevOps culture</a>), the technique has been widely adopted in the industry.</p>
+
+<p>Originally, the concept of Continuous Integration was associated exclusively with Version Control Systems (VCS). It was described as integrating developers&#8217; work (their working copies or branches) to the mainline (<em>trunk</em> in subversion or <em>master</em> branch in git) at least once a day.</p>
+
+<p>The idea behind these daily integrations to the mainline is to reduce integration problems, which are usually caused by the complexity of merging the work of developers that have been working isolatedly for a while. By integrating daily or after each commit, the complexity of the merge process is drastically reduced, as can be seen in the following example:</p>
+
+<p><a href="http://www.romenrg.com/images/branches_without_ci.png"><img src="http://www.romenrg.com/images/branches_without_ci.png" alt="Image of two developers working isolatedly over time, creating several commits before merging" /></a></p>
+
+<p><em>Example of two developers creating several commits in their corresponding branches before merging. Squares represent commits and the circle represents the big merge that has to be made at the end.</em></p>
+
+<p><a href="http://www.romenrg.com/images/branches_ci.png"><img src="http://www.romenrg.com/images/branches_ci.png" alt="Image of two developers applying continuous integration, integrating each change into the mainline" /></a></p>
+
+<p><em>Example of two developers applying the original concept of Continuous Integration, integrating every change into the mainline. As before, squares represent commits and circles represent merges, which are much simpler now, due to the high frequency of integration.</em></p>
+
+<p>However, although this original proposal has value on itself, <strong>more recently the definition of Continuous Integration has been broadened</strong>. Nowadays it often implies the existence of a CI Server (such as <a href="https://jenkins-ci.org/">Jenkins</a>) that, once a new change is made to the mainline of the VCS, executes a <a href="https://jenkins.io/doc/book/pipeline/">Continuous Integration Pipeline</a>. These pipelines are formed of different stages, executed sequentially on every integraton. Their goal, <a href="https://www.martinfowler.com/articles/continuousIntegration.html">as Martin Fowler states</a>, is <strong>to verify every integration with an automated build</strong>, to detect integration errors as quickly as possible. These builds include at least the compilation of the source code and the execution of unit tests, although in many cases other stages such as packaging, execution of integration / end-to-end tests and static code analysis are also included in these Continuous Integration Pipelines.</p>
+
+<p>In this extended definition, the pipeline can either finish successfully or a failure can be produced in any of the stages (tests failing, static analysis not passing a defined threshold….). Usually, in the event of a failure an email is sent to the person that created the last commit (probably the one causing the failure). In order to really get the benefits of Continuous Integration, it should be a priority for the team to keep the Continuous Integration status <em>green</em> (passing) instead of <em>red</em> (failing), fixing any problem as soon as it is detected.</p>
+
+<p>Following this approach, automated builds with several checks are performed to our code every time we integrate changes, allowing us to detect any issues in an early stage. <strong>This quick detection of problems makes fixing them much cheaper than in traditional approaches</strong>. Formerly, detection used to occur much later, often during QA or deployment phases, and many times in production, after having deployed. In those cases, days, weeks or even months have passed and developers have switched context, making it difficult for them to remember the particular cases they were working on when the problem was produced. Moreover, the higher pressure for deployment deadlines at those later stages usually leads to poorer solutions, that not only hinder code quality (reducing its readability and mantainability) but also tend to introduce new bugs.</p>
+
+<h2>Continuous Delivery vs Continuous Deployment</h2>
+
+<p>Once the extended Continuous Integration is set, we may decide to continue making deployments faster and safer. The next step would be automating deployments to production. Here is where the two remaining techniques (Continuous Delivery and Continuous Deployment) subtly differ, as can be see in the following diagram:</p>
+
+<p><a href="http://www.romenrg.com/images/continuous_delivery_vs_deployment.png"><img src="http://www.romenrg.com/images/continuous_delivery_vs_deployment.png" alt="Diagram showing usual stages of Continuous Integration and the differences between Continuous Delivery and Continuous Deployment" /></a></p>
+
+<p><em>Difference between Continuous Delivery and Continuous Deployment</em></p>
+
+<p><a href="https://continuousdelivery.com/">Continuous Delivery was described by Jez Humble</a>, as <em>&#8220;the ability to get changes of all types [&#8230;] into production, or into the hands of users, safely and quickly in a sustainable way&#8221;</em>. <strong>Continuous Delivery does not necessarily involve deployment to production on every change</strong>. We just need to ensure that our code is always in a deployable state. On the other hand, Continuous Deployment, however, does require every change to be always deployed automatically.</p>
+
+<p>Thus, as can be seen in the image above, if we decide to enhance the pipeline so that, once the Continuous Integration stages are completed, the new artifact is automatically deployed to production, we talk about <strong>Continuous Deployment</strong>. On the other hand, if we manage to automate everything, but decide to require a human approval in order to proceed with the deployment of the new version, we are talking about <strong>Continuous Delivery</strong>. The difference is subtle, but it has huge implications, making each technique appropriate for different situations, as we will see below.</p>
+
+<p>If you need some other references, appart from this article, to be convinced about this difference, notice that a few years ago <a href="https://puppet.com/blog/continuous-delivery-vs-continuous-deployment-what-s-diff">Puppet published a similar comparison</a> in their blog. Also, <a href="https://www.atlassian.com/continuous-delivery/ci-vs-ci-vs-cd">Atlassian has published a longer article</a> on the topic. I hope these articles help clarify these concepts, avoiding the current confusion with them.</p>
+
+<h3>When is Continuous Deployment recommended and when should we opt for Continuous Delivery?</h3>
+
+<p>In general, <strong>Continuous Deployment is great for B2C products</strong>, since as consumers we are used to the constant change of software products, usually assuming their changes without major problems. In fact, consumer companies such as <a href="https://research.fb.com/publications/continuous-deployment-at-facebook-and-oanda/">Facebook or Netflix follow this approach</a>, deploying small changes several times a day to production.</p>
+
+<p>However, <strong>in B2B products as well as in government projects</strong>, it is <strong>often</strong> necessary to include human control to activate deployments to production. In these cases, our changes may affect people and processes in other companies or departments, making it important for us to announce release dates with enough time, so everybody is able to update their processes, learn to use the new features we are about to release or even adapt their software to our API changes. In this context, applying Continuous Deployment (deploying automatically every change to production) could make other software crash, prevent people from doing their job or even lead to economic and legal issues. That is why for these cases, in which we have to set a fixed deploy date, <strong>Continuous Delivery is the technique of choice</strong>, as is our case in Platino. Following this approach we can also automate the whole process, but we provide human control to execute deployments to production, thus controlling when the new version is released.</p>
+
+<h2>Go ahead!</h2>
+
+<p>As mentioned above, these processes are key elements in modern-day software development and provide a significant competitive advantage to software companies applying them. As we have seen above, depending on the software being developed and its usage, we may not be able to opt for Continuous Deployment, being Continuous Delivery the alternative of choice. However, Continuous Integration is the essential practice that serves as a basis for the other two, making it the preferred choice to start off with.</p>
+
+<div class="revisions">
+  <h2>Significant revisions</h2>
+  <p><em>2018, May 26</em>: Improving overall style, rephrasing last section and adding a better description.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Programmer Bill Of Rights, Revisited]]></title>
+    <link href="http://www.romenrg.com/blog/2016/11/15/the-programmer-bill-of-rights/"/>
+    <updated>2016-11-15T18:34:00+00:00</updated>
+    <id>http://www.romenrg.com/blog/2016/11/15/the-programmer-bill-of-rights</id>
+    <content type="html"><![CDATA[<p>10 years ago, <a href="https://en.wikipedia.org/wiki/Jeff_Atwood">Jeff Atwood</a> wrote an article he titled <a href="https://blog.codinghorror.com/the-programmers-bill-of-rights/">The Programmer Bill of Rights</a>. In that article he described 6 fundamentals that companies should provide for programmers to be successful and work to their full potential, thus maximizing their productivity.</p>
+
+<p><img src="http://www.romenrg.com/images/two_monitors_unsplash.jpg" alt="Picture of a programmers desk with two monitors, one of them showing code" /></p>
+
+<p>Sadly, ten years later, many companies still deny these basics to their developers, even though the business case for these six points is absolutely proved.</p>
+
+<p>In this article, not only would I like to update the original 6 principles, providing further evidence of their importance; but also I would like to extend the list. Based on my experience during the last 10 years, I will propose 4 new fundamentals that I consider absolutelly necessary for the daily work of any programmer, developer or software engineer. Let&#8217;s get started:</p>
+
+<!-- More -->
+
+
+<h2>10 Fundamental Programmer Rights (6 + 4)</h2>
+
+<p>It is worth mentioning that, despite the headline, <em>this article does not refer to general Labor Rights, since those are usually well-known and its compliance is required by law. This article focuses only on aspects that are specific to software development</em>, aspects that are usually not regulated, but have a huge impact on programmers&#8217; daily work.</p>
+
+<h3>The 6 Original Rights proposed by Jeff</h3>
+
+<ol>
+<li><p><strong>Every programmer shall have two decent monitors</strong>. <br/>
+Apart from the scientific studies Jeff linked in his article in 2006, <a href="http://techreport.com/news/14343/more-bigger-monitors-boost-productivity-says-study">many others have emerged more recently</a>, proving the productivity benefits of having two monitors while programming. <a href="http://www.computerweekly.com/news/2240088457/Multiple-monitors-boost-productivity-by-355">Some studies even suggest having three monitors</a>.
+However, I have met some engineers that prefer to choose one big (27”) monitor rather than two smaller ones; and that should definitely be OK if that is her preferred set-up. <em>The key here is that companies should be wise enough to provide developers with the tools they need to take their productivity to the maximum.</em>
+Also, developers working on User Interfaces and graphic designers care a lot about other characteristics such as colors or bright; so again, it is not just about the screen size, it is about taking your employee into account when providing the tools he needs to perform his job in the best possible way.
+How is it possible that some companies do not pay attention to this at all? As many people pointed out in <a href="http://developers.slashdot.org/story/11/05/16/1957210/do-developers-really-need-a-second-monitor">this slashdot discussion about the topic</a>, the cost of a decent monitor may be around $150 - $200 nowadays. That is a ridiculous amount compared to <a href="http://money.usnews.com/careers/best-jobs/software-developer/salary">the salary of a developer</a>… So it cannot be about the money; since we know that the productivity increase would pay off in just a few days. Sadly, refusals from management to provide the right tools to employees are a clear sign of toxic management or toxic company culture and <a href="#toxic-management-denying-rights">if you find yourself in that situation, you should consider looking for a new job <em>ASAP</em></a>.</p></li>
+<li><p><strong>Every programmer shall have a fast PC</strong>. <br/>
+Although this claim still makes total sense, I think this one is one of the easiest-to-get for management and non-tech people, since everybody has suffered a slow pc and can relate to it more easily. However, I have seen cases in which developers have to connect to a remote machine using a remote desktop. This may cause some performance issues, as well as other problems such as non-functioning shortcuts or hardware compatibility problems. Unless there is a very clear reason to use a Remote Desktop, it should be avoided. As Jeff stated 10 years ago, every developer should have a fast computer that allows her to do all she needs to get her job done.</p></li>
+<li><p><strong>Every programmer shall have their choice of mouse and keyboard</strong>. <br/>
+To be honest, I’m not especially picky with mouse and keyboard, but some developers are… So if you are a manager and one of your developers complains about his keyboard and mouse… Do not waste any time thinking, we are probably talking about less than $50 here. It’s not worth discussing. If his choices are very specific or expensive, at least allow him to bring his own keyboard and mouse from home. Diversity in a company is enriching, so don’t try to treat all your employees as if they were clones.</p></li>
+<li><p><strong>Every programmer shall have a comfortable chair</strong>. <br/>
+I hope this is obvious to everybody in 2016. <a href="http://ergo.human.cornell.edu/AHTutorials/chairch.html">Having an ergonomic chair and sitting correctly is a health issue</a>. In fact, many countries have already created <a href="http://www.hse.gov.uk/pubns/priced/hsg57.pdf">health-and-safety regulations for office chairs</a>. Moreover, money is not a big deal either now, since <a href="http://www.ikea.com/us/en/catalog/products/00103102/">there are good chairs for $200</a>. Also, it is worth mentioning that in recent years the <a href="http://ergonomics.about.com/od/office/a/Benefits-of-a-Standing-Desk.htm">benefits of standing desks</a> have become popular, so it could be something to consider. Once again, when it comes to the tools to be used on a daily basis at work, like chairs, the best approach would be to involve employees in the decision. We all may have different preferences, based on our height, weight, back problems, etc…</p></li>
+<li><p><strong>Every programmer shall have a fast internet connection</strong>. <br/>
+For this claim, the same as in the “fast PC” sections has happened. Apart from the widespread access to broadband internet at low prices; services like Youtube, Netflix, online games and Skype/Hangouts video-calls have made us a great favour. Thanks to them many non-technical managers have realised about the importance of a fast internet connection, making it a default in most companies.</p></li>
+<li><p><strong>Every programmer shall have quiet working conditions</strong>. <br/>
+This is a tricky one. Nowadays most offices are open-plan. Moreover, collaboration is encouraged in agile teams. All this makes it difficult to keep quiet working conditions for us to concentrate. Many <a href="https://twitter.com/jasonfried/status/794212152206729216">relevant people in the industry are raising concerns about this</a>. However, <a href="https://hbr.org/2015/03/stop-noise-from-ruining-your-open-office">there are some things we can do</a>, such as having (and using) meeting rooms, having white noise generators to mask voices, wearing headphones to concentrate (which I usually do) and/or use an indicator to show coworkers if you can or cannot be interrupted. Even though many jobs require concentration, getting to “flow state” is vital to accomplish most programming tasks, as Jeff mentions.</p></li>
+</ol>
+
+
+<h3>My 4 Proposed Additions</h3>
+
+<ol>
+<li><p><strong>Every programmer shall be free to choose her preferred IDE</strong>. <br/>
+In the past it was common to have the build and/or deploy process of the application being developed attached to the IDE (usually by means of a plugin). Fortunately, nowadays the use of build tools has become mainstream, making our build processes IDE-independent. For example, in the Java community, build tools like maven or gradle make it possible for developers in a team to use different IDEs such as Eclipse, Intellij IDEA or any other editors, without any problems of collaboration. They just need to use a version control system (such as Subversion or Git) to share changes and a build tool to generate artifacts. In such environment, forcing developers to use an standardized IDE seems to be only a poor resource of old-school managers used to the “command-and-control” approach to impose their rule. That imposition can only cause a low morale among team members, decrease motivation and cause brain drain in the team, since many talented developers will leave to a more open-minded company.</p></li>
+<li><p><strong>Every programmer shall have admin rights on his computer</strong>. <br/>
+Last year I was introduced to a company that had recently been created with the idea to enter in the software development market. However, I was utterly surprised when I got to know that this company didn’t allow developers to have admin rights in their computers. This is pure nonsense. <a href="https://stackoverflow.com/a/701361">As this fantastic answer in Stack Overflow states</a>, developers in their daily work need to install software for different development purposes (editors, servers, databases, API clients&#8230;), they need to change different system configurations for different purposes and, most importantly, they need to be comfortable at work in order to give the best of themselves. Restricting admin rights to developers will only lead to a high turnover rate, inability to retain competent people, poor morale and poor quality delivery. Probably, <a href="http://stackoverflow.com/questions/701214/should-developers-have-administrator-permissions-on-their-pc#comment526142_701214">as this other comment states</a>, &#8220;if you walk into a job as a developer and find you have no admin rights in your machine, the best choice is to not come back the next day&#8221;.</p></li>
+<li><p><strong>Every programmer shall have access to the big picture</strong>. <br/>
+Sometimes programmers are not presented with the big picture of the system they are contributing to build, but instead they are given small tasks to do, with narrow descriptions. In those cases, they often do not have direct access to the product owner nor the end users of the software they are working on. This usually causes trouble, since many wrong decisions can be made and many misconceptions can be created. To design software that can evolve properly in the desired direction, developers should understand the big picture, the whole system that is being built, not only the small task that has been assigned to them at one point. Moreover, developers should be free to ask as many functional questions as they need, so they can make the right design decisions and write software that can evolve as expected, avoiding later problems.</p></li>
+<li><p><strong>Every programmer shall have autonomy in his daily work</strong>. <br/>
+As any other creative process, programming requires autonomy. That is why agile frameworks, like <a href="https://en.wikipedia.org/wiki/Scrum_(software_development)">Scrum</a>, propose planning work for periods of a week, 15 days or a month; so developers can organize themselves in between. Daily meetings can help detect and resolve problems, as well as keep the development team in sync; but freedom for each contributor to organize his workday without suffering micromanagement should be preserved. The need for autonomy also applies to the programming process, where creativity is key to problem-solving. Some developers prefer to solve a task by creating some tests first, others build a monolithic function and then refactor it, others start by understanding the existing codebase and doing some diagrams&#8230; Any of these approaches should be respected, as long as basic agreements of the team (e.g. <em>&#8220;definition of done&#8221;</em>) and quality standards (e.g. <em>minimum code coverage</em>) are met.</p></li>
+</ol>
+
+
+<p><em>What do you think about these additions? Please, join the conversation!</em> <br/> <em>Are these rights being respected at your company?</em></p>
+
+<blockquote><h3><a name="toxic-management-denying-rights">A real case of toxic management denying many of these rights</a></h3>
+
+<p>Unfortunately, there are companies that keep denying many of these basics today.</p>
+
+<p>I recently saw a case in which a manager refused to replace a defective monitor with obvious flickering problems to an employee (even though flickering may cause dizziness, fatigue and headaches). This very manager was also forcing programmers to work with only one squared 19” monitor (for no reason). He firmly refused to buy second monitors and even forbade some developers to bring a second monitor from their homes… Does it make any sense? However, this guy had two wide monitors in his desk, of course. I guess he just wanted to show that there was a big difference between him and his “subordinates”, who had to be controlled and treated like clones.</p>
+
+<p>As with any other of these rights, a reluctance to provide programmers with two monitors not only shows that your manager or the company board do not care about your opinions or comfort; they don’t even care about productivity. It is definitely a red flag. Taking into account the ridiculously small cost of monitors nowadays, even worrying about it shows a clear case of being “penny wise, pound foolish”.</p>
+
+<p>But that’s not all of it. Usually, when an old-school command-and-control minded manager is violating one of these basics, is probably violating many others, since they are all tightly-linked and it is all about mindset and company culture.</p>
+
+<p>In this particular case, this very manager was also forcing developers to use a three-year-outdated version of Netbeans as IDE, with no front-end support (significantly diminishing their productivity). And, by the way, he had also decided to forbid admin rights to programmers in their own machines (making their daily work absurdly complicated)&#8230; So you see, three basics at once. Not to mention that micro-management was also one of the company core values. The micro-manager used to interrupt programmers every hour to closely control their tasks, taking away all the autonomy and long-term vision from the developer.</p>
+
+<p>If you find yourself in a case like this one, my advice cannot be clearer: there are many companies that will be glad to provide the tools you need to achieve the best results in your daily work, so don’t wait anymore, move on. No one should work for a tyrant like that.</p></blockquote>
+
+<p>As an ending to this article, I would like to borrow the last paragraph from Jeff’s article: “The few basic rights we&#8217;re asking for are easy. They aren&#8217;t extravagant demands. They&#8217;re fundamental to the quality of work life for a software developer. If the company you work for isn&#8217;t getting it right, making it right is neither expensive nor difficult. <strong>Demand your rights as a programmer!</strong> And remember: you can either change your company, or you can <em>change your company</em>”.</p>
+
+<div class="revisions">
+  <h2>Significant revisions</h2>
+  <p><em>2018, Apr 27</em>: Clarified the last two &#8216;rights&#8217;, improving grammar and style. Minor corrections in the example section were also included.</p>
+  <p><em>2016, Nov 15</em>: Original version published.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why asking software developers for time estimates is a terrible idea and how to bypass it]]></title>
+    <link href="http://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum/"/>
+    <updated>2015-09-28T11:17:00+01:00</updated>
+    <id>http://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum</id>
+    <content type="html"><![CDATA[<p>I have worked in many software projects and have been lucky to be in the initial team of several software products. Besides, having acted both as a Developer and as a Product Manager has allowed me to have a wider view of what usually causes most friction between business and engineering: time estimates.</p>
+
+<p><img src="http://www.romenrg.com/images/scrum_software_estimates_reverse_engineering_pixabay.jpg" alt="Picture of a woman pointing to her watch as if you were late. Typical management or customer reaction to delayed software projects" /></p>
+
+<p>It usually starts with managers or customers asking “when will &lt;this idea> be ready?” and it is usually followed by developers racking their brains to give a specific date&#8230; Needless to say, that date is likely to be <em>dreadfully wrong</em>, as it is the norm in the industry. There is a near-total inability of developers to predict how long a project will take, so time estimates are usually worthless.</p>
+
+<p>However, applying <a href="http://www.scrumguides.org/">Scrum</a> along with some <a href="http://www.extremeprogramming.org/rules.html">XP</a> practices we can avoid the uncomfortable tension of asking developers for time estimates. Instead, we can calculate release dates automatically, getting infinitely more accurate time estimates, while saving all the arguments and keeping team morale high. How? Keep reading!</p>
+
+<!-- More -->
+
+
+<h2>1. The problem: Time estimates in Software Projects fail dramatically</h2>
+
+<p>The topic of delay and over-budget in the software industry has been widely discussed, including reports such as <a href="https://hbr.org/2011/09/why-your-it-project-may-be-riskier-than-you-think/ar">this one</a> by Harvard Business Review, later commented in this <a href="http://www.infoq.com/news/2011/10/risky-it-projects">InfoQ post</a>. A conclusion of this report is: <em>“If you want to avoid the slow death caused by IT projects you must be prepared not only to spend 400% more than planned on the project, but to reap only 25% of the expected benefits. If you keep this in mind you can possibly prevent a company from being killed by an IT project”</em>.</p>
+
+<p>Moreover, since 1994 <a href="http://standishgroup.com/">Standish Group</a> has been releasing their <a href="http://blog.standishgroup.com/post/50">CHAOS Reports</a> every year. These reports are a relevant snapshot of the state of the software development industry. <a href="http://www.infoq.com/articles/standish-chaos-2015">The last CHAOS Report (2015)</a>, shows that <em>even nowadays, only 29% of Software Projects are successful (defined as on-time, on-budget and with a satisfactory result)</em>. This report highlights one of the key variables affecting success rates: the approach used to manage projects (Agile vs Waterfall). <em>Agile approaches showed a 39% ratio of successful projects, while Waterfall only 11%</em>. This seems to be closely related to the way in which we deal with estimates and changes in each case.</p>
+
+<h3>1.1. Let’s assume we never know how long it’s going to take</h3>
+
+<p>I bet some of you consider yourselves great estimators. However, the overconfidence of software developers is a well-known issue. Dan Milstein describes it <a href="http://blog.hut8labs.com/coding-fast-and-slow.html">in this great article</a>, concluding that &#8220;one of the deepest challenges involved in writing software is <em>the near-total inability of developers to predict how long a project will take</em>”. In this article, Dan writes in detail about all the issues that make software projects so hard to estimate. Among others, factors such as the impossibility to write fully detailed specifications (as he says, to do so you have to be actually writing the software), uncertainty and unpredictability (about the product itself, the market, the technologies being used&#8230;) and the uniqueness of software projects (which makes it almost impossible to relate to similar projects for estimates since there are always major differences).</p>
+
+<p>Moreover, <a href="https://news.ycombinator.com/item?id=5596578">in this Hacker News thread</a>, <em>many developers acknowledge &#8220;lying&#8221; when giving estimates</em>, which is considered an standard practice to deal with customers or management. In the same thread, another interesting recommendation for management is to add <em>a load factor of 2-5x to developer estimates</em>, describing it also as an “industry standard”. As you may guess, these practices are not helping the industry to improve, but rather the opposite. Should we keep ignoring the elephant in the room?</p>
+
+<h3>1.2. Do we really need time estimates?</h3>
+
+<p>There is an increasing tendency among developers against giving estimates in software projects (see <a href="https://twitter.com/hashtag/NoEstimates">#NoEstimates</a>). To a certain extent this makes total sense, since time estimates have been proved to fail dramatically in the industry (<a href="https://coding.abel.nu/2012/06/programmer-time-translation-table/">especially for tasks that take more than a day</a> to complete). Besides, developers are usually the ones paying the bill of a failed estimate, by working long hours and suffering great stress due to management pressure to meet deadlines. This usually leads to poor team morale, friction, loss of credibility and many other problems, as described in detail by Richard Clayton in his article “<a href="https://rclayton.silvrback.com/software-estimation-is-a-losing-game">Software Estimation is a losing game</a>”.</p>
+
+<p>On the other hand, since I have been manager and CEO apart from developer, I know how useful would time estimates be from the business side (either to calculate costs for a customer that wants a fixed-price contract; or to ourselves, to plan marketing actions, meetings, etc&#8230;). <em>However, we must asume that calculating accurate time estimates for software projects is simply not possible</em>. Putting pressure on developers to give us time estimates will simply make them lie to us, giving a virtually random estimate that is going to be dreadfully wrong. As we have explained before, <em>they just don’t know how long it is going to take</em>.</p>
+
+<p>I guess I don&#8217;t need to mention that, if developers are not able to give us an accurate time estimate for a software project to be finished in; managers (with no technical background or having spent the last few years out of development) are much worse at it.</p>
+
+<p>So, at this point, as a manager it is worth taking some time to think if we really need to estimate the whole project (or backlog). Maybe we could follow an alternative approach, especially if we own the product we are building. For instance, some innovative companies, such as <a href="https://m.signalvnoise.com/how-we-set-up-our-work-cbce3d3d9cae">Basecamp</a> or <a href="https://open.buffer.com/6-week-cycles/">Buffer</a> are avoiding long term planning and estimation by working on 6-week cycles. They always focus on the most valuable user stories, adjusting scope to make sure a releaseable version is ready at the end of each cycle.</p>
+
+<h3>1.3 The role of evil contracts</h3>
+
+<p>If there is something to blame above anything else, that would be the magic <em>fixed-everything contract</em> (where price, time and scope are set at the beginning of the project). Those contracts are the root of all evil. The recipe for disaster starts by &#8220;setting the cost&#8221; of development beforehand (when we know the least about the software being built) and presenting it to the customer in the form of a contract. This contract will describe how a &#8220;fixed software&#8221; (that in most cases is just a vague idea) will be developed for a fixed price and, of course, ready for a fixed date.</p>
+
+<p>That is how all this madness usually starts.</p>
+
+<p>Most managers and salespeople love this approach. It seems so simple&#8230; To &#8220;calculate the cost&#8221; they just have to ask developers for time estimates, add some contingency time and then do the math (calculating salaries, other expenses, benefits&#8230;) and that&#8217;s it! Ready to convince the customer! What can go wrong?</p>
+
+<p>Well, now that you know that having accurate time estimates for software projects is simply not possible, as a manager you can <a href="https://www.youtube.com/playlist?list=PLhE6PVDdZ3dLSS42FLcwYLcH3pldS71MT">choose more realistic contract approaches</a>, or you can <a href="http://blog.salsitasoft.com/why-we-dont-do-fixed-price-software-projects/">assume the risks of doing fixed-everything contracts</a>, based on those more-than-likely-wrong time estimates. But if you choose the latter, don’t blame developers when deadlines are not met.</p>
+
+<p>If you have a team of professional and commited developers, they will be doing their best all the time, trying to do things as quickly as they can (as <a href="https://twitter.com/dhh">@dhh</a> says, <a href="https://twitter.com/dhh/status/584745462445518848">ASAP is implied</a>). Sadly, too many times managers end up using the whip to make developers achieve the impossible. At the end, the imposible is not achieved, software quality goes down because of the rush (causing more delays due to constant bugfixing and poor code-maintainability), team morale is almost zero, everyone suffers burnout and the customer gets angry. Nobody wins.</p>
+
+<p>However, even using these evil contracts, you can always follow an iterative and incremental development process internally, making sure your team is always working on the most important features and releasing an extended version of the product every few weeks. By doing this, you will always have working software to ship to your customer. If the deadline arrives and the project is not finished, at least the X more important features will be developed. And working software will be available. Moreover, if you manage to involve your customer in the process, you will benefit from showing her the incremental releases. Among other things, you will get valuable feedback, anticipate changes and build trust. Therefore, customer relationships will improve and contract changes will become easier to deal with.</p>
+
+<h2>2. An alternative solution to estimate Release Dates</h2>
+
+<p>So, if you are still forced to provide long term release dates, an alternative way to calculate them will be described in this section. This approach is based on combining Scrum with some XP concepts, such as Velocity and User Stories; as well as using effort-based Story Points.</p>
+
+<p>Unfortunately, Scrum has become kind of a buzzword in the last few years and many people in the software industry say they use Scrum when in reality they are not following many of its key principles&#8230; If you are new to Scrum, I encourage you to read <a href="http://www.scrumguides.org/">The Scrum Guide</a> which is a fantastic 16-pages document written by the creators of the framework describing its principles. You can also find information on XP practices <a href="http://www.extremeprogramming.org/rules.html">here</a>. Too tired to read? Then a good alternative are these <a href="http://scrumtrainingseries.com/">great videos about the scrum framework</a>.</p>
+
+<p>Although I think Scrum is a great framework for software development, I agree with <a href="https://twitter.com/jasonfried/status/700746928020176896">Jason Fried</a> and <a href="http://www.agile-doctor.com/2016/03/10/maybe-time-stop-using-word-sprint/">some others</a> that are showing <em>concerns about the word &#8216;sprint&#8217;</em>. As they have highlighted, this term can be misinterpreted, leading to behaviors that go against sustainable development, a core <a href="http://agilemanifesto.org/principles.html">agile principle</a>. For that reason, in this article <em>I have decided to use the word &#8216;cycle&#8217; instead.</em></p>
+
+<p>Having these definitions clear, all you need to do to get more accurate release dates for your software project is to follow 4 simple steps I will describe below. Since you won&#8217;t have to ask developers for time estimates, you will avoid many misunderstandings. Besides, this approach allows you to rearrange the product backlog anytime (adding, removing or moving stories), getting approximate release dates automatically.</p>
+
+<h3>2.1. Create a Product Backlog with User Stories as a first step</h3>
+
+<p>Not asking anything to developers yet; no coding. Sit down with your product team, potential users or customers and try to describe what you think the product should be, according to what you have learned so far. If you haven&#8217;t done it yet, creating some <a href="http://designmodo.com/wireframing-prototyping-mockuping/">simple wireframes</a>, discussing them lightly and iterating a bit over them is usually the best way to start. But keep it simple, following <a href="http://theleanstartup.com/principles">Lean Startup</a> advice. This exercise will help you with <a href="https://steveblank.com/2014/06/28/customer-discovery-the-search-for-productmarket-fit-2-minutes-to-see-why/">customer discovery</a>, clarifying your initial hypotheses.</p>
+
+<p>So, once you have enough information about the product and its market to do so, define some core <a href="https://www.scrumalliance.org/community/articles/2010/april/new-to-user-stories">User Stories</a> and prioritize them, creating a Product Backlog for your <em>Minimum Viable Product</em> (MVP). It should represent a basic version that you are able to release quickly, to get feedback from the market and keep learning and adapting, following an iterative and incremental development process. Since user stories are about functionality, wireframes are usually very good help. They can be added as part of their Acceptance Criteria.</p>
+
+<p>My favourite tool for managing Scrum is <a href="https://es.atlassian.com/software/jira/agile">Jira</a>, which includes a great backlog-management tool. However, there are many other tools available, including <a href="https://trello.com/">Trello</a>, which I also use as a kanban board for smaller projects. For wireframing, there are also many good tools available. One of my favourites is <a href="http://wireframesketcher.com/">WireframeSketcher</a>, due to its IDE and CVS integration. <a href="https://balsamiq.com/">Balsamiq</a> and <a href="https://moqups.com/">Moqups</a> are great alternatives too.</p>
+
+<p>After creating the initial Product Backlog, you will have a much clearer picture of the MVP you are going to build; therefore, you will be in a better position to present it to developers.</p>
+
+<h3>2.2. Estimate all User Stories in the backlog based on effort points</h3>
+
+<p>Once you have created your initial Product Backlog and prioritized User Stories, it is time to have the first Product Backlog Refinement meeting with the Scrum Team (which includes the Development Team). Our goal would be to estimate all User Stories in the Backlog, but instead of time we will be using effort points. Each user story will have X points. A common approach is to use the Fibonacci scale for those points.</p>
+
+<p>Since it is very important to be consistent when estimating user stories, I usually encourage the team to <em>find the easiest user story in the backlog and give it a 1 and then find the hardest one and give it either a 13 or a 21</em>. That way you have created the team’s effort scale, making it easier to estimate the remaining user stories based on a scale that is totally dependent on the project.</p>
+
+<p>“But those effort-points are not useful for me!”, a manager said. Please, hold on. They definitely are. For now they tell you which are the easiest user stories and which ones are the hardest. But even better, in a few cycles they will help you estimate when might the project be finished or when will a specific user story probably be done, according to its place in the backlog. And this estimate will be much more precise than any you could get from asking developers for time estimates.</p>
+
+<p>If in the future new user stories appear <em>(they will)</em>, all you have to do is add them to the backlog, placing them according to their relative priority compared to the rest; and save some time to conduct a backlog refinement meeting, in which the new stories will be estimated. The most important task of the Product Owner (your role in Scrum) is to keep the backlog updated, estimated and prioritized; in order to make it useful for predicting possible release dates.</p>
+
+<h3>2.3. Keep effort-based estimates time-independent</h3>
+
+<p>Even though agile implementations usually replace time estimates by effort points (using scales such as Fibonacci or t-shirt sizes), some managers simply establish a link from those points or sizes to &#8220;their equivalent&#8221; in time. And they usually do that publicly, which means that everybody goes back to time estimates, thus ruining the whole thing again and making developers hate agile too (even though what they hate is a bad implementation of agile frameworks).</p>
+
+<p><em>The key of using an effort-based system for story points is precisely to keep estimates separated from time</em>. The relative &#8220;effort&#8221; of a task is a much easier concept to analyze for developers, especially when comparing different user stories of a project. Moreover, estimating effort instead of time prevents common conflicts, mostly related to considering time estimates a &#8220;contract&#8221;. As we have seen before, developers simply cannot estimate how long a software project is going to take. Linking effort points to their &#8220;time equivalent&#8221; will only lead to poor team morale, friction and false expectations, as we have seen before. Avoid that. There is another way to get to time estimates: indirectly!</p>
+
+<h3>2.4. In the first few cycles Team Velocity is yet unknown</h3>
+
+<p>When planning a cycle <em>(sprint)</em>, the team will pick user stories from the top of the backlog until they consider it is enough work for the new cycle. Having a shared <a href="https://www.scrumalliance.org/community/articles/2008/september/what-is-definition-of-done-(dod)">Definition of Done</a> can help planning, making sure all team members are aware of all the tasks that have to be completed for each story to be &#8220;done&#8221;.</p>
+
+<p>Then, during the cycle review you will discover whether all user stories were completed as expected or if there were some changes (e.g. the team was not able to complete all user stories, or by constrast, all stories were completed early and some more were added to the cycle).</p>
+
+<p>As you will see, in the first few cycles there are usually some differences when comparing what the team planned to achieve and what it did actually achieve. However, this error tends to become smaller over time, achieving a similar pace, measured in number of story-points completed per cycle. This metric is often referred to as <em>Team Velocity</em>.</p>
+
+<p>It is worth highlighting the importance of minimizing changes related to team members (eg. replacing someone or changing her dedication). Any change of this sort will have a significant impact on velocity, which would undermine our capacity to forecast release dates.</p>
+
+<h3>2.5 After a few cycles you will be able to estimate release dates, based on Team Velocity</h3>
+
+<p>So, once a few cycles <em>(sprints)</em> have passed, you will realize that if the team and its story-point estimates have remained consistent, the number of story points being completed per cycle (Team Velocity) is similar.</p>
+
+<p>Since you have been doing your job of keeping the backlog updated, prioritized and estimated in story points, now you will able to forecast when will a particular story be finished.</p>
+
+<p><em>An <strong>example</strong> will make it clearer:</em></p>
+
+<p><em>Let’s say our development team is applying the strategy described in this post. It is completing about 25 points per cycle and each cycle is 15 days long. If you want to know when will a particular user story be finished, all you need to do is count the number of story points that are above it in the backlog, add its own story points and do some simple math:</em></p>
+
+<p><a href="http://www.romenrg.com/images/story_points_estimates_backlog_example.png"><img src="http://www.romenrg.com/images/story_points_estimates_backlog_example.png" alt="Example showing a backlog with story points, estimated based on effort; team velocity, cycle duration and a forecast for a particular story" /></a></p>
+
+<p><em>In this example, user story X has 52 points above it in the backlog and has 5 points itself. This means a total of 57 story points have to be completed for story X to be finished. Since in each cycle the team is completing approximately 25 points, the story you are looking for will probably be finished in 3 cycles time, meaning it would be deployed in about 45 days.</em></p>
+
+<p>The same process can be applied to guess when could the whole project be finished, just taking the last user story you have in the backlog for the calculations explained before.</p>
+
+<h2>Conclusion</h2>
+
+<p>There is no silver bullet in software estimation. However, if you need to prepare marketing actions or respond to a customer, you will probably need at least a rough idea of delivery dates. Following the management approach described in this article, you will get time estimates without asking for them; you will keep team morale high, avoid burnout and improve productivity. Besides, you will be able to automatically forecast the impact of changes in the timing of the project.</p>
+
+<p>This solution contributes to improve business-engineering relationship, improve software quality and reduce costs in the long-run. Besides, if you involve customers in the process, their understanding and trust may improve considerably, making it easier for both parties to deal with change, preventing many deadline-related conflicts.</p>
+
+<p>Now, join the conversation: How do you deal with time estimates in your company?</p>
+
+<div class="revisions">
+  <h2>Significant revisions</h2>
+  <p><em>2018, May 06</em>: Added an image to the example and improved its description.</p>
+  <p><em>2018, May 01</em>: References to 6-week cycles followed by Basecamp and Buffer are included. Also, replaced the term &#8220;sprint&#8221; by &#8220;cycle&#8221;, which seems more appropriate to encourage working at a sustainable pace.</p>
+  <p><em>2018, Apr 17</em>: Improving title and meta description.</p>
+  <p><em>2015, Sep 28</em>: Original version published.</p>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[10+1 Valuable Lessons I Learned From My Failed Startup]]></title>
+    <link href="http://www.romenrg.com/blog/2015/03/17/10-plus-1-valuable-lessons-i-learned-from-my-failed-startup/"/>
+    <updated>2015-03-17T19:53:00+00:00</updated>
+    <id>http://www.romenrg.com/blog/2015/03/17/10-plus-1-valuable-lessons-i-learned-from-my-failed-startup</id>
+    <content type="html"><![CDATA[<p style="text-align: right;"><em>&#8230;That I will take into account for the next one.</em></p>
+
+
+<p>Being the Founder and CEO of <a href="http://www.vocabularynotebook.com">Vocabulary Notebook</a> for more than 2 years (from September, 2012 to January 2015) was one of the most intense, enriching, stressful and exciting experiences I have ever lived.</p>
+
+<p><img src="http://www.romenrg.com/images/nomad_wide_800pxwidth.png" alt="Picture of a man using a writing machine and smoking with a pipe" /></p>
+
+<p>During this period I went from doing some mockups alone at home and printing them in paper to use them as low fidelity MVPs for customer discovery; to close a seed funding round, found a company, build a multiplatform product, build a team of 12 people, receive several awards, participate as speaker in 3 international events, get 30 000 users in more than 130 countries, register a trademark, conduct scientific research on our product and collaborate with schools and universities from 4 different countries&#8230; As I said before, it was intense!</p>
+
+<p>Sadly, two years after the beginning of this adventure we had not been able to reach the break-even point yet, we had a cost structure that we were not able to maintain and we didn’t manage to close another funding round to keep us going (to keep improving the product, launching marketing campaigns, validating new hypotheses, pivoting and improving our business model&#8230;). So, by last summer we had to start progressively reducing our cost structure, until we had no option other than shutting our startup down completely.</p>
+
+<p>However, during this amazing period <em>I learned very valuable lessons</em>, some of which I am going to share with you now, if you keep reading:</p>
+
+<!-- More -->
+
+
+<ol>
+<li><p><strong>Validating your hypothesis with the real customer may be very difficult in some B2B models.</strong> Being lean with B2B models is usually a lot harder than with B2C models. In our case the toughest part was interviewing the real customer, this is, the person that was actually going to pay for the product. Vocabulary Notebook was intended to be sold to schools. From the beginning we tried to be very lean, so we did customer discovery and tried to validate our hypotheses with students and teachers (our users). We did so, learned from them and pivoted a few times based on their feedback. We made sure both students and teachers found the tool valuable and that teachers considered the pricing solutions acceptable for the school. However, since our goal was to sell the product to schools, we must have been interviewing school directors instead. They are the ones with enough power to make the final decision (paying for the product). All the same, as the CEOs of any other company, they are usually very busy people and it is very difficult to have the chance of arranging a meeting with any of them. What is even worse: if you manage to arrange a meeting with a school director to make a presentation of your product and she finds out that what you are just asking her some questions to validate some hypotheses, or that, what you are offering her is still in development phase, she will feel that you are making her waste her time and she will probably ask you to come back later when the product is ready.</p></li>
+<li><p><strong>“Being Interested” and “paying” are <em>very</em> different.</strong> It is important to remember that it is very easy to say <em>“Wow! this looks great, we will definitely use it!”</em> when you are not forced to pay <em>now</em> to prove that you have real interest. In our case, many times when we had meetings with schools, everyone looked excited. Teachers were usually very interested in combining language learning and technology and our product looked just like the right fit for them&#8230; But it was always very difficult to close a deal at this stage. Almost always they were telling us that they would have to discuss it in further detail as well as organize themselves for the implantation of the product in the school for the next course (in which they were going to use it for sure…). <em>This is something typical in B2B models: sales cycles are long.</em> For us this meant waiting several months to close the deal, either until the end of the current course or until the very beginning of the next one… And as you can guess, most of the time when the next course arrived, nothing happened. They had been very busy and they had not been able to plan the implantation of our product (but&#8230; &#8220;we are still very interested! Next year we will include it for sure!&#8221;&#8230;). After a while we tried to reduce friction by providing them with materials and pilot projects, even offering in-house consultancy to &#8220;kick-start&#8221; the project in the school&#8230; But the point I want to make here is: <a href="http://steveblank.com/2014/06/28/customer-discovery-the-search-for-productmarket-fit-2-minutes-to-see-why/">Customers paying for your product or service is the only real validation of your business model</a>.</p></li>
+<li><p><strong>Connections are worth more than money.</strong> You will need connections in the market in which your target customers are (this is, in which your product is). Seriously, you will need them. This is <em>really</em> important, because as human beings we rely on our connections, either to decide whether to purchase a particular product or to decide if it is worth writing an article about it or not. For instance, if you are building a vocabulary platform which you are intending to sell to schools, you will need to be well connected with schools: you will need to have a good relationship with many school directors, teachers, teacher trainers, specialized researchers in the field, specialized bloggers and/or media, etc. If you don’t have those relationships yourself, you better find a partner or employee that has those connections. It is definitely worth it. Those connections will bring you money, it may be in the form of specialized investors, by saving money in expensive ad campaigns or, what is even better, in the form of important paying customers or early adopters that you wouldn’t have been able to reach otherwise.</p></li>
+<li><p><strong>You will need money for marketing.</strong> This is very related to the previous point. Selling is very hard. And very expensive. This is especially important for founders with a tech background. It may seem to you that you can build the next great app in a garage on your own (or with a few friends), with no funding at all and without marketing &amp; sales teams. <em>You may think that all you have to do is to build the right product and suddenly&#8230; it will go viral all alone and you will get rich!</em> Well&#8230; Honestly, that is extremely rare, even if you have a great product. It is so rare that probably most of the cases you think went viral all alone had actually a team that planned carefully their marketing campaigns and invested a lot of money and/or talent on them, <em>even if it doesn’t look like that</em>. A good example of this may be crowdfunding, and particularly, Kickstarter. Nowadays, <a href="http://www.forbes.com/sites/ryanmac/2014/08/06/backed-with-millions-startups-turn-to-crowdfunding-for-marketing/">many of the companies having successful Kickstarter campaigns have already been backed with investment before</a> (even millions). These companies are using Kickstarter as a marketing tool, which provides more visibility and more customers (either directly or indirectly). Companies are investing a lot in those campaigns to make them go viral (design, content, videos, pricing strategy, advertisement&#8230;). It is not just about creating a great product, <em>it is about making many people believe your product is great.</em> And that is expensive.</p></li>
+<li><p><strong>Make sure you get enough rest.</strong> Building a company is not a sprint, it is a marathon. It is easy to get too involved, to work almost every minute of the day, long hours, weekends, to keep thinking in your business even when you are having lunch with family or friends, or even when you are watching a film with your girl&#8230; But <a href="http://andrewdumont.me/avoiding-burnout/">if you work too hard for too long you may burn out</a> and then everything will fall apart. Many entrepreneurs have been there before. Make sure you disconnect and have quality rest every now and then. Set some spare time apart and do some exercise. Do it for your own health and personal life. Once you start doing it you will realize that it also helps your startup a lot. Since you will feel better, you will have more energy, bring new ideas and be more productive at work.</p></li>
+<li><p><strong>Analytics are crucial.</strong> If you haven’t heard about KPIs, web analytics or A/B testing yet, it is time to work on it. When you are a startup founder and you get some traction you end up realizing that you want to measure everything. Not a lot of things. Everything. <em>Where do the users come from? How many of them came through the last tweet we posted? How much time do visitors that come from the sponsored post in xxx spend in our site on average? If I change the sign-up button background to green, will it increase conversions? How much is the cost of acquisition of my users through Google Adwords? &#8230;And what is the lifetime-value of those users?</em> Everything is important. Data is a key element in a startup. You need to make decisions based on data, otherwise you are guessing and guessing can lead you to lose a lot of money. Remember, it is not what we like or how do we behave using our product, it is all about how our users and customers do. Avoid opinion-based strategy meetings with your team. As Jim Barksdale (CEO of Netscape) once said: <em>“If we have data, let’s look at data. If all we have are opinions, let’s go with mine”.</em> Let&#8217;s focus on having data!</p></li>
+<li><p><strong>Remember what your role should be.</strong> When your startup starts running it is very easy to be overwhelmed. Specially if you are a solo founder or if it is your first time in the startup world. At some point things start to get mad: your product starts generating some revenue, customers start to ask for bugfixes or new features; you start going to several startup events (<em><a href="http://zaman.io/startup-conferences-are-mostly-a-waste-of-time/">which sometimes are just a waste of time</a>, to be honest</em>); you start having too many meetings&#8230; You have to hire new people, coordinate a bigger team… And at the same time you try to keep in touch with investors and customers, try to close further funding rounds and deals… <em>With all that chaos it is very easy to lose focus on the most important things of your startup: developing your business, validating your hypotheses, analysing the performance of your product, reviewing your KPIs, doing some A/B testing, reviewing customer feedback, making strategic decisions&#8230;</em> Remember what your role should be.</p></li>
+<li><p><strong>Be sure to build the right team.</strong> Very related to the previous point. It is crucial to have talented people with different skills in your team, so you can delegate different areas, such as administration, finance, software engineering, product management, marketing or sales. Sometimes, especially with tech founders, we tend to underestimate other areas rather than product development, or some of us tend to do everything. And it may be the case that you can also be skilled in other areas, but the reality is that there is too much work to do and you can’t do it all. Moreover, there is always work that you like and work that you don’t, and you tend to work on what you like, even unconsciously. In my case I always tended to focus either on product development, user experience, analytics or business strategy; but always tried to avoid paperwork. Sadly, I didn’t have anyone in the team to delegate paperwork tasks and it ended up being a significant part of my daily workload, preventing me from doing the other things I really liked.</p></li>
+<li><p><strong>Be careful with side projects.</strong> We always tend to underestimate the cost of losing time. For instance, when you don’t have enough funding to be 100% focused on your product, it may be tempting to start doing other side projects for your company to “survive”, until somehow we hit the hockey stick with the product and can focus totally on it. Paradoxically, by doing that you may be killing your startup, since you may start devoting too much time to those side projects, having meetings with those “side customers”, paying less attention to the users of your product (because money comes from the side projects)&#8230; It is a risky solution and most of the time you will end up losing focus on your product and becoming a zombie startup. Be very careful with side projects.</p></li>
+<li><p><strong>Be very careful with government grants and / or loans.</strong> Funding is one of the toughest things for a startup founder (if not the toughest). The lack of funding can lead us to accept side projects, work too-long hours and even apply for grants and loans. The government, at least in Spain, in the last few years has created programs to help fund startups with grants and, mainly, with loans. However, <em>these programs are not lean at all</em>, they will involve a lot of paperwork (including 5-years-ahead cash flow tables with month-by-month detail); there will also be a lot of uncertainty until you get their answer (and even after it is approved uncertainty may be around); you may have to re-do things several times… And money may arrive late (or may not arrive, or not the full amount). My point here is that, although government has created these programs with good intentions, trying to help startups, you should be very careful. It may be a bad idea if you are trying to be a <em>lean</em> startup. Maybe you can consider it as a last resort&#8230; But in case you decide to go through this risky path, you better be aware of what it involves. It could even be a good idea to have someone in the team devoted exclusively to this tasks, <em>so you can stay focused on the important stuff (developing your business and validating hypotheses).</em></p></li>
+</ol>
+
+
+<p>Well&#8230; If you have reached this far, you have been patient enough to discover 10 key things I learned during my adventure as Founder and CEO of <a href="http://www.vocabularynotebook.com">Vocabulary Notebook</a>. Probably I am forgetting another 10 things that are at least as important as these, but it is always difficult to summarize such an overwhelming experience in a post like this. That being said, I will be glad to read any opinions and stories from others with similar experiences. Feel free to write a comments below :).</p>
+
+<p>Finally, I also wanted to add an extra thought here (<em>the +1 in the title</em>), which is not related to this particular experience, but is something I have seen too many times happening and has even happened to me before in previous startups:</p>
+
+<ul>
+<li><p><strong>“Lean Startup” does not mean “it’s a hobby”.</strong> To validate a few hypotheses, iterate and build an MVP you will need to take it seriously, invest real time and some real money as well; although a reduced amount of both money and time when compared to traditional approaches to building companies, in which people spent millions and years to create and execute business plans with no validation whatsoever. But you will definitely have to invest several hours a day to build, measure and learn in order to validate your hypotheses. And this is just the beginning. After your first validations you can decide that it is not worth to continue with your startup (if you haven’t been able to validate your business model and have no plans on pivoting). But if you get positive feedback you should probably take it even more seriously. This will force you to be 100% committed. You will need to interview a lot of potential customers, build a great team, look for funding, participate in events, build a product, organize marketing campaigns, analyze your KPIs&#8230; <em>It will be a lot of work.</em> So be honest to yourself: is it a hobby or is it a startup?</p></li>
+</ul>
+
+
+<p>If you want to build a great company from the ground, there is just one thing I can guarantee you: <em>You will have to work hard</em>. But if you are passionate, you will love the experience. No matter if your startup ends up failing. You will learn a lot, meet awesome people, have this incredible feeling of discovering that something that you created was valuable to other people (maybe at the other end of the world)&#8230; <em>It is an awesome experience.</em> And if you pay attention to other founder’s experiences, you may avoid some mistakes and thus make this adventure a bit easier, increasing your chances of success. I hope this article may help you with that.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why copywriting is key to UX: We increased conversions by 26% just changing some text]]></title>
+    <link href="http://www.romenrg.com/blog/2014/09/17/why-copywriting-is-key-to-ux-we-increased-conversions-by-26-percent-just-changing-some-text/"/>
+    <updated>2014-09-17T12:16:00+01:00</updated>
+    <id>http://www.romenrg.com/blog/2014/09/17/why-copywriting-is-key-to-ux-we-increased-conversions-by-26-percent-just-changing-some-text</id>
+    <content type="html"><![CDATA[<p>Too often people tend to think that UX is just art: Flat design, Modern UI and animations&#8230; But art represents only a tiny part of the User Experience. Some developers go one step further and think that it also implies strong technical skills (to achieve a good performance, proper-functioning software, etc). However, that is still a very narrow perspective of User / Customer Experience.</p>
+
+<p><img src="http://www.romenrg.com/images/copywriting_writing_machine.jpg" alt="Picture of a man using a writing machine and smoking with a pipe" /></p>
+
+<p>Some of us have realized that UX is not just how beautiful our product looks or how amazing its performance is. There are several other fields that are crucial when trying to achieve a great experience for our users, as you will see in this post. And if I had to choose just one field that is definitely key to UX, it would be <em>Psychology</em>.</p>
+
+<!-- More -->
+
+
+
+
+<h2>User Experience and feelings</h2>
+
+
+<p>User Experience is all about feelings. A beautiful interface will trigger interest and catch attention. But, what happens once a beautiful interface has catched user&#8217;s attention? The user will keep looking around, interacting with our site or product. At this stage, if the user does not manage to use it properly, she will lose interest, no matter the fancy animations and the great performance.</p>
+
+<p>Usability is sometimes an enemy of art. Underlining a link could be hard to accept for a designer, but it is proved that users look for an underlined text when they are looking for a link. By not underlining links, designers could worsen user&#8217;s experience. Actually, what usability is all about is sticking to the standards and making things as clear and easy to use as possible.</p>
+
+<p>However, when we talk about Customer Experience there is another key element to take into account. Since you want your visitor to <em>buy something</em>, your purpose is to guide her experience to a particular action. So, apart from design, engineering and usability; there is another key element which is vital in this case: <em>copywriting</em>.</p>
+
+<h2>Copywriting has a huge impact in User Experience</h2>
+
+
+<p>It could sound obvious, but 90% of the web is text. When a user is engaged with a nice-looking site that works properly, she will try to perform several actions. By this time, our site has to be usable, but above all, our site must guide her to perform the actions we want her to perform (such as signing up). And we have to tell her <em>what to do and why</em>, usually via text.</p>
+
+<p>In a Landing page this type of text is obviously related to marketing, but once the user has become a customer and is using our product, choosing the right text is just about psychology. We are trying to help our users to perform tasks using our product with the less pain possible; so they don&#8217;t get frustrated and they enjoy the experience as much as possible.</p>
+
+<p>Whether it is in a Landing Page or in an actual Product, copy has a huge impact on User&#8217;s Experience. However, designers and developers tend to underestimate the importance of text.</p>
+
+<p>But… How can we know if a particular text is better than another? Well, let your users tell you. Tracking user actions, measuring and testing are also key elements to achieve a great UX.</p>
+
+<h2>Our experiment: Changing text in the sign-up form</h2>
+
+
+<p>Fortunately, in <a href="http://www.vocabularynotebook.com">Vocabulary Notebook</a> we have used Web Analytics and A/B Tests extensively, so we can prove the importance of copywriting in User Experience (and in conversions) by means of one of our experiments.</p>
+
+<h3>Sign up page: Old version</h3>
+
+
+<p><img src="http://www.romenrg.com/images/screenshot_old_signup.png" alt="Screenshot of the Old sign-up form of Vocabulary Notebook" /></p>
+
+<p>This screen used to be our sign-up page for <a href="http://www.vocabularynotebook.com">Vocabulary Notebook</a>. As you can see, the page was quite simple. There is a navigation bar on top, a title and a form with its confirmation button.</p>
+
+<p>The main title was making it clear that you could start using our platform for free. Moreover, the purpose of the secondary title was to remind you that you were about to create a new individual account. Below, a form with three fields: email, password and name. Finally, there was a call-to-action button at the bottom-right corner just saying &#8220;try it now&#8221;.</p>
+
+<p>We used to think that this version was pretty simple and clear. However, there was a lot of room for improvement.</p>
+
+<p><em>With this version, our conversion rate (percentage of visitors to our landing page that were becoming registered users) used to be around 3,26%. However, there are some previous steps to get to this page, so if we focus only on those users were arriving to this sign-up page, our analytics say that 63% of them was completing and submitting the sign-up form.</em></p>
+
+<h3>Sign up page: New version</h3>
+
+
+<p><img src="http://www.romenrg.com/images/screenshot_new_signup.png" alt="Screenshot of the New sign-up form of Vocabulary Notebook" /></p>
+
+<p>Simple changes, right? Well, I can tell that our users have found those changes to be big enough to make a significant difference in our metrics.</p>
+
+<p>The first change is related to the main title. We decided to move the spotlight from the concept “free” to &#8220;it&#8217;s real quick&#8221;. It is well known that many users get scared when they see a sign-up form. It is a barrier to entry for them. However, removing the sign up was not an option for us, so we focused on trying to convince them by saying that the sign-up process was going be over very quickly.</p>
+
+<p>In this main title we also mention that you will be creating your “personal account”, so there was no need to keep that information in the secondary title anymore. Thus, we decided to also use this secondary title to encourage users to fill the form, focusing on how short it is: “only three fields”.</p>
+
+<p>As you can see, we also made two changes in the form itself. We decided to move the email to the second place, since we had the impression that people are more likely to provide an email than a password at that stage. Apart from moving the password request to the third place, we decided to remove the verification. We provide a &#8220;forgot your password&#8221; option for recovery, so there is no need to make the form longer with that verification.
+Finally, we decided to make the CTA (call-to-action) stronger, to convince you to keep going. That is why not only we let you know that by clicking it you can &#8220;start now&#8221;, but we also remind you that it will be &#8221;<em>free</em>&#8221; (at least for now).</p>
+
+<h2>The results</h2>
+
+
+<p>Now that you have seen the changes we made, you may be thinking that they are minor and that there shouldn&#8217;t be a big difference, since we just changed some text. However, you should already be aware of the importance of copywriting in UX.</p>
+
+<p>Believe it or not, the new version has a conversion rate around 4,10% (percentage of visitors to our landing page becoming registered users). <strong>This means that conversion rate increased by 26%</strong> (from 3,26% to 4,10%), which I consider a huge increase given the &#8220;minor changes&#8221; we made.</p>
+
+<p>Taking into account only the users that were actually arriving to the sign-up page, <strong>the rate went from 63% of them filling the form in the old version, to 80% of them in the new version</strong>; which is a significant improvement.</p>
+
+<p>Since the sign-up form is the last step in our conversion funnel, this change does not have further consequences along the funnel. However, doing small changes in previous stages of the funnel can have a much bigger impact on conversions. In a future post I will describe another experiment we conducted where we optimized a previous step in the conversion funnel. It was also a small detail, but a small improvement in conversions at the beginning of the funnel has much bigger consequences than at the end of it, as we will see. For now, I can only say that after this other change we increased conversions from the 4,10% (rate mentioned above as the result of this experiment), to a 6,74%, which is our current conversion rate for individual users visiting our landing page. If you are curious about this other experiment, stay tuned! I will post about it soon.</p>
+
+<p>In summary, UX is a complex discipline where several knowledge areas merge. Sometimes, trying to improve User Experience we make big changes that involve design, animations, performance… Changes that may take days of work. However, we should not forget the importance of copywriting. It could improve UX significantly with much less effort.</p>
+
+<p>As Jeff Gothelf states <em>&#8220;<a href="http://www.jeffgothelf.com/blog/the-secret-weapon-of-ux-copywriting/#sthash.asXhCmK5.dpbs">copywriting could be considered the secret weapon of UX</a>&#8221;</em>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Linking UX and Conversions by means of analytics and A/B tests]]></title>
+    <link href="http://www.romenrg.com/blog/2014/07/31/linking-ux-and-kpis-by-means-of-analytics-and-ab-tests/"/>
+    <updated>2014-07-31T19:03:00+01:00</updated>
+    <id>http://www.romenrg.com/blog/2014/07/31/linking-ux-and-kpis-by-means-of-analytics-and-ab-tests</id>
+    <content type="html"><![CDATA[<p>Thanks to my experience as Entrepreneur and Product Manager, I realized long ago about something that is totally counterintuitive for many other software engineers. This realization is that, when developing a software product, our main focus should always be sales. Always. Sales. I know that probably too many people have said that already, but it is so true that it is worth saying it once more, specially for my software mates: <em>&#8220;when developing a software product our main focus should always be sales&#8221;</em>.</p>
+
+
+<p><img src="http://www.romenrg.com/images/sales.jpg" /></p>
+
+<p>However, that statement is too generic. Most people already know that selling is important&#8230; But how can we sell more? Well, experience tells me that in order to increase sales, the first thing you will probably need are many more visits (and getting those visits is way more complicated than it seems). However, that is only the beginning. Once you get enough visits and you validate most of your product main hypotheses, the next step is <em>converting most of those visits into customers</em>. Here is where both <em>User Experience</em> and <em>KPIs (Key Performance Indicators)</em> become probably the most important areas for product management.</p>
+
+
+
+
+<!-- More -->
+
+
+
+
+<h2>User Experience and Conversion Rates</h2>
+
+
+
+
+<p>Every entrepreneur wants to convert visits into paying customers. There will be KPIs that you will probably always be checking, expecting them to improve. This KPIs could be &#8220;Signup rate&#8221; (from visits) or &#8220;Free to Premium rate&#8221; (the percentage of users becoming premium after being free users (in case you have some sort of free trial). <em>Conversion Rates</em> are very important business metrics, but improving those KPIs has to do with a few more things than just business. Particularly, the User or Customer Experience (UX / CX) is one of the most important factors in this task.</p>
+
+
+
+
+<p>I always define <em<strong>User Experience</strong> as a discipline in which Design, Usability, Marketing, Psychology and Engineering merge</em>. Are you wondering why? Did you think that UX was just &#8220;beautiful design&#8221;? Well&#8230; I have learnt that your experience while using a product is affected of course by the aesthetics (art and design), but also by the easier it is to use it (usability), the story it tells you (marketing), the way it engages you (psychology) and last but not least, &#8220;the engines&#8221;, that is, the technology that makes the product actually work and perform properly (engineering).</p>
+
+
+
+
+<p>Once you agree with this definition of User Experience, linking it with conversion rates is rather easy&#8230; The better the UX in our Landing page is, the better the signup rate will be. In the same sense, the better the UX in our free version of the product is, the better the &#8220;Free to Premium&#8221; conversion rate will be.</p>
+
+
+
+
+<h2>But&#8230; Is it easy to constantly improve UX in our software products?</h2>
+
+
+
+
+<p>To be perfectly honest, no. Improving UX constantly is really complicated. And actually one of the most difficult parts is subjectivity, because this are the sort of tasks in which everyone in the team wants to have a say. One day everyone wants to change the text of the main headline to their own &#8220;best&#8221; option, wasting a lot of hours in useless discussions where nobody agrees. Another day some engineer named Joe says &#8220;it is imposible&#8221; to a new important feature coming from business that may be an important source of income because it will imply a few changes in &#8220;his&#8221; domain objects and he thinks it is not worth it. The same day, the back-end engineer that is temporarily working in the UI development, named Jane, decides to use red for the main CTA because is her favourite color, although most people associate it with &#8220;danger&#8221; and thus, will reduce the click rate&#8230; Do these situations sound familiar to you?
+
+<p>I have seen this behaviors several times in several different software companies and I have realized that they are caused mainly because two reasons: 1) most companies do not value User Experience as much as they should and 2) most companies are lacking data that would slap the corresponding people in the face and lead to the right changes to really improve UX.</p>
+
+<h2>&#8220;If we have data lets look at data, if what we have are opinions, lets go with mine&#8221; - Jim Barksdale</h2>
+
+<p>In my experience as CEO of <a href="http://www.langproving.com">Langproving</a> and Product Manager of <a href="https://www.vocabularynotebook.com">Vocabulary Notebook</a> I have followed this quote as much as possible to avoid those discussions. To base our decisions in data, we have used both Web Analytics (tracking all the actions / events of our users) and A/B Tests (to compare objectively two versions of a portion of our product). To gather data and create our experiments we have used Google Analytics extensively. It has been a <em>fantastic</em> experience that has helped us, among other things, to <em> significantly improve our conversion rates</em>, as you can see <a href="http://www.slideshare.net/romenrg/curso-ux-tenerife-no-maltrates-a-tus-usuarios-fg-ull-da-5-experimentos-reales-la-experiencia-de-vocabulary-notebook">here</a>. Besides, those useless discussions mentioned above do not happen anymore in our company. Now we look at data. We listen to what our users say and we choose what <em>they</em> like the most.</p>
+
+<p>Regarding the link with the results of some of our experiments, it is worth mentioning that recently I gave a course at <a href="www.fg.ull.es">Fundación General Universidad de La Laguna</a> exactly about this topic (UX + Web Analytics). In this course, we had a first part focused on User Experience and a second part focused on Data (including our own experiments as examples). All the slides of the course are available (in spanish) in the following links. However, keep in mind that they are just slides that I created as visual support for my lectures during the course. They are not a book. This means that since they were intended to be seen along with my comments and explanations, they do not have much text and thus, sometimes can be a bit difficult to follow on your own.</p>
+
+<h2>Slides of my course about UX and Web Analytics</h2>
+<ul>
+<h3>Part One: User Experience and User Interface development</h3>
+<li><a href="http://www.slideshare.net/romenrg/curso-ux-tenerife-no-maltrates-a-tus-usuarios">Introduction to the course</a></li>
+<li><a href="http://www.slideshare.net/romenrg/curso-ux-fgullromenrg4coding">Boilerplate and tools for students</a></li>
+<li><a href="http://www.slideshare.net/romenrg/curso-ux-tenerife-no-maltrates-a-tus-usuarios-fg-ull-da-2-peores-y-mejores-prcticas-en-ux">Worse and Better UX real cases</a></li>
+<li><a href="http://www.slideshare.net/romenrg/curso-ux-tenerife-no-maltrates-a-tus-usuarios-fg-ull-da-3-responsive-web-design-rwd-mobile-ux">Mobile UX real cases</a></li>
+<li><a href=http://www.slideshare.net/romenrg/curso-ux-fgullromenrg5recursosyayudaproyecto">Useful resources for developing software UIs</a></li>
+</ul>
+<ul>
+<h3>Part Two: Web Analytics and A/B Testing</h3>
+<li><a href="http://www.slideshare.net/romenrg/curso-ux-tenerife-no-maltrates-a-tus-usuarios-fg-ull-da-4-introduccin-al-ab-testing-con-google-analytics">Intro to A/B Testing with Google Analytics</a></li>
+<li><a href="http://www.slideshare.net/romenrg/langproving-vocabulary-notebook-concurso-emprendedor-xxi">Intro to Vocabulary Notebook</a></li>
+<li><a href=http://www.slideshare.net/romenrg/curso-ux-tenerife-no-maltrates-a-tus-usuarios-fg-ull-da-5-experimentos-reales-la-experiencia-de-vocabulary-notebook"">Real UX experiments with Vocabulary Notebook</a></li>
+</ul>
+<ul>
+<h3>Part Three: Additional material</h3>
+<li><a href="http://www.slideshare.net/romenrg/curso-ux-tenerife-no-maltrates-a-tus-usuarios-fg-ull-da-5">Some keys to face-to-face usability testing</a></li>
+<li><a href="http://www.slideshare.net/romenrg/curso-ux-tenerife-no-maltrates-a-tus-usuarios-fg-ull-da-5-testing-automatizado-de-interfaces-web">UI automated testing</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Vocabulary Notebook: From Idea to Reality in one year]]></title>
+    <link href="http://www.romenrg.com/blog/2013/09/30/vocabulary-notebook-from-idea-to-reality-in-one-year/"/>
+    <updated>2013-09-30T13:59:00+01:00</updated>
+    <id>http://www.romenrg.com/blog/2013/09/30/vocabulary-notebook-from-idea-to-reality-in-one-year</id>
+    <content type="html"><![CDATA[<p>The 8th of September 2012 I started to work intensively in an idea I called Vocabulary Notebook. With that idea I was planning to solve a problem that myself and many other english students experience while learning vocabulary. It has already been a year since then and that idea is now a real platform used by thousands of students and teachers around the world. I must say that I’m quite proud of what we have achieved during this year, both as an entrepreneur and as an engineer. Although I don’t have much free time now, I have forced myself to write this post to summarize what has happened around Vocabulary Notebook during this year, from idea to reality. Since there are so many things that have happened, I’m afraid this post is going to be quite long, but I think that the anniversary deserves it.</p>
+
+
+<p><img src="http://www.romenrg.com/images/vocabularynotebook.png" /></p>
+
+<p><em>In this image we can see the different components of Vocabulary Notebook. The full platform includes Android, iOS and Web Apps both for students and for teachers.</em></p>
+
+
+
+
+<!-- More -->
+
+
+
+
+<p>Honestly, in this year I have worked <em>a lot</em>. A lot means an average of 80 hours a week&#8230; But this post is not about all the time I have worked and all the things I have learned. This post is about the first year of Vocabulary Notebook. It’s a summary of what have happened this year around our product, from the very beginning to the full platform we have today. I will probably publish another post soon in which I will talk about all I have learned during this year, doing some retrospectives about my decisions and describing all the tasks I have had to accomplish and all the roles I have had to play. But today I want to review what has happened to <a href="http://www.vocabularynotebook.com">Vocabulary Notebook</a> during this year in which it has been built.</p>
+
+
+
+
+<h2>The Idea</h2>
+
+
+
+
+<p>I had the idea of Vocabulary Notebook in my mind since 2011. We were living in Cambridge, UK and besides working remotely I was preparing the CAE Exam in an English School. Our teachers suggested us to use a paper notebook where we could write down all the words (phrasal verbs and idioms) that we were learning everyday; with a sample sentence and a definition. I had tried those notebooks before several times and they always failed for me. After a few days, the vocabulary was always messed. No alphabetical order, no topics order, difficult to edit, uncomfortable to carry… I tried it again, saving several pages for each letter this time, to have some alphabetical order. It failed again. They are uncomfortable. In this case the problem was that I had a lot of white pages in the middle; while editions were still messy and all topics were mixed… I asked my partners in the course and most of them had the same problems.</p>
+
+
+
+
+<p>You could think that the problem is that Vocabulary Notebooks are not useful; that it&#8217;s better to do nothing. However, there are <a href="#several-studies">several studies [1]</a> that prove the benefits of these notebooks in the Vocabulary Acquisition Process. <em>Significant benefits</em>. The base of the improvement is the personalization of the learning process. If you write your own definitions and sample sentences you tend to remember the word easily afterwards&#8230; You understand the word deeply and you won&#8217;t forget it easily. And it is true. If you read a definition from a dictionary, you will forget it quickly. If you create your own, first you have to understand the meaning and then you will generate your own definition. You have learned during the process. If you see the word again, you will remember instantly.</p>
+
+
+
+
+<p>Ok, let’s agree on Vocabulary Notebooks. They allow you to learn vocabulary faster and deeper. But they have several problems… And they could be solved with technology. That’s why I started to look for tech tools that could help me to sort my personal vocabulary. I didn’t want a dictionary nor a translator. I wanted to have my personal notebook, where I could create my own definitions and sample sentences, as my teacher wanted; but I wanted to have filters to study by categories, by not-known words, sorting… And after days looking for it, I couldn’t find what I wanted. I was mainly looking for “vocabulary notebook” in google. There were many references on how to create your own vocabulary notebook on paper. But no technology around. One day, when I gave up looking for a tool I went to bed, frustrated. Suddenly, I woke up in the middle of the night again, and decided purchase the domain <a href="http://www.vocabularynotebook.com">www.vocabularynotebook.com</a>.</p>
+
+
+
+
+<p>That was in September 2011. That day I just bought the domain, wrote some notes about the tool I was going to create and even defined a quick <em>ER</em> scheme of the database that it would have. That was all. I was busy back then working remotely as an Analyst/Programer in an e-learning tool for basic maths for children that we called EMATIC. It was integrated in a larger project called SAVEH, directed by researchers from the University of La Laguna. I was working in that project until January 2012, when I was hired by Arte Consultores Tecnológicos. During that period I was still working in a previous startup called Turawet, which we started in June 2010 and stoped working on by December 2011. We failed to market Turawet and we didn’t put all the effort we should have put in the UI and UX. Moreover we took it more as a hobby than as a real startup. I learned those lessons for Vocabulary Notebook.</p>
+
+
+
+
+<p>As I said, in January 2012 I started working in Arte Consultores Tecnológicos as Analyst / Programmer (Front-end Engineer), mainly dedicated to Stat4you. It was an engaging project, a sort of startup within the company; with many challenges. It was also a busy time. I was learning a lot of new technologies and we also moved to a new house. It wasn’t the time to start with a new personal project.</p>
+
+
+
+
+<h2>Let&#8217;s do it!</h2>
+
+
+
+
+<p>But then, in September 2012 my girl had to go to to mainland Spain to prepare an exam that would allow her to access a job she wanted. I was alone at home for 4 months. That was the time. To avoid loneliness I decided to start with Vocabulary Notebook in my free time.</p>
+
+
+
+
+<p>First, I tried to engage some friends / colleagues with the idea, to be partners and create a company. Difficult task. In my experience it’s not easy to engage Software Engineers in your project, specially if they have jobs and if they are not the target customers of the product you are planning to build. Usually good engineers find jobs quite easily (even in Spain), so they don’t usually have too much time to spend in other projects. If they decide to join a project, it’s quite probable that they are not going to be fully committed. I have the feeling that many Software Engineering like building things, but they hate business. They like building things in their free time and meeting with colleagues to do it. But more as a learning process, not as a business. <em>- “Let’s just start and see what happens” -</em>. Since they tend to do it in the free time, they would spend just some hours a week. I have been there myself. That’s why I know how it works. And I didn’t want that in this case, in this case I was planning to build a serious business. <em>Commitment was needed</em>.</p>
+
+
+
+
+<p>So in the end I decided to do it myself. I would find the way. Fortunately, I managed to convince my friends Axel and Robert to develop the iOS and Android apps respectively, as freelancers. I was lucky. They are great engineers. If you think that Vocabulary Notebook apps for iOS and Android are great, it has a lot to do with them. To build a great product you need a great team. That’s for sure. I was lucky to convince them to collaborate with me.</p>
+
+
+
+
+<h2>Lean Startup and other buzzwords / trends that we have embraced</h2>
+
+
+
+
+<p>From the very beginning of this new project I was a follower of the “Lean Startup” methodology for Business. As a software engineer I always try to apply Agile Methodologies for Software Development, so in this case I was willing to apply what for me was the equivalent for Business Development. By that time I was enrolled in “The Lean LaunchPad”, the Udacity course of Steve Blank, which turned out to be a really great course for me. I learned a lot from him. To dive deep in the Lean approach, I was reading The Lean Startup by Eric Ries. The last piece seemed to be the Business Model Canvas, but I had been working with it in my previous startup Turawet, so I was already used to it.</p>
+
+
+
+
+<p>Additionally, by that time we were attending a course in Arte Consultores about the same topics, taught by Edei Consultores.</p>
+
+
+
+
+<h3>Get out of the building</h3>
+
+
+
+
+<p>So I decided to <em>“get out of the building”</em>. First of all, I arranged meetings with several english teachers, in which we used to discuss the way in which Vocabulary is taught, the benefits of Vocabulary Notebooks, the trends in education, such as the personalization of the learning process; and other topics such as using software, smartphones and technology in class. I learned a lot from them. And what is more, they helped me prove that there was a real need when it comes to teaching and learning vocabulary. Teachers didn’t want dictionaries nor translators. They wanted students to create their own definitions and sample sentences. They didn’t want me to introduce features like “import definition from…” or an automatic translation. Most of them were actually encouraging students to keep their own records of personal vocabulary in paper notebooks (either an specific vocabulary notebook or in the general notebook). During the meetings teachers admitted that the paper notebooks approach had several problems for studying vocabulary, but for most of them it was the best approach, because of the personalization that it allowed.</p>
+
+
+
+
+<p>From the beginning I had the feeling that probably students were not willing to pay for a learning tool like Vocabulary Notebook. Many students prefer tools that teach them english. And that’s not what Vocabulary Notebook is intended to do. We wanted to do what teachers wanted. Not only because they are the education experts, but because we wanted them to be our prescriptors. We actually wanted to help teachers teach, instead of being their competitors. There are plenty of applications that teach english. We wanted to be different. Additionally, as an advanced english student I agreed with teachers about the importance of the personalization in the learning process.</p>
+
+
+
+
+<p>The initial idea I had in mind was a web application which was a personal Vocabulary Notebook. Just that. You could be able to add words (optionally adding definitions, sample sentences, translations, types or categories). For me the most important features were sorting (alphabetically and by last modified) and the filters (studying only not-known words or a particular topic easily). Those are the key features I missed the most in a paper notebooks. Moreover, I was fully committed to the personalization of learning. That’s why I wanted Vocabulary Notebook to be an empty notebook (as teachers want). All fields had to be optional. You could write a definition or not&#8230; Maybe just a translation, or perhaps just a sample sentence. Up to you. The same would happen with categories. I wanted students to create their own categories. One category could be “animals” but another could be “Monday Exam”; and another could be “Lee’s words” (in case you have a teacher named Lee that every now and then teaches you weird words typical from him).</p>
+
+
+
+
+<p>In my opinion that was a great tool for students like me. Engaged students willing to improve their vocabulary. People tired of the problems of paper notebooks. But I found that many students wanted apps to learn english, not a complementary tool for their learning process. Ok, no hard feelings, there are several well known apps you can use in the market. We were looking for something slightly different. We prefered to follow teachers and engaged students.</p>
+
+
+
+
+<p>Talking about monetization, I was thinking of a freemium model for the smartphone apps and a subscription model for the web application. I liked the subscription model for the cloud accounts. Students should pay a small fee per month or per year to use the web application. But we all agreed that probably students were not going to pay it. Unless their teacher recommend them doing it. This could be a tool schools could offer to all their students, as an innovative resource. But we would have to validate that. With schools. And we would have to offer something else to teachers…</p>
+
+
+
+
+<p>My colleagues (specially Axel) convinced me to start doing smartphone apps. The apps were a part of the full platform I wanted, and as an MVP, cheaper to develop. It wasn’t difficult to convince me. Moreover, by that time apps were trending (still are). I was hearing all day cases of people getting rich with apps. Everybody had (still have) an idea of an app was going to make him/her rich. <em>Why not Vocabulary Notebook?</em> We would upload it to the market and suddenly it would go viral and I would get rich!&#8230; So we decided to go for the apps. Actually I don’t regret at all. But I didn’t get rich with the apps. At all. Currently, our main business is the platform for schools (that hasn’t made me rich neither <em>-yet-</em>).</p>
+
+
+
+
+<p>To get out of the building I created a questionnaire in which I had many different questions to ask students, such as the way they used to study english and vocabulary. I had also created mockups of all the screens. And I printed them. I pretended the mockups to be my MVP. I started visiting many friends that study english and many teachers as well. I asked them the questions in my questionnaire and I also did usability tests with them using the paper mockups I had. I got a lot of feedback. I changed a lot the UI to make it fit their needs. I also asked them about pricing, and I realized that even though there were several students that liked the tool, many of them were not willing to pay for it. Actually, most of them confessed that they never pay for software - You can always get the same thing for free! -. However, one of the questions I was asking was <em>“What if your teacher recommends this app? Will you buy it?”</em> In those cases around 70 percent of students replied that they would pay at least the unlimited version of the smartphone / tablet app. A few would even pay the subscription for the web application and the cloud accounts. Teachers were the key. By then I was convinced that I had to do something teachers like. And I was thinking of a way in which schools could pay for it, instead of students.</p>
+
+
+
+
+<p>With all this feedback we decided to keep developing the apps. I was pretty sure that teachers would like the app (many of them had already told me that) and then, teachers would convince students to buy it. However, I still prefered the subscription model offered by the web app. Not only because we would be getting money every month / year; but also because I knew from my meetings with teachers that in many schools they don’t allow students to use smartphones in class, but they have laptops or tablets instead. And then, since I wanted that students could use their Vocabulary Notebook everytime and everywhere, I would need cloud accounts and a syncing mechanism for their multiple devices. <em>- But let’s do the apps first -</em>.</p>
+
+
+
+
+<h2>Now we have a plan</h2>
+
+
+
+
+<p>By October I had started preparing a submission for the Entrepreneurial Awards “Fyde CajaCanarias” although almost everyone told me that it was worthless. - <em>“They are looking for other type of projects, you won’t get any prize”</em> -.  I did it anyway. I described my business model using a Lean approach. I also did some quick forecasts, both from app purchases and school’s monthly / yearly subscriptions. I also talked about costs. But what I didn’t do was talking about the expenses or incomes I was going to have 5 years from then in the month of March, as traditional Business Plans state and as banks and other traditional people whant you to do it. I just showed my pricing strategy, the market I had, competitors and, as I said before, I even had some simple forecast for the first years.</p>
+
+
+
+
+<p>By November, a few days before the deadline for the submission, I managed to convince my boss at Arte Consultores, Carlos, to sign the project with me for the Contest. After talking thoroughly about the project, he did.</p>
+
+
+
+
+<h2>Suddenly everything goes faster than expected</h2>
+
+
+
+
+<p>From then on, everything started to move much faster. During the first week of December the organization of the contest contacted me to tell me that I was among the 4 finalists. I couldn’t believe it! Neither the rest of the team. For the final I did a presentation in front of the jury and we got the second price in the contest! That was a great step forward.</p>
+
+
+
+
+<p>A few days after that I submitted the project to the IV edition of Tenerfie Invierte, which is some sort of startup accelerator program run by Cabildo de Tenerife, which ends in a Investment Forum. In the meantime I managed to convince two Technical Architects I knew to invest in my project too, besides Carlos and myself. They agreed. At the end we were going to create a company… After talking with a lot of people, the name was going to be Langproving. There were very bad proposals too. I remember one that was “Underslang”&#8230; Now it sound horrible to me.</p>
+
+
+
+
+<p>I contacted many professors of Software Engineering at University of La Laguna (those that had taught me when I was studying there). I was planning to hire people for our company. Suddenly I was a headhunter. I had several interviews with last-year students and in the end I had an agreement to hire three of the best ones. As I have already said, one of the best things I managed to create this year was <u>a great team.</u></p>
+
+
+
+
+<p>The 2nd of January we officially constituted the company. I was the CEO and I had parteners which were going to be both advisors and investors. People with a lot of experience in business that were going to help me to build a new business. We had some money, so we hired our first 3 employees. We also had money to pay my colleagues Axel and Robert for their work developing the iOS and Android apps.</p>
+
+
+
+
+<p>I was going to keep working at Arte Consultores until we were reaching the break even, because I was the only one not being paid in our new company. - <em>I was the entrepreneur</em> -. So in those days I was working 40 hours a week in Arte Consultores (approximately from 7:00 to 15:00 from Monday to Friday) and then, from 16:00 to the end of the day I was going to be working on Vocabulary Notebook, with Esaú, Carlos and Victor, that were working part-time in the afternoons. Sometimes I had to meet Robert and Axel, as well as doing paperwork, meeting teachers, replying customers… Etc. I worked long days and full weekends. Average: 80 hours. As I said before.</p>
+
+
+
+
+<p>The new team was supposed to be working in the web application and in the API. That was long project. But we were also developing the mobile apps at the same time. We launched them by the end of February, coinciding with the awards ceremony in which we were going to get a Second Prize from Fyde-Cajacanarias; and also coinciding with the final of Tenerife Invierte (we had been chosen among the 8 finalist in that contest too).</p>
+
+
+
+
+<p>We kept working hard, and by March we started to have customers all around the world using the iOS and Android apps, some even paying for the unlimited version. It is such a great satisfaction to see people from so many different parts of the world downloading and even paying for your product, that it cannot be easily described. Even when the total amount you are getting is less than 100 €. But it is not about the amount. It’s about someone that you don’t know in India or New Zealand paying for your product.</p>
+
+
+
+
+<p>We released the apps with a freemium model. Everybody could download the apps for free and use them up to 10 words, just to try them. Then, they would have to purchase it (through an in-app purchase), in order to have unlimited words in their devices. At this stage there are many stories that I could talk about&#8230; They go from changing the prices of the apps in different countries and getting metrics to compare the results; to releasing bugs to production and receiving a lot of emails from customers&#8230; Late nights replying emails, changing the UI to get users use hidden features or increase conversions, and many other stories.</p>
+
+
+
+
+<h2>The teacher dashboard</h2>
+
+
+
+
+<p>On the other hand, from the feedback we had from students and teachers we were trying to improve the pack we were going to offer to schools. Since teachers were going to be our prescriptors, we had to offer something else to them. And it was when we started developing the teacher dashboard. Now teachers were able to see the top not-known words, which were the words that students of a particular class didn’t know (marked as not-known in their notebooks). We also provided other features such as the top important words for students, the top used categories&#8230; And also general stats about the class (number of words per student, number of tests, average scores…). Moreover, we included a “suggestions” feature. Teachers were now able to send lists of words to their students, but since we wanted to keep the notebooks personal for students, students would be able to accept or reject the words the teacher was sending. And teachers will be able to see who accepts a word, who rejects it and even able to see those students who had those words already in their notebooks (advanced students).</p>
+
+
+
+
+<p>These features soon proved to be really useful for teachers. We were offering a full pack to schools that not only included cloud accounts for students (thus providing access to their notebooks from any device, using the iOS and Android apps as well as the web application). We were now offering accounts for teachers with very valuable feedback for them too. Moreover, we were offering technical support and training courses for teachers and students. Actually, that’s what we do now. The school only pays a monthly / yearly fee per student. The teacher accounts, technical support and training courses are included without any extra charge.</p>
+
+
+
+
+<h2>Present: selling and improving</h2>
+
+
+
+
+<p>We now offer 3 different products with regards to Vocabulary Notebook. There are iOS and Android apps for students (with a cheap single payment, but are limited to just one device); we also offer cloud accounts for students (multiple devices and words stored in our cloud) and finally we offer the full pack for schools (including cloud accounts for students, accounts for teachers, support and training courses).</p>
+
+
+
+
+<p>Until now we have had more than 12 000 app downloads (combining the App Store and Google Play). From those downloads, we have had many users that have purchased the “mobile unlimited” version (premium). And we even have several cloud users too. Moreover, we have schools and universities from different countries already using the Full Platform and we are conducting some experiments with two universities to prove the benefits of Vocabulary Notebook for Vocabulary Acquisition.</p>
+
+
+
+
+<p>We are in a crucial moment, right now. We have just arrived to the market and we are trying to get to many other schools to use our platform so we can reach the break even as soon as possible.</p>
+
+
+
+
+<p>We have also won another prize in August, 2013. The Second Prize “Tenerife Innova” from Cabildo de Tenerife. We also got a grant from the Gobierno de Canarias, with some funding from the European Union, although we haven’t received the money yet. But prizes and awards, as well as new customers, help us to keep working hard on Vocaulary Notebook.</p>
+
+
+
+
+<p>In July 2013 I left Arte Consultores to advocate myself exclusively to Langproving, and specially to our main product: Vocaulary Notebook. I hadn’t done that before because I needed the money to pay my personal expenses, but by July I needed more time to market the Full Pack for schools. It required all my time, actually. Fortunately, by that time I had someone that could pay my expenses (althoug one day she will reproach this to me)&#8230; So from then on, until now, I’m working around 70 hours a week; but exclusively dedicated to Langproving. It’s a lot of time, but I’m focused on just one company. <em>And I really love that company</em>.</p>
+
+
+
+
+<p>So&#8230; This is the summary of this first year of Vocabulary Notebook. A lot has happened. For me it has been a massive experience. I have learned a lot. And I don’t know what will happen a year from now. It’s impossible to know it. All I can say is that now we have a clear Business Model and that we have learned a lot about our product and about our customers. We have a great product. But above all, what we have is <u>a great team</u>. I’m really lucky to have great people around me, that&#8217;s what allowed Vocabulary Notebook to become reality.</p>
+
+
+
+
+<p>Thanks to my great team: Fermín Gutiérrez Hernández, Carlos Peña Dorta, Robert Corujo Rodríguez, Axel Hernández Ferrera, Esaú Suárez Ramos, Carlos García-Ramos de Lorenzo Cáceres, José Manuel Alonso Delgado and Victor Mora Afonso.</p>
+
+
+
+
+<p>Thanks to all the people that have helped us too&#8230; From teachers to english students, advisors, friends… And above all, thank you Mónica Gutiérrez Barrios, love of my life; thank you for your patience, understanding, help and love. You are my fuel for this adventure.</p>
+
+
+
+
+<p>I’m only sure about one thing regarding this amazing year&#8230; <u>I will never, ever, forget it</u>. No matter what happens from now on; it has been a great experience and I would do it again, definitely.</p>
+
+
+
+
+<br/>
+
+
+
+
+<h4 id="several-studies">[1] Studies about Vocabulary Notebooks</h4>
+
+
+<ul style="margin-left:30px"><li><a href="http://kcy.me/ql3k"><em>The effect of keeping vocabulary notebooks on vocabulary acquisition. 2009. JoDee Walters & Neval Bozkurt.</em></a></li></ul>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[About UX in Modern Web Interfaces and Backbone.js: Choropleth Maps]]></title>
+    <link href="http://www.romenrg.com/blog/2013/07/27/about-modern-and-usable-web-interfaces-with-backbonejs-and-d3js-choropleth-maps/"/>
+    <updated>2013-07-27T17:27:00+01:00</updated>
+    <id>http://www.romenrg.com/blog/2013/07/27/about-modern-and-usable-web-interfaces-with-backbonejs-and-d3js-choropleth-maps</id>
+    <content type="html"><![CDATA[<p>I would like to start this post anouncing that this month I am leaving <a href="http://www.arte-consultores.com">Arte Consultores Tecnológicos</a>, after one year and seven months working there as an Analyst/Programmer (Front-end Engineer). I have made this decision because right now I need to devote myself exclusively to Langproving, which is in need of my full atention at this critical moment in which our MPV is finished and we have to market it to validate our business model.</p>
+
+
+
+
+<p>In this period of time working at Arte Consultores, I have improved significantly as an engineer. I have learnt a lot. Fortunately, I have had the great pleasure to work closely with my workmate and friend <a href="http://www.axelhzf.com">Axel Hernández</a>, who I admire for his ability to constantly learn new technologies and for being always aware of all the new trends in software development. I&#8217;m proud to say that I have learned a lot from him. I would like to think — actually, I hope — that he has also learned something from me too while we have been working together.</p>
+
+
+
+
+<p>One of the most valuable things I learned working at Arte was related to writing modern and usable web interfaces, not only with CSS3 animations or HTML5 new attributes and tags; but also with Javascript. In the last few years Javascript has grown up and become one of the keys of the evolution of the web. Many Javascript frameworks have emerged, ranging from those regarding DOM manipulation (jQuery) to others built to reproduce the model-view-controller (MVC) pattern in the client side, such as <a href="http://www.backbonejs.org">Backbone.js</a>. For more than a year I have been using Backbone to create Single-page applications that provide a quick response to user interaction, without the need to re-render the full page from the server as we were used to; thus improving sifnificantly the user experience (UX).</p>
+
+
+<p><img src="http://www.romenrg.com/images/js_html_css.png" /></p>
+
+<!-- More -->
+
+
+
+
+<h2>Choropleth Maps</h2>
+
+
+
+
+<p>In the following example we have a choropleth map from <a href="http://www.stat4you.com">Stat4you</a> in which the unemployment rate in the different regions of Spain is shown. The darker the colour, the higher the unemployment is. I have picked this dataset randomly, but it is worth mentioning that it shows a sad reality of Spain&#8217;s economic crisis.</p>
+
+
+<p><img src="http://www.romenrg.com/images/maps_initial.png" /></p>
+
+<p><em>We can see different elements in the map with which several actions can be performed. Firstly, we have the map itself, which happens to be a SVG vectorial image. Secondly, we have a zoom bar that has two different buttons (+ and -) and also has a draggable element that allows us to decrease or increase the zoom — as you may notice, it must be somehow synchronized with the + and - buttons —. Aditionally, we can use the mouse wheel to zoom in and out (as we can do in Google Maps). We can also click on a particular region of the map to zoom in and center the display on it; and we can click in the button above the zoom seciton to zoom out, going back to the original zoom and position of the map. We have also a leyend section, which indicates the ranges covered by each colour in the map. Finally, we have the ranges bar, which has a draggable element in the middle that can be used to increase or decrease the number of ranges to be used. It is also possible to click on the bar itself to increase or decrease the number of ranges. Clicking in the right side increases by one the number or ranges and clicking in the left side decreases the number of ranges in the same amount (the draggable selector will be moved automatically).</em></p>
+
+
+
+
+<p>As it can be seen, there are many elements that interact with each other. Since this is a Backbone application, everything runs on the client side. The server only loads the initial data, sends it to the client browser and then it is no needed any more. Only if the data to be displayed changes, an AJAX call is made to the server to bring new data, but not to reload the page. Anyway, this AJAX calls are beyond the scope of this post. We will focus on the interaction among the described controls of the map, which are mapped to diferent views in our MVC pattern implementation, all of them linked by a model.</p>
+
+
+<p><img src="http://www.romenrg.com/images/maps_initial_ranges.png" /></p>
+
+<p><em>In this new image we have just moved the ranges selector two positions to the left. This has caused automatically two changes in other elements, besides the changes in the ranges selector itself. On the one hand, the leyend has changed. The ranges have been re-calculated and now they are just three, instead of the initial five. Moreover, the map has been redrawed and some regions have changed their colour, since now the ranges are different and the unemployment rates of the regions are grouped diferently.</em></p>
+
+
+<p><img src="http://www.romenrg.com/images/maps_initial_clickzoom.png" /></p>
+
+<p><em>In this case, we have clicked in the autonomous city of Ceuta. When clicking in a region, as well as when we use the mouse wheel, the zoom changes. We have zoomed in to the best level of zoom in order to see the selected region properly (this is done automatically when clicking in a particular region). Moreover, the map is now centered in the selected region. As we can see, besides the changes in the map, the zoom controls have also changed. The selector is now stuck to the top, stating that the maximum level of zoom is being used.</em></p>
+
+
+
+
+<p>As you can see, there are several actions that affect different elements of the maps. All of them are being performed in the client side, in the user&#8217;s browser, thanks to Javascript and, in this case, thanks to the use of Backbone MVC Framework too. To display each element we have used different <a href="http://www.handlebars.com">Handlebars</a> templates. For the special case of the SVG maps, it is worth mentioning that they are being displayed by using another Javascript library called <a href="http://www.d3js.org">D3js</a>, which provides poweful visualization components and tools for manipulating documents based on data.</p>
+
+
+
+
+<p>To clearify how an MVC pattern can be implemented for this sample case by using Backbone framework, the following diagram has been made.</p>
+
+
+<p><img src="http://www.romenrg.com/images/maps_mvc_sinplified.png" /></p>
+
+<p><em>In the diagram we have represented the User Actions, the Map Model, the different Views for each section and a Map class that could be integrated in the MapContainerView if desired. Aditionally, the HTML / SVG code to be displayed in each case is stored in Handlebars templates and it is loaded in the &#8220;render&#8221; methods of its corresponding view. During execution, every action of the user triggers an event that is captured by the Map Model. Then, the model preforms different actions depending on the behavior of the user, and once it finishes, changes in some of its attributes are made. When the model is changed, new events are fired. Each view is listening to the events triggered by the model that are associated with it, thus being able to re-render itself if needed. Moreover, in case some mayor changes that require all elements to re-render are made, the render method of the MapContainerView will be called, which will execute each element&#8217;s render in turn.</em></p>
+
+
+
+
+<p>In summary, as I mentioned before, Javascrip MVC frameworks are quite powerful and lead to faster websites in which no communication with the server is needed in order to perform changes related to user actions, unless those actions require new data to be received. Definitely, the development of web interfaces combining the power of Javascript (jQuery, Backbone&#8230;) with the new animations and attributes of CSS3 and HTML5 provide us the great technical tools that have led to a new revolution of web interfaces. Moreover, if we combine these powerful tools with the implementation of design patterns such as Responsive Web Design, Graceful Degradation and Progressive Enhancement while following a User-centered design, we can achieve an amazing user experience and a great satisfaction from our customers.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Improving the UI to achieve a better UX: My experience in Stat4you]]></title>
+    <link href="http://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you/"/>
+    <updated>2013-01-02T17:29:00+00:00</updated>
+    <id>http://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you</id>
+    <content type="html"><![CDATA[<p>I had this article started but uncompleted since September 2012, and as a New Year’s Resolution for 2013 I decided to finish it.</p>
+
+
+
+
+<p>Back then, I had been working for some months as a Front-end engineer in <a href="http://www.stat4you.com">Stat4you</a>. In the early summer we were in a hurry to finish the alpha version of the platform, so we released it without paying too much atention to the details. A feature that was included in this release were the filters for the charts, by means of which users were able to change the positions of the dimensions and also to enable and disable the categories of those dimensions, thus changing the chart being displayed.</p>
+
+
+
+
+<p>The images below are screenshots of the filters initially released in Stat4you:</p>
+
+
+<p><img src="http://www.romenrg.com/images/s4y_table_filter.png" /></p>
+
+<p><em>The image above shows the filters available for the tables in the initial alpha version of the platform. The blue elements represent the containers of the dimensions which, in this case, have been also placed in a particular way to help the user understand the position in which every dimension will appear. The white elements represent the dimensions whilst the orange ones represent the categories of each dimension.</em></p>
+
+
+
+
+<!-- More -->
+
+
+<p><img src="http://www.romenrg.com/images/s4y_table_filter2.png" /></p>
+
+<p><em>In this image, the categories of one of the dimensions have been unfolded, this way the user can see all the categories available for a particular dimension, not only the previewed ones that can be seen without clicking in the right arrow. Also, it can be seen that the &#8220;Periodos&#8221; dimension has been moved to fixed (by doing drag and drop). This means that this dimension has been set to a specific category, which by default was the first one.</em></p>
+
+
+<p><img src="http://www.romenrg.com/images/s4y_barAndLine_filter.png" /></p>
+
+<p><em>Finally, there were also filters for the charts. Opposed to the table, in this case all the dimensions were displayed horizontally. The white text over the blue background indicated the position in which the dimension was going to appear if placed there (in the x-axis, in the columns&#8230;).</em></p>
+
+
+
+
+<p>As you could guess, this filters were kind of messy for the users. It was a quick design created in a hurry by us (developers) to launch the initial version of the product; so we made the mistake of not taking into account the user experience as much as we should have, although it was a MVP and was going to be improved in the near future.</p>
+
+
+
+
+<p>The days following the launch of the alpha version of Stat4you we had some feedback from visitors, and a portion of the negative feedback was regarding the filters, which appeared to be (as you can guess) confusing and difficult to use, causing a poor user experience. Hence, we decided to improve the user interface to achieve a better acceptance.</p>
+
+
+
+
+<p>To improve the filters we run some usability tests. In my case, I asked for the favor to some friends and family and started the experiment. In this experiment I asked them to access to some datasets within the platform and, once the dataset was accessed, I encouraged them to change the displayed chart or table to achieve a particular visualization (fixing dimensions, disabling some categories of other dimensions and changing their positions). As other users had reported before, the results were poor. It was difficult for them to achieve the changes I requested, but I got tons of information about the improvements needed: such as a search box for the categories, a better indication of the positions in which dimensions could be placed or a visible indication of which was the selected category in the fixed dimensions.</p>
+
+
+
+
+<p>Once these improvements were identified all we had to do was to develop them,knowing that those functionalities were the real needs of the users.</p>
+
+
+
+
+<p>The result of these changes can be seen in the following images:</p>
+
+
+<p><img src="http://www.romenrg.com/images/s4y_table_filter_new.png" /></p>
+
+<p><em>In this first image, the main changes were the labels indicating the positions in which dimensions could be placed and the width of the fixed position box, that now occupied the 100% of the available width.</em></p>
+
+
+<p><img src="http://www.romenrg.com/images/s4y_table_filters2_new.png" /></p>
+
+<p><em>In this case, some changes can be seen: For the fixed dimensions now the selected category is visible at every moment, preventing the users from unfolding the dimension to know which one the selected category is. In addition, a search box has been introduced to search within the categories of a dimension, making it much easier to find a particular category. Moreover, the &#8216;x&#8217; that was placed at the top right position of the unfolded box was removed and replaced by an &#8216;accept&#8217; button at the bottom right corner. In our experience, this change that forced users to accept the changes in order to close the unfolded categories, helped them to realize that the changes made are always going to be persisted. Before this change was made, some users had the sensation that when the &#8216;x&#8217; was clicked, it was going to undo the changes.</em></p>
+
+
+<p><img src="http://www.romenrg.com/images/s4y_barAndLine_filters_new.png" /></p>
+
+<p><em>For the charts, the main change were the labels and shapes of the position boxes. The new interface seems to make the available options of edition easier to understand for users. Besides, it mantains greater uniformity with the tables filters.</em></p>
+
+
+
+
+<p>After these changes, we obtained positive feedback from users, and in the usability tests conducted afterwards, the user experience improved significantly. Firstly we had developed a UI without testing it with real users and when we released the product, the user experience with the filters was poor; we had to conduct some tests once it was in production, detect the problems users were having and then rewrite the interface and re-launch the product with the improved filters.</p>
+
+
+
+
+<p>In conclusion, what I learned back then was something that I already knew, but sometimes with the rush and the misunderstandings of what a MVP actually is, we tend to forget: When designing user interfaces it is really important to prototype first, do some usability testings with the prototype and improve user interfaces by means of users feedback. Then, once these first steps are finished, it is time to implement the tested solution. This way, it will take more time to launch, but it ensures us to achieve a good user experience since the launch day, avoiding the extra time and cost of rebuilding the feature afterwards. It could seem faster to design and implement a simple UI without usability testing and user feedback, but it will have the drawback of causing a worse user experience and, in the long run, it will probably cost more (time and money) in order to rebuild the UI to achieve a better UX.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Front-end engineer role]]></title>
+    <link href="http://www.romenrg.com/blog/2012/08/17/the-front-end-engineer-role/"/>
+    <updated>2012-08-17T20:27:00+01:00</updated>
+    <id>http://www.romenrg.com/blog/2012/08/17/the-front-end-engineer-role</id>
+    <content type="html"><![CDATA[<p>The Front-end engineer is a relatively recent role in software development, but its importance is growing everyday as the importance of Javascript does. I&#8217;ve been working as a front-end engineer in the <a href="http://www.stat4you.com">Stat4you</a> project since January and in this article I will try to describe this role, emphasize its importance and highlight the differences that the introduction of Javascript has brought to the development of the front-end of web applications.</p>
+
+
+
+
+<p>I would like to introduce this article with a quote from the human-computer interaction expert Jeff Raskin that summarizes quite clearly the importance of software interfaces from the perspective of users. It reads: <em>“As far as the customer is concerned, the interface is the product”</em>.</p>
+
+
+
+
+<p>Although the quote above seems quite obvious, often developers and managers tend to forget or underestimate the importance of user interfaces, blinded by the complexity of the back-ends of the applications. This blindness has led many projects to failure, but fortunately this is starting to change.</p>
+
+
+
+
+<p>In order to continue highlighting the importance of user interfaces, there is another quote from Linus Torvalds on this topic which I also fully agree with: <em>“In many cases, the user interface to a program is the most important part for a commercial company: whether the programs works correctly or not seems to be secondary”</em>.</p>
+
+
+<p><img src="http://www.romenrg.com/images/angry.jpg" /></p>
+
+<!-- More -->
+
+
+
+
+<p>Quite often, traditional developers teams give priority to the development of new and complex features (which mostly will never be used by the majority of end-users) instead of spending the time in the creation a friendly and easy to use interface. This frequently results in a hard-to-use application with a lot of functionalities that will never be used due to the poor user experience caused by its unfriendly interface. Thereby, many projects meet with failure due to usability issues rather than lack of functionalities, as Linus Torvalds said.</p>
+
+
+
+
+<p>But… <em>What is exactly the interface?</em> And, <em>who develops it?</em> For many years there hasn’t been a figure in the development process dedicated exclusively to interfaces. Usually there was only the general concept of developer or programmer, who sometimes coded the business logic or the services, while in other occasions had to control user events or choose the color of the buttons and the way the information had to be displayed.</p>
+
+
+
+
+<p>It is true that it has been years since there is also a role related somehow with interfaces. It is called the designer, but usually this role is related to someone with an artistic background, most of the time it is someone who works fine creating images with Photoshop, but with little or none technical knowledge about HTML, CSS and Javascript. This kind of professional cannot be considered a Front end engineer. It is just a graphic designer.</p>
+
+
+
+
+<p>Working on this article I found an <a href="http://htmlcssjavascript.com/web/the-front-end-engineering-spectrum-the-three-generic-types-of-front-end-engineers/">interesting categorization</a> done by Rob Larsen in which he describes three profiles of front-end engineers: “the creative” (who would be probably a designer with HTML and CSS skills), “the coder” (who would be a javascript programmer, also strong at CSS and HTML but probably weak at design) and there a last one, named “the core” (this would be somewhere in the middle of the other two).</p>
+
+
+
+
+<p>The profiles defined above are rather wide, but I find them quite accurate. In my case, due to my programmer background and these last months focused on javascript I fit probably better into “the coder” although I see something of me in “the core” profile. Probably I was in this profile years ago, before studying at university, when I was interested in the web in general and I started learning both design and programming by myself. Then, at university I started to learn more about programming and I became more “coder”.</p>
+
+
+
+
+<p>Reading <a href="http://htmlcssjavascript.com/web/the-front-end-engineering-spectrum-the-roles/">another post</a> of Rob Larsen in which he describes the different front-end roles, I found his <strong>description of a “Front end developer”</strong>. He defines it as someone who is “responsible for HTML, CSS and JavaScript templates and prototypes at the beginning of development and remains heavily involved with the integration and QA phases of a site build. This person is solely focused on the presentation layer. While one might occasionally help out with tasks on either the design side or the server side, 95% of the work done in this role is in the narrow band defined above.”. He also says that this role is for a “core” or a “coder” who is happy to focus in javascript as his main programming language. I think that in the project I&#8217;m working on right now I fit in this description of front-end engineer fairly well.</p>
+
+
+
+
+<p>About the old concept of designer, Rob Larsen says: <em>“The general trend of the front end engineering spectrum is expanding away from this type of role”</em> mainly due to the importance of javascript.</p>
+
+
+<p><img title="The front-end layers" src="http://www.romenrg.com/images/applicationLayers3.png" /></p>
+
+<p>In the image above, we can see the distribution of tasks between front-end and back-end in a web application. In the case of the front-end I have separated it in two columns: on the right side we have the traditional web application (where the presentation code is in the server) and in the left side we have the modern concept (with javascript controllers in the client side).</p>
+
+
+
+
+<p>Nowadays with the growing importance of Javascript and the single-page applications, the controllers of the web applications are being moved to the client using javascript MVC frameworks such as Backbone.js, with the goal of providing a more fluid user experience akin to a desktop application. In our case, we have thinned the server side significantly with this approach. The server side provides a REST API from which the client consumes the services. The client sends AJAX requests to the API and the server sends JSON responses with the information required. </p>
+
+
+
+
+<p>Thus, in our case the information processing and the built of the web interface are done in the client side by the front-end engineer, using Javascript for the behavior and HTML and CSS for the markup and styles. For us this has been possible and maintainable thanks to the help of many frameworks, libraries and tools such as Backbonejs, Underscorejs, jQuery, D3js, Highcharts, Jasmine, Handlebars, Less and the Google Chrome Inspector for debugging. Surely, I would write about some of them in more detail in future.</p>
+
+
+
+
+<br />
+
+
+
+
+<p>So, in conclusion, front-end engineering is not designing, even though the design is a part of the front-end of an application. A front-end engineer must be someone focused on the presentation layer, mainly responsible for HTML, CSS and JavaScript templates and prototypes even though might occasionally help out with tasks on either the design side or the server side. With the growing importance of Javascript and the help of frameworks and libraries the controllers are being moved to the client side and being written in Javascript, leading the front-end engineers to focus on this programming language.</p>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Giving Octopress a shot for this new Blog]]></title>
+    <link href="http://www.romenrg.com/blog/2012/06/09/giving-octopress-a-shot-for-this-new-blog/"/>
+    <updated>2012-06-09T15:05:00+01:00</updated>
+    <id>http://www.romenrg.com/blog/2012/06/09/giving-octopress-a-shot-for-this-new-blog</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve been trying to set up a new Blog for a while, but to use a nice excuse, I haven&#8217;t had enough time to do it. On Friday I was talking with my workmate <a href="http://www.axelhzf.com">Axel</a> about <a href="http://www.octopress.org">Octopress</a> and it seemed interesting to me. I have just finished the installation and deployment of it using <a href="http://www.github.com">GitHub</a> and it has been rather easy.</p>
+
+
+
+
+<p>While I was reading about Octopress, I found <a href="http://inessential.com/2011/03/16/a_plea_for_baked_weblogs">this post</a> where the author writes about the importance of static rendering for webpages and blogs at present. Nowadays the most popular CMS systems store post and pages in a database and then they build the pages from the database on every request. Although it is also true that there are some cache plug-ins to improve this behavior, he states that this traditional implementation is inefficient. This idea reminded me that two years ago, when I built my own CMS for personal websites Sigecu CMS, I had this idea in mind, so what I did was to generate a static HTML page every time the user makes a change in the website, avoiding this problem. I would try to write some posts in the future about Sigecu.</p>
+
+]]></content>
+  </entry>
+  
+</feed>
