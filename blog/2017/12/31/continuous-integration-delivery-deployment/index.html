@@ -131,9 +131,9 @@
 
 <p>The concept of Continuous Integration (CI) was originally proposed by Grady Booch in 1991 and later integrated into <a href="http://www.extremeprogramming.org/">Extreme Programming</a>. From then on, specially thanks to the <a href="http://agilemanifesto.org/">Agile Software Development</a> movement (as well as <a href="https://www.atlassian.com/devops">DevOps culture</a>), the technique has been widely adopted in the industry.</p>
 
-<h3>Original definition</h3>
+<h3>Core proposition</h3>
 
-<p>Originally, the concept of Continuous Integration was associated exclusively with Version Control Systems (VCS). It was described as integrating developers&#8217; work (their working copies or branches) to the mainline (<em>trunk</em> in subversion or <em>master</em> branch in git) at least once a day.</p>
+<p>The core proposition of Continuous Integration is associated with Version Control Systems (VCS). It was originally described as a simple technique, which consisted of integrating developers&#8217; work (their working copies or branches) to the mainline (<em>trunk</em> in subversion or <em>master</em> branch in git) at least once a day.</p>
 
 <p>The idea behind these daily integrations to the mainline is to reduce integration problems, which are usually caused by the complexity of merging the work of developers that have been working isolatedly for a while. By integrating daily or after each commit, the complexity of the merge process is drastically reduced, as can be seen in the following example:</p>
 
@@ -147,7 +147,7 @@
 
 <h3>Extended Continuous Integration</h3>
 
-<p>Although the original proposal has value on itself, <strong>more recently the definition of Continuous Integration has been broadened</strong>. Nowadays it often implies the existence of a CI Server (such as <a href="https://jenkins-ci.org/">Jenkins</a>) that, once a new change is made to the mainline of the VCS, executes a <a href="https://jenkins.io/doc/book/pipeline/">Continuous Integration Pipeline</a>. These pipelines are formed of different stages, executed sequentially on every integraton. Their goal, <a href="https://www.martinfowler.com/articles/continuousIntegration.html">as Martin Fowler states</a>, is <strong>to verify every integration with an automated build</strong>, to detect integration errors as quickly as possible. These builds include at least the compilation of the source code and the execution of unit tests, although in many cases other stages such as packaging, execution of integration / end-to-end tests and static code analysis are also included in these Continuous Integration Pipelines.</p>
+<p>Although the core proposition of CI, described above, has value on itself, <strong>the definition of Continuous Integration was soon broadened</strong>. Nowadays, it often implies the existence of a CI Server (such as <a href="https://jenkins-ci.org/">Jenkins</a>) that, once a new change is made to the mainline of the VCS, executes a <a href="https://jenkins.io/doc/book/pipeline/">Continuous Integration Pipeline</a>. These pipelines are formed of different stages, executed sequentially on every integraton. Their goal, <a href="https://www.martinfowler.com/articles/continuousIntegration.html">as Martin Fowler states</a>, is <strong>to verify every integration with an automated build</strong>, to detect integration errors as quickly as possible. These builds include at least the compilation of the source code and the execution of unit tests, although in many cases other stages such as packaging, execution of integration / end-to-end tests and static code analysis are also included in these Continuous Integration Pipelines.</p>
 
 <p>In this extended definition, the pipeline can either finish successfully or a failure can be produced in any of the stages (tests failing, static analysis not passing a defined threshold….). Usually, in the event of a failure, a notification email is sent to the person that created the last commit (probably the one causing the failure). In such cases, in order to really get the benefits of Continuous Integration, it should be a priority for the team to keep the Continuous Integration status <em>green</em> (passing) instead of <em>red</em> (failing), fixing any problem as soon as it is detected (<a href="https://continuousdelivery.com/foundations/continuous-integration/#faq">ideally in less than 10 minutes</a>).</p>
 
@@ -155,7 +155,7 @@
 
 <h2>Continuous Delivery vs Continuous Deployment</h2>
 
-<p>Once the extended Continuous Integration is set, we may decide to continue making deployments faster and safer. The next step would be automating deployments to production. Here is where the two remaining techniques (Continuous Delivery and Continuous Deployment) subtly differ, as can be see in the following diagram:</p>
+<p>Once Continuous Integration is set, we may decide to continue improving our processes. The next step would be automating deployments to production, making them faster and safer. Here is where the two remaining techniques (Continuous Delivery and Continuous Deployment) subtly differ, as can be see in the following diagram:</p>
 
 <p><a href="/images/continuous_delivery_vs_deployment.png"><img src="/images/continuous_delivery_vs_deployment.png" alt="Diagram showing usual stages of Continuous Integration and the differences between Continuous Delivery and Continuous Deployment" /></a></p>
 
