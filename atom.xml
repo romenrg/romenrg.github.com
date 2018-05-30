@@ -4,7 +4,7 @@
   <title><![CDATA[Blog @romenrg]]></title>
   <link href="http://www.romenrg.com/atom.xml" rel="self"/>
   <link href="http://www.romenrg.com/"/>
-  <updated>2018-05-28T20:17:50+01:00</updated>
+  <updated>2018-05-30T13:45:33+01:00</updated>
   <id>http://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
@@ -27,9 +27,9 @@
 <!-- More -->
 
 
-<p>During this year I have been deeply involved in the topic, since I have been working on setting up Continuous Integration and Continuous Delivery in <a href="http://www.gobiernodecanarias.org/platino/">Platino</a>, which is a big government project that has been around for almost 10 years. Platino receives tens of millions of requests every month and has a considerable codebase, being composed of more than 50 web services and 9 web applications, deployed in different containers.</p>
+<p>This year I have been deeply involved in the subject, since I have been working on setting up Continuous Integration and Continuous Delivery in <a href="http://www.gobiernodecanarias.org/platino/">Platino</a>, which is a big government project that has been around for almost 10 years. Platino receives tens of millions of requests every month and has a considerable codebase, being composed of more than 50 web services and 9 web applications.</p>
 
-<p>In this time I have realized that, despite the importance of these practices, many professionals in the industry still miss the differences between the three, often talking about them indistinctly in conversations, which creates a lot of confusion. So, let&#8217;s check the differences:</p>
+<p>During this time I have realized that, despite the importance of these practices, many professionals in the industry still miss the differences between the three, often talking about them indistinctly in conversations, which creates a lot of confusion around the topic. So, let&#8217;s check the differences:</p>
 
 <h2>Continuous Integration</h2>
 
@@ -49,9 +49,9 @@
 
 <p>However, although this original proposal has value on itself, <strong>more recently the definition of Continuous Integration has been broadened</strong>. Nowadays it often implies the existence of a CI Server (such as <a href="https://jenkins-ci.org/">Jenkins</a>) that, once a new change is made to the mainline of the VCS, executes a <a href="https://jenkins.io/doc/book/pipeline/">Continuous Integration Pipeline</a>. These pipelines are formed of different stages, executed sequentially on every integraton. Their goal, <a href="https://www.martinfowler.com/articles/continuousIntegration.html">as Martin Fowler states</a>, is <strong>to verify every integration with an automated build</strong>, to detect integration errors as quickly as possible. These builds include at least the compilation of the source code and the execution of unit tests, although in many cases other stages such as packaging, execution of integration / end-to-end tests and static code analysis are also included in these Continuous Integration Pipelines.</p>
 
-<p>In this extended definition, the pipeline can either finish successfully or a failure can be produced in any of the stages (tests failing, static analysis not passing a defined threshold….). Usually, in the event of a failure an email is sent to the person that created the last commit (probably the one causing the failure). In order to really get the benefits of Continuous Integration, it should be a priority for the team to keep the Continuous Integration status <em>green</em> (passing) instead of <em>red</em> (failing), fixing any problem as soon as it is detected.</p>
+<p>In this extended definition, the pipeline can either finish successfully or a failure can be produced in any of the stages (tests failing, static analysis not passing a defined threshold….). Usually, in the event of a failure, a notification email is sent to the person that created the last commit (probably the one causing the failure). In such cases, in order to really get the benefits of Continuous Integration, it should be a priority for the team to keep the Continuous Integration status <em>green</em> (passing) instead of <em>red</em> (failing), fixing any problem as soon as it is detected (<a href="https://continuousdelivery.com/foundations/continuous-integration/#faq">ideally in less than 10 minutes</a>).</p>
 
-<p>Following this approach, automated builds with several checks are performed to our code every time we integrate changes, allowing us to detect any issues in an early stage. <strong>This quick detection of problems makes fixing them much cheaper than in traditional approaches</strong>. Formerly, detection used to occur much later, often during QA or deployment phases, and many times in production, after having deployed. In those cases, days, weeks or even months have passed and developers have switched context, making it difficult for them to remember the particular cases they were working on when the problem was produced. Moreover, the higher pressure for deployment deadlines at those later stages usually leads to poorer solutions, that not only hinder code quality (reducing its readability and mantainability) but also tend to introduce new bugs.</p>
+<p>Following this approach, automated builds with several checks are performed to our code every time we integrate changes, allowing us to detect any issues in an early stage. <strong>This quick detection of problems makes fixing them much cheaper than in traditional approaches</strong>. When these automated builds are not in place, detection of problems tends to occur much later, often during QA or deployment phases, and many times in production, after having deployed the new version. In those cases, days, weeks or even months have passed and developers have switched context, making it difficult for them to remember the particular cases they were working on when the problem was produced. Moreover, the higher pressure for deployment deadlines at those later stages usually leads to poorer solutions, that not only hinder code quality (reducing its readability and mantainability) but also tend to introduce new bugs.</p>
 
 <h2>Continuous Delivery vs Continuous Deployment</h2>
 
@@ -61,7 +61,7 @@
 
 <p><em>Difference between Continuous Delivery and Continuous Deployment</em></p>
 
-<p><a href="https://continuousdelivery.com/">Continuous Delivery was described by Jez Humble</a>, as <em>&#8220;the ability to get changes of all types [&#8230;] into production, or into the hands of users, safely and quickly in a sustainable way&#8221;</em>. <strong>Continuous Delivery does not necessarily involve deployment to production on every change</strong>. We just need to ensure that our code is always in a deployable state. On the other hand, Continuous Deployment, however, does require every change to be always deployed automatically.</p>
+<p><a href="https://continuousdelivery.com/">Continuous Delivery was described by Jez Humble</a>, as <em>&#8220;the ability to get changes of all types [&#8230;] into production, or into the hands of users, safely and quickly in a sustainable way&#8221;</em>. <strong>Continuous Delivery does not necessarily involve deployment to production on every change</strong>. We just need to ensure that our code is always in a deployable state, so we can deploy it easily whenever we want. On the other hand, Continuous Deployment requires every change to be always deployed automatically, without human intervention.</p>
 
 <p>Thus, as can be seen in the image above, if we decide to enhance the pipeline so that, once the Continuous Integration stages are completed, the new artifact is automatically deployed to production, we talk about <strong>Continuous Deployment</strong>. On the other hand, if we manage to automate everything, but decide to require a human approval in order to proceed with the deployment of the new version, we are talking about <strong>Continuous Delivery</strong>. The difference is subtle, but it has huge implications, making each technique appropriate for different situations, as we will see below.</p>
 
