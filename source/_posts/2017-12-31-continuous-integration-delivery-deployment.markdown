@@ -2,14 +2,14 @@
 layout: post
 title: "Continuous Integration, Delivery and Deployment: Key Differences"
 date: 2017-12-31 18:46
-updated: 2018-05-28 20:15
+updated: 2018-06-24 10:45
 comments: true
 categories: [Software Development, DevOps, Management]
 description: "Continuous integration, continuous delivery and continuous deployment are key modern practices in software development. These techniques allow us to deploy code more frequently and more safely, being tightly linked to agile approaches and DevOps culture. But... What are the differences between them?"
 keywords: continuous integration, continuous deployment, continuous delivery, agile, devops, software, production
 twitterimg: "/images/two_paths_fork_unsplash.jpg"
 ---
-Continuous Integration, Continuous Delivery, and Continuous Deployment are key modern practices in software development that share two main goals: to deploy more frequently and more safely. These processes take advantage of automation to assess the quality and correctness of the new software and to make deployments much more predictable, faster and less error prone. But... Do you really know the differences between the three?
+Continuous Integration, Continuous Delivery, and Continuous Deployment are key modern practices in software development. These techniques help us reduce integration problems, automate quality assessment and make deployments much more predictable and less error prone, allowing us to deploy easily and frequently. But… Do you really know the differences between the three?
 
 <img src="/images/two_paths_fork_unsplash.jpg" alt="Picture of a fork in the trail in a forest, leading to two alternative paths" />
 
