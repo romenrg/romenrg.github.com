@@ -76,5 +76,6 @@ As mentioned above, these processes are key elements in modern-day software deve
 
 <div class="revisions">
   <h2>Significant revisions</h2>
+  <p><em>2018, Jun 24</em>: Improving 'continuous delivery vs continuous deployment' figure.</p>
   <p><em>2018, May 28</em>: Improving overall style, rephrasing last section, adding a better description and improving example images.</p>
 </div>
