@@ -4,7 +4,7 @@
   <title><![CDATA[Blog @romenrg]]></title>
   <link href="http://www.romenrg.com/atom.xml" rel="self"/>
   <link href="http://www.romenrg.com/"/>
-  <updated>2018-05-30T18:08:07+01:00</updated>
+  <updated>2018-06-24T11:21:54+01:00</updated>
   <id>http://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
@@ -18,7 +18,7 @@
     <link href="http://www.romenrg.com/blog/2017/12/31/continuous-integration-delivery-deployment/"/>
     <updated>2017-12-31T18:46:00+00:00</updated>
     <id>http://www.romenrg.com/blog/2017/12/31/continuous-integration-delivery-deployment</id>
-    <content type="html"><![CDATA[<p>Continuous Integration, Continuous Delivery, and Continuous Deployment are key modern practices in software development that share two main goals: to deploy more frequently and more safely. These processes take advantage of automation to assess the quality and correctness of the new software and to make deployments much more predictable, faster and less error prone. But&#8230; Do you really know the differences between the three?</p>
+    <content type="html"><![CDATA[<p>Continuous Integration, Continuous Delivery, and Continuous Deployment are key modern practices in software development. These techniques help us reduce integration problems, automate quality assessment and make deployments much more predictable and less error prone, allowing us to deploy easily and frequently. But… Do you really know the differences between the three?</p>
 
 <p><img src="http://www.romenrg.com/images/two_paths_fork_unsplash.jpg" alt="Picture of a fork in the trail in a forest, leading to two alternative paths" /></p>
 
@@ -142,7 +142,7 @@ Last year I was introduced to a company that had recently been created with the 
 <li><p><strong>Every programmer shall have access to the big picture</strong>. <br/>
 Sometimes programmers are not presented with the big picture of the system they are contributing to build, but instead they are given small tasks to do, with narrow descriptions. In those cases, they often do not have direct access to the product owner nor the end users of the software they are working on. This usually causes trouble, since many wrong decisions can be made and many misconceptions can be created. To design software that can evolve properly in the desired direction, developers should understand the big picture, the whole system that is being built, not only the small task that has been assigned to them at one point. Moreover, developers should be free to ask as many functional questions as they need, so they can make the right design decisions and write software that can evolve as expected, avoiding later problems.</p></li>
 <li><p><strong>Every programmer shall have autonomy in his daily work</strong>. <br/>
-As any other creative process, programming requires autonomy. That is why agile frameworks, like <a href="https://en.wikipedia.org/wiki/Scrum_(software_development)">Scrum</a>, propose planning work for periods of a week, 15 days or a month; so developers can organize themselves in between. Daily meetings can help detect and resolve problems, as well as keep the development team in sync; but freedom for each contributor to organize his workday without suffering micromanagement should be preserved. The need for autonomy also applies to the programming process, where creativity is key to problem-solving. Some developers prefer to solve a task by creating some tests first, others build a monolithic function and then refactor it, others start by understanding the existing codebase and doing some diagrams&#8230; Any of these approaches should be respected, as long as basic agreements of the team (e.g. <em>&#8220;definition of done&#8221;</em>) and quality standards (e.g. <em>minimum code coverage</em>) are met.</p></li>
+As any other creative process, programming requires autonomy. That is why agile frameworks, like <a href="https://en.wikipedia.org/wiki/Scrum_(software_development)">Scrum</a>, propose planning work for periods of a week, 15 days or a month; so developers can organize themselves in between. Daily meetings can help detect and resolve problems, as well as keep the development team in sync; but freedom for each contributor to organize his workday without suffering micromanagement should be preserved. The need for autonomy also applies to the programming process, where creativity is key to problem-solving. Some developers prefer to solve a task by creating some tests first, others build a monolithic function and then refactor it, others start by understanding the existing codebase and doing some diagrams&#8230; Any of these approaches should be respected, as long as basic agreements of the team (e.g. <em>&#8220;definition of done&#8221;</em>) and quality standards (e.g. <em>minimum test coverage</em>) are met.</p></li>
 </ol>
 
 
