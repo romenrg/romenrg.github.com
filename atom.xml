@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Blog @romenrg]]></title>
-  <link href="http://www.romenrg.com/atom.xml" rel="self"/>
-  <link href="http://www.romenrg.com/"/>
-  <updated>2018-06-24T11:21:54+01:00</updated>
-  <id>http://www.romenrg.com/</id>
+  <link href="https://www.romenrg.com/atom.xml" rel="self"/>
+  <link href="https://www.romenrg.com/"/>
+  <updated>2018-06-24T11:31:25+01:00</updated>
+  <id>https://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
     
@@ -15,12 +15,12 @@
   
   <entry>
     <title type="html"><![CDATA[Continuous Integration, Delivery and Deployment: Key Differences]]></title>
-    <link href="http://www.romenrg.com/blog/2017/12/31/continuous-integration-delivery-deployment/"/>
+    <link href="https://www.romenrg.com/blog/2017/12/31/continuous-integration-delivery-deployment/"/>
     <updated>2017-12-31T18:46:00+00:00</updated>
-    <id>http://www.romenrg.com/blog/2017/12/31/continuous-integration-delivery-deployment</id>
+    <id>https://www.romenrg.com/blog/2017/12/31/continuous-integration-delivery-deployment</id>
     <content type="html"><![CDATA[<p>Continuous Integration, Continuous Delivery, and Continuous Deployment are key modern practices in software development. These techniques help us reduce integration problems, automate quality assessment and make deployments much more predictable and less error prone, allowing us to deploy easily and frequently. But… Do you really know the differences between the three?</p>
 
-<p><img src="http://www.romenrg.com/images/two_paths_fork_unsplash.jpg" alt="Picture of a fork in the trail in a forest, leading to two alternative paths" /></p>
+<p><img src="https://www.romenrg.com/images/two_paths_fork_unsplash.jpg" alt="Picture of a fork in the trail in a forest, leading to two alternative paths" /></p>
 
 <p>The aim of this article is to help clarify what do these techniques mean and highlight the benefits each one provides. We will also analyze which one should be chosen depending on the circumstances.</p>
 
@@ -41,11 +41,11 @@
 
 <p>The idea behind these daily integrations to the mainline is to reduce integration problems, which are usually caused by the complexity of merging the work of developers that have been working isolatedly for a while. By integrating daily or after each commit, the complexity of the merge process is drastically reduced, as can be seen in the following example:</p>
 
-<p><a href="http://www.romenrg.com/images/branches_without_ci.png"><img src="http://www.romenrg.com/images/branches_without_ci.png" alt="Image of two developers working isolatedly over time, creating several commits before merging" /></a></p>
+<p><a href="https://www.romenrg.com/images/branches_without_ci.png"><img src="https://www.romenrg.com/images/branches_without_ci.png" alt="Image of two developers working isolatedly over time, creating several commits before merging" /></a></p>
 
 <p><em>Example of two developers creating several commits in their corresponding branches before merging. Squares represent commits and the circle represents the big merge that has to be made at the end.</em></p>
 
-<p><a href="http://www.romenrg.com/images/branches_ci.png"><img src="http://www.romenrg.com/images/branches_ci.png" alt="Image of two developers applying continuous integration, integrating each change into the mainline" /></a></p>
+<p><a href="https://www.romenrg.com/images/branches_ci.png"><img src="https://www.romenrg.com/images/branches_ci.png" alt="Image of two developers applying continuous integration, integrating each change into the mainline" /></a></p>
 
 <p><em>Example of two developers applying the original concept of Continuous Integration, integrating every change into the mainline. As before, squares represent commits and circles represent merges, which are much simpler now, due to the high frequency of integration.</em></p>
 
@@ -61,7 +61,7 @@
 
 <p>Once Continuous Integration is set, we may decide to continue improving our processes. The next step would be automating deployments to production, making them faster and safer. Here is where the two remaining techniques (Continuous Delivery and Continuous Deployment) subtly differ, as can be see in the following diagram:</p>
 
-<p><a href="http://www.romenrg.com/images/continuous_delivery_vs_deployment.png"><img src="http://www.romenrg.com/images/continuous_delivery_vs_deployment.png" alt="Diagram showing usual stages of Continuous Integration and the differences between Continuous Delivery and Continuous Deployment" /></a></p>
+<p><a href="https://www.romenrg.com/images/continuous_delivery_vs_deployment.png"><img src="https://www.romenrg.com/images/continuous_delivery_vs_deployment.png" alt="Diagram showing usual stages of Continuous Integration and the differences between Continuous Delivery and Continuous Deployment" /></a></p>
 
 <p><em>Difference between Continuous Delivery and Continuous Deployment</em></p>
 
@@ -85,7 +85,8 @@
 
 <div class="revisions">
   <h2>Significant revisions</h2>
-  <p><em>2018, May 28</em>: Improving overall style, rephrasing last section, adding a better description and improving example images.</p>
+  <p><em>2018, Jun 24</em>: Figure &#8216;continuous delivery vs continuous deployment&#8217; improved.</p>
+  <p><em>2018, May 28</em>: Overall style improvements, rephrasing last section, adding a better description and improving example images.</p>
 </div>
 
 ]]></content>
@@ -93,12 +94,12 @@
   
   <entry>
     <title type="html"><![CDATA[The Programmer Bill Of Rights, Revisited]]></title>
-    <link href="http://www.romenrg.com/blog/2016/11/15/the-programmer-bill-of-rights/"/>
+    <link href="https://www.romenrg.com/blog/2016/11/15/the-programmer-bill-of-rights/"/>
     <updated>2016-11-15T18:34:00+00:00</updated>
-    <id>http://www.romenrg.com/blog/2016/11/15/the-programmer-bill-of-rights</id>
+    <id>https://www.romenrg.com/blog/2016/11/15/the-programmer-bill-of-rights</id>
     <content type="html"><![CDATA[<p>10 years ago, <a href="https://en.wikipedia.org/wiki/Jeff_Atwood">Jeff Atwood</a> wrote an article he titled <a href="https://blog.codinghorror.com/the-programmers-bill-of-rights/">The Programmer Bill of Rights</a>. In that article he described 6 fundamentals that companies should provide for programmers to be successful and work to their full potential, thus maximizing their productivity.</p>
 
-<p><img src="http://www.romenrg.com/images/two_monitors_unsplash.jpg" alt="Picture of a programmers desk with two monitors, one of them showing code" /></p>
+<p><img src="https://www.romenrg.com/images/two_monitors_unsplash.jpg" alt="Picture of a programmers desk with two monitors, one of them showing code" /></p>
 
 <p>Sadly, ten years later, many companies still deny these basics to their developers, even though the business case for these six points is absolutely proved.</p>
 
@@ -175,12 +176,12 @@ As any other creative process, programming requires autonomy. That is why agile 
   
   <entry>
     <title type="html"><![CDATA[Why asking software developers for time estimates is a terrible idea and how to bypass it]]></title>
-    <link href="http://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum/"/>
+    <link href="https://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum/"/>
     <updated>2015-09-28T11:17:00+01:00</updated>
-    <id>http://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum</id>
+    <id>https://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum</id>
     <content type="html"><![CDATA[<p>I have worked in many software projects and have been lucky to be in the initial team of several software products. Besides, having acted both as a Developer and as a Product Manager has allowed me to have a wider view of what usually causes most friction between business and engineering: time estimates.</p>
 
-<p><img src="http://www.romenrg.com/images/scrum_software_estimates_reverse_engineering_pixabay.jpg" alt="Picture of a woman pointing to her watch as if you were late. Typical management or customer reaction to delayed software projects" /></p>
+<p><img src="https://www.romenrg.com/images/scrum_software_estimates_reverse_engineering_pixabay.jpg" alt="Picture of a woman pointing to her watch as if you were late. Typical management or customer reaction to delayed software projects" /></p>
 
 <p>It usually starts with managers or customers asking “when will &lt;this idea> be ready?” and it is usually followed by developers racking their brains to give a specific date&#8230; Needless to say, that date is likely to be <em>dreadfully wrong</em>, as it is the norm in the industry. There is a near-total inability of developers to predict how long a project will take, so time estimates are usually worthless.</p>
 
@@ -281,7 +282,7 @@ As any other creative process, programming requires autonomy. That is why agile 
 
 <p><em>Let’s say our development team is applying the strategy described in this post. It is completing about 25 points per cycle and each cycle is 15 days long. If you want to know when will a particular user story be finished, all you need to do is count the number of story points that are above it in the backlog, add its own story points and do some simple math:</em></p>
 
-<p><a href="http://www.romenrg.com/images/story_points_estimates_backlog_example.png"><img src="http://www.romenrg.com/images/story_points_estimates_backlog_example.png" alt="Example showing a backlog with story points, estimated based on effort; team velocity, cycle duration and a forecast for a particular story" /></a></p>
+<p><a href="https://www.romenrg.com/images/story_points_estimates_backlog_example.png"><img src="https://www.romenrg.com/images/story_points_estimates_backlog_example.png" alt="Example showing a backlog with story points, estimated based on effort; team velocity, cycle duration and a forecast for a particular story" /></a></p>
 
 <p><em>In this example, user story X has 52 points above it in the backlog and has 5 points itself. This means a total of 57 story points have to be completed for story X to be finished. Since in each cycle the team is completing approximately 25 points, the story you are looking for will probably be finished in 3 cycles time, meaning it would be deployed in about 45 days.</em></p>
 
@@ -308,15 +309,15 @@ As any other creative process, programming requires autonomy. That is why agile 
   
   <entry>
     <title type="html"><![CDATA[10+1 Valuable Lessons I Learned From My Failed Startup]]></title>
-    <link href="http://www.romenrg.com/blog/2015/03/17/10-plus-1-valuable-lessons-i-learned-from-my-failed-startup/"/>
+    <link href="https://www.romenrg.com/blog/2015/03/17/10-plus-1-valuable-lessons-i-learned-from-my-failed-startup/"/>
     <updated>2015-03-17T19:53:00+00:00</updated>
-    <id>http://www.romenrg.com/blog/2015/03/17/10-plus-1-valuable-lessons-i-learned-from-my-failed-startup</id>
+    <id>https://www.romenrg.com/blog/2015/03/17/10-plus-1-valuable-lessons-i-learned-from-my-failed-startup</id>
     <content type="html"><![CDATA[<p style="text-align: right;"><em>&#8230;That I will take into account for the next one.</em></p>
 
 
 <p>Being the Founder and CEO of <a href="http://www.vocabularynotebook.com">Vocabulary Notebook</a> for more than 2 years (from September, 2012 to January 2015) was one of the most intense, enriching, stressful and exciting experiences I have ever lived.</p>
 
-<p><img src="http://www.romenrg.com/images/nomad_wide_800pxwidth.png" alt="Picture of a man using a writing machine and smoking with a pipe" /></p>
+<p><img src="https://www.romenrg.com/images/nomad_wide_800pxwidth.png" alt="Picture of a man using a writing machine and smoking with a pipe" /></p>
 
 <p>During this period I went from doing some mockups alone at home and printing them in paper to use them as low fidelity MVPs for customer discovery; to close a seed funding round, found a company, build a multiplatform product, build a team of 12 people, receive several awards, participate as speaker in 3 international events, get 30 000 users in more than 130 countries, register a trademark, conduct scientific research on our product and collaborate with schools and universities from 4 different countries&#8230; As I said before, it was intense!</p>
 
@@ -356,12 +357,12 @@ As any other creative process, programming requires autonomy. That is why agile 
   
   <entry>
     <title type="html"><![CDATA[Why copywriting is key to UX: We increased conversions by 26% just changing some text]]></title>
-    <link href="http://www.romenrg.com/blog/2014/09/17/why-copywriting-is-key-to-ux-we-increased-conversions-by-26-percent-just-changing-some-text/"/>
+    <link href="https://www.romenrg.com/blog/2014/09/17/why-copywriting-is-key-to-ux-we-increased-conversions-by-26-percent-just-changing-some-text/"/>
     <updated>2014-09-17T12:16:00+01:00</updated>
-    <id>http://www.romenrg.com/blog/2014/09/17/why-copywriting-is-key-to-ux-we-increased-conversions-by-26-percent-just-changing-some-text</id>
+    <id>https://www.romenrg.com/blog/2014/09/17/why-copywriting-is-key-to-ux-we-increased-conversions-by-26-percent-just-changing-some-text</id>
     <content type="html"><![CDATA[<p>Too often people tend to think that UX is just art: Flat design, Modern UI and animations&#8230; But art represents only a tiny part of the User Experience. Some developers go one step further and think that it also implies strong technical skills (to achieve a good performance, proper-functioning software, etc). However, that is still a very narrow perspective of User / Customer Experience.</p>
 
-<p><img src="http://www.romenrg.com/images/copywriting_writing_machine.jpg" alt="Picture of a man using a writing machine and smoking with a pipe" /></p>
+<p><img src="https://www.romenrg.com/images/copywriting_writing_machine.jpg" alt="Picture of a man using a writing machine and smoking with a pipe" /></p>
 
 <p>Some of us have realized that UX is not just how beautiful our product looks or how amazing its performance is. There are several other fields that are crucial when trying to achieve a great experience for our users, as you will see in this post. And if I had to choose just one field that is definitely key to UX, it would be <em>Psychology</em>.</p>
 
@@ -398,7 +399,7 @@ As any other creative process, programming requires autonomy. That is why agile 
 <h3>Sign up page: Old version</h3>
 
 
-<p><img src="http://www.romenrg.com/images/screenshot_old_signup.png" alt="Screenshot of the Old sign-up form of Vocabulary Notebook" /></p>
+<p><img src="https://www.romenrg.com/images/screenshot_old_signup.png" alt="Screenshot of the Old sign-up form of Vocabulary Notebook" /></p>
 
 <p>This screen used to be our sign-up page for <a href="http://www.vocabularynotebook.com">Vocabulary Notebook</a>. As you can see, the page was quite simple. There is a navigation bar on top, a title and a form with its confirmation button.</p>
 
@@ -411,7 +412,7 @@ As any other creative process, programming requires autonomy. That is why agile 
 <h3>Sign up page: New version</h3>
 
 
-<p><img src="http://www.romenrg.com/images/screenshot_new_signup.png" alt="Screenshot of the New sign-up form of Vocabulary Notebook" /></p>
+<p><img src="https://www.romenrg.com/images/screenshot_new_signup.png" alt="Screenshot of the New sign-up form of Vocabulary Notebook" /></p>
 
 <p>Simple changes, right? Well, I can tell that our users have found those changes to be big enough to make a significant difference in our metrics.</p>
 
@@ -441,13 +442,13 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
   
   <entry>
     <title type="html"><![CDATA[Linking UX and Conversions by means of analytics and A/B tests]]></title>
-    <link href="http://www.romenrg.com/blog/2014/07/31/linking-ux-and-kpis-by-means-of-analytics-and-ab-tests/"/>
+    <link href="https://www.romenrg.com/blog/2014/07/31/linking-ux-and-kpis-by-means-of-analytics-and-ab-tests/"/>
     <updated>2014-07-31T19:03:00+01:00</updated>
-    <id>http://www.romenrg.com/blog/2014/07/31/linking-ux-and-kpis-by-means-of-analytics-and-ab-tests</id>
+    <id>https://www.romenrg.com/blog/2014/07/31/linking-ux-and-kpis-by-means-of-analytics-and-ab-tests</id>
     <content type="html"><![CDATA[<p>Thanks to my experience as Entrepreneur and Product Manager, I realized long ago about something that is totally counterintuitive for many other software engineers. This realization is that, when developing a software product, our main focus should always be sales. Always. Sales. I know that probably too many people have said that already, but it is so true that it is worth saying it once more, specially for my software mates: <em>&#8220;when developing a software product our main focus should always be sales&#8221;</em>.</p>
 
 
-<p><img src="http://www.romenrg.com/images/sales.jpg" /></p>
+<p><img src="https://www.romenrg.com/images/sales.jpg" /></p>
 
 <p>However, that statement is too generic. Most people already know that selling is important&#8230; But how can we sell more? Well, experience tells me that in order to increase sales, the first thing you will probably need are many more visits (and getting those visits is way more complicated than it seems). However, that is only the beginning. Once you get enough visits and you validate most of your product main hypotheses, the next step is <em>converting most of those visits into customers</em>. Here is where both <em>User Experience</em> and <em>KPIs (Key Performance Indicators)</em> become probably the most important areas for product management.</p>
 
@@ -520,13 +521,13 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
   
   <entry>
     <title type="html"><![CDATA[Vocabulary Notebook: From Idea to Reality in one year]]></title>
-    <link href="http://www.romenrg.com/blog/2013/09/30/vocabulary-notebook-from-idea-to-reality-in-one-year/"/>
+    <link href="https://www.romenrg.com/blog/2013/09/30/vocabulary-notebook-from-idea-to-reality-in-one-year/"/>
     <updated>2013-09-30T13:59:00+01:00</updated>
-    <id>http://www.romenrg.com/blog/2013/09/30/vocabulary-notebook-from-idea-to-reality-in-one-year</id>
+    <id>https://www.romenrg.com/blog/2013/09/30/vocabulary-notebook-from-idea-to-reality-in-one-year</id>
     <content type="html"><![CDATA[<p>The 8th of September 2012 I started to work intensively in an idea I called Vocabulary Notebook. With that idea I was planning to solve a problem that myself and many other english students experience while learning vocabulary. It has already been a year since then and that idea is now a real platform used by thousands of students and teachers around the world. I must say that I’m quite proud of what we have achieved during this year, both as an entrepreneur and as an engineer. Although I don’t have much free time now, I have forced myself to write this post to summarize what has happened around Vocabulary Notebook during this year, from idea to reality. Since there are so many things that have happened, I’m afraid this post is going to be quite long, but I think that the anniversary deserves it.</p>
 
 
-<p><img src="http://www.romenrg.com/images/vocabularynotebook.png" /></p>
+<p><img src="https://www.romenrg.com/images/vocabularynotebook.png" /></p>
 
 <p><em>In this image we can see the different components of Vocabulary Notebook. The full platform includes Android, iOS and Web Apps both for students and for teachers.</em></p>
 
@@ -795,9 +796,9 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
   
   <entry>
     <title type="html"><![CDATA[About UX in Modern Web Interfaces and Backbone.js: Choropleth Maps]]></title>
-    <link href="http://www.romenrg.com/blog/2013/07/27/about-modern-and-usable-web-interfaces-with-backbonejs-and-d3js-choropleth-maps/"/>
+    <link href="https://www.romenrg.com/blog/2013/07/27/about-modern-and-usable-web-interfaces-with-backbonejs-and-d3js-choropleth-maps/"/>
     <updated>2013-07-27T17:27:00+01:00</updated>
-    <id>http://www.romenrg.com/blog/2013/07/27/about-modern-and-usable-web-interfaces-with-backbonejs-and-d3js-choropleth-maps</id>
+    <id>https://www.romenrg.com/blog/2013/07/27/about-modern-and-usable-web-interfaces-with-backbonejs-and-d3js-choropleth-maps</id>
     <content type="html"><![CDATA[<p>I would like to start this post anouncing that this month I am leaving <a href="http://www.arte-consultores.com">Arte Consultores Tecnológicos</a>, after one year and seven months working there as an Analyst/Programmer (Front-end Engineer). I have made this decision because right now I need to devote myself exclusively to Langproving, which is in need of my full atention at this critical moment in which our MPV is finished and we have to market it to validate our business model.</p>
 
 
@@ -811,7 +812,7 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
 <p>One of the most valuable things I learned working at Arte was related to writing modern and usable web interfaces, not only with CSS3 animations or HTML5 new attributes and tags; but also with Javascript. In the last few years Javascript has grown up and become one of the keys of the evolution of the web. Many Javascript frameworks have emerged, ranging from those regarding DOM manipulation (jQuery) to others built to reproduce the model-view-controller (MVC) pattern in the client side, such as <a href="http://www.backbonejs.org">Backbone.js</a>. For more than a year I have been using Backbone to create Single-page applications that provide a quick response to user interaction, without the need to re-render the full page from the server as we were used to; thus improving sifnificantly the user experience (UX).</p>
 
 
-<p><img src="http://www.romenrg.com/images/js_html_css.png" /></p>
+<p><img src="https://www.romenrg.com/images/js_html_css.png" /></p>
 
 <!-- More -->
 
@@ -826,7 +827,7 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
 <p>In the following example we have a choropleth map from <a href="http://www.stat4you.com">Stat4you</a> in which the unemployment rate in the different regions of Spain is shown. The darker the colour, the higher the unemployment is. I have picked this dataset randomly, but it is worth mentioning that it shows a sad reality of Spain&#8217;s economic crisis.</p>
 
 
-<p><img src="http://www.romenrg.com/images/maps_initial.png" /></p>
+<p><img src="https://www.romenrg.com/images/maps_initial.png" /></p>
 
 <p><em>We can see different elements in the map with which several actions can be performed. Firstly, we have the map itself, which happens to be a SVG vectorial image. Secondly, we have a zoom bar that has two different buttons (+ and -) and also has a draggable element that allows us to decrease or increase the zoom — as you may notice, it must be somehow synchronized with the + and - buttons —. Aditionally, we can use the mouse wheel to zoom in and out (as we can do in Google Maps). We can also click on a particular region of the map to zoom in and center the display on it; and we can click in the button above the zoom seciton to zoom out, going back to the original zoom and position of the map. We have also a leyend section, which indicates the ranges covered by each colour in the map. Finally, we have the ranges bar, which has a draggable element in the middle that can be used to increase or decrease the number of ranges to be used. It is also possible to click on the bar itself to increase or decrease the number of ranges. Clicking in the right side increases by one the number or ranges and clicking in the left side decreases the number of ranges in the same amount (the draggable selector will be moved automatically).</em></p>
 
@@ -836,12 +837,12 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
 <p>As it can be seen, there are many elements that interact with each other. Since this is a Backbone application, everything runs on the client side. The server only loads the initial data, sends it to the client browser and then it is no needed any more. Only if the data to be displayed changes, an AJAX call is made to the server to bring new data, but not to reload the page. Anyway, this AJAX calls are beyond the scope of this post. We will focus on the interaction among the described controls of the map, which are mapped to diferent views in our MVC pattern implementation, all of them linked by a model.</p>
 
 
-<p><img src="http://www.romenrg.com/images/maps_initial_ranges.png" /></p>
+<p><img src="https://www.romenrg.com/images/maps_initial_ranges.png" /></p>
 
 <p><em>In this new image we have just moved the ranges selector two positions to the left. This has caused automatically two changes in other elements, besides the changes in the ranges selector itself. On the one hand, the leyend has changed. The ranges have been re-calculated and now they are just three, instead of the initial five. Moreover, the map has been redrawed and some regions have changed their colour, since now the ranges are different and the unemployment rates of the regions are grouped diferently.</em></p>
 
 
-<p><img src="http://www.romenrg.com/images/maps_initial_clickzoom.png" /></p>
+<p><img src="https://www.romenrg.com/images/maps_initial_clickzoom.png" /></p>
 
 <p><em>In this case, we have clicked in the autonomous city of Ceuta. When clicking in a region, as well as when we use the mouse wheel, the zoom changes. We have zoomed in to the best level of zoom in order to see the selected region properly (this is done automatically when clicking in a particular region). Moreover, the map is now centered in the selected region. As we can see, besides the changes in the map, the zoom controls have also changed. The selector is now stuck to the top, stating that the maximum level of zoom is being used.</em></p>
 
@@ -856,7 +857,7 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
 <p>To clearify how an MVC pattern can be implemented for this sample case by using Backbone framework, the following diagram has been made.</p>
 
 
-<p><img src="http://www.romenrg.com/images/maps_mvc_sinplified.png" /></p>
+<p><img src="https://www.romenrg.com/images/maps_mvc_sinplified.png" /></p>
 
 <p><em>In the diagram we have represented the User Actions, the Map Model, the different Views for each section and a Map class that could be integrated in the MapContainerView if desired. Aditionally, the HTML / SVG code to be displayed in each case is stored in Handlebars templates and it is loaded in the &#8220;render&#8221; methods of its corresponding view. During execution, every action of the user triggers an event that is captured by the Map Model. Then, the model preforms different actions depending on the behavior of the user, and once it finishes, changes in some of its attributes are made. When the model is changed, new events are fired. Each view is listening to the events triggered by the model that are associated with it, thus being able to re-render itself if needed. Moreover, in case some mayor changes that require all elements to re-render are made, the render method of the MapContainerView will be called, which will execute each element&#8217;s render in turn.</em></p>
 
@@ -870,9 +871,9 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
   
   <entry>
     <title type="html"><![CDATA[Improving the UI to achieve a better UX: My experience in Stat4you]]></title>
-    <link href="http://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you/"/>
+    <link href="https://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you/"/>
     <updated>2013-01-02T17:29:00+00:00</updated>
-    <id>http://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you</id>
+    <id>https://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you</id>
     <content type="html"><![CDATA[<p>I had this article started but uncompleted since September 2012, and as a New Year’s Resolution for 2013 I decided to finish it.</p>
 
 
@@ -886,7 +887,7 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
 <p>The images below are screenshots of the filters initially released in Stat4you:</p>
 
 
-<p><img src="http://www.romenrg.com/images/s4y_table_filter.png" /></p>
+<p><img src="https://www.romenrg.com/images/s4y_table_filter.png" /></p>
 
 <p><em>The image above shows the filters available for the tables in the initial alpha version of the platform. The blue elements represent the containers of the dimensions which, in this case, have been also placed in a particular way to help the user understand the position in which every dimension will appear. The white elements represent the dimensions whilst the orange ones represent the categories of each dimension.</em></p>
 
@@ -896,12 +897,12 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
 <!-- More -->
 
 
-<p><img src="http://www.romenrg.com/images/s4y_table_filter2.png" /></p>
+<p><img src="https://www.romenrg.com/images/s4y_table_filter2.png" /></p>
 
 <p><em>In this image, the categories of one of the dimensions have been unfolded, this way the user can see all the categories available for a particular dimension, not only the previewed ones that can be seen without clicking in the right arrow. Also, it can be seen that the &#8220;Periodos&#8221; dimension has been moved to fixed (by doing drag and drop). This means that this dimension has been set to a specific category, which by default was the first one.</em></p>
 
 
-<p><img src="http://www.romenrg.com/images/s4y_barAndLine_filter.png" /></p>
+<p><img src="https://www.romenrg.com/images/s4y_barAndLine_filter.png" /></p>
 
 <p><em>Finally, there were also filters for the charts. Opposed to the table, in this case all the dimensions were displayed horizontally. The white text over the blue background indicated the position in which the dimension was going to appear if placed there (in the x-axis, in the columns&#8230;).</em></p>
 
@@ -931,17 +932,17 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
 <p>The result of these changes can be seen in the following images:</p>
 
 
-<p><img src="http://www.romenrg.com/images/s4y_table_filter_new.png" /></p>
+<p><img src="https://www.romenrg.com/images/s4y_table_filter_new.png" /></p>
 
 <p><em>In this first image, the main changes were the labels indicating the positions in which dimensions could be placed and the width of the fixed position box, that now occupied the 100% of the available width.</em></p>
 
 
-<p><img src="http://www.romenrg.com/images/s4y_table_filters2_new.png" /></p>
+<p><img src="https://www.romenrg.com/images/s4y_table_filters2_new.png" /></p>
 
 <p><em>In this case, some changes can be seen: For the fixed dimensions now the selected category is visible at every moment, preventing the users from unfolding the dimension to know which one the selected category is. In addition, a search box has been introduced to search within the categories of a dimension, making it much easier to find a particular category. Moreover, the &#8216;x&#8217; that was placed at the top right position of the unfolded box was removed and replaced by an &#8216;accept&#8217; button at the bottom right corner. In our experience, this change that forced users to accept the changes in order to close the unfolded categories, helped them to realize that the changes made are always going to be persisted. Before this change was made, some users had the sensation that when the &#8216;x&#8217; was clicked, it was going to undo the changes.</em></p>
 
 
-<p><img src="http://www.romenrg.com/images/s4y_barAndLine_filters_new.png" /></p>
+<p><img src="https://www.romenrg.com/images/s4y_barAndLine_filters_new.png" /></p>
 
 <p><em>For the charts, the main change were the labels and shapes of the position boxes. The new interface seems to make the available options of edition easier to understand for users. Besides, it mantains greater uniformity with the tables filters.</em></p>
 
@@ -960,9 +961,9 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
   
   <entry>
     <title type="html"><![CDATA[The Front-end engineer role]]></title>
-    <link href="http://www.romenrg.com/blog/2012/08/17/the-front-end-engineer-role/"/>
+    <link href="https://www.romenrg.com/blog/2012/08/17/the-front-end-engineer-role/"/>
     <updated>2012-08-17T20:27:00+01:00</updated>
-    <id>http://www.romenrg.com/blog/2012/08/17/the-front-end-engineer-role</id>
+    <id>https://www.romenrg.com/blog/2012/08/17/the-front-end-engineer-role</id>
     <content type="html"><![CDATA[<p>The Front-end engineer is a relatively recent role in software development, but its importance is growing everyday as the importance of Javascript does. I&#8217;ve been working as a front-end engineer in the <a href="http://www.stat4you.com">Stat4you</a> project since January and in this article I will try to describe this role, emphasize its importance and highlight the differences that the introduction of Javascript has brought to the development of the front-end of web applications.</p>
 
 
@@ -981,7 +982,7 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
 <p>In order to continue highlighting the importance of user interfaces, there is another quote from Linus Torvalds on this topic which I also fully agree with: <em>“In many cases, the user interface to a program is the most important part for a commercial company: whether the programs works correctly or not seems to be secondary”</em>.</p>
 
 
-<p><img src="http://www.romenrg.com/images/angry.jpg" /></p>
+<p><img src="https://www.romenrg.com/images/angry.jpg" /></p>
 
 <!-- More -->
 
@@ -1021,7 +1022,7 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
 <p>About the old concept of designer, Rob Larsen says: <em>“The general trend of the front end engineering spectrum is expanding away from this type of role”</em> mainly due to the importance of javascript.</p>
 
 
-<p><img title="The front-end layers" src="http://www.romenrg.com/images/applicationLayers3.png" /></p>
+<p><img title="The front-end layers" src="https://www.romenrg.com/images/applicationLayers3.png" /></p>
 
 <p>In the image above, we can see the distribution of tasks between front-end and back-end in a web application. In the case of the front-end I have separated it in two columns: on the right side we have the traditional web application (where the presentation code is in the server) and in the left side we have the modern concept (with javascript controllers in the client side).</p>
 
@@ -1052,9 +1053,9 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
   
   <entry>
     <title type="html"><![CDATA[Giving Octopress a shot for this new Blog]]></title>
-    <link href="http://www.romenrg.com/blog/2012/06/09/giving-octopress-a-shot-for-this-new-blog/"/>
+    <link href="https://www.romenrg.com/blog/2012/06/09/giving-octopress-a-shot-for-this-new-blog/"/>
     <updated>2012-06-09T15:05:00+01:00</updated>
-    <id>http://www.romenrg.com/blog/2012/06/09/giving-octopress-a-shot-for-this-new-blog</id>
+    <id>https://www.romenrg.com/blog/2012/06/09/giving-octopress-a-shot-for-this-new-blog</id>
     <content type="html"><![CDATA[<p>I&#8217;ve been trying to set up a new Blog for a while, but to use a nice excuse, I haven&#8217;t had enough time to do it. On Friday I was talking with my workmate <a href="http://www.axelhzf.com">Axel</a> about <a href="http://www.octopress.org">Octopress</a> and it seemed interesting to me. I have just finished the installation and deployment of it using <a href="http://www.github.com">GitHub</a> and it has been rather easy.</p>
 
 

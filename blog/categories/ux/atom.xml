@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: UX | Blog @romenrg]]></title>
-  <link href="http://www.romenrg.com/blog/categories/ux/atom.xml" rel="self"/>
-  <link href="http://www.romenrg.com/"/>
-  <updated>2018-06-24T11:21:54+01:00</updated>
-  <id>http://www.romenrg.com/</id>
+  <link href="https://www.romenrg.com/blog/categories/ux/atom.xml" rel="self"/>
+  <link href="https://www.romenrg.com/"/>
+  <updated>2018-06-24T11:31:25+01:00</updated>
+  <id>https://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
     
@@ -15,12 +15,12 @@
   
   <entry>
     <title type="html"><![CDATA[Why copywriting is key to UX: We increased conversions by 26% just changing some text]]></title>
-    <link href="http://www.romenrg.com/blog/2014/09/17/why-copywriting-is-key-to-ux-we-increased-conversions-by-26-percent-just-changing-some-text/"/>
+    <link href="https://www.romenrg.com/blog/2014/09/17/why-copywriting-is-key-to-ux-we-increased-conversions-by-26-percent-just-changing-some-text/"/>
     <updated>2014-09-17T12:16:00+01:00</updated>
-    <id>http://www.romenrg.com/blog/2014/09/17/why-copywriting-is-key-to-ux-we-increased-conversions-by-26-percent-just-changing-some-text</id>
+    <id>https://www.romenrg.com/blog/2014/09/17/why-copywriting-is-key-to-ux-we-increased-conversions-by-26-percent-just-changing-some-text</id>
     <content type="html"><![CDATA[<p>Too often people tend to think that UX is just art: Flat design, Modern UI and animations... But art represents only a tiny part of the User Experience. Some developers go one step further and think that it also implies strong technical skills (to achieve a good performance, proper-functioning software, etc). However, that is still a very narrow perspective of User / Customer Experience.</p>
 
-<p><img src="http://www.romenrg.com/images/copywriting_writing_machine.jpg" alt="Picture of a man using a writing machine and smoking with a pipe" /></p>
+<p><img src="https://www.romenrg.com/images/copywriting_writing_machine.jpg" alt="Picture of a man using a writing machine and smoking with a pipe" /></p>
 
 <p>Some of us have realized that UX is not just how beautiful our product looks or how amazing its performance is. There are several other fields that are crucial when trying to achieve a great experience for our users, as you will see in this post. And if I had to choose just one field that is definitely key to UX, it would be <em>Psychology</em>.</p>
 
@@ -57,7 +57,7 @@
 <h3>Sign up page: Old version</h3>
 
 
-<p><img src="http://www.romenrg.com/images/screenshot_old_signup.png" alt="Screenshot of the Old sign-up form of Vocabulary Notebook" /></p>
+<p><img src="https://www.romenrg.com/images/screenshot_old_signup.png" alt="Screenshot of the Old sign-up form of Vocabulary Notebook" /></p>
 
 <p>This screen used to be our sign-up page for <a href="http://www.vocabularynotebook.com">Vocabulary Notebook</a>. As you can see, the page was quite simple. There is a navigation bar on top, a title and a form with its confirmation button.</p>
 
@@ -70,7 +70,7 @@
 <h3>Sign up page: New version</h3>
 
 
-<p><img src="http://www.romenrg.com/images/screenshot_new_signup.png" alt="Screenshot of the New sign-up form of Vocabulary Notebook" /></p>
+<p><img src="https://www.romenrg.com/images/screenshot_new_signup.png" alt="Screenshot of the New sign-up form of Vocabulary Notebook" /></p>
 
 <p>Simple changes, right? Well, I can tell that our users have found those changes to be big enough to make a significant difference in our metrics.</p>
 
@@ -100,13 +100,13 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
   
   <entry>
     <title type="html"><![CDATA[Linking UX and Conversions by means of analytics and A/B tests]]></title>
-    <link href="http://www.romenrg.com/blog/2014/07/31/linking-ux-and-kpis-by-means-of-analytics-and-ab-tests/"/>
+    <link href="https://www.romenrg.com/blog/2014/07/31/linking-ux-and-kpis-by-means-of-analytics-and-ab-tests/"/>
     <updated>2014-07-31T19:03:00+01:00</updated>
-    <id>http://www.romenrg.com/blog/2014/07/31/linking-ux-and-kpis-by-means-of-analytics-and-ab-tests</id>
+    <id>https://www.romenrg.com/blog/2014/07/31/linking-ux-and-kpis-by-means-of-analytics-and-ab-tests</id>
     <content type="html"><![CDATA[<p>Thanks to my experience as Entrepreneur and Product Manager, I realized long ago about something that is totally counterintuitive for many other software engineers. This realization is that, when developing a software product, our main focus should always be sales. Always. Sales. I know that probably too many people have said that already, but it is so true that it is worth saying it once more, specially for my software mates: <em>"when developing a software product our main focus should always be sales"</em>.</p>
 
 
-<p><img src="http://www.romenrg.com/images/sales.jpg" /></p>
+<p><img src="https://www.romenrg.com/images/sales.jpg" /></p>
 
 <p>However, that statement is too generic. Most people already know that selling is important... But how can we sell more? Well, experience tells me that in order to increase sales, the first thing you will probably need are many more visits (and getting those visits is way more complicated than it seems). However, that is only the beginning. Once you get enough visits and you validate most of your product main hypotheses, the next step is <em>converting most of those visits into customers</em>. Here is where both <em>User Experience</em> and <em>KPIs (Key Performance Indicators)</em> become probably the most important areas for product management.</p>
 
@@ -179,9 +179,9 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
   
   <entry>
     <title type="html"><![CDATA[About UX in Modern Web Interfaces and Backbone.js: Choropleth Maps]]></title>
-    <link href="http://www.romenrg.com/blog/2013/07/27/about-modern-and-usable-web-interfaces-with-backbonejs-and-d3js-choropleth-maps/"/>
+    <link href="https://www.romenrg.com/blog/2013/07/27/about-modern-and-usable-web-interfaces-with-backbonejs-and-d3js-choropleth-maps/"/>
     <updated>2013-07-27T17:27:00+01:00</updated>
-    <id>http://www.romenrg.com/blog/2013/07/27/about-modern-and-usable-web-interfaces-with-backbonejs-and-d3js-choropleth-maps</id>
+    <id>https://www.romenrg.com/blog/2013/07/27/about-modern-and-usable-web-interfaces-with-backbonejs-and-d3js-choropleth-maps</id>
     <content type="html"><![CDATA[<p>I would like to start this post anouncing that this month I am leaving <a href="http://www.arte-consultores.com">Arte Consultores Tecnológicos</a>, after one year and seven months working there as an Analyst/Programmer (Front-end Engineer). I have made this decision because right now I need to devote myself exclusively to Langproving, which is in need of my full atention at this critical moment in which our MPV is finished and we have to market it to validate our business model.</p>
 
 
@@ -195,7 +195,7 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
 <p>One of the most valuable things I learned working at Arte was related to writing modern and usable web interfaces, not only with CSS3 animations or HTML5 new attributes and tags; but also with Javascript. In the last few years Javascript has grown up and become one of the keys of the evolution of the web. Many Javascript frameworks have emerged, ranging from those regarding DOM manipulation (jQuery) to others built to reproduce the model-view-controller (MVC) pattern in the client side, such as <a href="http://www.backbonejs.org">Backbone.js</a>. For more than a year I have been using Backbone to create Single-page applications that provide a quick response to user interaction, without the need to re-render the full page from the server as we were used to; thus improving sifnificantly the user experience (UX).</p>
 
 
-<p><img src="http://www.romenrg.com/images/js_html_css.png" /></p>
+<p><img src="https://www.romenrg.com/images/js_html_css.png" /></p>
 
 <!-- More -->
 
@@ -210,7 +210,7 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
 <p>In the following example we have a choropleth map from <a href="http://www.stat4you.com">Stat4you</a> in which the unemployment rate in the different regions of Spain is shown. The darker the colour, the higher the unemployment is. I have picked this dataset randomly, but it is worth mentioning that it shows a sad reality of Spain's economic crisis.</p>
 
 
-<p><img src="http://www.romenrg.com/images/maps_initial.png" /></p>
+<p><img src="https://www.romenrg.com/images/maps_initial.png" /></p>
 
 <p><em>We can see different elements in the map with which several actions can be performed. Firstly, we have the map itself, which happens to be a SVG vectorial image. Secondly, we have a zoom bar that has two different buttons (+ and -) and also has a draggable element that allows us to decrease or increase the zoom — as you may notice, it must be somehow synchronized with the + and - buttons —. Aditionally, we can use the mouse wheel to zoom in and out (as we can do in Google Maps). We can also click on a particular region of the map to zoom in and center the display on it; and we can click in the button above the zoom seciton to zoom out, going back to the original zoom and position of the map. We have also a leyend section, which indicates the ranges covered by each colour in the map. Finally, we have the ranges bar, which has a draggable element in the middle that can be used to increase or decrease the number of ranges to be used. It is also possible to click on the bar itself to increase or decrease the number of ranges. Clicking in the right side increases by one the number or ranges and clicking in the left side decreases the number of ranges in the same amount (the draggable selector will be moved automatically).</em></p>
 
@@ -220,12 +220,12 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
 <p>As it can be seen, there are many elements that interact with each other. Since this is a Backbone application, everything runs on the client side. The server only loads the initial data, sends it to the client browser and then it is no needed any more. Only if the data to be displayed changes, an AJAX call is made to the server to bring new data, but not to reload the page. Anyway, this AJAX calls are beyond the scope of this post. We will focus on the interaction among the described controls of the map, which are mapped to diferent views in our MVC pattern implementation, all of them linked by a model.</p>
 
 
-<p><img src="http://www.romenrg.com/images/maps_initial_ranges.png" /></p>
+<p><img src="https://www.romenrg.com/images/maps_initial_ranges.png" /></p>
 
 <p><em>In this new image we have just moved the ranges selector two positions to the left. This has caused automatically two changes in other elements, besides the changes in the ranges selector itself. On the one hand, the leyend has changed. The ranges have been re-calculated and now they are just three, instead of the initial five. Moreover, the map has been redrawed and some regions have changed their colour, since now the ranges are different and the unemployment rates of the regions are grouped diferently.</em></p>
 
 
-<p><img src="http://www.romenrg.com/images/maps_initial_clickzoom.png" /></p>
+<p><img src="https://www.romenrg.com/images/maps_initial_clickzoom.png" /></p>
 
 <p><em>In this case, we have clicked in the autonomous city of Ceuta. When clicking in a region, as well as when we use the mouse wheel, the zoom changes. We have zoomed in to the best level of zoom in order to see the selected region properly (this is done automatically when clicking in a particular region). Moreover, the map is now centered in the selected region. As we can see, besides the changes in the map, the zoom controls have also changed. The selector is now stuck to the top, stating that the maximum level of zoom is being used.</em></p>
 
@@ -240,7 +240,7 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
 <p>To clearify how an MVC pattern can be implemented for this sample case by using Backbone framework, the following diagram has been made.</p>
 
 
-<p><img src="http://www.romenrg.com/images/maps_mvc_sinplified.png" /></p>
+<p><img src="https://www.romenrg.com/images/maps_mvc_sinplified.png" /></p>
 
 <p><em>In the diagram we have represented the User Actions, the Map Model, the different Views for each section and a Map class that could be integrated in the MapContainerView if desired. Aditionally, the HTML / SVG code to be displayed in each case is stored in Handlebars templates and it is loaded in the "render" methods of its corresponding view. During execution, every action of the user triggers an event that is captured by the Map Model. Then, the model preforms different actions depending on the behavior of the user, and once it finishes, changes in some of its attributes are made. When the model is changed, new events are fired. Each view is listening to the events triggered by the model that are associated with it, thus being able to re-render itself if needed. Moreover, in case some mayor changes that require all elements to re-render are made, the render method of the MapContainerView will be called, which will execute each element's render in turn.</em></p>
 
@@ -254,9 +254,9 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
   
   <entry>
     <title type="html"><![CDATA[Improving the UI to achieve a better UX: My experience in Stat4you]]></title>
-    <link href="http://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you/"/>
+    <link href="https://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you/"/>
     <updated>2013-01-02T17:29:00+00:00</updated>
-    <id>http://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you</id>
+    <id>https://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you</id>
     <content type="html"><![CDATA[<p>I had this article started but uncompleted since September 2012, and as a New Year’s Resolution for 2013 I decided to finish it.</p>
 
 
@@ -270,7 +270,7 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
 <p>The images below are screenshots of the filters initially released in Stat4you:</p>
 
 
-<p><img src="http://www.romenrg.com/images/s4y_table_filter.png" /></p>
+<p><img src="https://www.romenrg.com/images/s4y_table_filter.png" /></p>
 
 <p><em>The image above shows the filters available for the tables in the initial alpha version of the platform. The blue elements represent the containers of the dimensions which, in this case, have been also placed in a particular way to help the user understand the position in which every dimension will appear. The white elements represent the dimensions whilst the orange ones represent the categories of each dimension.</em></p>
 
@@ -280,12 +280,12 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
 <!-- More -->
 
 
-<p><img src="http://www.romenrg.com/images/s4y_table_filter2.png" /></p>
+<p><img src="https://www.romenrg.com/images/s4y_table_filter2.png" /></p>
 
 <p><em>In this image, the categories of one of the dimensions have been unfolded, this way the user can see all the categories available for a particular dimension, not only the previewed ones that can be seen without clicking in the right arrow. Also, it can be seen that the "Periodos" dimension has been moved to fixed (by doing drag and drop). This means that this dimension has been set to a specific category, which by default was the first one.</em></p>
 
 
-<p><img src="http://www.romenrg.com/images/s4y_barAndLine_filter.png" /></p>
+<p><img src="https://www.romenrg.com/images/s4y_barAndLine_filter.png" /></p>
 
 <p><em>Finally, there were also filters for the charts. Opposed to the table, in this case all the dimensions were displayed horizontally. The white text over the blue background indicated the position in which the dimension was going to appear if placed there (in the x-axis, in the columns...).</em></p>
 
@@ -315,17 +315,17 @@ Finally, we decided to make the CTA (call-to-action) stronger, to convince you t
 <p>The result of these changes can be seen in the following images:</p>
 
 
-<p><img src="http://www.romenrg.com/images/s4y_table_filter_new.png" /></p>
+<p><img src="https://www.romenrg.com/images/s4y_table_filter_new.png" /></p>
 
 <p><em>In this first image, the main changes were the labels indicating the positions in which dimensions could be placed and the width of the fixed position box, that now occupied the 100% of the available width.</em></p>
 
 
-<p><img src="http://www.romenrg.com/images/s4y_table_filters2_new.png" /></p>
+<p><img src="https://www.romenrg.com/images/s4y_table_filters2_new.png" /></p>
 
 <p><em>In this case, some changes can be seen: For the fixed dimensions now the selected category is visible at every moment, preventing the users from unfolding the dimension to know which one the selected category is. In addition, a search box has been introduced to search within the categories of a dimension, making it much easier to find a particular category. Moreover, the 'x' that was placed at the top right position of the unfolded box was removed and replaced by an 'accept' button at the bottom right corner. In our experience, this change that forced users to accept the changes in order to close the unfolded categories, helped them to realize that the changes made are always going to be persisted. Before this change was made, some users had the sensation that when the 'x' was clicked, it was going to undo the changes.</em></p>
 
 
-<p><img src="http://www.romenrg.com/images/s4y_barAndLine_filters_new.png" /></p>
+<p><img src="https://www.romenrg.com/images/s4y_barAndLine_filters_new.png" /></p>
 
 <p><em>For the charts, the main change were the labels and shapes of the position boxes. The new interface seems to make the available options of edition easier to understand for users. Besides, it mantains greater uniformity with the tables filters.</em></p>
 

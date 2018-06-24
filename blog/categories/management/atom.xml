@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Management | Blog @romenrg]]></title>
-  <link href="http://www.romenrg.com/blog/categories/management/atom.xml" rel="self"/>
-  <link href="http://www.romenrg.com/"/>
-  <updated>2018-06-24T11:21:54+01:00</updated>
-  <id>http://www.romenrg.com/</id>
+  <link href="https://www.romenrg.com/blog/categories/management/atom.xml" rel="self"/>
+  <link href="https://www.romenrg.com/"/>
+  <updated>2018-06-24T11:31:25+01:00</updated>
+  <id>https://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
     
@@ -15,12 +15,12 @@
   
   <entry>
     <title type="html"><![CDATA[Continuous Integration, Delivery and Deployment: Key Differences]]></title>
-    <link href="http://www.romenrg.com/blog/2017/12/31/continuous-integration-delivery-deployment/"/>
+    <link href="https://www.romenrg.com/blog/2017/12/31/continuous-integration-delivery-deployment/"/>
     <updated>2017-12-31T18:46:00+00:00</updated>
-    <id>http://www.romenrg.com/blog/2017/12/31/continuous-integration-delivery-deployment</id>
+    <id>https://www.romenrg.com/blog/2017/12/31/continuous-integration-delivery-deployment</id>
     <content type="html"><![CDATA[<p>Continuous Integration, Continuous Delivery, and Continuous Deployment are key modern practices in software development. These techniques help us reduce integration problems, automate quality assessment and make deployments much more predictable and less error prone, allowing us to deploy easily and frequently. But… Do you really know the differences between the three?</p>
 
-<p><img src="http://www.romenrg.com/images/two_paths_fork_unsplash.jpg" alt="Picture of a fork in the trail in a forest, leading to two alternative paths" /></p>
+<p><img src="https://www.romenrg.com/images/two_paths_fork_unsplash.jpg" alt="Picture of a fork in the trail in a forest, leading to two alternative paths" /></p>
 
 <p>The aim of this article is to help clarify what do these techniques mean and highlight the benefits each one provides. We will also analyze which one should be chosen depending on the circumstances.</p>
 
@@ -41,11 +41,11 @@
 
 <p>The idea behind these daily integrations to the mainline is to reduce integration problems, which are usually caused by the complexity of merging the work of developers that have been working isolatedly for a while. By integrating daily or after each commit, the complexity of the merge process is drastically reduced, as can be seen in the following example:</p>
 
-<p><a href="http://www.romenrg.com/images/branches_without_ci.png"><img src="http://www.romenrg.com/images/branches_without_ci.png" alt="Image of two developers working isolatedly over time, creating several commits before merging" /></a></p>
+<p><a href="https://www.romenrg.com/images/branches_without_ci.png"><img src="https://www.romenrg.com/images/branches_without_ci.png" alt="Image of two developers working isolatedly over time, creating several commits before merging" /></a></p>
 
 <p><em>Example of two developers creating several commits in their corresponding branches before merging. Squares represent commits and the circle represents the big merge that has to be made at the end.</em></p>
 
-<p><a href="http://www.romenrg.com/images/branches_ci.png"><img src="http://www.romenrg.com/images/branches_ci.png" alt="Image of two developers applying continuous integration, integrating each change into the mainline" /></a></p>
+<p><a href="https://www.romenrg.com/images/branches_ci.png"><img src="https://www.romenrg.com/images/branches_ci.png" alt="Image of two developers applying continuous integration, integrating each change into the mainline" /></a></p>
 
 <p><em>Example of two developers applying the original concept of Continuous Integration, integrating every change into the mainline. As before, squares represent commits and circles represent merges, which are much simpler now, due to the high frequency of integration.</em></p>
 
@@ -61,7 +61,7 @@
 
 <p>Once Continuous Integration is set, we may decide to continue improving our processes. The next step would be automating deployments to production, making them faster and safer. Here is where the two remaining techniques (Continuous Delivery and Continuous Deployment) subtly differ, as can be see in the following diagram:</p>
 
-<p><a href="http://www.romenrg.com/images/continuous_delivery_vs_deployment.png"><img src="http://www.romenrg.com/images/continuous_delivery_vs_deployment.png" alt="Diagram showing usual stages of Continuous Integration and the differences between Continuous Delivery and Continuous Deployment" /></a></p>
+<p><a href="https://www.romenrg.com/images/continuous_delivery_vs_deployment.png"><img src="https://www.romenrg.com/images/continuous_delivery_vs_deployment.png" alt="Diagram showing usual stages of Continuous Integration and the differences between Continuous Delivery and Continuous Deployment" /></a></p>
 
 <p><em>Difference between Continuous Delivery and Continuous Deployment</em></p>
 
@@ -85,7 +85,8 @@
 
 <div class="revisions">
   <h2>Significant revisions</h2>
-  <p><em>2018, May 28</em>: Improving overall style, rephrasing last section, adding a better description and improving example images.</p>
+  <p><em>2018, Jun 24</em>: Figure 'continuous delivery vs continuous deployment' improved.</p>
+  <p><em>2018, May 28</em>: Overall style improvements, rephrasing last section, adding a better description and improving example images.</p>
 </div>
 
 ]]></content>
@@ -93,12 +94,12 @@
   
   <entry>
     <title type="html"><![CDATA[The Programmer Bill Of Rights, Revisited]]></title>
-    <link href="http://www.romenrg.com/blog/2016/11/15/the-programmer-bill-of-rights/"/>
+    <link href="https://www.romenrg.com/blog/2016/11/15/the-programmer-bill-of-rights/"/>
     <updated>2016-11-15T18:34:00+00:00</updated>
-    <id>http://www.romenrg.com/blog/2016/11/15/the-programmer-bill-of-rights</id>
+    <id>https://www.romenrg.com/blog/2016/11/15/the-programmer-bill-of-rights</id>
     <content type="html"><![CDATA[<p>10 years ago, <a href="https://en.wikipedia.org/wiki/Jeff_Atwood">Jeff Atwood</a> wrote an article he titled <a href="https://blog.codinghorror.com/the-programmers-bill-of-rights/">The Programmer Bill of Rights</a>. In that article he described 6 fundamentals that companies should provide for programmers to be successful and work to their full potential, thus maximizing their productivity.</p>
 
-<p><img src="http://www.romenrg.com/images/two_monitors_unsplash.jpg" alt="Picture of a programmers desk with two monitors, one of them showing code" /></p>
+<p><img src="https://www.romenrg.com/images/two_monitors_unsplash.jpg" alt="Picture of a programmers desk with two monitors, one of them showing code" /></p>
 
 <p>Sadly, ten years later, many companies still deny these basics to their developers, even though the business case for these six points is absolutely proved.</p>
 
@@ -175,12 +176,12 @@ As any other creative process, programming requires autonomy. That is why agile 
   
   <entry>
     <title type="html"><![CDATA[Why asking software developers for time estimates is a terrible idea and how to bypass it]]></title>
-    <link href="http://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum/"/>
+    <link href="https://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum/"/>
     <updated>2015-09-28T11:17:00+01:00</updated>
-    <id>http://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum</id>
+    <id>https://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum</id>
     <content type="html"><![CDATA[<p>I have worked in many software projects and have been lucky to be in the initial team of several software products. Besides, having acted both as a Developer and as a Product Manager has allowed me to have a wider view of what usually causes most friction between business and engineering: time estimates.</p>
 
-<p><img src="http://www.romenrg.com/images/scrum_software_estimates_reverse_engineering_pixabay.jpg" alt="Picture of a woman pointing to her watch as if you were late. Typical management or customer reaction to delayed software projects" /></p>
+<p><img src="https://www.romenrg.com/images/scrum_software_estimates_reverse_engineering_pixabay.jpg" alt="Picture of a woman pointing to her watch as if you were late. Typical management or customer reaction to delayed software projects" /></p>
 
 <p>It usually starts with managers or customers asking “when will &lt;this idea> be ready?” and it is usually followed by developers racking their brains to give a specific date... Needless to say, that date is likely to be <em>dreadfully wrong</em>, as it is the norm in the industry. There is a near-total inability of developers to predict how long a project will take, so time estimates are usually worthless.</p>
 
@@ -281,7 +282,7 @@ As any other creative process, programming requires autonomy. That is why agile 
 
 <p><em>Let’s say our development team is applying the strategy described in this post. It is completing about 25 points per cycle and each cycle is 15 days long. If you want to know when will a particular user story be finished, all you need to do is count the number of story points that are above it in the backlog, add its own story points and do some simple math:</em></p>
 
-<p><a href="http://www.romenrg.com/images/story_points_estimates_backlog_example.png"><img src="http://www.romenrg.com/images/story_points_estimates_backlog_example.png" alt="Example showing a backlog with story points, estimated based on effort; team velocity, cycle duration and a forecast for a particular story" /></a></p>
+<p><a href="https://www.romenrg.com/images/story_points_estimates_backlog_example.png"><img src="https://www.romenrg.com/images/story_points_estimates_backlog_example.png" alt="Example showing a backlog with story points, estimated based on effort; team velocity, cycle duration and a forecast for a particular story" /></a></p>
 
 <p><em>In this example, user story X has 52 points above it in the backlog and has 5 points itself. This means a total of 57 story points have to be completed for story X to be finished. Since in each cycle the team is completing approximately 25 points, the story you are looking for will probably be finished in 3 cycles time, meaning it would be deployed in about 45 days.</em></p>
 

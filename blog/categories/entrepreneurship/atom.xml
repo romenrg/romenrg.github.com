@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Entrepreneurship | Blog @romenrg]]></title>
-  <link href="http://www.romenrg.com/blog/categories/entrepreneurship/atom.xml" rel="self"/>
-  <link href="http://www.romenrg.com/"/>
-  <updated>2018-06-24T11:21:54+01:00</updated>
-  <id>http://www.romenrg.com/</id>
+  <link href="https://www.romenrg.com/blog/categories/entrepreneurship/atom.xml" rel="self"/>
+  <link href="https://www.romenrg.com/"/>
+  <updated>2018-06-24T11:31:25+01:00</updated>
+  <id>https://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
     
@@ -15,12 +15,12 @@
   
   <entry>
     <title type="html"><![CDATA[The Programmer Bill Of Rights, Revisited]]></title>
-    <link href="http://www.romenrg.com/blog/2016/11/15/the-programmer-bill-of-rights/"/>
+    <link href="https://www.romenrg.com/blog/2016/11/15/the-programmer-bill-of-rights/"/>
     <updated>2016-11-15T18:34:00+00:00</updated>
-    <id>http://www.romenrg.com/blog/2016/11/15/the-programmer-bill-of-rights</id>
+    <id>https://www.romenrg.com/blog/2016/11/15/the-programmer-bill-of-rights</id>
     <content type="html"><![CDATA[<p>10 years ago, <a href="https://en.wikipedia.org/wiki/Jeff_Atwood">Jeff Atwood</a> wrote an article he titled <a href="https://blog.codinghorror.com/the-programmers-bill-of-rights/">The Programmer Bill of Rights</a>. In that article he described 6 fundamentals that companies should provide for programmers to be successful and work to their full potential, thus maximizing their productivity.</p>
 
-<p><img src="http://www.romenrg.com/images/two_monitors_unsplash.jpg" alt="Picture of a programmers desk with two monitors, one of them showing code" /></p>
+<p><img src="https://www.romenrg.com/images/two_monitors_unsplash.jpg" alt="Picture of a programmers desk with two monitors, one of them showing code" /></p>
 
 <p>Sadly, ten years later, many companies still deny these basics to their developers, even though the business case for these six points is absolutely proved.</p>
 
@@ -97,12 +97,12 @@ As any other creative process, programming requires autonomy. That is why agile 
   
   <entry>
     <title type="html"><![CDATA[Why asking software developers for time estimates is a terrible idea and how to bypass it]]></title>
-    <link href="http://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum/"/>
+    <link href="https://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum/"/>
     <updated>2015-09-28T11:17:00+01:00</updated>
-    <id>http://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum</id>
+    <id>https://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum</id>
     <content type="html"><![CDATA[<p>I have worked in many software projects and have been lucky to be in the initial team of several software products. Besides, having acted both as a Developer and as a Product Manager has allowed me to have a wider view of what usually causes most friction between business and engineering: time estimates.</p>
 
-<p><img src="http://www.romenrg.com/images/scrum_software_estimates_reverse_engineering_pixabay.jpg" alt="Picture of a woman pointing to her watch as if you were late. Typical management or customer reaction to delayed software projects" /></p>
+<p><img src="https://www.romenrg.com/images/scrum_software_estimates_reverse_engineering_pixabay.jpg" alt="Picture of a woman pointing to her watch as if you were late. Typical management or customer reaction to delayed software projects" /></p>
 
 <p>It usually starts with managers or customers asking “when will &lt;this idea> be ready?” and it is usually followed by developers racking their brains to give a specific date... Needless to say, that date is likely to be <em>dreadfully wrong</em>, as it is the norm in the industry. There is a near-total inability of developers to predict how long a project will take, so time estimates are usually worthless.</p>
 
@@ -203,7 +203,7 @@ As any other creative process, programming requires autonomy. That is why agile 
 
 <p><em>Let’s say our development team is applying the strategy described in this post. It is completing about 25 points per cycle and each cycle is 15 days long. If you want to know when will a particular user story be finished, all you need to do is count the number of story points that are above it in the backlog, add its own story points and do some simple math:</em></p>
 
-<p><a href="http://www.romenrg.com/images/story_points_estimates_backlog_example.png"><img src="http://www.romenrg.com/images/story_points_estimates_backlog_example.png" alt="Example showing a backlog with story points, estimated based on effort; team velocity, cycle duration and a forecast for a particular story" /></a></p>
+<p><a href="https://www.romenrg.com/images/story_points_estimates_backlog_example.png"><img src="https://www.romenrg.com/images/story_points_estimates_backlog_example.png" alt="Example showing a backlog with story points, estimated based on effort; team velocity, cycle duration and a forecast for a particular story" /></a></p>
 
 <p><em>In this example, user story X has 52 points above it in the backlog and has 5 points itself. This means a total of 57 story points have to be completed for story X to be finished. Since in each cycle the team is completing approximately 25 points, the story you are looking for will probably be finished in 3 cycles time, meaning it would be deployed in about 45 days.</em></p>
 
@@ -230,15 +230,15 @@ As any other creative process, programming requires autonomy. That is why agile 
   
   <entry>
     <title type="html"><![CDATA[10+1 Valuable Lessons I Learned From My Failed Startup]]></title>
-    <link href="http://www.romenrg.com/blog/2015/03/17/10-plus-1-valuable-lessons-i-learned-from-my-failed-startup/"/>
+    <link href="https://www.romenrg.com/blog/2015/03/17/10-plus-1-valuable-lessons-i-learned-from-my-failed-startup/"/>
     <updated>2015-03-17T19:53:00+00:00</updated>
-    <id>http://www.romenrg.com/blog/2015/03/17/10-plus-1-valuable-lessons-i-learned-from-my-failed-startup</id>
+    <id>https://www.romenrg.com/blog/2015/03/17/10-plus-1-valuable-lessons-i-learned-from-my-failed-startup</id>
     <content type="html"><![CDATA[<p style="text-align: right;"><em>...That I will take into account for the next one.</em></p>
 
 
 <p>Being the Founder and CEO of <a href="http://www.vocabularynotebook.com">Vocabulary Notebook</a> for more than 2 years (from September, 2012 to January 2015) was one of the most intense, enriching, stressful and exciting experiences I have ever lived.</p>
 
-<p><img src="http://www.romenrg.com/images/nomad_wide_800pxwidth.png" alt="Picture of a man using a writing machine and smoking with a pipe" /></p>
+<p><img src="https://www.romenrg.com/images/nomad_wide_800pxwidth.png" alt="Picture of a man using a writing machine and smoking with a pipe" /></p>
 
 <p>During this period I went from doing some mockups alone at home and printing them in paper to use them as low fidelity MVPs for customer discovery; to close a seed funding round, found a company, build a multiplatform product, build a team of 12 people, receive several awards, participate as speaker in 3 international events, get 30 000 users in more than 130 countries, register a trademark, conduct scientific research on our product and collaborate with schools and universities from 4 different countries... As I said before, it was intense!</p>
 
@@ -278,13 +278,13 @@ As any other creative process, programming requires autonomy. That is why agile 
   
   <entry>
     <title type="html"><![CDATA[Vocabulary Notebook: From Idea to Reality in one year]]></title>
-    <link href="http://www.romenrg.com/blog/2013/09/30/vocabulary-notebook-from-idea-to-reality-in-one-year/"/>
+    <link href="https://www.romenrg.com/blog/2013/09/30/vocabulary-notebook-from-idea-to-reality-in-one-year/"/>
     <updated>2013-09-30T13:59:00+01:00</updated>
-    <id>http://www.romenrg.com/blog/2013/09/30/vocabulary-notebook-from-idea-to-reality-in-one-year</id>
+    <id>https://www.romenrg.com/blog/2013/09/30/vocabulary-notebook-from-idea-to-reality-in-one-year</id>
     <content type="html"><![CDATA[<p>The 8th of September 2012 I started to work intensively in an idea I called Vocabulary Notebook. With that idea I was planning to solve a problem that myself and many other english students experience while learning vocabulary. It has already been a year since then and that idea is now a real platform used by thousands of students and teachers around the world. I must say that I’m quite proud of what we have achieved during this year, both as an entrepreneur and as an engineer. Although I don’t have much free time now, I have forced myself to write this post to summarize what has happened around Vocabulary Notebook during this year, from idea to reality. Since there are so many things that have happened, I’m afraid this post is going to be quite long, but I think that the anniversary deserves it.</p>
 
 
-<p><img src="http://www.romenrg.com/images/vocabularynotebook.png" /></p>
+<p><img src="https://www.romenrg.com/images/vocabularynotebook.png" /></p>
 
 <p><em>In this image we can see the different components of Vocabulary Notebook. The full platform includes Android, iOS and Web Apps both for students and for teachers.</em></p>
 
