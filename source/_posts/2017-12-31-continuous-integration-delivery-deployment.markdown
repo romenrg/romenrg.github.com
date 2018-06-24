@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Continuous Integration, Delivery and Deployment: Key Differences"
+seo_title: "Continuous Integration, Delivery and Deployment: Key Differences"
 date: 2017-12-31 18:46
 updated: 2018-06-24 10:45
 comments: true
