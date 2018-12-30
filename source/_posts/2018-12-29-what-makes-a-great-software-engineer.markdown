@@ -62,7 +62,7 @@ So, since 1) nowadays most opennings still focus only on technologies and 2) com
 
 As stated in the repository, the purpose of this work is to serve as an alternative resource for conducting hiring interviews of software developers / engineers. It focuses on software development best practices, cross-framework principles and other portable skills; instead of the usual focus on specific languages, frameworks and trends, which tend to quickly become outdated and often don't reflect the real value software developers / engineers bring to the organization.
 
-It is also worth mentioning that it is a work in progress, so important knowledge might be missing, existing bullets can probably be improved and better grouping strategies could be found. For those reasons, any contributions (i.e. PRs) are welcome. Please feel free to propose changes following [the contributing guideline](https://github.com/romenrg/evergreen-skills-developers/CONTRIBUTING.md).
+It is also worth mentioning that it is a work in progress, so important knowledge might be missing, existing bullets can probably be improved and better grouping strategies could be found. For those reasons, any contributions (i.e. PRs) are welcome. Please feel free to propose changes following [the contributing guideline](https://github.com/romenrg/evergreen-skills-developers/blob/master/CONTRIBUTING.md).
 
 ## Be the change you want to see in the world
 
