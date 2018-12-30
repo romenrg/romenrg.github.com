@@ -24,19 +24,19 @@ Are we looking at the right skills?
 
 ## Beyond languages and frameworks
 
-So, despite the shortage of software engineers, we keep seeing, with dismay, that many companies keep restricting their opening positions to people with experience in very specific sets of technologies. Often stating that “X years of experience in <new framework Y>” is a key requirement.
+So, despite the shortage of software engineers, we keep seeing, with dismay, that many companies keep restricting their opening positions to people with experience in very specific sets of technologies. Often stating that “X years of experience in _\<new framework Y\>_” is a key requirement.
 
-Have you though that it's very likely that [you will not be using <new framework Y> in two years](https://sizovs.net/2018/12/17/stop-learning-frameworks/)? When that happens, which would be the skills your team will need to keep being productive?
+Have you though that it's very likely that [you will not be using _\<new framework Y\>_ in two years](https://sizovs.net/2018/12/17/stop-learning-frameworks/)? When that happens, which would be the skills your team will need to keep being productive?
 
-The existing focus on technologies and trendy frameworks is very harmful to our industry. We need to move forward. **There is a fundamental misunderstanding in what makes a great software developer.**
+It's great to keep an eye on new technologies, of course, as they might bring relevant innovations to our businesses; but focusing mostly on trendy frameworks or on our current tech stack, when hiring, has negative impacts in the long-run and, as a general practice, is very harmful to our industry. We need to move forward. **This focus on languages and frameworks hints there is a fundamental misunderstanding in what makes a great software developer.**
 
 ## The software industry is evolving constantly
 
-Granted, if you need an urgent short-term solution for a framework-specific question, you may want to find someone that knows it deeply. However, more often than not, those short-term needs hide long-term problems in a company.
+Granted, if you need an urgent short-term solution for a framework-specific problem, you may want to find someone that knows it deeply. However, more often than not, those short-term needs hide long-term problems in a company.
 
-Developing software is about providing solutions to existing problems. Also, we now know that due to the fast pace at which both technology and our needs evolve, [software development is a continuum](https://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum/). In most cases software products don’t have a beginning and an end. Products evolve, companies pivot in their strategy, new technologies bring new opportunities for enhancements; the adoption of technology in society at large brings more opportunities…
+Developing software is often about making processes more eficient and providing solutions to existing challenges. Also, we now know that due to the fast pace at which both technology and our needs evolve, [software development is a continuum](https://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum/). In most cases software products don’t have an end. We add new features, teams change, companies pivot in their strategy, new technologies bring new opportunities for enhancements, consumer demands change... And we just keep evolving our digital products.
 
-This constant innovation, brings constant change in languages, frameworks, tools, devices…
+This constant innovation brings constant changes, both in business and in technology. Our products change, as well as the languages, frameworks, tools and devices we use.
 
 ## Fortunately, key skills are evergreen
 
