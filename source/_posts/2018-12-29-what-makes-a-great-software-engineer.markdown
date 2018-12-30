@@ -62,15 +62,16 @@ So, since 1) nowadays most opennings still focus only on technologies and 2) com
 
 As stated in the repository, the purpose of this work is to serve as an alternative resource for conducting hiring interviews of software developers / engineers. It focuses on software development best practices, cross-framework principles and other portable skills; instead of the usual focus on specific languages, frameworks and trends, which tend to quickly become outdated and often don't reflect the real value software developers / engineers bring to the organization.
 
-It is also worth mentioning that it is a work in progress, so important knowledge might be missing, existing bullets can probably be improved and better grouping strategies could be found. For those reasons, any contributions (i.e. PRs) are welcome. Please feel free to propose changes following [the contributing guideline](CONTRIBUTING.md).
+It is also worth mentioning that it is a work in progress, so important knowledge might be missing, existing bullets can probably be improved and better grouping strategies could be found. For those reasons, any contributions (i.e. PRs) are welcome. Please feel free to propose changes following [the contributing guideline](https://github.com/romenrg/evergreen-skills-developers/CONTRIBUTING.md).
 
 ## Be the change you want to see in the world
 
-We all have a role in moving our industry forward. As a manager, think twice when desingning the description for your new open position, as an individual contributor, speak up when you are asked about the skills your next coworker should have; as a candidate, focus on your evergreen knowledge. We owe it to ourselves.
+We all have a role in moving our industry forward. As a manager, think twice when designing the description for your new open position and [look for ideas beyond a list of technologies](https://github.com/romenrg/evergreen-skills-developers); as an individual contributor, when you are asked about the skills your next coworker should have, ask for principles and best-practices; as a candidate, highlight your "evergreen" knowledge and its importance. We owe it to the profession we love.
 
-I have created the [evergreen skills repository](https://github.com/romenrg/evergreen-skills-developers) as my two cents' contribution to this discussion. It is a work in progress and PRs are welcome. I look forward to you contributions!
+I have created the [evergreen skills repository](https://github.com/romenrg/evergreen-skills-developers) as my two cents' contribution to this discussion. As I wrote before, it is a work in progress, which means there is a lot of room for improvement. I have added contributing guidelines and all constructive PRs are welcome... So I look forward to you contributions!
 
 <div class="revisions">
   <h2>Significant revisions</h2>
-  <p><em>2018, Dec 29</em>: Original version published.</p>
+  <p><em>2018, Dec 30</em>: Major rewrites to the article. First "public" version.</p>
+  <p><em>2018, Dec 29</em>: Original draft published.</p>
 </div>
