@@ -58,9 +58,9 @@ However, when I refer to "evergreen" technical knowledge, I mean [principles](ht
 
 ### The repository of "evergreen" knowledge to the rescue
 
-So, since 1) nowadays most opennings still focus only on technologies and 2) coming up with the "evergreen" knowledge that we could use for hiring interviews is not trivial, I have gone ahead and created [this GitHub repository](https://github.com/romenrg/evergreen-skills-developers), which goal is to serve as a fair assessment of skilled software developers / engineers.
+So, since 1) nowadays most opennings still focus only on technologies and 2) coming up with the "evergreen" knowledge that we could use for hiring interviews is not trivial, I have gone ahead and created [this GitHub repository](https://github.com/romenrg/evergreen-skills-developers), which goal is to serve as a pool of ideas to condut a fair assessment of skilled software developers / engineers.
 
-As it states, the purpose of this work is to serve as an alternative resource for conducting hiring interviews of software developers / engineers. It focuses on software development best practices, cross-framework principles and other portable skills; instead of the usual focus on trends and/or specific knowledge of short-lived frameworks, which tend to quickly become outdated and often don't reflect the real value software developers / engineers bring to the organization.
+As stated in the repository, the purpose of this work is to serve as an alternative resource for conducting hiring interviews of software developers / engineers. It focuses on software development best practices, cross-framework principles and other portable skills; instead of the usual focus on specific languages, frameworks and trends, which tend to quickly become outdated and often don't reflect the real value software developers / engineers bring to the organization.
 
 It is also worth mentioning that it is a work in progress, so important knowledge might be missing, existing bullets can probably be improved and better grouping strategies could be found. For those reasons, any contributions (i.e. PRs) are welcome. Please feel free to propose changes following [the contributing guideline](CONTRIBUTING.md).
 
