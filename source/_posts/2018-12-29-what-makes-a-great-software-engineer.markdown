@@ -12,11 +12,11 @@ twitterimg: "/images/two_paths_fork_unsplash.jpg"
 ---
 The software industry has been growing significantly for the last few decades, and this trend seems to only be accelerating.
 
-Due to this fast growth, there has been an ever-increasing demand for software engineers and, since there are not enough developers to meet the demand, many companies often fail to cover their open positions.
+Due to this fast growth, there has been an ever-increasing demand for software engineers and, since there are not enough developers to meet the demand, many companies often fail to cover their open positions. But, is it also possible that we are looking at the wrong skills when hiring?
 
 <img src="/images/question_unsplash.jpg" alt="Picture of a cofee mug with a question mug" />
 
-Most job descriptions simply describe a list of technologies as the necessary “skills” for the open position. But… Aren’t there other skills that could have a higher impact on developer’s success? 
+Most job descriptions simply describe a list of technologies as the necessary “profile” for the open position. However… Aren’t there other skills that could have a higher impact on developer’s success? 
 
 Are we looking at the right skills?
 
