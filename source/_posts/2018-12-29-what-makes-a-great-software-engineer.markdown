@@ -3,12 +3,12 @@ layout: post
 title: "What makes a great software engineer"
 seo_title: "What makes a great software engineer"
 date: 2018-12-29 10:09
-updated: 2018-12-29 10:15
+updated: 2018-12-30 19:15
 comments: true
 categories: [Software Development, Management]
 description: "Most job descriptions simply describe a list of technologies as the necessary “skills” for the open position. But… Aren’t there other skills that could have a higher impact on developer’s success?"
 keywords: skills, traits, software engineer, learning, soft skills, clean code
-twitterimg: "/images/two_paths_fork_unsplash.jpg"
+twitterimg: "/images/question_unsplash.jpg"
 ---
 The software industry has been growing significantly for the last few decades, and this trend seems to only be accelerating.
 
