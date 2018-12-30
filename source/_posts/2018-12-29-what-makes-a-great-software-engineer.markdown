@@ -16,7 +16,7 @@ Due to this fast growth, there has been an ever-increasing demand for software e
 
 <img src="/images/question_unsplash.jpg" alt="Picture of a cofee mug with a question mug" />
 
-Most job descriptions simply describe a list of technologies as the necessary “profile” for the open position. However… Aren’t there other skills that could have a higher impact on developer’s success? 
+Most job descriptions simply list a set of technologies as the necessary “profile” for the open position. However… Aren’t there other skills that could have a higher impact on developer’s success? 
 
 Are we looking at the right skills?
 
@@ -24,11 +24,11 @@ Are we looking at the right skills?
 
 ## Beyond languages and frameworks
 
-So, despite the shortage of software engineers, we keep seeing, with dismay, how many companies keep restricting their opening positions to people with experience in very specific set of technologies. Often stating that “the new framework X” is a key requirement.
+So, despite the shortage of software engineers, we keep seeing, with dismay, that many companies keep restricting their opening positions to people with experience in very specific sets of technologies. Often stating that “X years of experience in <new framework Y>” is a key requirement.
 
-Have you though that it's very likely that [you will not be using “new framework X” in two years](https://sizovs.net/2018/12/17/stop-learning-frameworks/)? When that happens, which would be the skills your team will need to keep being productive?
+Have you though that it's very likely that [you will not be using <new framework Y> in two years](https://sizovs.net/2018/12/17/stop-learning-frameworks/)? When that happens, which would be the skills your team will need to keep being productive?
 
-The existing focus on technologies and trendy frameworks is very harmful for our industry. We need to move forward. **There is a fundamental misunderstanding in what makes a great software developer.**
+The existing focus on technologies and trendy frameworks is very harmful to our industry. We need to move forward. **There is a fundamental misunderstanding in what makes a great software developer.**
 
 ## The software industry is evolving constantly
 
