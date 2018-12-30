@@ -50,11 +50,11 @@ Every day more relevant voices in the industry are raising concerns about his. S
 
 ### But there is also technical evergreen knowledge 
 
-Despite the constant change of technology, the principles and best practices that make a software engineer great are portable across frameworks.
+Despite the constant change of technology, the technical principles and best practices that also make a software engineer great, are portable across frameworks.
 
-This is a heated discussion. It is indeed difficult to draw a line separating technologies that are evergreen from those that are just temporary, as can be seen in the dicussion between [Zach Leatherman](https://twitter.com/zachleat/status/1074776108422307840) and [Laurie Voss](https://twitter.com/seldo/status/1075027798333493249).
+This is a heated discussion. It is indeed difficult to name "fundamentals" or even to draw a line separating technologies that are evergreen from those that are just temporary, as can be seen in the dicussion between [Zach Leatherman](https://twitter.com/zachleat/status/1074776108422307840) and [Laurie Voss](https://twitter.com/seldo/status/1075027798333493249).
 
-However, when I refer to "evergreen" technical knowledge, [I mean principles](https://github.com/romenrg/evergreen-skills-developers#general-technical-knowledge), such as OOP, SOLID, data structures, SCM, Clean Code or DevOps practices.
+However, when I refer to "evergreen" technical knowledge, I mean [principles](https://github.com/romenrg/evergreen-skills-developers#general-technical-knowledge), such as OOP, SOLID, data structures, SCM, Clean Code guidelines or DevOps practices.
 
 ### The repository of "evergreen" knowledge to the rescue
 
