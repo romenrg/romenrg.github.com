@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What makes a great software engineer"
+title: "What Makes a Great Software Engineer"
 date: 2018-12-29 10:09
 updated: 2018-12-30 19:15
 comments: true
