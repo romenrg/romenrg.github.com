@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Software Development | Blog @romenrg]]></title>
   <link href="https://www.romenrg.com/blog/categories/software-development/atom.xml" rel="self"/>
   <link href="https://www.romenrg.com/"/>
-  <updated>2019-01-19T09:05:34+00:00</updated>
+  <updated>2019-01-26T11:57:56+00:00</updated>
   <id>https://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
@@ -49,7 +49,7 @@
 
 <h2>Fortunately, key skills are evergreen</h2>
 
-<p>Isn't there “evergreen” technical knowledge that can be portable across frameworks? Aren't "soft" skills vital? How about code readability, learning-ability and communication skills? Wouldn't those skills be more valuable that framework-specific knowledge in this ever-evolving world?</p>
+<p>Isn't there “evergreen” technical knowledge that can be portable across frameworks? Aren't "soft" skills vital? How about code readability, learning-ability and communication skills? Wouldn't those skills be more valuable than framework-specific knowledge in this ever-evolving world?</p>
 
 <h3>It’s not just about technology</h3>
 
@@ -63,7 +63,7 @@
 
 <p>This is a heated discussion. It is indeed difficult to name "fundamentals" or even to draw a line separating technologies that are evergreen from those that are just temporary, as can be seen in the dicussion between <a href="https://twitter.com/zachleat/status/1074776108422307840">Zach Leatherman</a> and <a href="https://twitter.com/seldo/status/1075027798333493249">Laurie Voss</a>.</p>
 
-<p>However, when I refer to "evergreen" technical knowledge, I mean <a href="https://github.com/romenrg/evergreen-skills-developers#general-technical-knowledge">principles</a>, such as OOP, SOLID, data structures, SCM, Clean Code guidelines or DevOps practices.</p>
+<p>However, when I refer to "evergreen" technical knowledge, I mean <a href="https://github.com/romenrg/evergreen-skills-developers#general-technical-knowledge">principles</a>, such as OOP and SOLID; data structures, SCM, Clean Code guidelines or DevOps practices.</p>
 
 <h3>The repository of "evergreen" knowledge to the rescue</h3>
 
