@@ -2,7 +2,7 @@
 layout: post
 title: "What Makes a Great Software Engineer"
 date: 2018-12-29 10:09
-updated: 2018-12-30 19:15
+updated: 2019-01-26 11:45
 comments: true
 categories: [Software Development, Management]
 description: "Most job descriptions simply describe a list of technologies as the necessary “skills” for the open position. But… Aren’t there other skills that could have a higher impact on developer’s success?"
@@ -39,7 +39,7 @@ This constant innovation brings constant changes, both in business and in techno
 
 ## Fortunately, key skills are evergreen
 
-Isn't there “evergreen” technical knowledge that can be portable across frameworks? Aren't "soft" skills vital? How about code readability, learning-ability and communication skills? Wouldn't those skills be more valuable that framework-specific knowledge in this ever-evolving world?
+Isn't there “evergreen” technical knowledge that can be portable across frameworks? Aren't "soft" skills vital? How about code readability, learning-ability and communication skills? Wouldn't those skills be more valuable than framework-specific knowledge in this ever-evolving world?
 
 ### It’s not just about technology
 
@@ -53,7 +53,7 @@ Despite the constant change of technology, the technical principles and best pra
 
 This is a heated discussion. It is indeed difficult to name "fundamentals" or even to draw a line separating technologies that are evergreen from those that are just temporary, as can be seen in the dicussion between [Zach Leatherman](https://twitter.com/zachleat/status/1074776108422307840) and [Laurie Voss](https://twitter.com/seldo/status/1075027798333493249).
 
-However, when I refer to "evergreen" technical knowledge, I mean [principles](https://github.com/romenrg/evergreen-skills-developers#general-technical-knowledge), such as OOP, SOLID, data structures, SCM, Clean Code guidelines or DevOps practices.
+However, when I refer to "evergreen" technical knowledge, I mean [principles](https://github.com/romenrg/evergreen-skills-developers#general-technical-knowledge), such as OOP and SOLID; data structures, SCM, Clean Code guidelines or DevOps practices.
 
 ### The repository of "evergreen" knowledge to the rescue
 
