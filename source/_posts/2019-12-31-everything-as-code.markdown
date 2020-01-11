@@ -15,7 +15,7 @@ If you are in the software industry, and specially if you are in the DevOps spac
 
 During 2019 I've been intensively working in this idea at [CloudBees University](https://standard.cbu.cloudbees.com/), along with my colleagues. Nowadays, for our training platform and courses everything is done "as code".
 
-Sounds interesting? Keep reading to learn more about it and/or watch the ["Training As Code" talk](#training-as-code-talk) my colleague Mark Waite and I delivered at DevOps World | Jenkins World in December 2019.
+Sounds interesting? Keep reading to learn more about it and/or watch the ["Training As Code" talk](https://www.romenrg.com/blog/2019/12/31/everything-as-code/#training-as-code-talk) my colleague Mark Waite and I delivered at DevOps World | Jenkins World in December 2019.
 
 <!-- More -->
 
