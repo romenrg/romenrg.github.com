@@ -23,7 +23,11 @@ table th {
 }
 
 table th, table td {
-  padding: 5px;
+  padding: 6px 15px 6px 0;
+}
+
+table td {
+  font-size: 85%;
 }
 
 tbody tr:nth-child(even) {

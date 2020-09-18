@@ -10,9 +10,10 @@ footer: true
 
 Below you can watch or review the slides of some of my talks:
 
-Title                                                            | Event                                        | Resources                                    | Year   |
------------------------------------------------------------------ | -------------------------------------------- | -------------------------------------------- | -----  |
-Everything As Code: Applying CI & CD to Training Development      | DevOps World / Jenkins World 2019, Lisbon    | [Video](https://youtu.be/1hda-bVYaVc) (English), [Slides](https://www.slideshare.net/romenrg/dwjw2019-lisbon-trainingascode-applying-ci-cd-to-training-development) (English)   | 2019
-Everything "as-code". El caso de CloudBees University             | TLP Innova 2019                              | [Video](https://youtu.be/RyWSqxSIyVg) (Spanish)       | 2019
+Title                                                             | Year | Event                                                    | Resources                             |
+----------------------------------------------------------------- | ---- | -------------------------------------------------------- | ------------------------------------  |
+_Everything As Code: Applying CI & CD to Training Development_    | 2019 | DevOps World - Jenkins World ; Lisbon, Portugal          | [Video](https://youtu.be/1hda-bVYaVc) (English), [Slides](https://www.slideshare.net/romenrg/dwjw2019-lisbon-trainingascode-applying-ci-cd-to-training-development) (English)
+_Everything "as-code". El caso de CloudBees University_           | 2019 | TLP Innova ; Tenerife, Spain                             | [Video](https://youtu.be/RyWSqxSIyVg) (Spanish), [Slides](https://www.slideshare.net/romenrg/everything-as-code-cloudbees-university) (Spanish)
+_Agile software development - Beyond Projects_                    | 2019 | Lecture, University of La Laguna (ULL) ; Tenerife, Spain | [Slides](https://www.slideshare.net/romenrg/agile-software-development-beyond-projects-ull) (English)
 
 
