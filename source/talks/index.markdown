@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Talks"
+title: "Talks and Courses"
 date: 2020-10-08 08:00
 comments: true
 description: "Some of my talks are listed here, including links to videos or slides. As with the articles in this Blog, in my talks I share thoughts, experiments and ideas about software, internet and entrepreneurship. Looking at peopleware, the human side of technology."
@@ -8,7 +8,9 @@ sharing: true
 footer: true
 ---
 
-Below you can watch or review the slides of some of my talks:
+Below you can review some of the talks and courses I have delivered. Depending on the case, there might be different materials available: recordings, slides and/or derivative articles or books.
+
+## Talks
 
 Title                                                             | Year | Event                                                    | Resources                             |
 ----------------------------------------------------------------- | ---- | -------------------------------------------------------- | ------------------------------------  |
@@ -24,3 +26,9 @@ _Vocabulary Notebook: <br/>A Digital Solution to General and Specific Vocabulary
 _A Process and a Tool to Assess Vocabulary Learning for Computer Science Engineers_ | 2014 | IEEE Education Engineering (EDUCON) <br /> Istambul, Turkey | [Slides](https://www.slideshare.net/secret/MOfkEL0ICnCBhr) (English), [Article](https://ieeexplore.ieee.org/document/6826163) (English)
 _Premio Accésit a "Vocabulary Notebook". <br /> Premios Empresariales Fundación FYDE-CajaCanarias 2012_ | 2012 | Premios Empresariales <br /> Fyde CajaCanarias <br /> Teneife, Spain | [Video](https://youtu.be/MXkKLFlTpbw) (Spanish), <br /> [Slides](https://www.slideshare.net/secret/aAz1fyofObEPsX) (Spanish)
 _Turawet: <br /> Integración de herramientas de modelado, recopilación y explotación de datos. <br /> Aplicaciones prácticas en casos reales_ | 2011 | University of La Laguna <br /> Tenerife, Spain | [Video](https://youtu.be/4BLMhpE66yQ) (Spanish), <br /> [Slides](https://www.slideshare.net/secret/I70JF08TCMEenr) (Spanish), <br /> [Demo](https://youtu.be/k9qX9cnQfSw), <br /> [Book](../docs/Memoria_Final_Proyecto_Turawet.pdf) (Spanish)
+
+## Course
+
+Title | Year(s) | Organization & location | Length | Resources |
+----- | ------- | ----------------------- | --------- |
+_Analítica web y métricas para Startups_ | 2018 <br /> 2017 <br /> 2016 <br /> | Escuela de Organización Industrial (EOI) <br /> Canary Islands, Spain | 1-Day session <br /> (4 hours) | [Slides](https://www.slideshare.net/romenrg/analtica-web-y-mtricas-para-startups-julio-2018)
