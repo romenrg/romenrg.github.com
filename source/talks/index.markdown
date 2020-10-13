@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Talks and Courses"
-date: 2020-10-08 08:00
+date: 2020-10-13 08:00
 comments: true
 description: "Some of my talks are listed here, including links to videos or slides. As with the articles in this Blog, in my talks I share thoughts, experiments and ideas about software, internet and entrepreneurship. Looking at peopleware, the human side of technology."
 sharing: true
@@ -26,6 +26,8 @@ _Vocabulary Notebook: <br/>A Digital Solution to General and Specific Vocabulary
 _A Process and a Tool to Assess Vocabulary Learning for Computer Science Engineers_ | 2014 | IEEE Education Engineering (EDUCON) <br /> Istambul, Turkey | [Slides](https://www.slideshare.net/secret/MOfkEL0ICnCBhr) (English), [Article](https://ieeexplore.ieee.org/document/6826163) (English)
 _Premio Accésit a "Vocabulary Notebook". <br /> Premios Empresariales Fundación FYDE-CajaCanarias 2012_ | 2012 | Premios Empresariales <br /> Fyde CajaCanarias <br /> Teneife, Spain | [Video](https://youtu.be/MXkKLFlTpbw) (Spanish), <br /> [Slides](https://www.slideshare.net/secret/aAz1fyofObEPsX) (Spanish)
 _Turawet: <br /> Integración de herramientas de modelado, recopilación y explotación de datos. <br /> Aplicaciones prácticas en casos reales_ | 2011 | University of La Laguna <br /> Tenerife, Spain | [Video](https://youtu.be/4BLMhpE66yQ) (Spanish), <br /> [Slides](https://www.slideshare.net/secret/I70JF08TCMEenr) (Spanish), <br /> [Demo](https://youtu.be/k9qX9cnQfSw), <br /> [Book](../docs/Memoria_Final_Proyecto_Turawet.pdf) (Spanish)
+
+<p class="small-text"> * Some of the talks above have been presented in multiple places at multiple times. The latest delivery has been listed.</p>
 
 ## Courses
 
