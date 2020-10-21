@@ -2,7 +2,7 @@
 layout: post
 title: "Everything 'as-code'"
 date: 2019-12-31 20:14
-updated: 2020-01-12 18:45
+updated: 2020-10-21 12:30
 comments: true
 categories: [Software Development, DevOps, Management]
 description: "In the software industry, 'infrastructure as code' and 'configuration as code' have become popular DevOps concepts. But the 'as code' idea can be applied to everything else in a software company, from documentation to training. We achieved 'training as code' in CloudBees University by doing everything 'as code' for our trianing platform and courses"
@@ -13,7 +13,7 @@ If you are in the software industry, and specially if you are in the DevOps spac
 
 <img src="/images/dwjw2019_lisbon_talk.jpg" alt="Picture taken during the presentation at DWJW 2019. I'm showing the tech stack of the new CloudBees' training platform" />
 
-During 2019 I've been intensively working in this idea at [CloudBees University](https://standard.cbu.cloudbees.com/), along with my colleagues. Nowadays, for our training platform and courses everything is done "as code".
+During 2019 I've been intensively working on this idea at [CloudBees University](https://standard.cbu.cloudbees.com/), along with my colleagues. Nowadays, for our training platform and courses everything is done "as code".
 
 Sounds interesting? Keep reading to learn more about it and/or watch the ["Training As Code" talk](https://www.romenrg.com/blog/2019/12/31/everything-as-code/#training-as-code-talk) my colleague Mark Waite and I delivered at DevOps World | Jenkins World in December 2019.
 
@@ -31,21 +31,21 @@ It's been a while since many technologies and tools have shifted their documenta
 
 Also, blogging tools, like [Jekyll](https://jekyllrb.com/), have geared to this concept as well; using Markdown files to represent the different posts, that are later rendered into HTML.
 
-And this trend is also accelerating. Nowadays I see many relevant projects and tools shifting their documentation sites to code. Among the benefits, not only does it allow us to treat everything that belongs (or relates to) a software product equially, but it also improves collaboration between teams. Engineers are much more likely to contribute to documentation if it is written as code, and specially if it is in the very same repo in which the code is. This shift is actually helping to break silos again, as it did between development and operations.
+And this trend is also accelerating. Nowadays I see many relevant projects and tools shifting their documentation sites to code. Among the benefits, not only does it allow us to treat everything that belongs (or relates to) a software product equally, but it also improves collaboration between teams. Engineers are much more likely to contribute to documentation if it is written as code, and specially if it is in the very same repo in which the code is. This shift is actually helping to break silos again, as it did between development and operations.
 
 Moreover, having documentation as code makes it easier for us to include documentation-specific stages in our CI/CD pipelines, such as spelling checks or broken links validations.
 
 ## Combining these concepts in CloudBees University
 
-In CloudBees University we offer several courses, most of them focused on [Jenkins](https://jenkins.io/) (targeting audiences with different level of knowledge in Jenkins administration or Jenkins Pipelines). Those courses are highly technical and have significant "hands on" pieces. The content is displayed as a website, while for the hands on part, we provide students with lab environments in which they have the different tools they need for the course, with the specific configuration needed for the different exercises they have to complete.
+In CloudBees University we offer several courses, most of them focused on [Jenkins](https://jenkins.io/) (targeting audiences with different level of knowledge in Jenkins administration or Jenkins pipelines). Those courses are highly technical and have significant "hands on" pieces. The content is displayed as a website, while for the hands on part, we provide students with lab environments in which they have the different tools they need for the course, with the specific configuration needed for the different exercises they have to complete.
 
 ### Everything "as code"
 
 Needless to say everything is done as code, from our content to the lab environments and their configuration.
 
-Want to know more? Mark and I explained all the details in our talk at DevOps World | Jenkins World 2019, which we recorded and is available here:
+Want to know more? Mark and I explained all the details in our talk at DevOps World | Jenkins World 2019, which we recorded and is available below.
 
-<h3 id="training-as-code-talk"> Training As Code: Applying CI & CD to Training Development</h3>
+<h4 id="training-as-code-talk"> Training As Code: Applying CI & CD to Training Development</h4>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1hda-bVYaVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -55,6 +55,7 @@ Now, how about you? Are you doing "everything as code" already?
 
 <div class="revisions">
   <h2>Significant revisions</h2>
+  <p><em>2020, Oct 21</em>: Minor style improvements</p>
   <p><em>2020, Jan 12</em>: Minor fixes (typos) and addition of examples of docs-specific CI checks.</p>
   <p><em>2020, Jan 11</em>: Major rewrites to the article. First "public" version.</p>
   <p><em>2019, Dec 31</em>: Original draft.</p>
