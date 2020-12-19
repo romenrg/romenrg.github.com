@@ -1,18 +1,43 @@
 ---
 layout: page
-title: Blog Archive
+title: Article Archive
 footer: false
 ---
+
+<p>This archive lists articles I have published, both in this blog and as well as in external sites.</p>
+
+<h2>In This Blog</h2>
 
 <div id="blog-archives">
 {% for post in site.posts reverse %}
 {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
 {% unless year == this_year %}
   {% assign year = this_year %}
-  <h2>{{ year }}</h2>
+  <h3>{{ year }}</h3>
 {% endunless %}
 <article>
   {% include archive_post.html %}
 </article>
 {% endfor %}
+</div>
+
+
+<h2 style="margin-top: 1.5em;">In External Sites</h2>
+
+<div class="blog-archives">
+  <h3>2019</h3>
+  <article>
+    <h1>
+      <a href="https://www.jenkins.io/blog/2019/05/30/becoming-contributor-newbie-tickets/">Becoming a Jenkins contributor: Newbie-friendly tickets</a>
+    </h1>
+    <time datetime="2019-05-30T00:00:00+00:00" pubdate=""><span class="month">May</span> <span class="day">30</span> <span class="year">2019</span></time>
+    <footer>posted in Jenkins.io</footer>
+  </article>
+  <article>
+    <h1>
+      <a href="https://www.jenkins.io/blog/2019/03/29/becoming-contributor-intro/">The journey of becoming a Jenkins contributor: Introduction</a>
+    </h1>
+    <time datetime="2019-03-29T00:00:00+00:00" pubdate=""><span class="month">Mar</span> <span class="day">29</span> <span class="year">2019</span></time>
+    <footer>posted in Jenkins.io</footer>
+  </article>
 </div>

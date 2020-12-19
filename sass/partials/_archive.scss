@@ -1,7 +1,7 @@
 #archive {
   #content > div { &, > article { padding-top: 0; } }
 }
-#blog-archives {
+#blog-archives, .blog-archives {
   article {
     padding: 1em 0 1em;
     position: relative;
@@ -12,7 +12,7 @@
     footer { padding: 0; margin: 0;}
   }
   h1 { color: $text-color; margin-bottom: .3em; }
-  h2 { display: none; }
+  h2, h3 { display: none; }
   h1 {
     font-size: 1.5em;
     a {
@@ -40,7 +40,7 @@
   a:hover { color: $link-color-hover; }
   @media only screen and (min-width: 550px) {
     article { margin-left: 5em; }
-    h2 {
+    h2, h3 {
       margin-bottom: .3em;
       font-weight: normal;
       display: inline-block;
