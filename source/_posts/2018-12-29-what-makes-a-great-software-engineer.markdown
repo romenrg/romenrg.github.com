@@ -25,7 +25,7 @@ Are we looking at the right skills?
 
 So, despite the shortage of software engineers, we keep seeing, with dismay, that many companies keep restricting their opening positions to people with experience in very specific sets of technologies. Often stating that “X years of experience in _\<new framework Y\>_” is a key requirement.
 
-Have you though that it's very likely that [you will not be using _\<new framework Y\>_ in two years](https://sizovs.net/2018/12/17/stop-learning-frameworks/)? When that happens, which would be the skills your team will need to keep being productive?
+Have you thought that it's very likely that [you will not be using _\<new framework Y\>_ in two years](https://sizovs.net/2018/12/17/stop-learning-frameworks/)? When that happens, which would be the skills your team will need to keep being productive?
 
 It's great to keep an eye on new technologies, of course, as they might bring relevant innovations to our businesses; but focusing mostly on trendy frameworks or on our current tech stack, when hiring, has negative impacts in the long-run and, as a general practice, is very harmful to our industry. We need to move forward. **This focus on languages and frameworks hints there is a fundamental misunderstanding in what makes a great software developer.**
 
