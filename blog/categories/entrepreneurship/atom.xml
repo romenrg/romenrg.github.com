@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Entrepreneurship | Blog @romenrg]]></title>
   <link href="https://www.romenrg.com/blog/categories/entrepreneurship/atom.xml" rel="self"/>
   <link href="https://www.romenrg.com/"/>
-  <updated>2020-12-28T13:35:07+00:00</updated>
+  <updated>2020-12-30T09:14:28+00:00</updated>
   <id>https://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
@@ -288,7 +288,7 @@ As any other creative process, programming requires autonomy. That is why agile 
     <link href="https://www.romenrg.com/blog/2013/09/30/vocabulary-notebook-from-idea-to-reality-in-one-year/"/>
     <updated>2013-09-30T13:59:00+01:00</updated>
     <id>https://www.romenrg.com/blog/2013/09/30/vocabulary-notebook-from-idea-to-reality-in-one-year</id>
-    <content type="html"><![CDATA[<p>The 8th of September 2012 I started to work intensively in an idea I called Vocabulary Notebook. With that idea I was planning to solve a problem that myself and many other english students experience while learning vocabulary. It has already been a year since then and that idea is now a real platform used by thousands of students and teachers around the world. I must say that I’m quite proud of what we have achieved during this year, both as an entrepreneur and as an engineer. Although I don’t have much free time now, I have forced myself to write this post to summarize what has happened around Vocabulary Notebook during this year, from idea to reality. Since there are so many things that have happened, I’m afraid this post is going to be quite long, but I think that the anniversary deserves it.</p>
+    <content type="html"><![CDATA[<p>The 8th of September 2012 I started to work intensively in an idea I called Vocabulary Notebook. With that idea I was planning to solve a problem that myself and many other english students experience while learning vocabulary. It has already been a year since then and that idea is now a real platform used by thousands of students and teachers around the world. I must say that I’m quite proud of what we have achieved during this year, both as an entrepreneur and as an engineer. Although I don’t have much free time now, I have forced myself to write this post to summarize what has happened around Vocabulary Notebook during this year, from idea to reality. Since there are so many things that have happened, I’m afraid this post is going to be quite long, but I think the anniversary deserves it.</p>
 
 
 <p><img src="https://www.romenrg.com/images/vocabularynotebook.png" /></p>
@@ -303,7 +303,7 @@ As any other creative process, programming requires autonomy. That is why agile 
 
 
 
-<p>Honestly, in this year I have worked <em>a lot</em>. A lot means an average of 80 hours a week... But this post is not about all the time I have worked and all the things I have learned. This post is about the first year of Vocabulary Notebook. It’s a summary of what have happened this year around our product, from the very beginning to the full platform we have today. I will probably publish another post soon in which I will talk about all I have learned during this year, doing some retrospectives about my decisions and describing all the tasks I have had to accomplish and all the roles I have had to play. But today I want to review what has happened to <a href="http://www.vocabularynotebook.com">Vocabulary Notebook</a> during this year in which it has been built.</p>
+<p>Honestly, in this year I have worked <em>a lot</em>. A lot means an average of 80 hours a week... But this post is not about all the time I have worked and all the things I have learned. This post is about the first year of Vocabulary Notebook. It’s a summary of what has happened this year around our product, from the very beginning to the full platform we have today. I will probably publish another post soon in which I will talk about all I have learned during this year, doing some retrospectives about my decisions and describing all the tasks I have had to accomplish and all the roles I have had to play. But today I want to review what has happened to <a href="http://www.vocabularynotebook.com">Vocabulary Notebook</a> during this year in which it has been built and launched.</p>
 
 
 
@@ -313,17 +313,17 @@ As any other creative process, programming requires autonomy. That is why agile 
 
 
 
-<p>I had the idea of Vocabulary Notebook in my mind since 2011. We were living in Cambridge, UK and besides working remotely I was preparing the CAE Exam in an English School. Our teachers suggested us to use a paper notebook where we could write down all the words (phrasal verbs and idioms) that we were learning everyday; with a sample sentence and a definition. I had tried those notebooks before several times and they always failed for me. After a few days, the vocabulary was always messed. No alphabetical order, no topics order, difficult to edit, uncomfortable to carry… I tried it again, saving several pages for each letter this time, to have some alphabetical order. It failed again. They are uncomfortable. In this case the problem was that I had a lot of white pages in the middle; while editions were still messy and all topics were mixed… I asked my partners in the course and most of them had the same problems.</p>
+<p>I had the idea of Vocabulary Notebook in my mind since 2011. We were living in Cambridge, UK; and besides working remotely, I was preparing the CAE Exam in an English School. Our teachers suggested us to use a paper notebook where we could write down all the words (phrasal verbs and idioms) that we were learning every day; with a sample sentence and a definition. I had tried those notebooks before several times and they always failed for me. After a few days, the vocabulary was always messed. No alphabetical order, no topics order, difficult to edit, uncomfortable to carry… I tried it again, saving several pages for each letter this time, to have some alphabetical order. It failed again. They are uncomfortable. In this case the problem was that I had a lot of white pages in the middle; while editions were still messy and all topics were mixed… I asked my classmates and most of them had the same problems.</p>
 
 
 
 
-<p>You could think that the problem is that Vocabulary Notebooks are not useful; that it's better to do nothing. However, there are <a href="#several-studies">several studies [1]</a> that prove the benefits of these notebooks in the Vocabulary Acquisition Process. <em>Significant benefits</em>. The base of the improvement is the personalization of the learning process. If you write your own definitions and sample sentences you tend to remember the word easily afterwards... You understand the word deeply and you won't forget it easily. And it is true. If you read a definition from a dictionary, you will forget it quickly. If you create your own, first you have to understand the meaning and then you will generate your own definition. You have learned during the process. If you see the word again, you will remember instantly.</p>
+<p>You could think the problem is that Vocabulary Notebooks are not useful; that it is better to do nothing. However, there are <a href="#several-studies">several studies [1]</a> that prove the benefits of these notebooks in the Vocabulary Acquisition Process. <em>Significant benefits</em>. The base of the improvement is the personalization of the learning process. If you write your own definitions and sample sentences you tend to remember the word afterwards... You understand its meaning deeply and you won't forget it easily. And it is true. If you read a definition from a dictionary, you will forget it quickly. If you create your own, first you have to understand the meaning and then you will generate your own definition. You have learned during the process. If you see the word again, you will remember instantly.</p>
 
 
 
 
-<p>Ok, let’s agree on Vocabulary Notebooks. They allow you to learn vocabulary faster and deeper. But they have several problems… And they could be solved with technology. That’s why I started to look for tech tools that could help me to sort my personal vocabulary. I didn’t want a dictionary nor a translator. I wanted to have my personal notebook, where I could create my own definitions and sample sentences, as my teacher wanted; but I wanted to have filters to study by categories, by not-known words, sorting… And after days looking for it, I couldn’t find what I wanted. I was mainly looking for “vocabulary notebook” in google. There were many references on how to create your own vocabulary notebook on paper. But no technology around. One day, when I gave up looking for a tool I went to bed, frustrated. Suddenly, I woke up in the middle of the night again, and decided purchase the domain <a href="http://www.vocabularynotebook.com">www.vocabularynotebook.com</a>.</p>
+<p>Ok, let’s agree on Vocabulary Notebooks. They allow you to learn vocabulary faster and deeper. But they have several problems… And they could be solved with technology. That’s why I started to look for tech tools that could help me sort my personal vocabulary. I didn’t want a dictionary nor a translator. I wanted to have my personal notebook, where I could create my own definitions and sample sentences, as my teacher wanted; but I wanted to have filters to study by categories, by not-known words, sorting… And after days looking for it, I couldn’t find what I wanted. I was mainly looking for “vocabulary notebook” in Google. There were many references on how to create your own vocabulary notebook on paper. But no technology around. One day, I gave up looking for a tool and went to bed, frustrated. That same day, I woke up in the middle of the night, and decided purchase the domain <a href="http://www.vocabularynotebook.com">www.vocabularynotebook.com</a>.</p>
 
 
 
@@ -333,7 +333,7 @@ As any other creative process, programming requires autonomy. That is why agile 
 
 
 
-<p>As I said, in January 2012 I started working in Arte Consultores Tecnológicos as Analyst / Programmer (Front-end Engineer), mainly dedicated to Stat4you. It was an engaging project, a sort of startup within the company; with many challenges. It was also a busy time. I was learning a lot of new technologies and we also moved to a new house. It wasn’t the time to start with a new personal project.</p>
+<p>As I said before, in January 2012 I started working in Arte Consultores Tecnológicos as Analyst / Programmer (Front-end Engineer), mainly dedicated to Stat4you. It was an engaging project, a sort of startup within the company; with many challenges. It was also a busy time. I was learning a lot of new technologies and we also moved to a new house. It wasn’t the time to start with a new personal project.</p>
 
 
 
@@ -343,12 +343,12 @@ As any other creative process, programming requires autonomy. That is why agile 
 
 
 
-<p>But then, in September 2012 my girl had to go to to mainland Spain to prepare an exam that would allow her to access a job she wanted. I was alone at home for 4 months. That was the time. To avoid loneliness I decided to start with Vocabulary Notebook in my free time.</p>
+<p>But then, in September 2012 my wife had to go to to mainland Spain to prepare an exam that would allow her to access a job she wanted. I was alone at home for 4 months. That was the time. To avoid loneliness I decided to start with Vocabulary Notebook in my free time.</p>
 
 
 
 
-<p>First, I tried to engage some friends / colleagues with the idea, to be partners and create a company. Difficult task. In my experience it’s not easy to engage Software Engineers in your project, specially if they have jobs and if they are not the target customers of the product you are planning to build. Usually good engineers find jobs quite easily (even in Spain), so they don’t usually have too much time to spend in other projects. If they decide to join a project, it’s quite probable that they are not going to be fully committed. I have the feeling that many Software Engineering like building things, but they hate business. They like building things in their free time and meeting with colleagues to do it. But more as a learning process, not as a business. <em>- “Let’s just start and see what happens” -</em>. Since they tend to do it in the free time, they would spend just some hours a week. I have been there myself. That’s why I know how it works. And I didn’t want that in this case, in this case I was planning to build a serious business. <em>Commitment was needed</em>.</p>
+<p>First, I tried to engage some friends / colleagues with the idea, to be partners and create a company. Difficult task. In my experience it’s not easy to engage Software Engineers in your project, specially if they have jobs and if they are not the target customers of the product you are planning to build. Usually good engineers find jobs quite easily (even in Spain), so they don’t usually have too much time to spend in other projects. If they decide to join a project, it’s quite probable that they are not going to be fully committed. I have the feeling that many Software Engineers like building things, but they hate business. They like building things in their free time and meeting with colleagues to do it. But more as a learning process, not as a business. <em>- “Let’s just start and see what happens” -</em>. Since they tend to do it in the free time, they typically spend just a few hours per week. I have been there myself. That’s why I know how it works. And I didn’t want that in this case, in this case I was planning to build a serious business. <em>Commitment was needed</em>.</p>
 
 
 
@@ -363,7 +363,7 @@ As any other creative process, programming requires autonomy. That is why agile 
 
 
 
-<p>From the very beginning of this new project I was a follower of the “Lean Startup” methodology for Business. As a software engineer I always try to apply Agile Methodologies for Software Development, so in this case I was willing to apply what for me was the equivalent for Business Development. By that time I was enrolled in “The Lean LaunchPad”, the Udacity course of Steve Blank, which turned out to be a really great course for me. I learned a lot from him. To dive deep in the Lean approach, I was reading The Lean Startup by Eric Ries. The last piece seemed to be the Business Model Canvas, but I had been working with it in my previous startup Turawet, so I was already used to it.</p>
+<p>From the very beginning of this new project I followed the “Lean Startup” approach to business development. As a software engineer, I always try to apply agile frameworks for software development. So in this case I was willing to apply what to me was its equivalent for the business. By that time I was enrolled in “The Lean LaunchPad”, the Udacity course of Steve Blank on the topic, which turned out to be a really great course for me. I learned a lot from him. To dive deeper in the Lean approach, I was reading The Lean Startup by Eric Ries. The last piece seemed to be the Business Model Canvas, but I had been working with it in my previous startup Turawet, so I was already used to it.</p>
 
 
 
@@ -378,12 +378,12 @@ As any other creative process, programming requires autonomy. That is why agile 
 
 
 
-<p>So I decided to <em>“get out of the building”</em>. First of all, I arranged meetings with several english teachers, in which we used to discuss the way in which Vocabulary is taught, the benefits of Vocabulary Notebooks, the trends in education, such as the personalization of the learning process; and other topics such as using software, smartphones and technology in class. I learned a lot from them. And what is more, they helped me prove that there was a real need when it comes to teaching and learning vocabulary. Teachers didn’t want dictionaries nor translators. They wanted students to create their own definitions and sample sentences. They didn’t want me to introduce features like “import definition from…” or an automatic translation. Most of them were actually encouraging students to keep their own records of personal vocabulary in paper notebooks (either an specific vocabulary notebook or in the general notebook). During the meetings teachers admitted that the paper notebooks approach had several problems for studying vocabulary, but for most of them it was the best approach, because of the personalization that it allowed.</p>
+<p>So I decided to <em>“get out of the building”</em>. First of all, I arranged meetings with several English teachers, in those meetings we used to discuss the way in which vocabulary is usually taught, the benefits of Vocabulary Notebooks, the trends in education, such as the personalization of the learning process; and other topics such as using software, smartphones and technology in class. I learned a lot from them. And what is more, they helped me prove that there was a real need when it comes to teaching and learning vocabulary. Teachers didn’t want dictionaries nor translators. They wanted students to create their own definitions and sample sentences. They didn’t want me to introduce features like “import definition from…” or an automatic translation. Most of them were actually encouraging students to keep their own records of personal vocabulary in paper notebooks (either an specific vocabulary notebook or in the general notebook). During these meetings, teachers admitted that the paper notebooks approach had several problems for studying vocabulary, but for most of them it was the best approach, because of the personalization it allowed.</p>
 
 
 
 
-<p>From the beginning I had the feeling that probably students were not willing to pay for a learning tool like Vocabulary Notebook. Many students prefer tools that teach them english. And that’s not what Vocabulary Notebook is intended to do. We wanted to do what teachers wanted. Not only because they are the education experts, but because we wanted them to be our prescriptors. We actually wanted to help teachers teach, instead of being their competitors. There are plenty of applications that teach english. We wanted to be different. Additionally, as an advanced english student I agreed with teachers about the importance of the personalization in the learning process.</p>
+<p>From the beginning I had the feeling that probably students were not willing to pay for a learning tool like Vocabulary Notebook. Many students prefer tools that teach them English. And that’s not what Vocabulary Notebook is intended to do. We wanted to do what teachers wanted. Not only because they are the education experts, but because we wanted them to be our prescriptors. We actually wanted to help teachers teach, instead of being their competitors. There are plenty of applications that teach English. We wanted to be different. Additionally, as an advanced English student myself, I agreed with teachers about the importance of the personalization in the learning process.</p>
 
 
 
