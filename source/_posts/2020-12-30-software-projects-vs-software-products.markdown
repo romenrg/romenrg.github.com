@@ -95,7 +95,7 @@ I understand that, when somebody (like Kohsuke with Jenkins) starts to build an 
 
 As you may have guessed after reading this article, I’m a big fan of building software as products. I have built many in my career; and [I’ve learned a lot](https://www.romenrg.com/blog/2015/03/17/10-plus-1-valuable-lessons-i-learned-from-my-failed-startup/) from those experiences.
 
-But building products is not just what I enjoy the most. It is the way I truly believe we should be building software to get the most out of it.
+But building software as products is not just what I enjoy the most. It is truly the way I believe we should be building software, to get the most out of it.
 
 Software projects are dead. Long live _software products_.
 
