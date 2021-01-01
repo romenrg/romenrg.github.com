@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Management | Blog @romenrg]]></title>
   <link href="https://www.romenrg.com/blog/categories/management/atom.xml" rel="self"/>
   <link href="https://www.romenrg.com/"/>
-  <updated>2020-12-31T13:44:12+00:00</updated>
+  <updated>2021-01-01T11:53:01+00:00</updated>
   <id>https://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
@@ -85,12 +85,12 @@
 <tr>
 <td><em>Costs</em>                                 </td>
 <td> Supposedly known and fixed.               </td>
-<td> “Pay as we go”, i.e. weekly / monthly / yearly (e.g. salaries)</td>
+<td> “Pay as we go”, i.e. weekly / monthly / yearly (e.g. salaries).</td>
 </tr>
 <tr>
 <td><em>Technical quality</em>                     </td>
 <td> Not rewarded; thus, not prioritized. Projects are seen as one-off efforts, so maintainability is not valued. </td>
-<td> Critical. Product development is a continuum. Technical excellence is key to keep up the product’s iterative and incremental evolution</td>
+<td> Critical. Product development is a continuum. Technical excellence is key to keep up the product’s iterative and incremental evolution.</td>
 </tr>
 <tr>
 <td><em>Key mindset aspects</em>                   </td>
@@ -112,23 +112,23 @@
 
 <h3>In the digital economy, software evolves constantly</h3>
 
-<p>Think of the software you use in your daily life. It is always evolving. You receive constant updates, not only for bugfixing but also to add new features, improve the UX or even to remove pieces that are no longer relevant.</p>
+<p>Think of the software you use in your daily life. Isn't it always evolving? You receive constant updates, not only for bugfixing; but also to add new features, <a href="https://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you/">improve the UX</a>, or even to remove pieces that are no longer relevant.</p>
 
-<p>Does this fit into the definition of "project" we saw before? Something that must have “a defined beginning and end in time”? And how about scope and resources, which are also supposed to be fixed upfront?</p>
+<p>Does this fit into the definition of "project" we saw before? Do these applications have “a defined beginning and end in time”? And how about scope and resources, do they seem to have been fixed upfront?</p>
 
 <p>Change and evolution are natural in products, but not in projects. Projects don't welcome change. And software evolves constantly.</p>
 
 <h3>Software products and outsourcing are not a good fit</h3>
 
-<p>Traditionally, it has been common for non-software organizations to outsource software development initiatives.</p>
+<p>Traditionally, it has been common for non-software organizations to outsource software development initiatives. For instance, Government agencies typically outsource their “software development projects”, even though in most cases they should have been thinking in terms of software products instead.</p>
 
-<p>Government agencies still typically outsource “software development projects”. Think of an e-gov application in which citizens can perform their bureaucratic obligations from home. Isn’t that a software product? The site would have to evolve, as new laws are passed. It is not supposed to have a predefined teardown day. Instead, we would expect it to be there for the long run. Citizens (users) will discover bugs, which will have to be addressed; and we will likely complain and/or suggest improvements. There might also be scalability issues and/or outages that will have to be tackled.</p>
+<p>Think of an e-gov application in which citizens can perform their bureaucratic obligations from home. Isn’t that a software product? It will have to evolve, as new laws are passed. And it is not supposed to have a predefined teardown day. Instead, we would probably expect it to be there for the long run. Over time, citizens (users) will discover bugs, which will have to be addressed; and we will likely complain about it and/or suggest improvements. There might also be scalability issues and/or outages that will have to be tackled.</p>
 
-<p>Treating these software products as outsourced projects means that the owners will hire an external company to build it. Usually the cheapest. The project will have a fixed scope and the parties will agree on a timeline and a price. The external company will complete the project, according to those parameters and hand it over to the customer. Then, typically, the external company forgets about it. If changes are desired in the future, new projects will be defined and outsourced. Often to different companies.</p>
+<p>Treating these software products as outsourced projects means that the owners will hire an external company to build it. Usually the cheapest. The project will have a fixed scope, and the parties will agree on a timeline and on a price. The external company will complete the project, according to those parameters and hand it over to the customer. Then, usually, the external company forgets about it. If changes are desired in the future, new projects will be defined and outsourced. Often to different companies.</p>
 
-<p>In most cases, the company that builds the software is not involved in the discovery process with potential users. They are not involved in the prioritization of features. They are just hired to do X, as quickly and cheaply as possible. And since they are not rewarded for software quality nor for asking questions, they will probably build it without maintenance in their minds. And they won’t question decisions nor worry about gathering data.</p>
+<p>In most cases, the company that is hired to build the software is not involved in the discovery process with potential users. They are not involved in the prioritization of features. They are just hired to do X, as quickly and cheaply as possible. And since they are not rewarded for software quality nor for asking questions, they will probably build it without maintenance in their minds. And they won’t question decisions nor worry about gathering data.</p>
 
-<p>Now, think how different it would be if it was treated as a software product, with an in-house team building it and participating in all the process, from conception to evolution. The team would understand needs, motivations and strategic goals; they would be engaged. They would ask questions. Hypotheses can be defined together and data collection and learning are in everybody’s mind since the beginning. Working in small increments becomes easier. Writing maintainable code is crucial. Changes are welcome. And quality matters.</p>
+<p>Now, think how different it would be if it was treated as a software product, with an in-house team building it and participating in all the process, from conception to evolution. The team would understand needs, motivations and strategic goals; they would be engaged. They would ask questions. Hypotheses could be defined together and data collection and learning would be in everybody’s mind since the beginning. Working in small increments would be easier. Writing maintainable code becomes crucial. Changes are welcome. And quality matters.</p>
 
 <p>Being aware of the importance of software products in the digital economy means that, if your software is (or is becoming) the core of your business, then you keep software development in-house. Nowadays, every company is a software company. Think of Airbnb, Lyft or Netflix. These businesses could have opted to externalize software development, but they realized the software products they were building are the core of their business. They realized they were software companies.</p>
 
@@ -138,7 +138,9 @@
 
 <p>I have been an open source software (OSS) user for many years, and I have also contributed to open source myself. One example of OSS to which I have contributed is <a href="http://jenkins.io/">Jenkins</a>. Jenkins is the leading open source automation server. It has been around for more than 15 years, with millions of installations worldwide. And it has evolved significantly, including the fork from Hudson, the recent UI changes, and the thousands of ever-evolving plugins, created by a thriving open source community. Based on this data and the previous definitions, should we consider Jenkins an “open source project” or, rather, an “open source product”?</p>
 
-<p>I understand that, when somebody (like Kohsuke with Jenkins) starts to build an open source software, they might define an initial “project” phase. A project to build the first set of fixed features for their idea. The first increment. But if it is successful, that initial project leads to a product that keeps evolving in unanticipated ways. Scope is no longer fixed, as the community starts to bring new ideas and prioritize their development; and there is no defined “end date”. Successful open source products are here to stay, for a long time. Until the community decides otherwise.</p>
+<p>I understand that, when somebody (like Kohsuke with Jenkins) starts to build an open source software, they might have a limited and well defined idea. And they may work on a “project” to make it happen. A project to build the first set of fixed features for their idea. But then, if it is successful, that initial project leads to a product that keeps evolving in unanticipated ways. Scope is no longer fixed, as the community starts to bring new ideas and prioritize their development; and there is no defined “end date”.</p>
+
+<p>Successful open source "projects" are here to stay, for a long time. But their success will keep them evolving within their communities, as <em>software products</em>.</p>
 
 <h2>My personal take</h2>
 
