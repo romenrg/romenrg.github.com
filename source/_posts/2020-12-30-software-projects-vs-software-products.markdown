@@ -51,8 +51,8 @@ Aspect                                  | Project                               
 --------------------------------------- | ----------------------------------------- | ---------------------------------------------------------- |
 _Duration_                              | Fixed. Limited (e.g. _X_ months).           | Unknown. Depending on market (from _X_ weeks to _Y_ decades).
 _Scope_                                 | Supposedly known and fixed.               | Unknown. Constant learning and adaptation is assumed.
-_Costs_                                 | Supposedly known and fixed.               | “Pay as we go”, i.e. weekly / monthly / yearly (e.g. salaries)
-_Technical quality_                     | Not rewarded; thus, not prioritized. Projects are seen as one-off efforts, so maintainability is not valued. | Critical. Product development is a continuum. Technical excellence is key to keep up the product’s iterative and incremental evolution
+_Costs_                                 | Supposedly known and fixed.               | “Pay as we go”, i.e. weekly / monthly / yearly (e.g. salaries).
+_Technical quality_                     | Not rewarded; thus, not prioritized. Projects are seen as one-off efforts, so maintainability is not valued. | Critical. Product development is a continuum. Technical excellence is key to keep up the product’s iterative and incremental evolution.
 _Key mindset aspects_                   | Fixed mindset. “We know what we have to build”. So, “just do it”. Don’t question things. | Learning mindset. “We are constantly learning and adapting”. Data-driven. Question decisions constantly.
 _Key engineering skills_                | Framework-specific knowledge. <br/><br/> Everything is fixed, from features to technologies. "We just need to write the code as quickly as possible". | [Evergreen development skills](https://github.com/romenrg/evergreen-skills-developers). <br/><br/> Everything may change, from features to technology. "We need to learn and adapt constantly". "We apply technical best practices". "Teamwork, mentoring and collaboration are key".
 
@@ -63,23 +63,23 @@ _Key engineering skills_                | Framework-specific knowledge. <br/><br
 
 ### In the digital economy, software evolves constantly
 
-Think of the software you use in your daily life. It is always evolving. You receive constant updates, not only for bugfixing but also to add new features, improve the UX or even to remove pieces that are no longer relevant.
+Think of the software you use in your daily life. Isn't it always evolving? You receive constant updates, not only for bugfixing; but also to add new features, [improve the UX](https://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you/), or even to remove pieces that are no longer relevant.
 
-Does this fit into the definition of "project" we saw before? Something that must have “a defined beginning and end in time”? And how about scope and resources, which are also supposed to be fixed upfront?
+Does this fit into the definition of "project" we saw before? Do these applications have “a defined beginning and end in time”? And how about scope and resources, do they seem to have been fixed upfront?
 
 Change and evolution are natural in products, but not in projects. Projects don't welcome change. And software evolves constantly.
 
 ### Software products and outsourcing are not a good fit
 
-Traditionally, it has been common for non-software organizations to outsource software development initiatives.
+Traditionally, it has been common for non-software organizations to outsource software development initiatives. For instance, Government agencies typically outsource their “software development projects”, even though in most cases they should have been thinking in terms of software products instead.
 
-Government agencies still typically outsource “software development projects”. Think of an e-gov application in which citizens can perform their bureaucratic obligations from home. Isn’t that a software product? The site would have to evolve, as new laws are passed. It is not supposed to have a predefined teardown day. Instead, we would expect it to be there for the long run. Citizens (users) will discover bugs, which will have to be addressed; and we will likely complain and/or suggest improvements. There might also be scalability issues and/or outages that will have to be tackled.
+Think of an e-gov application in which citizens can perform their bureaucratic obligations from home. Isn’t that a software product? It will have to evolve, as new laws are passed. And it is not supposed to have a predefined teardown day. Instead, we would probably expect it to be there for the long run. Over time, citizens (users) will discover bugs, which will have to be addressed; and we will likely complain about it and/or suggest improvements. There might also be scalability issues and/or outages that will have to be tackled.
 
-Treating these software products as outsourced projects means that the owners will hire an external company to build it. Usually the cheapest. The project will have a fixed scope and the parties will agree on a timeline and a price. The external company will complete the project, according to those parameters and hand it over to the customer. Then, typically, the external company forgets about it. If changes are desired in the future, new projects will be defined and outsourced. Often to different companies.
+Treating these software products as outsourced projects means that the owners will hire an external company to build it. Usually the cheapest. The project will have a fixed scope, and the parties will agree on a timeline and on a price. The external company will complete the project, according to those parameters and hand it over to the customer. Then, usually, the external company forgets about it. If changes are desired in the future, new projects will be defined and outsourced. Often to different companies.
 
-In most cases, the company that builds the software is not involved in the discovery process with potential users. They are not involved in the prioritization of features. They are just hired to do X, as quickly and cheaply as possible. And since they are not rewarded for software quality nor for asking questions, they will probably build it without maintenance in their minds. And they won’t question decisions nor worry about gathering data.
+In most cases, the company that is hired to build the software is not involved in the discovery process with potential users. They are not involved in the prioritization of features. They are just hired to do X, as quickly and cheaply as possible. And since they are not rewarded for software quality nor for asking questions, they will probably build it without maintenance in their minds. And they won’t question decisions nor worry about gathering data.
 
-Now, think how different it would be if it was treated as a software product, with an in-house team building it and participating in all the process, from conception to evolution. The team would understand needs, motivations and strategic goals; they would be engaged. They would ask questions. Hypotheses can be defined together and data collection and learning are in everybody’s mind since the beginning. Working in small increments becomes easier. Writing maintainable code is crucial. Changes are welcome. And quality matters.
+Now, think how different it would be if it was treated as a software product, with an in-house team building it and participating in all the process, from conception to evolution. The team would understand needs, motivations and strategic goals; they would be engaged. They would ask questions. Hypotheses could be defined together and data collection and learning would be in everybody’s mind since the beginning. Working in small increments would be easier. Writing maintainable code becomes crucial. Changes are welcome. And quality matters.
 
 Being aware of the importance of software products in the digital economy means that, if your software is (or is becoming) the core of your business, then you keep software development in-house. Nowadays, every company is a software company. Think of Airbnb, Lyft or Netflix. These businesses could have opted to externalize software development, but they realized the software products they were building are the core of their business. They realized they were software companies.
 
@@ -89,7 +89,9 @@ It is common in the software industry to hear people refer to “open source pro
 
 I have been an open source software (OSS) user for many years, and I have also contributed to open source myself. One example of OSS to which I have contributed is [Jenkins](http://jenkins.io/). Jenkins is the leading open source automation server. It has been around for more than 15 years, with millions of installations worldwide. And it has evolved significantly, including the fork from Hudson, the recent UI changes, and the thousands of ever-evolving plugins, created by a thriving open source community. Based on this data and the previous definitions, should we consider Jenkins an “open source project” or, rather, an “open source product”?
 
-I understand that, when somebody (like Kohsuke with Jenkins) starts to build an open source software, they might define an initial “project” phase. A project to build the first set of fixed features for their idea. The first increment. But if it is successful, that initial project leads to a product that keeps evolving in unanticipated ways. Scope is no longer fixed, as the community starts to bring new ideas and prioritize their development; and there is no defined “end date”. Successful open source products are here to stay, for a long time. Until the community decides otherwise.
+I understand that, when somebody (like Kohsuke with Jenkins) starts to build an open source software, they might have a limited and well defined idea. And they may work on a “project” to make it happen. A project to build the first set of fixed features for their idea. But then, if it is successful, that initial project leads to a product that keeps evolving in unanticipated ways. Scope is no longer fixed, as the community starts to bring new ideas and prioritize their development; and there is no defined “end date”.
+
+Successful open source "projects" are here to stay, for a long time. But their success will keep them evolving within their communities, as _software products_.
 
 ## My personal take
 
