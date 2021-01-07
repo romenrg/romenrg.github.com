@@ -33,13 +33,15 @@ Now, if we try to look for definitions of “[product](https://en.wikipedia.org/
  * A **product** is an object or system made available for consumer use; it is anything that can be offered to a market to satisfy the desire or need of a customer.
  * **Product management**, then, drives the business case for product development and has an active role throughout its development, test and launch; being also involved in product change and lifecycle decisions and planning.
 
+Can you tell the key differences already?
+
 ## Digging into the differences
 
-### Key differences, based on definitions
+### Two key differences, from definitions
 
-From the definitions above, we can clearly see the first big difference: the temporary nature of a project. Projects are time-constrained efforts, supposed to have a defined beginning and end date. This clearly-defined temporary nature does not apply to products, which don’t have such predefined beginning and end in time, being subject to market demand instead.
+From the definitions above, we can clearly see the first big difference: the temporary nature of a project. **Projects are time-constrained efforts**, supposed to have a defined beginning and end date. This clearly-defined temporary nature does not apply to products, which don’t have such predefined beginning and end in time, being subject to market demand instead.
 
-Moreover, those clearly defined time boundaries for projects also bring the second clear distinction: fixed scope and resources (i.e. the project requirements). This doesn’t apply to products either. Products are evolving creatures by nature. While project management cares about meeting those predefined project requirements; product management cares about the business case for the product, constantly learning from users and having an active role in the product lifecycle, defining new features and/or re-prioritizing work, adapting to market needs.
+Moreover, those clearly defined time boundaries for projects also bring the second clear distinction: fixed scope and resources (i.e. the project requirements). This doesn’t apply to products either. **Products are evolving creatures by nature**. While project management cares about meeting those predefined project requirements; product management cares about the business case for the product, constantly learning from users and having an active role in the product lifecycle, defining new features and/or re-prioritizing work, adapting to market needs.
 
 ### Detailed comparison
 
