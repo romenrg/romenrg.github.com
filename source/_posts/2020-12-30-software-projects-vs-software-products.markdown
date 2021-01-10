@@ -2,16 +2,16 @@
 layout: post
 title: "Software Projects vs Software Products"
 date: 2020-12-30 13:26
-updated: 2020-12-30 14:00
+updated: 2020-01-10 19:00
 comments: true
 categories: [Software Development, Management, Entrepreneurship]
 description: "Do you work on software projects? Or are they software products? According to definitions, projects are time-constrained efforts, supposed to have a defined beginning and end. This clearly-defined temporary nature does not apply to products, which don’t have a predefined beginning and end in time, being subject to market demand. The same applies to fixed scope. Products evolve constantly. As an industry we should talk more about software products, instead of projects"
 keywords: software projects, software products, agile software development, lean startup, open source products, outsourcing, building products
 twitterimg: "/images/products_vs_projects.jpg"
 ---
-So, as a developer, you work on software projects, right? ...Or are they _software products_?
+As a developer, you work on software projects, right? ...Or are they _software products_?
 
-As many others in the software industry, you might think those two concepts are synonyms; but they aren’t. In fact, whether the software being developed is considered a project or a product may have critical and non-trivial ramifications, in many aspects.
+Like many others in the software industry, you might think those two concepts are synonyms; but they aren’t. In fact, whether the software being developed is considered a project or a product may have critical and non-trivial ramifications, in many aspects.
 
 <img src="/images/products_vs_projects.jpg" alt="Team meeting in which multiple colleagues discuss in a table, where several computres are opened. One man moves hands displaying confusion" />
 
@@ -19,7 +19,9 @@ The _not-so-subtle_ differences between software projects and software products 
 
 <!-- More -->
 
-For many years I’ve been trying to find the time to write about this key difference, to which many people in tech fail to give importance to. Finally, about a year ago, I gave a [lecture](https://www2.slideshare.net/romenrg/agile-software-development-beyond-projects-ull) on this very topic: "software projects vs software products", in the context of agile software development. And now that my 2020 article is due, I have decided to write about this important topic in more detail.
+For many years I’ve been trying to find the time to write about this key difference, to which many people in tech fail to give importance to. About a year ago, I had the opportunity to give a [lecture](https://www2.slideshare.net/romenrg/agile-software-development-beyond-projects-ull) on this very topic. And now, I have finally decided to write about this important topic in more detail.
+
+I will start with definitions, digging into the key differences that derive from them; and will then explore the ramifications. However, if you just want a quick summary, feel free to jump directly to the [comparison table](#detailed-comparison).
 
 ## Let’s start with some definitions
 
@@ -43,7 +45,7 @@ From the definitions above, we can clearly see the first big difference: the tem
 
 Moreover, those clearly defined time boundaries for projects also bring the second clear distinction: fixed scope and resources (i.e. the project requirements). This doesn’t apply to products either. **Products are evolving creatures by nature**. While project management cares about meeting those predefined project requirements; product management cares about the business case for the product, constantly learning from users and having an active role in the product lifecycle, defining new features and/or re-prioritizing work, adapting to market needs.
 
-### Detailed comparison
+### <a id="detailed-comparison"></a>Detailed comparison
 
 When I was preparing my lecture, I found a very nice article by Sriram Narayan in Martin Fowler’s blog. In his article, Sriram added a very comprehensive [table comparing project-mode and product-mode](https://martinfowler.com/articles/products-over-projects.html#WhatIsProduct-mode).
 
@@ -105,5 +107,6 @@ Software projects are dead. Long live _software products_.
 
 <div class="revisions">
   <h2>Significant revisions</h2>
+  <p><em>2021, Jan 10</em>: Improved introduction, incl. reference to comparison table, as a TL;DR resource.</p>
   <p><em>2020, Dec 30</em>: First version published.</p>
  </div>
