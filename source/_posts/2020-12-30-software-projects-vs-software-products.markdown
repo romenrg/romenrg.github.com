@@ -21,7 +21,7 @@ The _not-so-subtle_ differences between software projects and software products 
 
 For many years I’ve been trying to find the time to write about this key difference, to which many people in tech fail to give importance to. About a year ago, I had the opportunity to give a [lecture](https://www2.slideshare.net/romenrg/agile-software-development-beyond-projects-ull) on this very topic. And now, I have finally decided to write about this important topic in more detail.
 
-I will start with definitions, digging into the key differences that derive from them; and will then explore the ramifications. However, if you just want a quick summary, feel free to jump directly to the [comparison table](#detailed-comparison).
+I'll start with definitions, digging into the key differences that derive from them. Afterwards, I'll explore the critical behavioral ramifications. However, if you just want a quick summary, feel free to jump directly to the [comparison table](#detailed-comparison).
 
 ## Let’s start with some definitions
 
