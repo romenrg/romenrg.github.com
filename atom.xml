@@ -4,7 +4,7 @@
   <title><![CDATA[Blog @romenrg]]></title>
   <link href="https://www.romenrg.com/atom.xml" rel="self"/>
   <link href="https://www.romenrg.com/"/>
-  <updated>2021-01-08T14:00:47+00:00</updated>
+  <updated>2021-01-11T10:43:24+00:00</updated>
   <id>https://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
@@ -18,9 +18,9 @@
     <link href="https://www.romenrg.com/blog/2020/12/30/software-projects-vs-software-products/"/>
     <updated>2020-12-30T13:26:00+00:00</updated>
     <id>https://www.romenrg.com/blog/2020/12/30/software-projects-vs-software-products</id>
-    <content type="html"><![CDATA[<p>So, as a developer, you work on software projects, right? &#8230;Or are they <em>software products</em>?</p>
+    <content type="html"><![CDATA[<p>As a developer, you work on software projects, right? &#8230;Or are they <em>software products</em>?</p>
 
-<p>As many others in the software industry, you might think those two concepts are synonyms; but they aren’t. In fact, whether the software being developed is considered a project or a product may have critical and non-trivial ramifications, in many aspects.</p>
+<p>Like many others in the software industry, you might think those two concepts are synonyms; but they aren’t. In fact, whether the software being developed is considered a project or a product may have critical and non-trivial ramifications, in many aspects.</p>
 
 <p><img src="https://www.romenrg.com/images/products_vs_projects.jpg" alt="Team meeting in which multiple colleagues discuss in a table, where several computres are opened. One man moves hands displaying confusion" /></p>
 
@@ -29,7 +29,9 @@
 <!-- More -->
 
 
-<p>For many years I’ve been trying to find the time to write about this key difference, to which many people in tech fail to give importance to. Finally, about a year ago, I gave a <a href="https://www2.slideshare.net/romenrg/agile-software-development-beyond-projects-ull">lecture</a> on this very topic: &#8220;software projects vs software products&#8221;, in the context of agile software development. And now that my 2020 article is due, I have decided to write about this important topic in more detail.</p>
+<p>For many years I’ve been trying to find the time to write about this key difference, to which many people in tech fail to give importance to. About a year ago, I had the opportunity to give a <a href="https://www2.slideshare.net/romenrg/agile-software-development-beyond-projects-ull">lecture</a> on this very topic. And now, I have finally decided to write about this important topic in more detail.</p>
+
+<p>I will start with definitions, digging into the key differences that derive from them; and will then explore the ramifications. However, if you just want a quick summary, feel free to jump directly to the <a href="#detailed-comparison">comparison table</a>.</p>
 
 <h2>Let’s start with some definitions</h2>
 
@@ -59,7 +61,7 @@
 
 <p>Moreover, those clearly defined time boundaries for projects also bring the second clear distinction: fixed scope and resources (i.e. the project requirements). This doesn’t apply to products either. <strong>Products are evolving creatures by nature</strong>. While project management cares about meeting those predefined project requirements; product management cares about the business case for the product, constantly learning from users and having an active role in the product lifecycle, defining new features and/or re-prioritizing work, adapting to market needs.</p>
 
-<h3>Detailed comparison</h3>
+<h3><a id="detailed-comparison"></a>Detailed comparison</h3>
 
 <p>When I was preparing my lecture, I found a very nice article by Sriram Narayan in Martin Fowler’s blog. In his article, Sriram added a very comprehensive <a href="https://martinfowler.com/articles/products-over-projects.html#WhatIsProduct-mode">table comparing project-mode and product-mode</a>.</p>
 
@@ -154,6 +156,7 @@
 
 <div class="revisions">
   <h2>Significant revisions</h2>
+  <p><em>2021, Jan 10</em>: Improved introduction, incl. reference to comparison table, as a TL;DR resource.</p>
   <p><em>2020, Dec 30</em>: First version published.</p>
  </div>
 
