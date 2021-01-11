@@ -22,4 +22,4 @@ footer: true
 
   <p>If you want to know more about me, you can explore the <a href="https://www.romenrg.com/talks/">talks & courses</a> section, where recordings and materials of my talks are shared. You can also take a <a href="https://github.com/romenrg">look at my GitHub</a> repositories, <a href="http://www.linkedin.com/in/romenrg/en"LinkedIn>find me on LinkedIn</a> or <a href="http://www.twitter.com/romenrg">follow me on Twitter</a>, where I share more thoughts, news and articles about software, internet and entrepreneurship.</p>
 
-  <p>By the way, I'm always open to considering new adventures when there is a good cultural fit. So, if what I have described here resonates with you and your team, feel free to reach out. We might achieve great things together.</p>
+  <p>By the way, I'm always open to considering new adventures when there is a good cultural fit. So, if what I have described here resonates with you and your team, feel free to reach out. I'll be happy to chat.</p>
