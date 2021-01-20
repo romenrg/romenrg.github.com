@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Entrepreneurship | Blog @romenrg]]></title>
   <link href="https://www.romenrg.com/blog/categories/entrepreneurship/atom.xml" rel="self"/>
   <link href="https://www.romenrg.com/"/>
-  <updated>2021-01-11T11:36:12+00:00</updated>
+  <updated>2021-01-20T10:45:42+00:00</updated>
   <id>https://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
@@ -319,7 +319,7 @@ As any other creative process, programming requires autonomy. That is why agile 
 
 <h3>2.2. Estimate all User Stories in the backlog based on effort points</h3>
 
-<p>Once you have created your initial Product Backlog and prioritized User Stories, it is time to have the first Product Backlog Refinement meeting with the Scrum Team (which includes the Development Team). Our goal would be to estimate all User Stories in the Backlog, but instead of time we will be using effort points. Each user story will have X points. A common approach is to use the Fibonacci scale for those points.</p>
+<p>Once you have created your initial Product Backlog and prioritized its user stories, it is time to have the first Product Backlog Refinement meeting with the Scrum Team (which includes the Development Team). Our goal would be to estimate all user stories in the backlog, but instead of time we will be using effort points. Each user story will have X points. A common approach is to use the Fibonacci scale for those points.</p>
 
 <p>Since it is very important to be consistent when estimating user stories, I usually encourage the team to <em>find the easiest user story in the backlog and give it a 1 and then find the hardest one and give it either a 13 or a 21</em>. That way you have created the team’s effort scale, making it easier to estimate the remaining user stories based on a scale that is totally dependent on the project.</p>
 
@@ -347,7 +347,7 @@ As any other creative process, programming requires autonomy. That is why agile 
 
 <p>So, once a few cycles <em>(sprints)</em> have passed, you will realize that if the team and its story-point estimates have remained consistent, the number of story points being completed per cycle (Team Velocity) is similar.</p>
 
-<p>Since you have been doing your job of keeping the backlog updated, prioritized and estimated in story points, now you will able to forecast when will a particular story be finished.</p>
+<p>Since you have been doing your job of keeping the backlog updated, prioritized and estimated in story points, now you will be able to forecast when will a particular story be finished.</p>
 
 <p><em>An <strong>example</strong> will make it clearer:</em></p>
 
