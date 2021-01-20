@@ -78,7 +78,7 @@ After creating the initial Product Backlog, you will have a much clearer picture
 
 ###2.2. Estimate all User Stories in the backlog based on effort points
 
-Once you have created your initial Product Backlog and prioritized User Stories, it is time to have the first Product Backlog Refinement meeting with the Scrum Team (which includes the Development Team). Our goal would be to estimate all User Stories in the Backlog, but instead of time we will be using effort points. Each user story will have X points. A common approach is to use the Fibonacci scale for those points.
+Once you have created your initial Product Backlog and prioritized its user stories, it is time to have the first Product Backlog Refinement meeting with the Scrum Team (which includes the Development Team). Our goal would be to estimate all user stories in the backlog, but instead of time we will be using effort points. Each user story will have X points. A common approach is to use the Fibonacci scale for those points.
 
 Since it is very important to be consistent when estimating user stories, I usually encourage the team to <em>find the easiest user story in the backlog and give it a 1 and then find the hardest one and give it either a 13 or a 21</em>. That way you have created the team’s effort scale, making it easier to estimate the remaining user stories based on a scale that is totally dependent on the project.
 
@@ -106,7 +106,7 @@ It is worth highlighting the importance of minimizing changes related to team me
 
 So, once a few cycles *(sprints)* have passed, you will realize that if the team and its story-point estimates have remained consistent, the number of story points being completed per cycle (Team Velocity) is similar.
 
-Since you have been doing your job of keeping the backlog updated, prioritized and estimated in story points, now you will able to forecast when will a particular story be finished.
+Since you have been doing your job of keeping the backlog updated, prioritized and estimated in story points, now you will be able to forecast when will a particular story be finished.
 
 <em>An **example** will make it clearer:</em>
 
