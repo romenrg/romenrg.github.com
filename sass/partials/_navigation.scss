@@ -75,10 +75,13 @@ body > nav {
       text-align: left;
       padding-left: .8em;
       width: $sidebar-width-medium - $pad-medium*2 - $sidebar-pad-medium + 20px;
+      position: relative;
+      top: 0.2em;
       .search {
         width: 93%;
-        font-size: .95em;
-        line-height: 1.2em;
+        font-size: .90em;
+        line-height: 1.1em;
+	padding-bottom: 0.1em;
       }
     }
     ul[data-subscription$=email] + form {
