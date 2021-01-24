@@ -11,7 +11,7 @@ body > nav {
     @include background-clip(padding-box);
     margin: 0; padding: 0;
     .search {
-      padding: .3em .5em 0;
+      padding: .1em .5em;
       font-size: .85em;
       font-family: $sans;
       line-height: 1.1em;
@@ -80,7 +80,7 @@ body > nav {
       .search {
         width: 93%;
         font-size: .90em;
-        line-height: 1.1em;
+        line-height: 1.2em;
 	padding-bottom: 0.1em;
       }
     }
