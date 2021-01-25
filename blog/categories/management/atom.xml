@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Management | Blog @romenrg]]></title>
   <link href="https://www.romenrg.com/blog/categories/management/atom.xml" rel="self"/>
   <link href="https://www.romenrg.com/"/>
-  <updated>2021-01-24T14:43:29+00:00</updated>
+  <updated>2021-01-25T12:14:29+00:00</updated>
   <id>https://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
@@ -140,7 +140,7 @@
 
 <p>It is common in the software industry to hear people refer to “open source projects”. In most cases, though, I would argue we should be talking about “open source products” instead.</p>
 
-<p>I have been an open source software (OSS) user for many years, and I have also contributed to open source myself. One example of OSS to which I have contributed is <a href="http://jenkins.io/">Jenkins</a>. Jenkins is the leading open source automation server. It has been around for more than 15 years, with millions of installations worldwide. And it has evolved significantly, including the fork from Hudson, the recent UI changes, and the thousands of ever-evolving plugins, created by a thriving open source community. Based on this data and the previous definitions, should we consider Jenkins an “open source project” or, rather, an “open source product”?</p>
+<p>I have been an open source software (OSS) user for many years, and I have also contributed to open source myself. One example of OSS to which I have contributed is <a href="http://jenkins.io/">Jenkins</a>. Jenkins is the leading open source automation server. It has been around for more than 15 years, with millions of installations worldwide. And it has evolved significantly, including the rename from Hudson, the recent UI changes, and the thousands of ever-evolving plugins, created by a thriving open source community. Based on this data and the previous definitions, should we consider Jenkins an “open source project” or, rather, an “open source product”?</p>
 
 <p>I understand that, when somebody (like Kohsuke with Jenkins) starts to build an open source software, they might have a limited and well defined idea. And they may work on a “project” to make it happen. A project to build the first set of fixed features for their idea. But then, if it is successful, that initial project leads to a product that keeps evolving in unanticipated ways. Scope is no longer fixed, as the community starts to bring new ideas and prioritize their development; and there is no defined “end date”.</p>
 
