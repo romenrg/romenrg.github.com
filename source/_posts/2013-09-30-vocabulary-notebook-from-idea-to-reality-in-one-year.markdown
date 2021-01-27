@@ -14,7 +14,7 @@ description: "During one year running a startup we have put into practice key co
 
 <!-- More -->
 
-<p>Honestly, in this year I have worked <em>a lot</em>. A lot means an average of 80 hours a week... But this post is not about all the time I have worked and all the things I have learned. This post is about the first year of Vocabulary Notebook. It’s a summary of what has happened this year around our product, from the very beginning to the full platform we have today. I will probably publish another post soon in which I will talk about all I have learned during this year, doing some retrospectives about my decisions and describing all the tasks I have had to accomplish and all the roles I have had to play. But today I want to review what has happened to <a href="http://www.vocabularynotebook.com">Vocabulary Notebook</a> during this year in which it has been built and launched.</p>
+<p>Honestly, in this year I have worked <em>a lot</em>. But this post is not about all the time I have worked and all the things I have learned. This post is about the first year of Vocabulary Notebook. It’s a summary of what has happened this year around our product, from the very beginning to the full platform we have today. I will probably publish another post soon in which I will talk about all I have learned during this year, doing some retrospectives about my decisions and describing all the tasks I have had to accomplish and all the roles I have had to play. But today I want to review what has happened to <a href="http://www.vocabularynotebook.com">Vocabulary Notebook</a> during this year in which it has been built and launched.</p>
 
 <h2>The Idea</h2>
 
