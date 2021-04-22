@@ -45,7 +45,7 @@ Isn't there “evergreen” technical knowledge that can be portable across fram
 
 There are skills that often have a higher impact on success than technical knowledge. The so-called "soft" skills (or [core skills](https://github.com/romenrg/evergreen-skills-developers#core-skills-aka-soft-skills)) are crucial for any software developer: being able to communicate properly (via email, chat or face-to-face), sharing knowledge with coworkers, engaging in constructive discussions...
 
-Every day more relevant voices in the industry are raising concerns about his. Sam Altman recently shared his [hiring priorities](https://twitter.com/sama/status/981690839280771073?lang=en): values first, aptitude second, specific skills third. Buffer is also a very innovative company in this area, with a [culture-fit-based hiring process](https://open.buffer.com/hiring-process/), where "soft" skills play a key role.
+Every day more relevant voices in the industry are raising concerns about this. Sam Altman recently shared his [hiring priorities](https://twitter.com/sama/status/981690839280771073?lang=en): values first, aptitude second, specific skills third. Buffer is also a very innovative company in this area, with a [culture-fit-based hiring process](https://open.buffer.com/hiring-process/), where "soft" skills play a key role.
 
 ### But there is also technical evergreen knowledge 
 
