@@ -6,14 +6,14 @@
 <head>
   <meta charset="utf-8">
   
-    <title>Giving Octopress a shot for this new Blog - Blog @romenrg</title>
+    <title>Genetic Algorithms Figuring out Startup Life Choices - Blog @romenrg</title>
   
 
   <meta name="author" content="Romén Rodríguez-Gil">
 
   
-  <meta name="description" content="Thoughts and experiences; about software, internet and entrepreneurship. Writing about Agile Software Development, Lean Startup and the growing implications of technology on society. Also about innovation, startups, digital marketing and UX. Focused on peopleware, the human side of technology.">
-  <meta name="keywords" content="agile, agile software development, software development, software engineering, scrum, peopleware, noestimates, estimates, noprojects, digital entrepreneurship, management, leadership, continuous integration, continuous delivery, continuous deployment, software projects, user experience, programming, startups">
+  <meta name="description" content="Startups deal with huge uncertainty and limited resources. Genetic startups implements a Genetic Algorithm trying to figure out the best choices, in a random map with investors, product launches, team additions, sad news, sales...">
+  <meta name="keywords" content="genetic algorithms, startup choices, artificial intelligence, startups, evolutionary algorithms, startup life, startup stages, entrepreneurship">
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -21,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="https://www.romenrg.com/blog/2012/06/09/giving-octopress-a-shot-for-this-new-blog/">
+  <link rel="canonical" href="https://www.romenrg.com/blog/2021/07/17/genetic-algorithms-figuring-out-startup-life-choices/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -31,10 +31,10 @@
   
     <meta property="twitter:card" content="summary">
     <meta property="twitter:site" content="romenrg">
-    <meta property="twitter:url" content="https://www.romenrg.com/blog/2012/06/09/giving-octopress-a-shot-for-this-new-blog/">
-    <meta property="twitter:title" content="Giving Octopress a shot for this new Blog">
-    <meta property="twitter:description" content="Thoughts and experiences; about software, internet and entrepreneurship. Writing about Agile Software Development, Lean Startup and the growing implications of technology on society. Also about &hellip;">
-    <meta property="twitter:image:src" content="https://www.romenrg.com/images/twitter.jpg">
+    <meta property="twitter:url" content="https://www.romenrg.com/blog/2021/07/17/genetic-algorithms-figuring-out-startup-life-choices/">
+    <meta property="twitter:title" content="Genetic Algorithms Figuring out Startup Life Choices">
+    <meta property="twitter:description" content="Startups deal with huge uncertainty and limited resources. Genetic startups implements a Genetic Algorithm trying to figure out the best choices, in a random map with investors, product launches, &hellip;">
+    <meta property="twitter:image:src" content="https://www.romenrg.com/images/gs-web-ran-algorithm-story.png">
 
 <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="https://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -93,7 +93,7 @@
   
   <header>
     
-      <h1 class="entry-title">Giving Octopress a Shot for This New Blog</h1>
+      <h1 class="entry-title">Genetic Algorithms Figuring Out Startup Life Choices</h1>
     
     
       <p class="meta">
@@ -109,19 +109,49 @@
   
 
 
-<time datetime="2012-06-09T15:05:00+01:00" pubdate data-updated="true">Jun 9<span>th</span>, 2012</time>
+
+  
+<time datetime="2021-07-17T10:00:00+01:00" pubdate data-updated="true">Jul 17<span>th</span>, 2021</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>I&#8217;ve been trying to set up a new Blog for a while, but to use a nice excuse, I haven&#8217;t had enough time to do it. On Friday I was talking with my workmate <a href="http://www.axelhzf.com">Axel</a> about <a href="http://www.octopress.org">Octopress</a> and it seemed interesting to me. I have just finished the installation and deployment of it using <a href="http://www.github.com">GitHub</a> and it has been rather easy.</p>
+<div class="entry-content"><p>In late 2015, based on all the <a href="/blog/2015/03/17/10-plus-1-valuable-lessons-i-learned-from-my-failed-startup/">lessons learned from my startup experience</a>, I decided to create a representation of the different choices startups encounter through their lives, as a map; and then assigned some values and scores to them, so that Genetic Algorithms could be used as a way to learn to navigate those choices.</p>
+
+<p>Originally this was implemented as a dektop application, but I have recently built a web application to experiment with <a href="https://www.geneticstartups.com">Genetic Startups</a>. Here is a quick demo video:</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fbtgCnUwW68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
 
-<p>While I was reading about Octopress, I found <a href="http://inessential.com/2011/03/16/a_plea_for_baked_weblogs">this post</a> where the author writes about the importance of static rendering for webpages and blogs at present. Nowadays the most popular CMS systems store post and pages in a database and then they build the pages from the database on every request. Although it is also true that there are some cache plug-ins to improve this behavior, he states that this traditional implementation is inefficient. This idea reminded me that two years ago, when I built my own CMS for personal websites Sigecu CMS, I had this idea in mind, so what I did was to generate a static HTML page every time the user makes a change in the website, avoiding this problem. I would try to write some posts in the future about Sigecu.</p>
+<!-- More -->
+
+
+<h2>Telling a story based on the algorithm result</h2>
+
+<p>Apart from creating random maps with the different choices, modifying the settings and running the algorithm; there is also a feature to tell a story, based on the final path selected by our algorithm; as if it was the real story of a startup. This feature is showcased in the following video:</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k8YICnLAB_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<h2>More information</h2>
+
+<p>If you want to learn more about how the algorithm is implemented or about the tech stack behind this web application, you can take a look at the following video, or visit the <a href="http://www.geneticstartups.com/info">info section of Genetic Startups</a>.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DMIWYCU6SIU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<h2>Want to contribute?</h2>
+
+<p>Genetic Startups is open source software. It is also a work in progress and a hobby project, so many improvements can be made. Constructive contributions are welcome. Please feel free to comment in this post, or refer to the main <a href="https://github.com/romenrg/genetic-startups">GitHub repository</a> of the project for more information on how to contribute. I look forward to hearing your thoughts!</p>
+
+<div class="revisions">
+  <h2>Significant revisions</h2>
+  <p><em>2021, Jul 17</em>: First version published.</p>
+</div>
 
 </div>
 
@@ -145,15 +175,23 @@
   
 
 
-<time datetime="2012-06-09T15:05:00+01:00" pubdate data-updated="true">Jun 9<span>th</span>, 2012</time>
+
+  
+<time datetime="2021-07-17T19:00:00+01:00" class="updated">Updated Jul 17<span>th</span>, 2021</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/entrepreneurship/'>Entrepreneurship</a>, <a class='category' href='/blog/categories/front-end/'>Front-End</a>, <a class='category' href='/blog/categories/software-development/'>Software Development</a>, <a class='category' href='/blog/categories/ux/'>UX</a>
+  
+</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://www.romenrg.com/blog/2012/06/09/giving-octopress-a-shot-for-this-new-blog/" data-via="romenrg" data-counturl="https://www.romenrg.com/blog/2012/06/09/giving-octopress-a-shot-for-this-new-blog/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://www.romenrg.com/blog/2021/07/17/genetic-algorithms-figuring-out-startup-life-choices/" data-via="romenrg" data-counturl="https://www.romenrg.com/blog/2021/07/17/genetic-algorithms-figuring-out-startup-life-choices/" >Tweet</a>
   
   
   
@@ -162,8 +200,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2020/12/30/software-projects-vs-software-products/" title="Previous Post: Software Projects vs Software Products">&laquo; Software Projects vs Software Products</a>
       
-        <a class="basic-alignment right" href="/blog/2012/08/17/the-front-end-engineer-role/" title="Next Post: The Front-end engineer role">The Front-end engineer role &raquo;</a>
       
     </p>
   </footer>
@@ -251,8 +289,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'https://www.romenrg.com/blog/2012/06/09/giving-octopress-a-shot-for-this-new-blog/';
-        var disqus_url = 'https://www.romenrg.com/blog/2012/06/09/giving-octopress-a-shot-for-this-new-blog/';
+        var disqus_identifier = 'https://www.romenrg.com/blog/2021/07/17/genetic-algorithms-figuring-out-startup-life-choices/';
+        var disqus_url = 'https://www.romenrg.com/blog/2021/07/17/genetic-algorithms-figuring-out-startup-life-choices/';
         var disqus_script = 'embed.js';
       
     (function () {
