@@ -2,14 +2,14 @@
 layout: post
 title: "Genetic Algorithms Figuring out Startup Life Choices"
 date: 2021-07-17 10:00
-updated: 2021-07-17 19:00
+updated: 2021-07-25 19:00
 comments: true
 categories: [Software Development, Entrepreneurship, Front-End, UX]
 description: "Startups deal with huge uncertainty and limited resources. Genetic startups implements a Genetic Algorithm trying to figure out the best choices, in a random map with investors, product launches, team additions, sad news, sales..."
 keywords: genetic algorithms, startup choices, artificial intelligence, startups, evolutionary algorithms, startup life, startup stages, entrepreneurship
 twitterimg: "/images/gs-web-ran-algorithm-story.png"
 ---
-In late 2015, based on all the [lessons learned from my startup experience](/blog/2015/03/17/10-plus-1-valuable-lessons-i-learned-from-my-failed-startup/), I decided to create a representation of the different choices startups encounter through their lives, as a map; and then assigned some values and scores to them, so that Genetic Algorithms could be used as a way to learn to navigate those choices.
+In late 2015, based on all the [lessons learned from my startup experience](/blog/2015/03/17/10-plus-1-valuable-lessons-i-learned-from-my-failed-startup/), I decided to create a representation of the [different choices startups encounter](https://geneticstartups.com/info/map#cell-types) through their lives, as a map; and then assigned some values and scores to them, so that Genetic Algorithms could be used as a way to learn to navigate those choices.
 
 Originally this was implemented as a dektop application, but I have recently built a web application to experiment with [Genetic Startups](https://www.geneticstartups.com). Here is a quick demo video:
 
