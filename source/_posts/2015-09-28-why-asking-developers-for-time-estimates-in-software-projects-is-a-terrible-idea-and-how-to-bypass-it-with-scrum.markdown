@@ -10,7 +10,7 @@ description: "Time estimates in software projects fail dramatically, due to the 
 keywords: estimates, software development, velocity, scrum, agile, story points, effort points, projects, deadlines, software estimates, software estimation, delivery date, software projects, time estimates, delays
 twitterimg: "/images/scrum_software_estimates_reverse_engineering_pixabay.jpg"
 ---
-I have worked in many software projects and have been lucky to be in the initial team of several [software products](https://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum/). Besides, having acted both as a Developer and as a Product Manager has allowed me to have a wider view of what usually causes most friction between business and engineering: time estimates.
+I have worked in many software projects and have been lucky to be in the initial team of several [software products](https://www.romenrg.com/blog/2020/12/30/software-projects-vs-software-products/). Besides, having acted both as a Developer and as a Product Manager has allowed me to have a wider view of what usually causes most friction between business and engineering: time estimates.
 
 <img src="/images/scrum_software_estimates_reverse_engineering_pixabay.jpg" alt="Picture of a woman pointing to her watch as if you were late. Typical management or customer reaction to delayed software projects" />
 
