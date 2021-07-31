@@ -4,7 +4,7 @@ title: "Genetic Algorithms Figuring out Startup Life Choices"
 date: 2021-07-17 10:00
 updated: 2021-07-25 19:00
 comments: true
-categories: [Software Development, Entrepreneurship, Front-End, UX]
+categories: [Software Development, Entrepreneurship, Front-End]
 description: "Startups deal with huge uncertainty and limited resources. Genetic startups implements a Genetic Algorithm trying to figure out the best choices, in a random map with investors, product launches, team additions, sad news, sales..."
 keywords: genetic algorithms, startup choices, artificial intelligence, startups, evolutionary algorithms, startup life, startup stages, entrepreneurship
 twitterimg: "/images/gs-web-ran-algorithm-story.png"
