@@ -17,15 +17,15 @@ But… Is switching to remote work just a matter of working from home and using 
 
 <!-- More -->
 
-Many first-timers working remotely fail to realize that the key paradigm shift that remote work enables is “async work”, beyond the distributed, “remote” aspect itself.
+Many first-timers working remotely fail to realize that the key paradigm shift which remote work enables is “async work”, beyond the distributed, “remote” aspect itself.
 
-This means that not only working from the same office is not needed, but also, that we don’t really need to even work at the same time (for the most part).
+This means that not only working from the same office is not needed, but also, that we don’t even need to work at the same time (for the most part).
 
 However, since this async bit is less obvious, we will dig into it further in this article.
 
 ## Overcoming physical limitations
 
-Of course, the remote aspect is a prerequisite to async work. And working remotely has some minimal requirements on its own; which are worth reviewing quickly.
+Of course, the remote aspect is a prerequisite to async work. And working remotely has some minimal requirements on its own, which are worth reviewing quickly.
 
 Those of us working in the digital realm have no physical constraints to our work, apart from the very minimal ones: table, chair, computer and internet connection. Beyond that, we only have the artificial constraints that some companies (or ourselves) impose, either consciously or unconsciously.
 
@@ -34,19 +34,19 @@ If you work in software development, or, really, in any other knowledge-intensiv
 ### So, what do digital workers and companies really need?
 
  * Computers, meeting the hardware requirements of the work, including a webcam and a microphone.
- * A tool to chat, which should also allow grouping conversations in channels / topics to make them manageable.
+ * A tool to chat, which should also allow grouping conversations in channels / topics and threads, to make them manageable.
  * A tool to meet, supporting both video and audio; and with the ability to record meetings.
- * A tool to organize and track work (creating to-do list / backlogs; setting status to items: pending, in progress, completed; etc.)
+ * A tool to organize and track work (to create to-do lists / backlogs; set status to items: pending, in progress, completed; etc.)
  * A tool to keep and share work-related knowledge.
 
 ### Some useful enhancements
 
  * A good microphone, camera and headset, beyond the built-in ones in your computer:
-   * Video and audio quality are very important for a successful remote communication, especially audio, when you have many non-native speakers in the team. But also video, since the non-verbal cues are a key part of human communication.
+   * Video and audio quality are very important for a successful remote communication. Especially audio, when you have many non-native speakers in the team. But also video, since non-verbal cues are a key part of human communication.
  * Enough screen real estate:
    * To me, screen real estate is never too much.
    * Personally, I have two 28” monitors that I use constantly (e.g. one with the chatting tool and another one with a browser; or one with a browser and another one with the IDE). I use big font sizes, as my sight is not my greatest strength. So having two large screens really helps me.
-     * Also, I find my 2 big screens very useful for remote meetings, as I can keep the general participants' view in one of my 28” screens (letting me see all, or most, faces); while also keeping another screen either for whoever is speaking at a certain point or, specially, for the shared screen of whoever is presenting.
+     * Also, I find my 2 big screens very useful for remote meetings. I can keep the general participants' view in one of my 28” screens (letting me see all, or most, faces); while also keeping another screen either for whoever is speaking at a certain point or, especially, for the shared screen of whoever is presenting.
    * Additionally, I also keep my 15” mac screen on a side, for secondary things such as music (Spotify), for instance.
      * In meetings, I also benefit from having this third monitor, to keep our chatting tool (Slack) handy there; or a browser window, useful if I have to search for something while in the meeting.
 
@@ -87,11 +87,9 @@ The previous list is really what I consider to be the minimal set of sync meetin
     * Yearly planning meetings
     * Some special focused meetings that might be required when starting a new initiative / project.
 
-Also, I am a big fan of open, transparent companies; and I’ve been lucky to have worked at both CloudBees and Turo recently, which fit that category. In those cases, so-called “all-hands” meetings were held every other week (or every month), typically lasting less than 1 hour every time. And I find them extremely valuable, to align the whole org (e.g. engineering) and/or company. But in these meetings, which tend to be recorded, the average IC is most likely going to be a listener. So they don’t really qualify as a “sync meeting”, even though attending these sessions live has many benefits, including being able to participate (either commenting or asking questions).
+Also, I am a big fan of open, transparent companies; and I’ve been lucky to work at both CloudBees and Turo recently, which fit that category. In those cases, so-called “all-hands” meetings are held every other week (or every month), typically lasting less than 1 hour every time. And I find them extremely valuable, to align the whole org (e.g. engineering) and/or company. But in these meetings, which tend to be recorded, the average IC is most likely going to be a listener. So they don’t really qualify as a “sync meeting”, even though attending these sessions live has many benefits, including being able to participate (either commenting or asking questions).
 
 So, If we take a quick look at the list above, it translates to a range that goes from 3 to 10 hours per week.
-
-Assuming the regular 40-hour work week, that means that only between 7.5% to 25% of the time has to be synchronous; while 75% to 92.5% of our work time can be fully asynchronous.
 
 Assuming the regular 40-hour work week, that means that only between 7.5% to 25% of the time has to be synchronous; while 75% to 92.5% of our work time can be fully asynchronous.
 
@@ -120,7 +118,7 @@ Some that I’ve been part of and consider valuable include:
 
 ### Spending some in-person time periodically is a good idea
 
-In my last two companies I’ve been working fully remotely, and in both cases we have had at least 2 opportunities per year to meet face-to-face. And in my experience, those events tend to be very energizing, and make me feel much more connected to both my peers and the business. I always come back home highly motivated. 
+In my last two companies I’ve been working fully remotely, and in both cases we have usually had at least 2 opportunities per year to meet face-to-face. And in my experience, those events tend to be very energizing, and make me feel much more connected to both my peers and the business. I always come back home highly motivated. 
 
 So, meeting for a week or two, every six months or so, even though it is not really essential, I would say is highly recommended. Or at least once a year, to keep the human connection with colleagues, be it spending some time working next to each other or having a company-wide event with talks from different areas. The latter has the additional benefit of breaking silos, letting us learn more about other teams and meet people we don’t often work with. But at least having some org-wide in-person social time is great to devirtualize (and humanize) the names we often see in Slack.
 
