@@ -81,8 +81,14 @@
         <lastmod>2022-10-02T23:38:57+01:00</lastmod>
     </url>
     <url>
+        <loc>
+            https://www.romenrg.com/blog/2022/12/31/its-not-remote-work-async-work-is-the-real-paradigm-shift/
+        </loc>
+        <lastmod>2022-12-31T02:26:18+00:00</lastmod>
+    </url>
+    <url>
         <loc>https://www.romenrg.com/</loc>
-        <lastmod>2022-10-02T23:38:57+01:00</lastmod>
+        <lastmod>2022-12-31T02:26:18+00:00</lastmod>
     </url>
     <url>
         <loc>https://www.romenrg.com/talks/</loc>
@@ -94,6 +100,6 @@
     </url>
     <url>
         <loc>https://www.romenrg.com/blog/archives/</loc>
-        <lastmod>2022-10-02T23:38:57+01:00</lastmod>
+        <lastmod>2022-12-31T02:26:18+00:00</lastmod>
     </url>
 </urlset>
