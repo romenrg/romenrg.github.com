@@ -59,7 +59,7 @@ Beyond the minimal setup described above, some of the key practices to really be
   * Minimizing sync times, and planning meetings ahead. Letting people have time to organize. Also, being mindful of the best overlapping hours of the attendees (as they are likely to be distributed across multiple timezones).
   * Recording meetings by default, as they are a great source of documentation later on.
   * Moving to written and async communication by default:
-    * Written communication forces us to think more about the ideas that we want to convey; and also to be more careful expressing them, since our words are going to remain there, readable for a log time, and often visible to many.
+    * Written communication forces us to think more about the ideas that we want to convey; and also to be more careful expressing them, since our words are going to remain there, readable for a long time, and often visible to many.
     * By using channels and threads properly, in our chatting tool, we can avoid unnecessary noise, while also creating a great searchable knowledge-base for all coworkers, automatically.
   * Using digital-native tools to cover all aspects of work.
     * E.g. in Software Development:
@@ -121,7 +121,7 @@ Some that I’ve been part of and consider valuable include:
 
 In my last two companies I’ve been working fully remote, and in both cases we have usually had at least 2 opportunities per year to meet face-to-face. In my experience, those events tend to be very energizing, and make me feel much more connected to both my peers and the business. I always come back home highly motivated. 
 
-So, meeting for a week or two, every six months or so, even though it is not really essential, I would say is highly recommended. Or at least once a year, to keep the human connection with colleagues. These in-person events can range from simply spending some time working next to each other, to having a company-wide event with talks from different areas. The latter has the additional benefit of breaking silos, letting us learn more about other teams and meet people we don’t often work with. Plus, spending some org-wide in-person social time is a great to devirtualize, and humanize, the names we often see in Slack.
+So, meeting for a week or two, every six months or so, even though it is not really essential, I would say is highly recommended. Or at least once a year, to keep the human connection with colleagues. These in-person events can range from simply spending some time working next to each other, to having a company-wide event with talks from different areas. The latter has the additional benefit of breaking silos, letting us learn more about other teams and meet people we don’t often work with. Plus, spending some company-wide, in-person social time, is a great way to devirtualize (and humanize) people with whom we may have chatted (or even met in a virtual call), but who we have never seen in real life.
 
 ## The benefits of distributed and async work
 
