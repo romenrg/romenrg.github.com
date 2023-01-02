@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Software Development | Blog @romenrg]]></title>
   <link href="https://www.romenrg.com/blog/categories/software-development/atom.xml" rel="self"/>
   <link href="https://www.romenrg.com/"/>
-  <updated>2022-12-31T10:13:59+00:00</updated>
+  <updated>2023-01-02T20:47:42+00:00</updated>
   <id>https://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
@@ -27,15 +27,15 @@
 <!-- More -->
 
 
-<p>Many first-timers working remotely fail to realize that the key paradigm shift which remote work enables is “async work”, beyond the distributed, “remote” aspect itself.</p>
+<p>Many first-timers working remotely fail to realize that the key paradigm shift which remote work enables is “async work”; beyond the distributed, “remote” aspect itself.</p>
 
 <p>This means that not only working from the same office is not needed, but also, that we don’t even need to work at the same time (for the most part).</p>
 
-<p>However, since this async bit is less obvious, we will dig into it further in this article.</p>
+<p>However, since this async bit is less obvious, we will dig further into it in this article.</p>
 
 <h2>Overcoming physical limitations</h2>
 
-<p>Of course, the remote aspect is a prerequisite to async work. And working remotely has some minimal requirements on its own, which are worth reviewing quickly.</p>
+<p>Of course, enabling remote work is a prerequisite to async work. And working remotely has some minimal requirements on its own, which are worth reviewing quickly first.</p>
 
 <p>Those of us working in the digital realm have no physical constraints to our work, apart from the very minimal ones: table, chair, computer and internet connection. Beyond that, we only have the artificial constraints that some companies (or ourselves) impose, either consciously or unconsciously.</p>
 
@@ -47,7 +47,7 @@
 <li>Computers, meeting the hardware requirements of the work, including a webcam and a microphone.</li>
 <li>A tool to chat, which should also allow grouping conversations in channels / topics and threads, to make them manageable.</li>
 <li>A tool to meet, supporting both video and audio; and with the ability to record meetings.</li>
-<li>A tool to organize and track work (to create to-do lists / backlogs; set status to items: pending, in progress, completed; etc.)</li>
+<li>A tool to organize and track work (to create to-do lists / backlogs; set status to items: pending, in progress, completed; etc.).</li>
 <li>A tool to keep and share work-related knowledge.</li>
 </ul>
 
@@ -58,7 +58,7 @@
 <li>A good microphone, camera and headset, beyond the built-in ones in your computer:
 
 <ul>
-<li>Video and audio quality are very important for a successful remote communication. Especially audio, when you have many non-native speakers in the team. But also video, since non-verbal cues are a key part of human communication.</li>
+<li>Video and audio quality are very important for a successful remote communication. Especially audio when you have many non-native speakers in the team. But also video, since non-verbal cues are a key part of human communication.</li>
 </ul>
 </li>
 <li>Enough screen real estate:
@@ -71,7 +71,7 @@
 <li>Also, I find my 2 big screens very useful for remote meetings. I can keep the general participants' view in one of my 28” screens (letting me see all, or most, faces); while also keeping another screen either for whoever is speaking at a certain point or, especially, for the shared screen of whoever is presenting.</li>
 </ul>
 </li>
-<li>Additionally, I also keep my 15” mac screen on a side, for secondary things such as music (Spotify), for instance.
+<li>Additionally, I also keep my 16” mac screen on a side, for secondary things such as music (Spotify), for instance.
 
 <ul>
 <li>In meetings, I also benefit from having this third monitor, to keep our chatting tool (Slack) handy there; or a browser window, useful if I have to search for something while in the meeting.</li>
@@ -82,32 +82,35 @@
 </ul>
 
 
-<p>So, even though this minimal setup is important, some people focus too much (or solely) on tools, and often forget the essential (and more complex) process changes. These are really the key to make the most out of distributed, asynchronous team collaboration.</p>
+<p>But, even though this minimal setup is important, some people focus too much (or solely) on tools, and often forget the essential (and more complex) process changes. These are really the key to make the most out of distributed, asynchronous team collaboration.</p>
 
-<h3>But, what are the best practices to work effectively as a fully distributed, asynchronous team?</h3>
+<h3>So, what are the best practices to work effectively as a fully distributed, asynchronous team?</h3>
 
 <p>Beyond the minimal setup described above, some of the key practices to really be effective as a fully distributed and asynchronous team include:</p>
 
 <ul>
-<li>Minimizing sync times and planning those meetings ahead, so people have time to organize. Also, being mindful of the best overlapping hours of the attendees (as they are likely to in different timezones).</li>
+<li>Minimizing sync times, and planning meetings ahead. Letting people have time to organize. Also, being mindful of the best overlapping hours of the attendees (as they are likely to be distributed across multiple timezones).</li>
 <li>Recording meetings by default, as they are a great source of documentation later on.</li>
 <li>Moving to written and async communication by default:
 
 <ul>
-<li>Written communication forces us to think more about the ideas that we want to convey, and to be more careful, since our words are going to remain there.</li>
-<li>By using channels and threads properly in our chatting tool, we can avoid unnecessary noise, while also creating a great searchable knowledge-base for all coworkers, automatically.</li>
+<li>Written communication forces us to think more about the ideas that we want to convey; and also to be more careful expressing them, since our words are going to remain there, readable for a log time, and often visible to many.</li>
+<li>By using channels and threads properly, in our chatting tool, we can avoid unnecessary noise, while also creating a great searchable knowledge-base for all coworkers, automatically.</li>
 </ul>
 </li>
-<li>Using digital-native tools to cover all aspects of work. E.g. in Software Development:
+<li>Using digital-native tools to cover all aspects of work.
 
 <ul>
-<li>SCM, such as Github:
+<li>E.g. in Software Development:
 
 <ul>
-<li>Which is also tightly linked to written communication, in the form of PR reviews, where a lot of async collaboration happens organically.</li>
+<li>Github, or an equivalent advanced application built on top of SCM tools:
+
+<ul>
+<li>These are also tightly linked to written communication; e.g. in the form of PRs and their reviews, where a lot of async collaboration happens organically.</li>
 </ul>
 </li>
-<li>Jira + Confluence / Notion:
+<li>Jira + Confluence; Notion, or similar:
 
 <ul>
 <li>For a more formal organization of work, planning and documentation.</li>
@@ -117,6 +120,8 @@
 
 <ul>
 <li>For direct, mostly async, communication; per teams, topics or 1:1s.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -134,7 +139,7 @@
 <li>A 1-2 hours review + retrospective session at the end of the cycle, one or two days before the new planning session.
 
 <ul>
-<li>Honest retrospectives are extremely valuable, where all team members feel free to speak constructively, all trying to collectively improve processes and align.</li>
+<li>Honest retrospectives are extremely valuable; especially if all team members feel free to speak their minds, and all are trying to collectively improve processes and align, constructively.</li>
 </ul>
 </li>
 </ul>
@@ -143,22 +148,22 @@
 <p>The previous list is really what I consider to be the minimal set of sync meetings necessary, but some useful additions could be made, such as:</p>
 
 <ul>
-<li>A 1-2 hours meeting, at some point during the cycle, used as a longer-term planning session, to refine upcoming work, to keep a “ready” backlog and thus easy cycle-planning sessions.</li>
-<li>1:1s with your manager, every other week or once a month, for 30 mins. And maybe with some other key team members.</li>
+<li>A 1-2 hours meeting, at some point during the cycle, used as a longer-term planning session, in which to refine upcoming work; to keep a “ready” backlog and thus ease upcoming cycle-planning sessions.</li>
+<li>1:1s with your manager, every other week or once a month, for 30 mins. And maybe similar meetigns with some other key team members as well.</li>
 <li>Some less frequent meetings such as:
 
 <ul>
-<li>Quarterly planning meetings,</li>
-<li>Yearly planning meetings</li>
-<li>Some special focused meetings that might be required when starting a new initiative / project.</li>
+<li>Quarterly planning meetings.</li>
+<li>Yearly planning meetings.</li>
+<li>Some especial, focused meetings, that might be required when starting a new initiative / project.</li>
 </ul>
 </li>
 </ul>
 
 
-<p>Also, I am a big fan of open, transparent companies; and I’ve been lucky to work at both CloudBees and Turo recently, which fit that category. In those cases, so-called “all-hands” meetings are held every other week (or every month), typically lasting less than 1 hour every time. And I find them extremely valuable, to align the whole org (e.g. engineering) and/or company. But in these meetings, which tend to be recorded, the average IC is most likely going to be a listener. So they don’t really qualify as a “sync meeting”, even though attending these sessions live has many benefits, including being able to participate (either commenting or asking questions).</p>
+<p>Also, I am a big fan of open, transparent companies; and I’ve been lucky to work at both <a href="https://www.cloudbees.com/">CloudBees</a> and <a href="https://turo.com/">Turo</a> recently, which fit that category. In these cases, so-called “all-hands” meetings are held every other week (or every month), typically lasting less than 1 hour every time. And I find them extremely valuable, to align the whole org (e.g. engineering) and/or the whole company. But in these meetings, which are usually recorded, the average IC is most likely going to be a listener. So they don’t really qualify as a “sync meeting”; even though attending these sessions live has many benefits, including being able to participate (either commenting or asking questions).</p>
 
-<p>So, If we take a quick look at the list above, it translates to a range that goes from 3 to 10 hours per week.</p>
+<p>So, summarizing: If we take a quick look at the list above, necessary sync time translates to a range that goes from 3 to 10 hours per week.</p>
 
 <p>Assuming the regular 40-hour work week, that means that only between 7.5% to 25% of the time has to be synchronous; while 75% to 92.5% of our work time can be fully asynchronous.</p>
 
@@ -175,16 +180,16 @@
 <p>Some that I’ve been part of and consider valuable include:</p>
 
 <ul>
-<li>Social synchronous meetings, maybe 1-2 hours per month:
+<li>Social synchronous meetings, maybe 1-3 hours per month:
 
 <ul>
 <li>They should definitely be optional for team members, but I highly encourage everyone to participate.</li>
-<li>You might also consider recording them, so that those that were not able to attend can watch the recording and feel integrated, and keep the social context of the team.</li>
+<li>You might also consider recording them, so that those that were not able to attend can watch the recording and feel integrated, keeping the social context of the team.</li>
 <li>In our case, we currently have 2 remote-but-synchronous social activities per month (both optional):
 
 <ul>
 <li>One casual social meeting. In this one-hour meeting we can talk about anything other than work. We often bring 2 topics beforehand, as placeholders, but discussion can move away from those topics entirely. We have also had meetings in which we have formed teams to play online light games, such as <a href="https://www.geoguessr.com/">GeoGuessr</a>.</li>
-<li>A virtual <a href="https://codingdojo.org/">Coding Dojo</a> session, where a team member proposes and facilitates a code kata (or architectural kata) and we work together on solving it. We might break the group down into multiple ones depending on the number of attendees. At the end we share learnings, comments, suggestions, etc. This is applicable to us as an engineering team, but I’m sure other teams can find equivalent types of activities.</li>
+<li>A two-hour <a href="https://codingdojo.org/">Coding Dojo</a> session, where a team member proposes and facilitates a code kata (or architectural kata) and we work together on solving it. We might break the group down into multiple ones depending on the number of attendees. At the end we share learnings, comments, suggestions, etc. This is applicable to us as an engineering team, but I’m sure other teams can find equivalent types of activities.</li>
 </ul>
 </li>
 </ul>
@@ -195,7 +200,7 @@
 <li>E.g.: board-games, cooking, travel, series, you name it…</li>
 </ul>
 </li>
-<li>Have regular short 1:1 with your different teammates, just to chat a bit and discuss things other than work, to keep a human connection. Even spending half an hour per month on an individual call with each of your closer teammates can already make a big (although subtle) difference in the daily work.
+<li>Have regular, short 1:1s with your different teammates; just to chat a bit and discuss things other than work, to keep a human connection. Even spending half an hour per month on an individual call with each of your closer teammates can already make a big (although subtle) difference in the daily work.
 
 <ul>
 <li>In a remote setting, most of the casual conversations that often happen in an office are lost, so forcing them a bit via 1:1s helps compensate for the loss, and lets us build human relationships with our colleagues.</li>
@@ -206,21 +211,21 @@
 
 <h3>Spending some in-person time periodically is a good idea</h3>
 
-<p>In my last two companies I’ve been working fully remotely, and in both cases we have usually had at least 2 opportunities per year to meet face-to-face. And in my experience, those events tend to be very energizing, and make me feel much more connected to both my peers and the business. I always come back home highly motivated.</p>
+<p>In my last two companies I’ve been working fully remote, and in both cases we have usually had at least 2 opportunities per year to meet face-to-face. In my experience, those events tend to be very energizing, and make me feel much more connected to both my peers and the business. I always come back home highly motivated.</p>
 
-<p>So, meeting for a week or two, every six months or so, even though it is not really essential, I would say is highly recommended. Or at least once a year, to keep the human connection with colleagues, be it spending some time working next to each other or having a company-wide event with talks from different areas. The latter has the additional benefit of breaking silos, letting us learn more about other teams and meet people we don’t often work with. But at least having some org-wide in-person social time is great to devirtualize (and humanize) the names we often see in Slack.</p>
+<p>So, meeting for a week or two, every six months or so, even though it is not really essential, I would say is highly recommended. Or at least once a year, to keep the human connection with colleagues. These in-person events can range from simply spending some time working next to each other, to having a company-wide event with talks from different areas. The latter has the additional benefit of breaking silos, letting us learn more about other teams and meet people we don’t often work with. Plus, spending some org-wide in-person social time is a great to devirtualize, and humanize, the names we often see in Slack.</p>
 
 <h2>The benefits of distributed and async work</h2>
 
-<p>Ok, so far we have covered the needs remote teams have, and we have also discussed the minimal time needed in synchronous calls and some tips on how to promote a healthy remote and async work environment.</p>
+<p>Ok, so far we have covered the needs remote teams have. We have also discussed the minimal time needed in synchronous calls. And we have gone through some tips on how to promote a healthy remote and async work environment.</p>
 
 <p>But, why would we want to do all this? Are there any real benefits to it?</p>
 
 <h3>A productivity booster</h3>
 
-<p>Interruptions are a real productivity killer. I’ve suffered this in the past, working from an office setting. There is often the classic coworker that comes to your desk to ask a not-that important-question, every now and then, interrupting your flow (which maybe took an hour to get going) and now causing you to try hard, for the next 20 minutes, hoping to get back to it.</p>
+<p>Interruptions are a real productivity killer. I’ve suffered this in the past, working from an office setting. There is often the classic coworker that comes to your desk to ask a not-that-important question, every now and then; interrupting your flow (which maybe took an hour to get going), and now causing you to put extra effort, for the next 20 minutes, trying hard to get back to where you were.</p>
 
-<p>And since there are many of such interruptions during a work day, several hours per day are wasted daily in offices, on average, due to interruptions. With the cost it has both directly (wasted time) and indirectly (negative effect on morale and, as any other distraction, increased mistakes).</p>
+<p>And since there are many of such interruptions during a work day, several hours per day are wasted daily in offices, on average, due to interruptions. With the cost it has both directly (wasted time) and indirectly (negative effect on morale and, as with any other distraction, increased mistakes).</p>
 
 <p>In contrast, by switching those questions to whatever chatting tool you use remotely, they become asynchronous, so you can keep your focus and then reply whenever you finish what you were doing (or whenever you voluntarily decide to switch focus).</p>
 
@@ -228,7 +233,7 @@
 
 <p>Another productivity-related benefit of remote and async work is that it forces us to schedule meetings beforehand. This typically leads to time optimization, preparing an agenda and agreeing on the need for the meeting to be held; avoiding unnecessary meetings and spending the minimal time required in the call, with the minimal number of people necessary.</p>
 
-<p>Also, when meetings are recorded, people can decide to skip them if they don’t feel their presence is needed; and can always watch the recording if they feel something relevant was discussed. The recording also allows them to skip sections of the meetings that are not relevant to them, or play them at a faster speed, while maybe doing something else (especially when the meeting is not critically important and they only want to have an idea of what was discussed). This also leads to saving time, and being more efficient at work.</p>
+<p>Also, when meetings are recorded, people can decide to skip them if they don’t feel their presence is needed; and can always watch the recording if they feel something relevant was discussed. Recording also allows viewers to skip sections of the meetings that are not relevant to them, or play them at a faster speed, while maybe doing something else (especially when the meeting is not critically important and they only want to have an idea of what was discussed). This also leads to saving time, and being more efficient at work.</p>
 
 <h3>Access to a wider talent pool</h3>
 
@@ -240,9 +245,9 @@
 
 <h3>Real flexibility to separate or blend life and work</h3>
 
-<p>As a parent, I really value the flexibility that remote and async work brings to me. I can arrange my work day so that I can take my kids to school / day care, and/or pick them up; working in between. I can also have a quick walk with them in the afternoon while there is still sun; and then I can work a bit while they are asleep and it is quiet at home.</p>
+<p>As a parent, I really value the flexibility that remote and async work brings to me. I can arrange my work day so that I can take my kids to school / day care, and/or pick them up; working in between. I can also have a quick walk with them in the afternoon while there is still sun; and then I can work a bit when they are asleep and it is quiet at home.</p>
 
-<p>Your preferences might vary, and you might prefer to have a clear separation between your work and personal hours. But the key is that remote and async work lets you decide how you organize your professional self in the way that best fits your life.</p>
+<p>Your preferences might vary, and you might prefer to have a clear separation between your work and personal time. But the key here is that remote and async work lets you decide how you organize your professional self in the way that best fits your life.</p>
 
 <h2>Some interesting resources</h2>
 
@@ -254,7 +259,7 @@
 <li><a href="https://buffer.com/resources/asynchronous-communication/">Asynchronous Communication and Why It Matters For Remote Work, from Buffer</a></li>
 <li><a href="https://about.gitlab.com/company/culture/all-remote/asynchronous/">How to embrace asynchronous communication for remote work, by GitLab</a></li>
 <li><a href="https://lattice.com/library/what-is-asynchronous-work-heres-everything-you-need-to-know-to-implement-it-at-your-organization">What Is Asynchronous Work? Here’s Everything You Need to Know to Implement It at Your Organization, from Lattice</a></li>
-<li><a href="https://twitter.com/shl/status/1222545212477599751">A Twitter thread by Sahil Lavingia of Gumroad’s transition to fully asynchronous work</a></li>
+<li><a href="https://twitter.com/shl/status/1222545212477599751">A Twitter thread by Sahil Lavingia, on Gumroad’s transition to fully asynchronous work</a></li>
 <li><a href="https://remote.com/blog/why-you-should-be-doing-async-work">One article on “Why you should be working asynchronously in 2022”, from remote.com</a></li>
 </ul>
 
@@ -266,12 +271,13 @@ Or were you already convinced?</p>
 
 <p>What has your experience been with remote and async work so far?</p>
 
-<p>I’ve probably missed some relevant points; and you might have encountered challenges that I’ve failed to mention (and which might be interesting to discuss). You might also have discovered better socializing approaches in these remote and async settings, or you might know about other tools/tips/processes that ease the transition for more traditional companies.</p>
+<p>I’ve probably missed some relevant points; and you might have encountered challenges that I’ve failed to mention (and which might be interesting to discuss). You may also have discovered better socializing approaches in these remote and async settings, or you might know about other tools/tips/processes that ease the transition for more traditional companies.</p>
 
 <p>So, please, join the conversation in the comments and let’s keep discussing this interesting topic, remotely and asynchronously!</p>
 
 <div class="revisions">
   <h2>Significant revisions</h2>
+  <p><em>2023, Jan 02</em>: Some general style improvements.</p>
   <p><em>2022, Dec 31</em>: First version published.</p>
 </div>
 
