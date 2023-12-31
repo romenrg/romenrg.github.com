@@ -7,7 +7,7 @@ comments: true
 categories: [Entrepreneurship, Management]
 description: "Resilience is the ability to bounce back from setbacks. Building resilience and reconstructing your life during tough times takes time and effort, but it pays off when you are finally able to bounce back."
 keywords: resilieve, human workplace, metal health, work-life balace
-twitterimg: "/images/remote-async-work.jpeg"
+twitterimg: "/images/resilience-man-sunrise-nature.jpeg"
 ---
 Resilience is the ability to bounce back from setbacks. It is definitely a critical skill to have, especially during difficult times; although it is often overlooked.
 
@@ -33,7 +33,7 @@ However, there are some tips that can be very useful to help us bounce back, bui
 
 6. **Find purpose**: We all need a project in life, a long-term goal. Something to strive towards, which motivates us long term. Something that gives meaning to our life. Without a purpose, life can turn into a depressing, self-consuming void. Personally, my main purpose revolves around two little people, who bring profound meaning to my life. For them, I strive to be the best version of myself, willing to endure anything to care for them. Aday and Haridian, my son and daughter. Your father loves you both, with all my heart. And always will. This love is unconditional and unwavering.
 
-I think the former 6 points are critical when trying to overcome difficult situations. Hope this article helps others as much as it helps myself.
+Well, I think the former 6 points are critical when trying to overcome difficult situations. Hope this article helps others as much as it helps myself.
 
 In summary, it is okay to take time for yourself and prioritize your well-being. Building resilience and reconstructing your life during tough times takes time and effort, but it pays off when you are finally able to bounce back.
 
