@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Entrepreneurship | Blog @romenrg]]></title>
   <link href="https://www.romenrg.com/blog/categories/entrepreneurship/atom.xml" rel="self"/>
   <link href="https://www.romenrg.com/"/>
-  <updated>2023-08-27T13:02:35+01:00</updated>
+  <updated>2023-12-31T17:25:12+00:00</updated>
   <id>https://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Building Resilience: Overcoming Adversity and Finding Balance]]></title>
+    <link href="https://www.romenrg.com/blog/2023/12/31/building-resilience-overcoming-adversity-and-finding-balance/"/>
+    <updated>2023-12-31T16:57:00+00:00</updated>
+    <id>https://www.romenrg.com/blog/2023/12/31/building-resilience-overcoming-adversity-and-finding-balance</id>
+    <content type="html"><![CDATA[<p>Resilience is the ability to bounce back from setbacks. It is definitely a critical skill to have, especially during difficult times; although it is often overlooked.</p>
+
+<p><img src="https://www.romenrg.com/images/resilience-man-sunrise-nature.jpeg" alt="An image of a man, taken from behind, in nature, looking at sunrise" /></p>
+
+<p>Personally, I have always considered myself quite resilient. However, 2023 has really made me prove it. And, to be honest, it has been a very challenging year. That is why I figured that writing about it would be the best idea for my end-of-year article.</p>
+
+<!-- More -->
+
+
+<p>When we face challenging situations in life, especially those that cause profound damage to our life pillars, our self-esteem and/or our mental health in general; it might be hard to find purpose, meaning and/or maintain a healthy lifestyle. Plus, for knowledge workers, it is especially hard to stay productive in such circumstances.</p>
+
+<p>However, there are some tips that can be very useful to help us bounce back, building resilience and balance, in both personal life and work:</p>
+
+<ol>
+<li><p><strong>Prioritize self-care</strong>: Taking care of oneself is essential, especially during difficult times. Make sure you are getting enough sleep, eating healthy, and exercising regularly. You can also try meditation or other relaxation techniques to help manage stress. And I would highly encourage you to start one fun social activity, be it cooking lessons, acting classes or dance lessons; to meet new people and take a break from problems, while doing something new and fun.</p></li>
+<li><p><strong>Set boundaries</strong>: It is important to set boundaries between your personal life and work. This can include setting specific work hours, turning off your phone or email after work hours, and taking breaks throughout the day. Also, you might need to take time off to take care of your mental health depending on the seriousness of the challenge. Think of it as if it was a serious physical injury. Wouldn’t you go on medical leave if that was the case? The support of your colleagues and manager are key as well. Be as open to them about your situation as you can, this will help them empathize and understand your situation.</p></li>
+<li><p><strong>Build a support system</strong>: Having a strong support system can help you get through tough times. This can include friends, family, or even a therapist. Don’t be afraid to reach out for help when you need it. We, as humans, are social creatures; and no matter how self-sufficient you are, certain situations are too much for an individual to handle without support.</p></li>
+<li><p><strong>Stay positive</strong>: It is important to stay positive and focus on the things that you can control. And let go of those that you cannot control. Try to find the silver lining in difficult situations and focus on the things that you are grateful for.</p></li>
+<li><p><strong>Practice resilience</strong>: Resilience is a skill that can be developed over time. It is important to practice resilience during difficult times. This can include setting goals, staying focused, and taking small steps towards your goals every day. But don’t be too hard on yourself. It is ok to have bad days. However, in those days, don’t stop prioritizing self-care and the good habits you are building, including your social routines, which are critical in rebuilding your mental health.</p></li>
+<li><p><strong>Find purpose</strong>: We all need a project in life, a long-term goal. Something to strive towards, which motivates us long term. Something that gives meaning to our life. Without a purpose, life can turn into a depressing, self-consuming void. Personally, my main purpose revolves around two little people, who bring profound meaning to my life. For them, I strive to be the best version of myself, willing to endure anything to care for them. Aday and Haridian, my son and daughter. Your father loves you both, with all my heart. And always will. This love is unconditional and unwavering.</p></li>
+</ol>
+
+
+<p>I think the former 6 points are critical when trying to overcome difficult situations. Hope this article helps others as much as it helps myself.</p>
+
+<p>In summary, it is okay to take time for yourself and prioritize your well-being. Building resilience and reconstructing your life during tough times takes time and effort, but it pays off when you are finally able to bounce back.</p>
+
+<p>Remember, nurture and love yourself. Ultimately, you are your lifelong companion, the one constant presence that will surely be with you throughout your entire journey.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[It’s not remote work. Async work is the real paradigm shift]]></title>
@@ -554,139 +590,6 @@ As any other creative process, programming requires autonomy. That is why agile 
   <h2>Significant revisions</h2>
   <p><em>2018, Apr 27</em>: Clarified the last two 'rights', improving grammar and style. Minor corrections in the example section were also included.</p>
   <p><em>2016, Nov 15</em>: Original version published.</p>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Why asking software developers for time estimates is a terrible idea and how to bypass it]]></title>
-    <link href="https://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum/"/>
-    <updated>2015-09-28T11:17:00+01:00</updated>
-    <id>https://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum</id>
-    <content type="html"><![CDATA[<p>I have worked in many software projects and have been lucky to be in the initial team of several <a href="https://www.romenrg.com/blog/2020/12/30/software-projects-vs-software-products/">software products</a>. Besides, having acted both as a Developer and as a Product Manager has allowed me to have a wider view of what usually causes most friction between business and engineering: time estimates.</p>
-
-<p><img src="https://www.romenrg.com/images/scrum_software_estimates_reverse_engineering_pixabay.jpg" alt="Picture of a woman pointing to her watch as if you were late. Typical management or customer reaction to delayed software projects" /></p>
-
-<p>It usually starts with managers or customers asking “when will &lt;this idea> be ready?” and it is usually followed by developers racking their brains to give a specific date... Needless to say, that date is likely to be <em>dreadfully wrong</em>, as it is the norm in the industry. There is a near-total inability of developers to predict how long a project will take, so time estimates are usually worthless.</p>
-
-<p>However, applying <a href="http://www.scrumguides.org/">Scrum</a> along with some <a href="http://www.extremeprogramming.org/rules.html">XP</a> practices we can avoid the uncomfortable tension of asking developers for time estimates. Instead, we can calculate release dates automatically, getting infinitely more accurate time estimates, while saving all the arguments and keeping team morale high. How? Keep reading!</p>
-
-<!-- More -->
-
-
-<h2>1. The problem: Time estimates in Software Projects fail dramatically</h2>
-
-<p>The topic of delay and over-budget in the software industry has been widely discussed, including reports such as <a href="https://hbr.org/2011/09/why-your-it-project-may-be-riskier-than-you-think/ar">this one</a> by Harvard Business Review, later commented in this <a href="http://www.infoq.com/news/2011/10/risky-it-projects">InfoQ post</a>. A conclusion of this report is: <em>“If you want to avoid the slow death caused by IT projects you must be prepared not only to spend 400% more than planned on the project, but to reap only 25% of the expected benefits. If you keep this in mind you can possibly prevent a company from being killed by an IT project”</em>.</p>
-
-<p>Moreover, since 1994 <a href="http://standishgroup.com/">Standish Group</a> has been releasing their <a href="http://blog.standishgroup.com/post/50">CHAOS Reports</a> every year. These reports are a relevant snapshot of the state of the software development industry. <a href="http://www.infoq.com/articles/standish-chaos-2015">The last CHAOS Report (2015)</a>, shows that <em>even nowadays, only 29% of Software Projects are successful (defined as on-time, on-budget and with a satisfactory result)</em>. This report highlights one of the key variables affecting success rates: the approach used to manage projects (Agile vs Waterfall). <em>Agile approaches showed a 39% ratio of successful projects, while Waterfall only 11%</em>. This seems to be closely related to the way in which we deal with estimates and changes in each case.</p>
-
-<h3>1.1. Let’s assume we never know how long it’s going to take</h3>
-
-<p>I bet some of you consider yourselves great estimators. However, the overconfidence of software developers is a well-known issue. Dan Milstein describes it <a href="http://blog.hut8labs.com/coding-fast-and-slow.html">in this great article</a>, concluding that "one of the deepest challenges involved in writing software is <em>the near-total inability of developers to predict how long a project will take</em>”. In this article, Dan writes in detail about all the issues that make software projects so hard to estimate. Among others, factors such as the impossibility to write fully detailed specifications (as he says, to do so you have to be actually writing the software), uncertainty and unpredictability (about the product itself, the market, the technologies being used...) and the uniqueness of software projects (which makes it almost impossible to relate to similar projects for estimates since there are always major differences).</p>
-
-<p>Moreover, <a href="https://news.ycombinator.com/item?id=5596578">in this Hacker News thread</a>, <em>many developers acknowledge "lying" when giving estimates</em>, which is considered an standard practice to deal with customers or management. In the same thread, another interesting recommendation for management is to add <em>a load factor of 2-5x to developer estimates</em>, describing it also as an “industry standard”. As you may guess, these practices are not helping the industry to improve, but rather the opposite. Should we keep ignoring the elephant in the room?</p>
-
-<h3>1.2. Do we really need time estimates?</h3>
-
-<p>There is an increasing tendency among developers against giving estimates in software projects (see <a href="https://twitter.com/hashtag/NoEstimates">#NoEstimates</a>). To a certain extent this makes total sense, since time estimates have been proved to fail dramatically in the industry (<a href="https://coding.abel.nu/2012/06/programmer-time-translation-table/">especially for tasks that take more than a day</a> to complete). Besides, developers are usually the ones paying the bill of a failed estimate, by working long hours and suffering great stress due to management pressure to meet deadlines. This usually leads to poor team morale, friction, loss of credibility and many other problems, as described in detail by Richard Clayton in his article “<a href="https://rclayton.silvrback.com/software-estimation-is-a-losing-game">Software Estimation is a losing game</a>”.</p>
-
-<p>On the other hand, since I have been manager and CEO apart from developer, I know how useful would time estimates be from the business side (either to calculate costs for a customer that wants a fixed-price contract; or to ourselves, to plan marketing actions, meetings, etc...). <em>However, we must asume that calculating accurate time estimates for software projects is simply not possible</em>. Putting pressure on developers to give us time estimates will simply make them lie to us, giving a virtually random estimate that is going to be dreadfully wrong. As we have explained before, <em>they just don’t know how long it is going to take</em>.</p>
-
-<p>I guess I don't need to mention that, if developers are not able to give us an accurate time estimate for a software project to be finished in; managers (with no technical background or having spent the last few years out of development) are much worse at it.</p>
-
-<p>So, at this point, as a manager it is worth taking some time to think if we really need to estimate the whole project (or backlog). Maybe we could follow an alternative approach, especially if we own the product we are building. For instance, some innovative companies, such as <a href="https://m.signalvnoise.com/how-we-set-up-our-work-cbce3d3d9cae">Basecamp</a> or <a href="https://open.buffer.com/6-week-cycles/">Buffer</a> are avoiding long term planning and estimation by working on 6-week cycles. They always focus on the most valuable user stories, adjusting scope to make sure a releaseable version is ready at the end of each cycle.</p>
-
-<h3>1.3 The role of evil contracts</h3>
-
-<p>If there is something to blame above anything else, that would be the magic <em>fixed-everything contract</em> (where price, time and scope are set at the beginning of the project). Those contracts are the root of all evil. The recipe for disaster starts by "setting the cost" of development beforehand (when we know the least about the software being built) and presenting it to the customer in the form of a contract. This contract will describe how a "fixed software" (that in most cases is just a vague idea) will be developed for a fixed price and, of course, ready for a fixed date.</p>
-
-<p>That is how all this madness usually starts.</p>
-
-<p>Most managers and salespeople love this approach. It seems so simple... To "calculate the cost" they just have to ask developers for time estimates, add some contingency time and then do the math (calculating salaries, other expenses, benefits...) and that's it! Ready to convince the customer! What can go wrong?</p>
-
-<p>Well, now that you know that having accurate time estimates for software projects is simply not possible, as a manager you can <a href="https://www.youtube.com/playlist?list=PLhE6PVDdZ3dLSS42FLcwYLcH3pldS71MT">choose more realistic contract approaches</a>, or you can <a href="http://blog.salsitasoft.com/why-we-dont-do-fixed-price-software-projects/">assume the risks of doing fixed-everything contracts</a>, based on those more-than-likely-wrong time estimates. But if you choose the latter, don’t blame developers when deadlines are not met.</p>
-
-<p>If you have a team of professional and commited developers, they will be doing their best all the time, trying to do things as quickly as they can (as <a href="https://twitter.com/dhh">@dhh</a> says, <a href="https://twitter.com/dhh/status/584745462445518848">ASAP is implied</a>). Sadly, too many times managers end up using the whip to make developers achieve the impossible. At the end, the imposible is not achieved, software quality goes down because of the rush (causing more delays due to constant bugfixing and poor code-maintainability), team morale is almost zero, everyone suffers burnout and the customer gets angry. Nobody wins.</p>
-
-<p>However, even using these evil contracts, you can always follow an iterative and incremental development process internally, making sure your team is always working on the most important features and releasing an extended version of the product every few weeks. By doing this, you will always have working software to ship to your customer. If the deadline arrives and the project is not finished, at least the X more important features will be developed. And working software will be available. Moreover, if you manage to involve your customer in the process, you will benefit from showing her the incremental releases. Among other things, you will get valuable feedback, anticipate changes and build trust. Therefore, customer relationships will improve and contract changes will become easier to deal with.</p>
-
-<h2>2. An alternative solution to estimate Release Dates</h2>
-
-<p>So, if you are still forced to provide long term release dates, an alternative way to calculate them will be described in this section. This approach is based on combining Scrum with some XP concepts, such as Velocity and User Stories; as well as using effort-based Story Points.</p>
-
-<p>Unfortunately, Scrum has become kind of a buzzword in the last few years and many people in the software industry say they use Scrum when in reality they are not following many of its key principles... If you are new to Scrum, I encourage you to read <a href="http://www.scrumguides.org/">The Scrum Guide</a> which is a fantastic 16-pages document written by the creators of the framework describing its principles. You can also find information on XP practices <a href="http://www.extremeprogramming.org/rules.html">here</a>. Too tired to read? Then a good alternative are these <a href="http://scrumtrainingseries.com/">great videos about the scrum framework</a>.</p>
-
-<p>Although I think Scrum is a great framework for software development, I agree with <a href="https://twitter.com/jasonfried/status/700746928020176896">Jason Fried</a> and <a href="http://www.agile-doctor.com/2016/03/10/maybe-time-stop-using-word-sprint/">some others</a> that are showing <em>concerns about the word 'sprint'</em>. As they have highlighted, this term can be misinterpreted, leading to behaviors that go against sustainable development, a core <a href="http://agilemanifesto.org/principles.html">agile principle</a>. For that reason, in this article <em>I have decided to use the word 'cycle' instead.</em></p>
-
-<p>Having these definitions clear, all you need to do to get more accurate release dates for your software project is to follow 4 simple steps I will describe below. Since you won't have to ask developers for time estimates, you will avoid many misunderstandings. Besides, this approach allows you to rearrange the product backlog anytime (adding, removing or moving stories), getting approximate release dates automatically.</p>
-
-<h3>2.1. Create a Product Backlog with User Stories as a first step</h3>
-
-<p>Not asking anything to developers yet; no coding. Sit down with your product team, potential users or customers and try to describe what you think the product should be, according to what you have learned so far. If you haven't done it yet, creating some <a href="http://designmodo.com/wireframing-prototyping-mockuping/">simple wireframes</a>, discussing them lightly and iterating a bit over them is usually the best way to start. But keep it simple, following <a href="http://theleanstartup.com/principles">Lean Startup</a> advice. This exercise will help you with <a href="https://steveblank.com/2014/06/28/customer-discovery-the-search-for-productmarket-fit-2-minutes-to-see-why/">customer discovery</a>, clarifying your initial hypotheses.</p>
-
-<p>So, once you have enough information about the product and its market to do so, define some core <a href="https://www.scrumalliance.org/community/articles/2010/april/new-to-user-stories">User Stories</a> and prioritize them, creating a Product Backlog for your <em>Minimum Viable Product</em> (MVP). It should represent a basic version that you are able to release quickly, to get feedback from the market and keep learning and adapting, following an iterative and incremental development process. Since user stories are about functionality, wireframes are usually very good help. They can be added as part of their Acceptance Criteria.</p>
-
-<p>My favourite tool for managing Scrum is <a href="https://es.atlassian.com/software/jira/agile">Jira</a>, which includes a great backlog-management tool. However, there are many other tools available, including <a href="https://trello.com/">Trello</a>, which I also use as a kanban board for smaller projects. For wireframing, there are also many good tools available. One of my favourites is <a href="http://wireframesketcher.com/">WireframeSketcher</a>, due to its IDE and CVS integration. <a href="https://balsamiq.com/">Balsamiq</a> and <a href="https://moqups.com/">Moqups</a> are great alternatives too.</p>
-
-<p>After creating the initial Product Backlog, you will have a much clearer picture of the MVP you are going to build; therefore, you will be in a better position to present it to developers.</p>
-
-<h3>2.2. Estimate all User Stories in the backlog based on effort points</h3>
-
-<p>Once you have created your initial Product Backlog and prioritized its user stories, it is time to have the first Product Backlog Refinement meeting with the Scrum Team (which includes the Development Team). Our goal would be to estimate all user stories in the backlog, but instead of time we will be using effort points. Each user story will have X points. A common approach is to use the Fibonacci scale for those points.</p>
-
-<p>Since it is very important to be consistent when estimating user stories, I usually encourage the team to <em>find the easiest user story in the backlog and give it a 1 and then find the hardest one and give it either a 13 or a 21</em>. That way you have created the team’s effort scale, making it easier to estimate the remaining user stories based on a scale that is totally dependent on the project.</p>
-
-<p>“But those effort-points are not useful for me!”, a manager said. Please, hold on. They definitely are. For now they tell you which are the easiest user stories and which ones are the hardest. But even better, in a few cycles they will help you estimate when might the project be finished or when will a specific user story probably be done, according to its place in the backlog. And this estimate will be much more precise than any you could get from asking developers for time estimates.</p>
-
-<p>If in the future new user stories appear <em>(they will)</em>, all you have to do is add them to the backlog, placing them according to their relative priority compared to the rest; and save some time to conduct a backlog refinement meeting, in which the new stories will be estimated. The most important task of the Product Owner (your role in Scrum) is to keep the backlog updated, estimated and prioritized; in order to make it useful for predicting possible release dates.</p>
-
-<h3>2.3. Keep effort-based estimates time-independent</h3>
-
-<p>Even though agile implementations usually replace time estimates by effort points (using scales such as Fibonacci or t-shirt sizes), some managers simply establish a link from those points or sizes to "their equivalent" in time. And they usually do that publicly, which means that everybody goes back to time estimates, thus ruining the whole thing again and making developers hate agile too (even though what they hate is a bad implementation of agile frameworks).</p>
-
-<p><em>The key of using an effort-based system for story points is precisely to keep estimates separated from time</em>. The relative "effort" of a task is a much easier concept to analyze for developers, especially when comparing different user stories of a project. Moreover, estimating effort instead of time prevents common conflicts, mostly related to considering time estimates a "contract". As we have seen before, developers simply cannot estimate how long a software project is going to take. Linking effort points to their "time equivalent" will only lead to poor team morale, friction and false expectations, as we have seen before. Avoid that. There is another way to get to time estimates: indirectly!</p>
-
-<h3>2.4. In the first few cycles Team Velocity is yet unknown</h3>
-
-<p>When planning a cycle <em>(sprint)</em>, the team will pick user stories from the top of the backlog until they consider it is enough work for the new cycle. Having a shared <a href="https://www.scrumalliance.org/community/articles/2008/september/what-is-definition-of-done-(dod)">Definition of Done</a> can help planning, making sure all team members are aware of all the tasks that have to be completed for each story to be "done".</p>
-
-<p>Then, during the cycle review you will discover whether all user stories were completed as expected or if there were some changes (e.g. the team was not able to complete all user stories, or by constrast, all stories were completed early and some more were added to the cycle).</p>
-
-<p>As you will see, in the first few cycles there are usually some differences when comparing what the team planned to achieve and what it did actually achieve. However, this error tends to become smaller over time, achieving a similar pace, measured in number of story-points completed per cycle. This metric is often referred to as <em>Team Velocity</em>.</p>
-
-<p>It is worth highlighting the importance of minimizing changes related to team members (eg. replacing someone or changing her dedication). Any change of this sort will have a significant impact on velocity, which would undermine our capacity to forecast release dates.</p>
-
-<h3>2.5 After a few cycles you will be able to estimate release dates, based on Team Velocity</h3>
-
-<p>So, once a few cycles <em>(sprints)</em> have passed, you will realize that if the team and its story-point estimates have remained consistent, the number of story points being completed per cycle (Team Velocity) is similar.</p>
-
-<p>Since you have been doing your job of keeping the backlog updated, prioritized and estimated in story points, now you will be able to forecast when will a particular story be finished.</p>
-
-<p><em>An <strong>example</strong> will make it clearer:</em></p>
-
-<p><em>Let’s say our development team is applying the strategy described in this post. It is completing about 25 points per cycle and each cycle is 15 days long. If you want to know when will a particular user story be finished, all you need to do is count the number of story points that are above it in the backlog, add its own story points and do some simple math:</em></p>
-
-<p><a href="https://www.romenrg.com/images/story_points_estimates_backlog_example.png"><img src="https://www.romenrg.com/images/story_points_estimates_backlog_example.png" alt="Example showing a backlog with story points, estimated based on effort; team velocity, cycle duration and a forecast for a particular story" /></a></p>
-
-<p><em>In this example, user story X has 52 points above it in the backlog and has 5 points itself. This means a total of 57 story points have to be completed for story X to be finished. Since in each cycle the team is completing approximately 25 points, the story you are looking for will probably be finished in 3 cycles time, meaning it would be deployed in about 45 days.</em></p>
-
-<p>The same process can be applied to guess when could the whole project be finished, just taking the last user story you have in the backlog for the calculations explained before.</p>
-
-<h2>Conclusion</h2>
-
-<p>There is no silver bullet in software estimation. However, if you need to prepare marketing actions or respond to a customer, you will probably need at least a rough idea of delivery dates. Following the management approach described in this article, you will get time estimates without asking for them; you will keep team morale high, avoid burnout and improve productivity. Besides, you will be able to automatically forecast the impact of changes in the timing of the project.</p>
-
-<p>This solution contributes to improve business-engineering relationship, improve software quality and reduce costs in the long-run. Besides, if you involve customers in the process, their understanding and trust may improve considerably, making it easier for both parties to deal with change, preventing many deadline-related conflicts.</p>
-
-<p>Now, join the conversation: How do you deal with time estimates in your company?</p>
-
-<div class="revisions">
-  <h2>Significant revisions</h2>
-  <p><em>2018, May 06</em>: Added an image to the example and improved its description.</p>
-  <p><em>2018, May 01</em>: References to 6-week cycles followed by Basecamp and Buffer are included. Also, replaced the term "sprint" by "cycle", which seems more appropriate to encourage working at a sustainable pace.</p>
-  <p><em>2018, Apr 17</em>: Improving title and meta description.</p>
-  <p><em>2015, Sep 28</em>: Original version published.</p>
 </div>
 
 ]]></content>
