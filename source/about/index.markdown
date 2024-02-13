@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About me"
-date: 2020-12-19 10:00
+date: 2024-02-13 16:00
 comments: true
 description: "Lifelong Learner, Software Engineer and Internet Entrepreneur. In this blog I publish my thoughts, experiments and ideas about software, internet and entrepreneurship. Looking at peopleware, the human side of technology."
 sharing: true
@@ -18,7 +18,7 @@ footer: true
 
   <p> But above practices, tools, or processes, I'm convinced <em>"<a href="https://www.amazon.com/Peopleware-Productive-Projects-Teams-3rd/dp/0321934113/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&psc=1&refRID=F07A2E2YJ4AQ5JZQRK5B">Peopleware</a>"</em> is the key element of every knowledge-based company; even though many forget about that. As a blogger, <a href="https://www.romenrg.com/talks/">speaker</a> and consultant I try to highlight the importance of building a healthy company culture, where people feel safe, valued, and can grow. I see this as the foundation to create a successful environment, both for developers and for managers; and from a business as well as from an engineering perspective.</p>
 
-  <p>Well, that is me <em>professionally</em>. But apart from all the above, I also love to spend some time away from technology, be it having fun with friends, playing with my kids or hiking with my wife.</p>
+  <p>Well, that is me <em>professionally</em>. But apart from all the above, I also love to spend some time away from technology, be it having fun with friends, playing with my kids or hiking.</p>
 
   <p>If you want to know more about me, you can explore the <a href="https://www.romenrg.com/talks/">talks & courses</a> section, where recordings and materials of my talks are shared. You can also take a <a href="https://github.com/romenrg">look at my GitHub</a> repositories, <a href="http://www.linkedin.com/in/romenrg/en"LinkedIn>find me on LinkedIn</a> or <a href="http://www.twitter.com/romenrg">follow me on Twitter</a>, where I share more thoughts, news and articles about software, internet and entrepreneurship.</p>
 
