@@ -5,8 +5,11 @@ date: 2024-12-31 20:35
 updated: 2025-01-01 01:00
 comments: true
 categories: [Entrepreneurship, Management]
+description: "Uncover the truth about software engineers' productivity; learn why common metrics mislead and how to evaluate real efficiency"
+keywords: engineers performance, developers productivity, measuring commits, productivity metrics, assessing performance, engineers review
+twitterimg: "/images/measuring-software-engineers-productivity.jpeg"
 ---
-The question of how to measure software developers' productivity has long been a subject of debate in the tech industry. New versions of old misguided approaches, such as counting the "number of lines of code" written, resurface, over and over again, despite not reflecting value creation over and over again. 
+The question of how to measure software developers' productivity has long been a subject of debate in the tech industry. New versions of old misguided approaches, such as counting the "number of lines of code" written, resurface, over and over again, despite not reflecting value creation or performace. 
 
 <img src="/images/measuring-software-engineers-productivity.jpeg" alt="An image of the home office of a remote worker, where his mac laptop screen displays a Zoom meeting" />
 
@@ -20,7 +23,7 @@ In fact, setting incentives based on such metrics can lead to counterproductive 
 
 The "number of lines of code" metric (LOC) is perhaps the most infamous example of a misleading measure. While intuitively appealing due to its simplicity, it fails to account for the true purpose of software development: solving problems efficiently and effectively. In fact, fewer lines of well-crafted, maintainable code are often more valuable than sprawling, complex implementations.
 
-Consider the case of IBM in the 1980s, where developers were incentivized to write more code. The unintended consequence was a proliferation of verbose, redundant code that increased maintenance costs and slowed progress (from the documentary “Triumph of the Nerds”). Similarly, in 1982 in Apple, some managers in the Lisa software team were asking engineers to weekly submit the number of codes they had written, to measure productivity. This finally stopped when the, arguably, most important Lisa implementer, [Bill Atkinson](https://en.wikipedia.org/wiki/Bill_Atkinson), famously reported “[-2000 lines](https://www.folklore.org/Negative_2000_Lines_Of_Code.html)” the very same week he had made changes to an algorithm to make it 6x faster; thus highlighting the absurd nature of the LOC metric and its absolute disconnect with the actual impact of the work of engineers.
+Consider the case of IBM in the 1980s, where developers were incentivized to write more code. The unintended consequence was a proliferation of verbose, redundant code that increased maintenance costs and slowed progress (from the documentary “Triumph of the Nerds”). Similarly, in 1982 in Apple, some managers in the Lisa software team were asking engineers to weekly submit the number of codes they had written, to measure productivity. This finally stopped when [Bill Atkinson](https://en.wikipedia.org/wiki/Bill_Atkinson), arguably the most important Lisa implementer, famously reported “[-2000 lines](https://www.folklore.org/Negative_2000_Lines_Of_Code.html)” the very same week he had made changes to an algorithm to make it 6x faster; thus highlighting the absurd nature of the LOC metric and its absolute disconnect with the actual impact of the work of engineers.
 
 ### Number of Commits
 
@@ -53,7 +56,7 @@ Effective software development is a team effort. The more senior engineers are, 
  * Conducting code reviews.
  * Improving team processes.
 
-These activities foster knowledge transfer and elevate the entire team’s productivity. For more on the importance of mentorship.
+These activities foster knowledge transfer and elevate the entire team’s productivity.
 
 ### 4. Explore Customer-Centric Metrics
 
