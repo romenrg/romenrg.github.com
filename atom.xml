@@ -4,7 +4,7 @@
   <title><![CDATA[Blog @romenrg]]></title>
   <link href="https://www.romenrg.com/atom.xml" rel="self"/>
   <link href="https://www.romenrg.com/"/>
-  <updated>2024-02-13T16:18:32+00:00</updated>
+  <updated>2025-01-01T03:41:45+00:00</updated>
   <id>https://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[On Software Engineers' Productivity: Beyond Misleading Metrics]]></title>
+    <link href="https://www.romenrg.com/blog/2024/12/31/on-software-engineers-productivity-beyond-misleading-metrics/"/>
+    <updated>2024-12-31T20:35:00+00:00</updated>
+    <id>https://www.romenrg.com/blog/2024/12/31/on-software-engineers-productivity-beyond-misleading-metrics</id>
+    <content type="html"><![CDATA[<p>The question of how to measure software developers&#8217; productivity has long been a subject of debate in the tech industry. New versions of old misguided approaches, such as counting the &#8220;number of lines of code&#8221; written, persist, despite not reflecting value creation.</p>
+
+<p>In fact, setting incentives based on such metrics can lead to counterproductive behaviors, as explored in &#8220;Reinventing Organizations&#8221; by Frederic Laloux. The book highlights how traditional incentive systems often undermine intrinsic motivation and foster a culture of gaming the system rather than pursuing genuine excellence.</p>
+
+<!-- More -->
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Building Resilience: Overcoming Adversity and Finding Balance]]></title>

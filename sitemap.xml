@@ -93,8 +93,14 @@
         <lastmod>2023-12-31T17:30:51+00:00</lastmod>
     </url>
     <url>
+        <loc>
+            https://www.romenrg.com/blog/2024/12/31/on-software-engineers-productivity-beyond-misleading-metrics/
+        </loc>
+        <lastmod>2025-01-01T03:41:32+00:00</lastmod>
+    </url>
+    <url>
         <loc>https://www.romenrg.com/</loc>
-        <lastmod>2023-12-31T17:30:51+00:00</lastmod>
+        <lastmod>2025-01-01T03:41:32+00:00</lastmod>
     </url>
     <url>
         <loc>https://www.romenrg.com/talks/</loc>
@@ -106,6 +112,6 @@
     </url>
     <url>
         <loc>https://www.romenrg.com/blog/archives/</loc>
-        <lastmod>2023-12-31T17:30:51+00:00</lastmod>
+        <lastmod>2025-01-01T03:41:32+00:00</lastmod>
     </url>
 </urlset>
