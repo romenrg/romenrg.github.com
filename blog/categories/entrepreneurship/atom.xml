@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Entrepreneurship | Blog @romenrg]]></title>
   <link href="https://www.romenrg.com/blog/categories/entrepreneurship/atom.xml" rel="self"/>
   <link href="https://www.romenrg.com/"/>
-  <updated>2025-01-01T19:38:56+00:00</updated>
+  <updated>2025-01-01T20:04:24+00:00</updated>
   <id>https://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
@@ -18,7 +18,7 @@
     <link href="https://www.romenrg.com/blog/2024/12/31/on-software-engineers-productivity-beyond-misleading-metrics/"/>
     <updated>2024-12-31T20:35:00+00:00</updated>
     <id>https://www.romenrg.com/blog/2024/12/31/on-software-engineers-productivity-beyond-misleading-metrics</id>
-    <content type="html"><![CDATA[<p>The question of how to measure software developers' productivity has long been a subject of debate in the tech industry. New versions of old misguided approaches, such as counting the "number of lines of code" written, resurface, over and over again, despite not reflecting value creation over and over again.</p>
+    <content type="html"><![CDATA[<p>The question of how to measure software developers' productivity has long been a subject of debate in the tech industry. New versions of old misguided approaches, such as counting the "number of lines of code" written, resurface, over and over again, despite not reflecting value creation or performace.</p>
 
 <p><img src="https://www.romenrg.com/images/measuring-software-engineers-productivity.jpeg" alt="An image of the home office of a remote worker, where his mac laptop screen displays a Zoom meeting" /></p>
 
@@ -33,7 +33,7 @@
 
 <p>The "number of lines of code" metric (LOC) is perhaps the most infamous example of a misleading measure. While intuitively appealing due to its simplicity, it fails to account for the true purpose of software development: solving problems efficiently and effectively. In fact, fewer lines of well-crafted, maintainable code are often more valuable than sprawling, complex implementations.</p>
 
-<p>Consider the case of IBM in the 1980s, where developers were incentivized to write more code. The unintended consequence was a proliferation of verbose, redundant code that increased maintenance costs and slowed progress (from the documentary “Triumph of the Nerds”). Similarly, in 1982 in Apple, some managers in the Lisa software team were asking engineers to weekly submit the number of codes they had written, to measure productivity. This finally stopped when the, arguably, most important Lisa implementer, <a href="https://en.wikipedia.org/wiki/Bill_Atkinson">Bill Atkinson</a>, famously reported “<a href="https://www.folklore.org/Negative_2000_Lines_Of_Code.html">-2000 lines</a>” the very same week he had made changes to an algorithm to make it 6x faster; thus highlighting the absurd nature of the LOC metric and its absolute disconnect with the actual impact of the work of engineers.</p>
+<p>Consider the case of IBM in the 1980s, where developers were incentivized to write more code. The unintended consequence was a proliferation of verbose, redundant code that increased maintenance costs and slowed progress (from the documentary “Triumph of the Nerds”). Similarly, in 1982 in Apple, some managers in the Lisa software team were asking engineers to weekly submit the number of codes they had written, to measure productivity. This finally stopped when <a href="https://en.wikipedia.org/wiki/Bill_Atkinson">Bill Atkinson</a>, arguably the most important Lisa implementer, famously reported “<a href="https://www.folklore.org/Negative_2000_Lines_Of_Code.html">-2000 lines</a>” the very same week he had made changes to an algorithm to make it 6x faster; thus highlighting the absurd nature of the LOC metric and its absolute disconnect with the actual impact of the work of engineers.</p>
 
 <h3>Number of Commits</h3>
 
@@ -68,7 +68,7 @@
 </ul>
 
 
-<p>These activities foster knowledge transfer and elevate the entire team’s productivity. For more on the importance of mentorship.</p>
+<p>These activities foster knowledge transfer and elevate the entire team’s productivity.</p>
 
 <h3>4. Explore Customer-Centric Metrics</h3>
 
