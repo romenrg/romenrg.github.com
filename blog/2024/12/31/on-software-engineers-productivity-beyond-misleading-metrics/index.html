@@ -119,11 +119,140 @@
   </header>
 
 
-<div class="entry-content"><p>The question of how to measure software developers&#8217; productivity has long been a subject of debate in the tech industry. New versions of old misguided approaches, such as counting the &#8220;number of lines of code&#8221; written, persist, despite not reflecting value creation.</p>
+<div class="entry-content"><p>The question of how to measure software developers&#8217; productivity has long been a subject of debate in the tech industry. New versions of old misguided approaches, such as counting the &#8220;number of lines of code&#8221; written, resurface, over and over again, despite not reflecting value creation over and over again.</p>
+
+<p><img src="/images/measuring-software-engineers-productivity.jpeg" alt="An image of the home office of a remote worker, where his mac laptop screen displays a Zoom meeting" /></p>
 
 <p>In fact, setting incentives based on such metrics can lead to counterproductive behaviors, as explored in &#8220;Reinventing Organizations&#8221; by Frederic Laloux. The book highlights how traditional incentive systems often undermine intrinsic motivation and foster a culture of gaming the system rather than pursuing genuine excellence.</p>
 
 <!-- More -->
+
+
+<h2>The Pitfalls of Misleading Metrics</h2>
+
+<h3>Number of Lines of Code</h3>
+
+<p>The &#8220;number of lines of code&#8221; metric (LOC) is perhaps the most infamous example of a misleading measure. While intuitively appealing due to its simplicity, it fails to account for the true purpose of software development: solving problems efficiently and effectively. In fact, fewer lines of well-crafted, maintainable code are often more valuable than sprawling, complex implementations.</p>
+
+<p>Consider the case of IBM in the 1980s, where developers were incentivized to write more code. The unintended consequence was a proliferation of verbose, redundant code that increased maintenance costs and slowed progress (from the documentary “Triumph of the Nerds”). Similarly, in 1982 in Apple, some managers in the Lisa software team were asking engineers to weekly submit the number of codes they had written, to measure productivity. This finally stopped when the, arguably, most important Lisa implementer, <a href="https://en.wikipedia.org/wiki/Bill_Atkinson">Bill Atkinson</a>, famously reported “<a href="https://www.folklore.org/Negative_2000_Lines_Of_Code.html">-2000 lines</a>” the very same week he had made changes to an algorithm to make it 6x faster; thus highlighting the absurd nature of the LOC metric and its absolute disconnect with the actual impact of the work of engineers.</p>
+
+<h3>Number of Commits</h3>
+
+<p>Another misleading metric that has somewhat replaced LOC in the GitHub era is the &#8220;number of commits.&#8221; While frequent commits can indicate progress, they do not inherently reflect the quality or significance of the work. A developer making small, incremental improvements adds value, but using this metric as a primary measure can incentivize meaningless, fragmented, or even broken commits later fixed in subsequent ones just to bump the metric. Similarly to the LOC metric, this approach may discourage thoughtful, cohesive, simpler and more readable changes that are better for the project in the long term.</p>
+
+<h3>Bug Count as a Standalone Metric</h3>
+
+<p>Another problematic metric is the number of bugs fixed. While fixing bugs is crucial, a focus solely on this metric can incentivize developers to neglect proactive measures like writing tests or addressing root causes of recurring issues. This approach risks significant business impact when unstable software reaches production. Worse, it can create perverse incentives. Developers may be tempted to introduce issues they later resolve, gaining recognition at the cost of overall product stability. The metaphor &#8220;rewarding firefighters creates a culture of arsonists&#8221; aptly describes how praising bug fixers can lead to these harmful behaviors.</p>
+
+<h2>Designing Meaningful and Nuanced Metrics</h2>
+
+<p>Apart from all the above, one of the most problematic aspects of the simple metrics described before is that they distort the real work of Software Engineers, who contribute to the success of a project in many ways beyond just writing code.</p>
+
+<p>When designing metrics to assess the productivity of Software Engineers, we need to take into account several different aspects that reflect the diverse nature of their work, many of which are difficult to quantify:</p>
+
+<h3>1. Long-Term Impact of Solutions</h3>
+
+<p>Measure the durability and adaptability of solutions. A developer who designs a system that scales effortlessly with growing user demand or integrates seamlessly with future technologies has delivered significant value. Metrics like the stability of code over time, adaptability to new requirements, and low frequency of critical bugs highlight long-term impact. These metrics are not trivial to calculate, although some authors dig into them, for example in &#8220;Accelerate: The Science of Lean Software and DevOps&#8221; by Nicole Forsgren, Jez Humble, and Gene Kim.</p>
+
+<h3>2. Total Cost of Ownership (TCO)</h3>
+
+<p>Account for the ongoing costs associated with a piece of software, including maintenance, infrastructure usage, and the complexity it adds to the codebase. Developers who minimize TCO by writing efficient, modular, and well-documented code provide substantial value. This is partly reflected in Martin Fowler’s “<a href="https://martinfowler.com/articles/is-quality-worth-cost.html">Is High Quality Software Worth the Cost?</a>&#8221;.</p>
+
+<h3>3. Collaboration and Mentorship</h3>
+
+<p>Effective software development is a team effort. The more senior engineers are, the more we must recognize their contributions to:</p>
+
+<ul>
+<li>Mentoring junior developers.</li>
+<li>Conducting code reviews.</li>
+<li>Improving team processes.</li>
+</ul>
+
+
+<p>These activities foster knowledge transfer and elevate the entire team’s productivity. For more on the importance of mentorship.</p>
+
+<h3>4. Explore Customer-Centric Metrics</h3>
+
+<p>Focus on the outcomes for end-users. Metrics like customer satisfaction (e.g. via Net Promoter Scores or feedback surveys), time-to-market for critical features, and user retention rates often indirectly reflect the real-world impact of developers’ work.</p>
+
+<h3>5. Quality Assurance Contributions</h3>
+
+<p>Value efforts in ensuring robust, maintainable software, such as:</p>
+
+<ul>
+<li>Writing automated tests.</li>
+<li>Implementing CI/CD pipelines.</li>
+<li>Advocating for best practices.</li>
+<li>Crafting readable and easily maintainable code.</li>
+</ul>
+
+
+<h3>6. Innovation and Creativity</h3>
+
+<p>Encourage developers to experiment and innovate by valuing the outputs of the implementation of new ideas or technologies. Innovation can manifest in improved algorithms, novel user experiences, or tools that enhance team productivity.</p>
+
+<h3>7. Quality of Pull Request Reviews</h3>
+
+<p>Pull Request (PR) reviews are a cornerstone of collaborative software development. However, the focus should be on the quality of these reviews rather than their quantity. High-quality reviews:</p>
+
+<ul>
+<li>Identify potential bugs and inefficiencies.</li>
+<li>Suggest improvements for maintainability and readability.</li>
+<li>Provide constructive feedback that helps team members grow.</li>
+</ul>
+
+
+<p>Defining quality in PR reviews is inherently complex, as it involves subjective elements like depth of analysis, clarity of communication, and alignment with project goals. A balanced approach considers both tangible outcomes (e.g., fewer post-merge defects) and team feedback on the helpfulness of reviews. For practical advice, see <a href="https://google.github.io/eng-practices/review/reviewer/">Google’s Guidelines on Code Reviews</a>.</p>
+
+<h2>Trying to Define a Balanced System</h2>
+
+<p>The key takeaway from the previous sections is to acknowledge <a href="https://martinfowler.com/articles/measuring-developer-productivity-humans.html">the importance of qualitative metrics</a> when assessing the performance of Software Engineers.</p>
+
+<p>A holistic evaluation system should:</p>
+
+<ul>
+<li>Combine quantitative and qualitative metrics.</li>
+<li>Involve peer and stakeholder feedback to capture less tangible contributions.</li>
+<li>Avoid incentivizing counterproductive behaviors.</li>
+</ul>
+
+
+<p>For example, a balanced scorecard might include:</p>
+
+<ul>
+<li>Objective measures like feature cycle time and defect rates.</li>
+<li>Subjective assessments of mentorship, team collaboration, and alignment with business goals.</li>
+</ul>
+
+
+<p>However, defining a formula to assess the performance of Software Engineers in a meaningful and holistic way is extremely hard.</p>
+
+<h2>Do We Really Need Metrics?</h2>
+
+<p>Since we have acknowledged the difficulty to measure developers productivity, an alternative approach is to not focus on it.</p>
+
+<p>As highlighted in <em>Reinventing Organizations</em>, we might be better off in environments of trust and autonomy where developers are empowered to self-manage and align their work with the organization’s broader purpose.</p>
+
+<p>This method removes the need for counterproductive incentives, enabling individuals and teams to focus on delivering meaningful results.</p>
+
+<p>This approach requires more careful hiring practices, to ensure a team of motivated, capable individuals who can thrive in such environments.</p>
+
+<p>Low performers can still be identified through peer feedback, repeated poor outcomes, or by patterns of behavior that conflict with team culture, norms and goals. Thus, accountability within the self-managing system can still be achieved.</p>
+
+<h2>Conclusion</h2>
+
+<p>There is a reasonable doubt about whether we can really measure developers’ productivity objectively; and also about whether we really need to do so, since measuring software developer productivity requires nuance and an appreciation of the multifaceted nature of their contributions.</p>
+
+<p>Moving beyond superficial metrics like the number of lines of code (or the number of commits) and embracing more meaningful (though often subjective) indicators, organizations can foster a culture that values quality, collaboration, and long-term success. These more complex and nuanced approaches usually lead to better outcomes for users and businesses alike.</p>
+
+<p>Alternative approaches to traditional incentives and measuring techniques involve creating environments of trust and autonomy where developers are empowered to self-manage and align their work with the organization’s broader purpose, removing the need for counterproductive incentives, and focusing on culture instead.</p>
+
+<p>There is no silver bullet, but reimagining organizations to function as a “<em>Living System</em>” rather than a “<em>Machine</em>” offers a more natural fit for the complexity of today’s knowledge-driven, creative, and rapidly evolving digital landscape.&#8221;</p>
+
+<div class="revisions">
+  <h2>Significant revisions</h2>
+  <p><em>2025, Jan 01</em>: Significant general revision; major improvements.</p>
+</div>
 
 </div>
 
