@@ -1,0 +1,466 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+    <title>Vibe Coding vs Prompt Engineering: AI and the Future of Software Development - Blog @romenrg</title>
+  
+
+  <meta name="author" content="Romén Rodríguez-Gil">
+
+  
+  <meta name="description" content="AI impact in software development: vibe coding, prompt engineering, and how modern tools are reshaping engineering work">
+  <meta name="keywords" content="AI in software development, prompt engineering, AI coding tools, software engineering, AI for developers, developer productivity, AI code review, modern software engineering">
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="https://www.romenrg.com/blog/2025/12/25/vibe-coding-vs-prompt-engineering-ai-and-the-future-of-software-development/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Blog @romenrg" type="application/atom+xml">
+  
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="romenrg">
+    <meta property="twitter:url" content="https://www.romenrg.com/blog/2025/12/25/vibe-coding-vs-prompt-engineering-ai-and-the-future-of-software-development/">
+    <meta property="twitter:title" content="Vibe Coding vs Prompt Engineering: AI and the Future of Software Development">
+    <meta property="twitter:description" content="AI impact in software development: vibe coding, prompt engineering, and how modern tools are reshaping engineering work">
+    <meta property="twitter:image" content="https://www.romenrg.com/images/vibe-coding-prompt-engineering-ai.png">
+
+<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="https://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GW6RWLPWS"></script>
+  <script>
+    var host = window.location.hostname;
+    if (host != "localhost") {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7GW6RWLPWS');
+      gtag('config', 'UA-34189452-1');
+    }
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Blog @romenrg</a></h1>
+  
+    <h2>Thoughts and experiences; about Software, Internet and Entrepreneurship.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.romenrg.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/archives">Article Archive</a></li>
+  <li><a href="/talks/">Talks & Courses</a></li>
+  <li><a href="/about">About Me</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Vibe Coding vs Prompt Engineering: AI and the Future of Software Development</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+<time datetime="2025-12-25T20:07:00+00:00" pubdate data-updated="true">Dec 25<span>th</span>, 2025</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Every year, the industry announces a new “game-changing” innovation. Most of them matter far less in practice than they do in talks and blog posts. A few are useful. Very few actually change how software is built.</p>
+
+<p>AI agents did.</p>
+
+<p><img src="/images/vibe-coding-prompt-engineering-ai.png" alt="A vertically divided composition illustrating the synergy between human and AI in software development" /></p>
+
+<p>In 2025, AI stopped being an experiment and became <strong>infrastructure</strong> for how I build software. It now shapes how I think about problems, how I design systems, how I write code, and how I review the work of others. Ignoring it today feels similar to ignoring version control or automated testing once they became standard.</p>
+
+<!-- More -->
+
+
+<p>The shift didn’t happen all at once.</p>
+
+<p>I first noticed it in July at <em>We Are Developers 2025</em> in Berlin. AI was clearly a trend there—present in many talks, widely discussed, but still framed as something emerging.</p>
+
+<p>Two months later, at <em>GOTO; Conf 2025</em> in Copenhagen, the tone had changed completely. AI was no longer a trend. It was a reality. And not just any conference—GOTO consistently attracts speakers who have been shaping this industry for decades. When that crowd converges on the same conclusion, it’s usually worth paying attention.</p>
+
+<p>The question wasn’t whether AI mattered, but how to use it without creating long-term damage.</p>
+
+<p>At Turo, our engineering organization made an early and explicit bet on AI to <strong>increase engineer leverage</strong>. Not to replace people. Not to lower standards. But to turn strong engineers into force multipliers.</p>
+
+<p><strong>AI doesn’t replace engineers. It amplifies them — and it brutally exposes the difference between good ones and bad ones.</strong></p>
+
+<hr />
+
+<h2>How AI Is Already Changing How I Build Software</h2>
+
+<h3>The Tools I Actually Use</h3>
+
+<p>My setup is simple: Claude, Cursor, and ChatGPT. The value isn’t in the tools themselves, but in how deeply they’re embedded in the workflow.</p>
+
+<p>I use them daily in real production work at Turo. This isn’t about side projects or demos. It’s about shipping code, reviewing pull requests, and making architectural decisions under real constraints. Organizational support made the difference between experimentation and real leverage.</p>
+
+<p>These tools don’t think for me. They think <em>with</em> me.</p>
+
+<h3>My Three Core Modes of AI Usage</h3>
+
+<p>Over time, my usage settled into three clear modes.</p>
+
+<p><strong>1. Asking questions at machine speed</strong><br/>
+Architecture tradeoffs, framework behavior, edge cases, second opinions. AI collapses hours of context-switching into minutes.</p>
+
+<p><strong>2. Offloading the obvious</strong><br/>
+Boilerplate, glue code, repetitive transformations, mechanical refactors. AI handles the predictable work so I can focus on decisions that actually matter.</p>
+
+<p><strong>3. Pairing on hard problems</strong><br/>
+For complex problems, I don’t ask for answers. I debate. We design. We break things down. We implement step by step. I review, adjust, and commit incrementally. Done right, this feels like <strong>compressed collaboration</strong>.</p>
+
+<hr />
+
+<h2>A Concrete Use Case: Learning a Codebase Faster (Without Breaking It)</h2>
+
+<p>One use case I’ve found particularly valuable is using AI to understand the <strong>implicit conventions</strong> of a codebase I haven’t worked with extensively.</p>
+
+<p>Instead of guessing style, structure, or patterns, I ask the agent to analyze existing code and explain:</p>
+
+<ul>
+<li>How responsibilities are typically split</li>
+<li>What conventions are followed (and which ones actually matter)</li>
+<li>How similar problems have been solved elsewhere</li>
+</ul>
+
+
+<p>This allows me to produce code that <em>fits</em>—not just functionally, but stylistically and architecturally. The result is fewer review cycles, less friction with the team, and changes that feel native to the codebase rather than bolted on.</p>
+
+<p>This is not about delegating understanding. It’s about <strong>accelerating it</strong>.</p>
+
+<hr />
+
+<h2>Why AI Makes Skill More Important, Not Less</h2>
+
+<h3>AI Is an Amplifier</h3>
+
+<p>AI doesn’t flatten skill differences. It exaggerates them.</p>
+
+<p>Strong engineers get faster and more precise. Weak foundations lead to faster accumulation of technical debt, overconfidence, and fragile systems that look correct until they fail.</p>
+
+<p>A simple rule emerged for me:</p>
+
+<p><strong>AI increases the slope of your trajectory — it doesn’t change its direction.</strong></p>
+
+<p>With the right context and constraints, AI feels less like autocomplete and more like leverage.</p>
+
+<h3>Vibe Coding vs Prompt Engineering</h3>
+
+<p>This distinction matters.</p>
+
+<p><em>Vibe coding</em> is fast, intuitive, and chaotic. It’s great for prototypes and MVPs.</p>
+
+<p><em>Prompt engineering</em> is deliberate and constrained. It’s how you build systems you expect to maintain.</p>
+
+<p>Vibe coding gets you a demo.<br/>
+Prompt engineering gets you a system you can live with.</p>
+
+<h3>Prompt Engineering Is Just Engineering</h3>
+
+<p>Good prompt engineering looks like good engineering: clear goals, explicit constraints, decomposition, validation. The interface changed. The fundamentals didn’t.</p>
+
+<hr />
+
+<h2>Context, MCPs, and Why Agents Are Getting Better Fast</h2>
+
+<h3>Context Is the Real Multiplier</h3>
+
+<p>Without context, AI is mediocre. With context, it becomes genuinely powerful.</p>
+
+<p>In practice, the biggest gains I’ve seen come from integrations that eliminate friction and surface the <em>right</em> information at the right time. Connecting AI to Jira, Confluence, New Relic, and GitHub allows it to reason about real systems instead of abstractions.</p>
+
+<p>Most “AI doesn’t work for us” complaints disappear once this level of context is in place.</p>
+
+<h3>Predefined Agents Beat Generic Ones</h3>
+
+<p>We’ve also had strong results creating <strong>purpose-built agents</strong>, each with a predefined role and context:</p>
+
+<ul>
+<li>An RFC-writing agent</li>
+<li>A product-manager-style agent focused on problem framing</li>
+<li>A senior software engineer agent biased toward best practices, maintainability, and risk</li>
+</ul>
+
+
+<p>These agents aren’t smarter models. They’re better <em>situated</em>. That turns out to matter more.</p>
+
+<hr />
+
+<h2>AI Code Reviews: Free Value, Today</h2>
+
+<h3>What AI Reviewers Already Do Well</h3>
+
+<p>AI reviewers are excellent at the boring but important things: obvious bugs, inconsistencies, missing tests, and common edge cases. They don’t get tired. They don’t rush.</p>
+
+<h3>Raising the Bar for Humans</h3>
+
+<p>At Turo, AI acts as a first-pass reviewer. Humans spend more time on architecture, intent, and risk. The result is <strong>higher standards</strong>, not lower ones.</p>
+
+<hr />
+
+<h2>The Rise of the Technical Product Manager</h2>
+
+<h3>One Person, Small-Team Output</h3>
+
+<p>This is the first time in my career where I can realistically see one engineer doing work that previously required a small, well-coordinated team. With AI agents, deeply technical product-minded engineers can define problems, design solutions, and execute end to end.</p>
+
+<h3>Programming Background Is Not Optional</h3>
+
+<p>This only works if you actually understand systems. Without that, AI accelerates the wrong things. With it, the leverage is enormous.</p>
+
+<h3>A Personal Direction</h3>
+
+<p>I could see myself moving into this kind of role. Not away from engineering, but deeper into it—closer to product and outcomes, with AI doing the mechanical heavy lifting.</p>
+
+<hr />
+
+<h2>The Dark Side</h2>
+
+<h3>Fast Output, Slow Pain</h3>
+
+<p>AI makes it easy to move fast in the wrong direction. The short-term productivity gains are real. The long-term costs are too, if judgment is missing.</p>
+
+<h3>Experience Still Wins</h3>
+
+<p>Experience shows up in what you reject, not what you accept. AI doesn’t remove responsibility. It amplifies it.</p>
+
+<hr />
+
+<h2>Conclusion: The Bar Is Going Up</h2>
+
+<p>AI isn’t replacing software engineers. It’s changing which ones matter.</p>
+
+<p>For engineers with strong fundamentals and product sense, this is an unprecedented leverage moment. For everyone else, it’s a trap.</p>
+
+<p>The future of software development belongs to those who can combine <strong>judgment, context, and intent</strong> with AI at scale.</p>
+
+<blockquote><p><strong>TL;DR:</strong> AI doesn’t replace engineers; it amplifies skill, judgment, and context — or the lack of them.</p></blockquote>
+
+<p><em>Oh, and yes — this article was prompt-engineered.</em></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Romén Rodríguez-Gil</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+<time datetime="2025-12-25T20:07:00+00:00" class="updated">Updated Dec 25<span>th</span>, 2025</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/entrepreneurship/'>Entrepreneurship</a>, <a class='category' href='/blog/categories/management/'>Management</a>, <a class='category' href='/blog/categories/software-development/'>Software Development</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="https://www.romenrg.com/blog/2025/12/25/vibe-coding-vs-prompt-engineering-ai-and-the-future-of-software-development/" data-via="romenrg" data-counturl="https://www.romenrg.com/blog/2025/12/25/vibe-coding-vs-prompt-engineering-ai-and-the-future-of-software-development/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2024/12/31/on-software-engineers-productivity-beyond-misleading-metrics/" title="Previous Post: On Software Engineers' Productivity: Beyond Misleading Metrics">&laquo; On Software Engineers' Productivity: Beyond Misleading Metrics</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Latest Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2025/12/25/vibe-coding-vs-prompt-engineering-ai-and-the-future-of-software-development/">Vibe Coding vs Prompt Engineering: AI and the Future of Software Development</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/12/31/on-software-engineers-productivity-beyond-misleading-metrics/">On Software Engineers' Productivity: Beyond Misleading Metrics</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2023/12/31/building-resilience-overcoming-adversity-and-finding-balance/">Building Resilience: Overcoming Adversity and Finding Balance</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/12/31/its-not-remote-work-async-work-is-the-real-paradigm-shift/">It’s not remote work. Async work is the real paradigm shift</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/07/17/genetic-algorithms-figuring-out-startup-life-choices/">Genetic Algorithms Figuring out Startup Life Choices</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2020/12/30/software-projects-vs-software-products/">Software Projects vs Software Products</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>About Me</h1>
+
+  <p>I'm Romén Rodríguez-Gil, a Lifelong Learner who started building software ~20 years ago; who seeks continuous improvement, and cares about the human side of technology.</p>
+
+  <p>As a Software Engineer and Digital Entrepreneur, I've worked in several software companies, research teams and startups, wearing many different hats.</p>
+
+  <p>Big advocate of knowledge-sharing, innovation and <a href="https://en.wikipedia.org/wiki/Open-source_software">OSS</a>; I've learned a lot from others in the Internet. With this blog, I try to give back to the community, sharing thoughts and experiences.</p>
+
+  <a href="/about/">Read more about me</a>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <a class="twitter-timeline" data-chrome="nofooter transparent noheader" data-tweet-limit="3" href="https://twitter.com/romenrg">Tweets by romenrg</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></section>
+  <a href="https://twitter.com/romenrg" class="twitter-follow-button" data-show-count="false">Follow @romenrg</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2025 - Romén Rodríguez-Gil -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'romenrgblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'https://www.romenrg.com/blog/2025/12/25/vibe-coding-vs-prompt-engineering-ai-and-the-future-of-software-development/';
+        var disqus_url = 'https://www.romenrg.com/blog/2025/12/25/vibe-coding-vs-prompt-engineering-ai-and-the-future-of-software-development/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'https://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'https://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

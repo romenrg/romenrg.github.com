@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Entrepreneurship | Blog @romenrg]]></title>
   <link href="https://www.romenrg.com/blog/categories/entrepreneurship/atom.xml" rel="self"/>
   <link href="https://www.romenrg.com/"/>
-  <updated>2025-07-27T18:42:16+01:00</updated>
+  <updated>2025-12-25T20:49:54+00:00</updated>
   <id>https://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
@@ -12,6 +12,190 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Vibe Coding vs Prompt Engineering: AI and the Future of Software Development]]></title>
+    <link href="https://www.romenrg.com/blog/2025/12/25/vibe-coding-vs-prompt-engineering-ai-and-the-future-of-software-development/"/>
+    <updated>2025-12-25T20:07:00+00:00</updated>
+    <id>https://www.romenrg.com/blog/2025/12/25/vibe-coding-vs-prompt-engineering-ai-and-the-future-of-software-development</id>
+    <content type="html"><![CDATA[<p>Every year, the industry announces a new “game-changing” innovation. Most of them matter far less in practice than they do in talks and blog posts. A few are useful. Very few actually change how software is built.</p>
+
+<p>AI agents did.</p>
+
+<p><img src="https://www.romenrg.com/images/vibe-coding-prompt-engineering-ai.png" alt="A vertically divided composition illustrating the synergy between human and AI in software development" /></p>
+
+<p>In 2025, AI stopped being an experiment and became <strong>infrastructure</strong> for how I build software. It now shapes how I think about problems, how I design systems, how I write code, and how I review the work of others. Ignoring it today feels similar to ignoring version control or automated testing once they became standard.</p>
+
+<!-- More -->
+
+
+<p>The shift didn’t happen all at once.</p>
+
+<p>I first noticed it in July at <em>We Are Developers 2025</em> in Berlin. AI was clearly a trend there—present in many talks, widely discussed, but still framed as something emerging.</p>
+
+<p>Two months later, at <em>GOTO; Conf 2025</em> in Copenhagen, the tone had changed completely. AI was no longer a trend. It was a reality. And not just any conference—GOTO consistently attracts speakers who have been shaping this industry for decades. When that crowd converges on the same conclusion, it’s usually worth paying attention.</p>
+
+<p>The question wasn’t whether AI mattered, but how to use it without creating long-term damage.</p>
+
+<p>At Turo, our engineering organization made an early and explicit bet on AI to <strong>increase engineer leverage</strong>. Not to replace people. Not to lower standards. But to turn strong engineers into force multipliers.</p>
+
+<p><strong>AI doesn’t replace engineers. It amplifies them — and it brutally exposes the difference between good ones and bad ones.</strong></p>
+
+<hr />
+
+<h2>How AI Is Already Changing How I Build Software</h2>
+
+<h3>The Tools I Actually Use</h3>
+
+<p>My setup is simple: Claude, Cursor, and ChatGPT. The value isn’t in the tools themselves, but in how deeply they’re embedded in the workflow.</p>
+
+<p>I use them daily in real production work at Turo. This isn’t about side projects or demos. It’s about shipping code, reviewing pull requests, and making architectural decisions under real constraints. Organizational support made the difference between experimentation and real leverage.</p>
+
+<p>These tools don’t think for me. They think <em>with</em> me.</p>
+
+<h3>My Three Core Modes of AI Usage</h3>
+
+<p>Over time, my usage settled into three clear modes.</p>
+
+<p><strong>1. Asking questions at machine speed</strong><br/>
+Architecture tradeoffs, framework behavior, edge cases, second opinions. AI collapses hours of context-switching into minutes.</p>
+
+<p><strong>2. Offloading the obvious</strong><br/>
+Boilerplate, glue code, repetitive transformations, mechanical refactors. AI handles the predictable work so I can focus on decisions that actually matter.</p>
+
+<p><strong>3. Pairing on hard problems</strong><br/>
+For complex problems, I don’t ask for answers. I debate. We design. We break things down. We implement step by step. I review, adjust, and commit incrementally. Done right, this feels like <strong>compressed collaboration</strong>.</p>
+
+<hr />
+
+<h2>A Concrete Use Case: Learning a Codebase Faster (Without Breaking It)</h2>
+
+<p>One use case I’ve found particularly valuable is using AI to understand the <strong>implicit conventions</strong> of a codebase I haven’t worked with extensively.</p>
+
+<p>Instead of guessing style, structure, or patterns, I ask the agent to analyze existing code and explain:</p>
+
+<ul>
+<li>How responsibilities are typically split</li>
+<li>What conventions are followed (and which ones actually matter)</li>
+<li>How similar problems have been solved elsewhere</li>
+</ul>
+
+
+<p>This allows me to produce code that <em>fits</em>—not just functionally, but stylistically and architecturally. The result is fewer review cycles, less friction with the team, and changes that feel native to the codebase rather than bolted on.</p>
+
+<p>This is not about delegating understanding. It’s about <strong>accelerating it</strong>.</p>
+
+<hr />
+
+<h2>Why AI Makes Skill More Important, Not Less</h2>
+
+<h3>AI Is an Amplifier</h3>
+
+<p>AI doesn’t flatten skill differences. It exaggerates them.</p>
+
+<p>Strong engineers get faster and more precise. Weak foundations lead to faster accumulation of technical debt, overconfidence, and fragile systems that look correct until they fail.</p>
+
+<p>A simple rule emerged for me:</p>
+
+<p><strong>AI increases the slope of your trajectory — it doesn’t change its direction.</strong></p>
+
+<p>With the right context and constraints, AI feels less like autocomplete and more like leverage.</p>
+
+<h3>Vibe Coding vs Prompt Engineering</h3>
+
+<p>This distinction matters.</p>
+
+<p><em>Vibe coding</em> is fast, intuitive, and chaotic. It’s great for prototypes and MVPs.</p>
+
+<p><em>Prompt engineering</em> is deliberate and constrained. It’s how you build systems you expect to maintain.</p>
+
+<p>Vibe coding gets you a demo.<br/>
+Prompt engineering gets you a system you can live with.</p>
+
+<h3>Prompt Engineering Is Just Engineering</h3>
+
+<p>Good prompt engineering looks like good engineering: clear goals, explicit constraints, decomposition, validation. The interface changed. The fundamentals didn’t.</p>
+
+<hr />
+
+<h2>Context, MCPs, and Why Agents Are Getting Better Fast</h2>
+
+<h3>Context Is the Real Multiplier</h3>
+
+<p>Without context, AI is mediocre. With context, it becomes genuinely powerful.</p>
+
+<p>In practice, the biggest gains I’ve seen come from integrations that eliminate friction and surface the <em>right</em> information at the right time. Connecting AI to Jira, Confluence, New Relic, and GitHub allows it to reason about real systems instead of abstractions.</p>
+
+<p>Most “AI doesn’t work for us” complaints disappear once this level of context is in place.</p>
+
+<h3>Predefined Agents Beat Generic Ones</h3>
+
+<p>We’ve also had strong results creating <strong>purpose-built agents</strong>, each with a predefined role and context:</p>
+
+<ul>
+<li>An RFC-writing agent</li>
+<li>A product-manager-style agent focused on problem framing</li>
+<li>A senior software engineer agent biased toward best practices, maintainability, and risk</li>
+</ul>
+
+
+<p>These agents aren’t smarter models. They’re better <em>situated</em>. That turns out to matter more.</p>
+
+<hr />
+
+<h2>AI Code Reviews: Free Value, Today</h2>
+
+<h3>What AI Reviewers Already Do Well</h3>
+
+<p>AI reviewers are excellent at the boring but important things: obvious bugs, inconsistencies, missing tests, and common edge cases. They don’t get tired. They don’t rush.</p>
+
+<h3>Raising the Bar for Humans</h3>
+
+<p>At Turo, AI acts as a first-pass reviewer. Humans spend more time on architecture, intent, and risk. The result is <strong>higher standards</strong>, not lower ones.</p>
+
+<hr />
+
+<h2>The Rise of the Technical Product Manager</h2>
+
+<h3>One Person, Small-Team Output</h3>
+
+<p>This is the first time in my career where I can realistically see one engineer doing work that previously required a small, well-coordinated team. With AI agents, deeply technical product-minded engineers can define problems, design solutions, and execute end to end.</p>
+
+<h3>Programming Background Is Not Optional</h3>
+
+<p>This only works if you actually understand systems. Without that, AI accelerates the wrong things. With it, the leverage is enormous.</p>
+
+<h3>A Personal Direction</h3>
+
+<p>I could see myself moving into this kind of role. Not away from engineering, but deeper into it—closer to product and outcomes, with AI doing the mechanical heavy lifting.</p>
+
+<hr />
+
+<h2>The Dark Side</h2>
+
+<h3>Fast Output, Slow Pain</h3>
+
+<p>AI makes it easy to move fast in the wrong direction. The short-term productivity gains are real. The long-term costs are too, if judgment is missing.</p>
+
+<h3>Experience Still Wins</h3>
+
+<p>Experience shows up in what you reject, not what you accept. AI doesn’t remove responsibility. It amplifies it.</p>
+
+<hr />
+
+<h2>Conclusion: The Bar Is Going Up</h2>
+
+<p>AI isn’t replacing software engineers. It’s changing which ones matter.</p>
+
+<p>For engineers with strong fundamentals and product sense, this is an unprecedented leverage moment. For everyone else, it’s a trap.</p>
+
+<p>The future of software development belongs to those who can combine <strong>judgment, context, and intent</strong> with AI at scale.</p>
+
+<blockquote><p><strong>TL;DR:</strong> AI doesn’t replace engineers; it amplifies skill, judgment, and context — or the lack of them.</p></blockquote>
+
+<p><em>Oh, and yes — this article was prompt-engineered.</em></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[On Software Engineers' Productivity: Beyond Misleading Metrics]]></title>
@@ -502,156 +686,6 @@ Or were you already convinced?</p>
   <h2>Significant revisions</h2>
   <p><em>2021, Jul 17</em>: First version published.</p>
 </div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Software Projects vs Software Products]]></title>
-    <link href="https://www.romenrg.com/blog/2020/12/30/software-projects-vs-software-products/"/>
-    <updated>2020-12-30T13:26:00+00:00</updated>
-    <id>https://www.romenrg.com/blog/2020/12/30/software-projects-vs-software-products</id>
-    <content type="html"><![CDATA[<p>As a developer, you work on software projects, right? ...Or are they <em>software products</em>?</p>
-
-<p>Like many others in the software industry, you might think those two concepts are synonyms; but they aren’t. In fact, whether the software being developed is considered a project or a product may have critical and non-trivial ramifications, in many aspects.</p>
-
-<p><img src="https://www.romenrg.com/images/products_vs_projects.jpg" alt="Team meeting in which multiple colleagues discuss in a table, where several computres are opened. One man moves hands displaying confusion" /></p>
-
-<p>The <em>not-so-subtle</em> differences between software projects and software products actually have a huge impact on our behavior, both from a business as well as from an engineering perspective.</p>
-
-<!-- More -->
-
-
-<p>For many years I’ve been trying to find the time to write about this key difference, to which many people in tech fail to give importance to. About a year ago, I had the opportunity to give a <a href="https://www2.slideshare.net/romenrg/agile-software-development-beyond-projects-ull">lecture</a> on this very topic. And now, I have finally decided to write about this important topic in more detail.</p>
-
-<p>I'll start with definitions, digging into the key differences that derive from them. Afterwards, I'll explore the critical behavioral ramifications. However, if you just want a quick summary, feel free to jump directly to the <a href="#detailed-comparison">comparison table</a>.</p>
-
-<h2>Let’s start with some definitions</h2>
-
-<p>If we want to get a clear definition of "project" and “<a href="https://www.pmi.org/about/learn-about-pmi/what-is-project-management">project management</a>", the Project Management Institute (PMI) can probably be of some help. From their site we can extract two clear sentences that are relevant in this context:</p>
-
-<ul>
-<li>A <strong>project</strong> is temporary in that it has a defined beginning and end in time, and therefore defined scope and resources.</li>
-<li><strong>Project management</strong>, then, is the application of knowledge, skills, tools, and techniques to project activities to meet the project requirements.</li>
-</ul>
-
-
-<p>Now, if we try to look for definitions of “<a href="https://en.wikipedia.org/wiki/Product_(business)">product</a>” and “<a href="https://en.wikipedia.org/wiki/Product_management">product management</a>”, we can probably summarize them as:</p>
-
-<ul>
-<li>A <strong>product</strong> is an object or system made available for consumer use; it is anything that can be offered to a market to satisfy the desire or need of a customer.</li>
-<li><strong>Product management</strong>, then, drives the business case for product development and has an active role throughout its development, test and launch; being also involved in product change and lifecycle decisions and planning.</li>
-</ul>
-
-
-<p>Can you tell the key differences already?</p>
-
-<h2>Digging into the differences</h2>
-
-<h3>Two key differences, from definitions</h3>
-
-<p>From the definitions above, we can clearly see the first big difference: the temporary nature of a project. <strong>Projects are time-constrained efforts</strong>, supposed to have a defined beginning and end date. This clearly-defined temporary nature does not apply to products, which don’t have such predefined beginning and end in time, being subject to market demand instead.</p>
-
-<p>Moreover, those clearly defined time boundaries for projects also bring the second clear distinction: fixed scope and resources (i.e. the project requirements). This doesn’t apply to products either. <strong>Products are evolving creatures by nature</strong>. While project management cares about meeting those predefined project requirements; product management cares about the business case for the product, constantly learning from users and having an active role in the product lifecycle, defining new features and/or re-prioritizing work, adapting to market needs.</p>
-
-<h3><a id="detailed-comparison"></a>Detailed comparison</h3>
-
-<p>When I was preparing my lecture, I found a very nice article by Sriram Narayan in Martin Fowler’s blog. In his article, Sriram added a very comprehensive <a href="https://martinfowler.com/articles/products-over-projects.html#WhatIsProduct-mode">table comparing project-mode and product-mode</a>.</p>
-
-<p>For this article, I have created my own simplified table; focusing only on some key aspects I would like to compare for the two cases.</p>
-
-<table>
-<thead>
-<tr>
-<th>Aspect                                  </th>
-<th> Project                                   </th>
-<th> Product                                                    </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>Duration</em>                              </td>
-<td> Fixed. Limited (e.g. <em>X</em> months).           </td>
-<td> Unknown. Depending on market (from <em>X</em> weeks to <em>Y</em> decades).</td>
-</tr>
-<tr>
-<td><em>Scope</em>                                 </td>
-<td> Supposedly known and fixed.               </td>
-<td> Unknown. Constant learning and adaptation is assumed.</td>
-</tr>
-<tr>
-<td><em>Costs</em>                                 </td>
-<td> Supposedly known and fixed.               </td>
-<td> “Pay as we go”, i.e. weekly / monthly / yearly (e.g. salaries).</td>
-</tr>
-<tr>
-<td><em>Technical quality</em>                     </td>
-<td> Not rewarded; thus, not prioritized. Projects are seen as one-off efforts, so maintainability is not valued. </td>
-<td> Critical. Product development is a continuum. Technical excellence is key to keep up the product’s iterative and incremental evolution.</td>
-</tr>
-<tr>
-<td><em>Key mindset aspects</em>                   </td>
-<td> Fixed mindset. “We know what we have to build”. So, “just do it”. Don’t question things. </td>
-<td> Learning mindset. “We are constantly learning and adapting”. Data-driven. Question decisions constantly.</td>
-</tr>
-<tr>
-<td><em>Key engineering skills</em>                </td>
-<td> Framework-specific knowledge. <br/><br/> Everything is fixed, from features to technologies. "We just need to write the code as quickly as possible". </td>
-<td> <a href="https://github.com/romenrg/evergreen-skills-developers">Evergreen development skills</a>. <br/><br/> Everything may change, from features to technology. "We need to learn and adapt constantly". "We apply technical best practices". "Teamwork, mentoring and collaboration are key".</td>
-</tr>
-</tbody>
-</table>
-
-
-<h2>Software development is mainly about building products</h2>
-
-<p><a href="https://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum/#the-role-of-evil-contracts">Software development involves many unknowns</a>. Those unknowns make it extremely hard for us to have the certainties "projects" require upfront. At the beginning is when we know the least about the software what we are building.</p>
-
-<h3>In the digital economy, software evolves constantly</h3>
-
-<p>Think of the software you use in your daily life. Isn't it always evolving? You receive constant updates, not only for bugfixing; but also to add new features, <a href="https://www.romenrg.com/blog/2013/01/02/improving-the-ui-to-achieve-a-better-ux-my-experience-in-stat4you/">improve the UX</a>, or even to remove pieces that are no longer relevant.</p>
-
-<p>Does this fit into the definition of "project" we saw before? Do these applications have “a defined beginning and end in time”? And how about scope and resources, do they seem to have been fixed upfront?</p>
-
-<p>Change and evolution are natural in products, but not in projects. Projects don't welcome change. And software evolves constantly.</p>
-
-<h3>Software products and outsourcing are not a good fit</h3>
-
-<p>Traditionally, it has been common for non-software organizations to outsource software development initiatives. For instance, Government agencies typically outsource their “software development projects”, even though in most cases they should have been thinking in terms of software products instead.</p>
-
-<p>Think of an e-gov application in which citizens can perform their bureaucratic obligations from home. Isn’t that a software product? It will have to evolve, as new laws are passed. And it is not supposed to have a predefined teardown day. Instead, we would probably expect it to be there for the long run. Over time, citizens (users) will discover bugs, which will have to be addressed; and we will likely complain about it and/or suggest improvements. There might also be scalability issues and/or outages that will have to be tackled.</p>
-
-<p>Treating these software products as outsourced projects means that the owners will hire an external company to build it. Usually the cheapest. The project will have a fixed scope, and the parties will agree on a timeline and on a price. The external company will complete the project, according to those parameters and hand it over to the customer. Then, usually, the external company forgets about it. If changes are desired in the future, new projects will be defined and outsourced. Often to different companies.</p>
-
-<p>In most cases, the company that is hired to build the software is not involved in the discovery process with potential users. They are not involved in the prioritization of features. They are just hired to do X, as quickly and cheaply as possible. And since they are not rewarded for software quality nor for asking questions, they will probably build it without maintenance in their minds. And they won’t question decisions nor worry about gathering data.</p>
-
-<p>Now, think how different it would be if it was treated as a software product, with an in-house team building it and participating in all the process, from conception to evolution. The team would understand needs, motivations and strategic goals; they would be engaged. They would ask questions. Hypotheses could be defined together and data collection and learning would be in everybody’s mind since the beginning. Working in small increments would be easier. Writing maintainable code becomes crucial. Changes are welcome. And quality matters.</p>
-
-<p>Being aware of the importance of software products in the digital economy means that, if your software is (or is becoming) the core of your business, then you keep software development in-house. Nowadays, every company is a software company. Think of Airbnb, Lyft or Netflix. These businesses could have opted to externalize software development, but they realized the software products they were building are the core of their business. They realized they were software companies.</p>
-
-<h3>How about open source "projects"?</h3>
-
-<p>It is common in the software industry to hear people refer to “open source projects”. In most cases, though, I would argue we should be talking about “open source products” instead.</p>
-
-<p>I have been an open source software (OSS) user for many years, and I have also contributed to open source myself. One example of OSS to which I have contributed is <a href="http://jenkins.io/">Jenkins</a>. Jenkins is the leading open source automation server. It has been around for more than 15 years, with millions of installations worldwide. And it has evolved significantly, including the rename from Hudson, the recent UI changes, and the thousands of ever-evolving plugins, created by a thriving open source community. Based on this data and the previous definitions, should we consider Jenkins an “open source project” or, rather, an “open source product”?</p>
-
-<p>I understand that, when somebody (like Kohsuke with Jenkins) starts to build an open source software, they might have a limited and well defined idea. And they may work on a “project” to make it happen. A project to build the first set of fixed features for their idea. But then, if it is successful, that initial project leads to a product that keeps evolving in unanticipated ways. Scope is no longer fixed, as the community starts to bring new ideas and prioritize their development; and there is no defined “end date”.</p>
-
-<p>Successful open source "projects" are here to stay, for a long time. But their success will keep them evolving within their communities, as <em>software products</em>.</p>
-
-<h2>My personal take</h2>
-
-<p>As you may have guessed after reading this article, I’m a big fan of building software as products. I have built many in my career; and <a href="https://www.romenrg.com/blog/2015/03/17/10-plus-1-valuable-lessons-i-learned-from-my-failed-startup/">I’ve learned a lot</a> from those experiences.</p>
-
-<p>But building software as products is not just what I enjoy the most. It is truly the way I believe we should be building software, to get the most out of it.</p>
-
-<p>Software projects are dead. Long live <em>software products</em>.</p>
-
-<div class="revisions">
-  <h2>Significant revisions</h2>
-  <p><em>2021, Jan 10</em>: Improved introduction, incl. reference to comparison table, as a TL;DR resource.</p>
-  <p><em>2020, Dec 30</em>: First version published.</p>
- </div>
 
 ]]></content>
   </entry>

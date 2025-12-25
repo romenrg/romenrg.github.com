@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Software Development | Blog @romenrg]]></title>
   <link href="https://www.romenrg.com/blog/categories/software-development/atom.xml" rel="self"/>
   <link href="https://www.romenrg.com/"/>
-  <updated>2025-07-27T18:42:16+01:00</updated>
+  <updated>2025-12-25T20:49:54+00:00</updated>
   <id>https://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
@@ -12,6 +12,190 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Vibe Coding vs Prompt Engineering: AI and the Future of Software Development]]></title>
+    <link href="https://www.romenrg.com/blog/2025/12/25/vibe-coding-vs-prompt-engineering-ai-and-the-future-of-software-development/"/>
+    <updated>2025-12-25T20:07:00+00:00</updated>
+    <id>https://www.romenrg.com/blog/2025/12/25/vibe-coding-vs-prompt-engineering-ai-and-the-future-of-software-development</id>
+    <content type="html"><![CDATA[<p>Every year, the industry announces a new “game-changing” innovation. Most of them matter far less in practice than they do in talks and blog posts. A few are useful. Very few actually change how software is built.</p>
+
+<p>AI agents did.</p>
+
+<p><img src="https://www.romenrg.com/images/vibe-coding-prompt-engineering-ai.png" alt="A vertically divided composition illustrating the synergy between human and AI in software development" /></p>
+
+<p>In 2025, AI stopped being an experiment and became <strong>infrastructure</strong> for how I build software. It now shapes how I think about problems, how I design systems, how I write code, and how I review the work of others. Ignoring it today feels similar to ignoring version control or automated testing once they became standard.</p>
+
+<!-- More -->
+
+
+<p>The shift didn’t happen all at once.</p>
+
+<p>I first noticed it in July at <em>We Are Developers 2025</em> in Berlin. AI was clearly a trend there—present in many talks, widely discussed, but still framed as something emerging.</p>
+
+<p>Two months later, at <em>GOTO; Conf 2025</em> in Copenhagen, the tone had changed completely. AI was no longer a trend. It was a reality. And not just any conference—GOTO consistently attracts speakers who have been shaping this industry for decades. When that crowd converges on the same conclusion, it’s usually worth paying attention.</p>
+
+<p>The question wasn’t whether AI mattered, but how to use it without creating long-term damage.</p>
+
+<p>At Turo, our engineering organization made an early and explicit bet on AI to <strong>increase engineer leverage</strong>. Not to replace people. Not to lower standards. But to turn strong engineers into force multipliers.</p>
+
+<p><strong>AI doesn’t replace engineers. It amplifies them — and it brutally exposes the difference between good ones and bad ones.</strong></p>
+
+<hr />
+
+<h2>How AI Is Already Changing How I Build Software</h2>
+
+<h3>The Tools I Actually Use</h3>
+
+<p>My setup is simple: Claude, Cursor, and ChatGPT. The value isn’t in the tools themselves, but in how deeply they’re embedded in the workflow.</p>
+
+<p>I use them daily in real production work at Turo. This isn’t about side projects or demos. It’s about shipping code, reviewing pull requests, and making architectural decisions under real constraints. Organizational support made the difference between experimentation and real leverage.</p>
+
+<p>These tools don’t think for me. They think <em>with</em> me.</p>
+
+<h3>My Three Core Modes of AI Usage</h3>
+
+<p>Over time, my usage settled into three clear modes.</p>
+
+<p><strong>1. Asking questions at machine speed</strong><br/>
+Architecture tradeoffs, framework behavior, edge cases, second opinions. AI collapses hours of context-switching into minutes.</p>
+
+<p><strong>2. Offloading the obvious</strong><br/>
+Boilerplate, glue code, repetitive transformations, mechanical refactors. AI handles the predictable work so I can focus on decisions that actually matter.</p>
+
+<p><strong>3. Pairing on hard problems</strong><br/>
+For complex problems, I don’t ask for answers. I debate. We design. We break things down. We implement step by step. I review, adjust, and commit incrementally. Done right, this feels like <strong>compressed collaboration</strong>.</p>
+
+<hr />
+
+<h2>A Concrete Use Case: Learning a Codebase Faster (Without Breaking It)</h2>
+
+<p>One use case I’ve found particularly valuable is using AI to understand the <strong>implicit conventions</strong> of a codebase I haven’t worked with extensively.</p>
+
+<p>Instead of guessing style, structure, or patterns, I ask the agent to analyze existing code and explain:</p>
+
+<ul>
+<li>How responsibilities are typically split</li>
+<li>What conventions are followed (and which ones actually matter)</li>
+<li>How similar problems have been solved elsewhere</li>
+</ul>
+
+
+<p>This allows me to produce code that <em>fits</em>—not just functionally, but stylistically and architecturally. The result is fewer review cycles, less friction with the team, and changes that feel native to the codebase rather than bolted on.</p>
+
+<p>This is not about delegating understanding. It’s about <strong>accelerating it</strong>.</p>
+
+<hr />
+
+<h2>Why AI Makes Skill More Important, Not Less</h2>
+
+<h3>AI Is an Amplifier</h3>
+
+<p>AI doesn’t flatten skill differences. It exaggerates them.</p>
+
+<p>Strong engineers get faster and more precise. Weak foundations lead to faster accumulation of technical debt, overconfidence, and fragile systems that look correct until they fail.</p>
+
+<p>A simple rule emerged for me:</p>
+
+<p><strong>AI increases the slope of your trajectory — it doesn’t change its direction.</strong></p>
+
+<p>With the right context and constraints, AI feels less like autocomplete and more like leverage.</p>
+
+<h3>Vibe Coding vs Prompt Engineering</h3>
+
+<p>This distinction matters.</p>
+
+<p><em>Vibe coding</em> is fast, intuitive, and chaotic. It’s great for prototypes and MVPs.</p>
+
+<p><em>Prompt engineering</em> is deliberate and constrained. It’s how you build systems you expect to maintain.</p>
+
+<p>Vibe coding gets you a demo.<br/>
+Prompt engineering gets you a system you can live with.</p>
+
+<h3>Prompt Engineering Is Just Engineering</h3>
+
+<p>Good prompt engineering looks like good engineering: clear goals, explicit constraints, decomposition, validation. The interface changed. The fundamentals didn’t.</p>
+
+<hr />
+
+<h2>Context, MCPs, and Why Agents Are Getting Better Fast</h2>
+
+<h3>Context Is the Real Multiplier</h3>
+
+<p>Without context, AI is mediocre. With context, it becomes genuinely powerful.</p>
+
+<p>In practice, the biggest gains I’ve seen come from integrations that eliminate friction and surface the <em>right</em> information at the right time. Connecting AI to Jira, Confluence, New Relic, and GitHub allows it to reason about real systems instead of abstractions.</p>
+
+<p>Most “AI doesn’t work for us” complaints disappear once this level of context is in place.</p>
+
+<h3>Predefined Agents Beat Generic Ones</h3>
+
+<p>We’ve also had strong results creating <strong>purpose-built agents</strong>, each with a predefined role and context:</p>
+
+<ul>
+<li>An RFC-writing agent</li>
+<li>A product-manager-style agent focused on problem framing</li>
+<li>A senior software engineer agent biased toward best practices, maintainability, and risk</li>
+</ul>
+
+
+<p>These agents aren’t smarter models. They’re better <em>situated</em>. That turns out to matter more.</p>
+
+<hr />
+
+<h2>AI Code Reviews: Free Value, Today</h2>
+
+<h3>What AI Reviewers Already Do Well</h3>
+
+<p>AI reviewers are excellent at the boring but important things: obvious bugs, inconsistencies, missing tests, and common edge cases. They don’t get tired. They don’t rush.</p>
+
+<h3>Raising the Bar for Humans</h3>
+
+<p>At Turo, AI acts as a first-pass reviewer. Humans spend more time on architecture, intent, and risk. The result is <strong>higher standards</strong>, not lower ones.</p>
+
+<hr />
+
+<h2>The Rise of the Technical Product Manager</h2>
+
+<h3>One Person, Small-Team Output</h3>
+
+<p>This is the first time in my career where I can realistically see one engineer doing work that previously required a small, well-coordinated team. With AI agents, deeply technical product-minded engineers can define problems, design solutions, and execute end to end.</p>
+
+<h3>Programming Background Is Not Optional</h3>
+
+<p>This only works if you actually understand systems. Without that, AI accelerates the wrong things. With it, the leverage is enormous.</p>
+
+<h3>A Personal Direction</h3>
+
+<p>I could see myself moving into this kind of role. Not away from engineering, but deeper into it—closer to product and outcomes, with AI doing the mechanical heavy lifting.</p>
+
+<hr />
+
+<h2>The Dark Side</h2>
+
+<h3>Fast Output, Slow Pain</h3>
+
+<p>AI makes it easy to move fast in the wrong direction. The short-term productivity gains are real. The long-term costs are too, if judgment is missing.</p>
+
+<h3>Experience Still Wins</h3>
+
+<p>Experience shows up in what you reject, not what you accept. AI doesn’t remove responsibility. It amplifies it.</p>
+
+<hr />
+
+<h2>Conclusion: The Bar Is Going Up</h2>
+
+<p>AI isn’t replacing software engineers. It’s changing which ones matter.</p>
+
+<p>For engineers with strong fundamentals and product sense, this is an unprecedented leverage moment. For everyone else, it’s a trap.</p>
+
+<p>The future of software development belongs to those who can combine <strong>judgment, context, and intent</strong> with AI at scale.</p>
+
+<blockquote><p><strong>TL;DR:</strong> AI doesn’t replace engineers; it amplifies skill, judgment, and context — or the lack of them.</p></blockquote>
+
+<p><em>Oh, and yes — this article was prompt-engineered.</em></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[It’s not remote work. Async work is the real paradigm shift]]></title>
@@ -540,81 +724,6 @@ Or were you already convinced?</p>
 </div>
 
 
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[What Makes a Great Software Engineer]]></title>
-    <link href="https://www.romenrg.com/blog/2018/12/29/what-makes-a-great-software-engineer/"/>
-    <updated>2018-12-29T10:09:00+00:00</updated>
-    <id>https://www.romenrg.com/blog/2018/12/29/what-makes-a-great-software-engineer</id>
-    <content type="html"><![CDATA[<p>The software industry has been growing significantly for the last few decades, and this trend seems to only be accelerating.</p>
-
-<p>Due to this fast growth, there has been an ever-increasing demand for software engineers and, since there are not enough developers to meet the demand, many companies often fail to cover their open positions. But, is it also possible that we are looking at the wrong skills when hiring?</p>
-
-<p><img src="https://www.romenrg.com/images/question_unsplash.jpg" alt="Picture of a cofee mug with a question mug" /></p>
-
-<p>Most job descriptions simply list a set of technologies as the necessary “profile” for the open position. However… Aren’t there other skills that could have a higher impact on developer’s success?</p>
-
-<p>Are we looking at the right skills?</p>
-
-<!-- More -->
-
-
-<h2>Beyond languages and frameworks</h2>
-
-<p>So, despite the shortage of software engineers, we keep seeing, with dismay, that many companies keep restricting their opening positions to people with experience in very specific sets of technologies. Often stating that “X years of experience in <em>&lt;new framework Y></em>” is a key requirement.</p>
-
-<p>Have you thought that it's very likely that <a href="https://sizovs.net/2018/12/17/stop-learning-frameworks/">you will not be using <em>&lt;new framework Y></em> in two years</a>? When that happens, which would be the skills your team will need to keep being productive?</p>
-
-<p>It's great to keep an eye on new technologies, of course, as they might bring relevant innovations to our businesses; but focusing mostly on trendy frameworks or on our current tech stack, when hiring, has negative impacts in the long-run and, as a general practice, is very harmful to our industry. We need to move forward. <strong>This focus on languages and frameworks hints there is a fundamental misunderstanding in what makes a great software developer.</strong></p>
-
-<h2>The software industry is evolving constantly</h2>
-
-<p>Granted, if you need an urgent short-term solution for a framework-specific problem, you may want to find someone that knows it deeply. However, more often than not, those short-term needs hide long-term problems in a company.</p>
-
-<p>Developing software is often about making processes more eficient and providing solutions to existing challenges. Also, we now know that due to the fast pace at which both technology and our needs evolve, <a href="https://www.romenrg.com/blog/2015/09/28/why-asking-developers-for-time-estimates-in-software-projects-is-a-terrible-idea-and-how-to-bypass-it-with-scrum/">software development is a continuous process</a>. In most cases software products don’t have an end. We add new features, teams change, companies pivot in their strategy, new technologies bring new opportunities for enhancements, consumer demands change... And we just keep evolving our digital products.</p>
-
-<p>This constant innovation brings constant changes, both in business and in technology. Our products change, as well as the languages, frameworks, tools and devices we use.</p>
-
-<h2>Fortunately, key skills are evergreen</h2>
-
-<p>Isn't there “evergreen” technical knowledge that can be portable across frameworks? Aren't "soft" skills vital? How about code readability, learning-ability and communication skills? Wouldn't those skills be more valuable than framework-specific knowledge in this ever-evolving world?</p>
-
-<h3>It’s not just about technology</h3>
-
-<p>There are skills that often have a higher impact on success than technical knowledge. The so-called "soft" skills (or <a href="https://github.com/romenrg/evergreen-skills-developers#core-skills-aka-soft-skills">core skills</a>) are crucial for any software developer: being able to communicate properly (via email, chat or face-to-face), sharing knowledge with coworkers, engaging in constructive discussions...</p>
-
-<p>Every day more relevant voices in the industry are raising concerns about this. Sam Altman recently shared his <a href="https://twitter.com/sama/status/981690839280771073?lang=en">hiring priorities</a>: values first, aptitude second, specific skills third. Buffer is also a very innovative company in this area, with a <a href="https://open.buffer.com/hiring-process/">culture-fit-based hiring process</a>, where "soft" skills play a key role.</p>
-
-<h3>But there is also technical evergreen knowledge</h3>
-
-<p>Despite the constant change of technology, the technical principles and best practices that also make a software engineer great, are portable across frameworks.</p>
-
-<p>This is a heated discussion. It is indeed difficult to name "fundamentals" or even to draw a line separating technologies that are evergreen from those that are just temporary, as can be seen in the dicussion between <a href="https://twitter.com/zachleat/status/1074776108422307840">Zach Leatherman</a> and <a href="https://twitter.com/seldo/status/1075027798333493249">Laurie Voss</a>.</p>
-
-<p>However, when I refer to "evergreen" technical knowledge, I mean <a href="https://github.com/romenrg/evergreen-skills-developers#general-technical-knowledge">principles</a>, such as OOP and SOLID; data structures, SCM, Clean Code guidelines or DevOps practices.</p>
-
-<h3>The repository of "evergreen" knowledge to the rescue</h3>
-
-<p>So, since 1) nowadays most opennings still focus only on technologies and 2) coming up with the "evergreen" knowledge that we could use for hiring interviews is not trivial, I have gone ahead and created <a href="https://github.com/romenrg/evergreen-skills-developers">this GitHub repository</a>, which goal is to serve as a pool of ideas to condut a fair assessment of skilled software developers / engineers.</p>
-
-<p>As stated in the repository, the purpose of this work is to serve as an alternative resource for conducting hiring interviews of software developers / engineers. It focuses on software development best practices, cross-framework principles and other portable skills; instead of the usual focus on specific languages, frameworks and trends, which tend to quickly become outdated and often don't reflect the real value software developers / engineers bring to the organization.</p>
-
-<p>It is also worth mentioning that it is a work in progress, so important knowledge might be missing, existing bullets can probably be improved and better grouping strategies could be found. For those reasons, any contributions (i.e. PRs) are welcome. Please feel free to propose changes following <a href="https://github.com/romenrg/evergreen-skills-developers/blob/master/CONTRIBUTING.md">the contributing guideline</a>.</p>
-
-<h2>Be the change you want to see in the world</h2>
-
-<p>We all have a role in moving our industry forward. As a manager, think twice when designing the description for your new open position and <a href="https://github.com/romenrg/evergreen-skills-developers">look for ideas beyond a list of technologies</a>; as an individual contributor, when you are asked about the skills your next coworker should have, ask for principles and best-practices; as a candidate, highlight your "evergreen" knowledge and its importance. We owe it to the profession we love.</p>
-
-<p>I have created the <a href="https://github.com/romenrg/evergreen-skills-developers">evergreen skills repository</a> as my two cents' contribution to this discussion. As I wrote before, it is a work in progress, which means there is a lot of room for improvement. I have added contributing guidelines and all constructive PRs are welcome... So I look forward to you contributions!</p>
-
-<div class="revisions">
-  <h2>Significant revisions</h2>
-  <p><em>2018, Dec 30</em>: Major rewrites to the article. First "public" version.</p>
-  <p><em>2018, Dec 29</em>: Original draft published.</p>
-</div>
 
 ]]></content>
   </entry>
