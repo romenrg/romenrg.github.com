@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Management | Blog @romenrg]]></title>
   <link href="https://www.romenrg.com/blog/categories/management/atom.xml" rel="self"/>
   <link href="https://www.romenrg.com/"/>
-  <updated>2025-12-25T20:49:54+00:00</updated>
+  <updated>2025-12-25T21:35:21+00:00</updated>
   <id>https://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
@@ -29,6 +29,8 @@
 <!-- More -->
 
 
+<h2>When the Conversation Changed</h2>
+
 <p>The shift didn’t happen all at once.</p>
 
 <p>I first noticed it in July at <em>We Are Developers 2025</em> in Berlin. AI was clearly a trend there—present in many talks, widely discussed, but still framed as something emerging.</p>
@@ -39,9 +41,7 @@
 
 <p>At Turo, our engineering organization made an early and explicit bet on AI to <strong>increase engineer leverage</strong>. Not to replace people. Not to lower standards. But to turn strong engineers into force multipliers.</p>
 
-<p><strong>AI doesn’t replace engineers. It amplifies them — and it brutally exposes the difference between good ones and bad ones.</strong></p>
-
-<hr />
+<p><strong>AI doesn’t replace engineers. It reflects the quality of the thinking behind it.</strong></p>
 
 <h2>How AI Is Already Changing How I Build Software</h2>
 
@@ -66,8 +66,6 @@ Boilerplate, glue code, repetitive transformations, mechanical refactors. AI han
 <p><strong>3. Pairing on hard problems</strong><br/>
 For complex problems, I don’t ask for answers. I debate. We design. We break things down. We implement step by step. I review, adjust, and commit incrementally. Done right, this feels like <strong>compressed collaboration</strong>.</p>
 
-<hr />
-
 <h2>A Concrete Use Case: Learning a Codebase Faster (Without Breaking It)</h2>
 
 <p>One use case I’ve found particularly valuable is using AI to understand the <strong>implicit conventions</strong> of a codebase I haven’t worked with extensively.</p>
@@ -85,8 +83,6 @@ For complex problems, I don’t ask for answers. I debate. We design. We break t
 
 <p>This is not about delegating understanding. It’s about <strong>accelerating it</strong>.</p>
 
-<hr />
-
 <h2>Why AI Makes Skill More Important, Not Less</h2>
 
 <h3>AI Is an Amplifier</h3>
@@ -98,6 +94,8 @@ For complex problems, I don’t ask for answers. I debate. We design. We break t
 <p>A simple rule emerged for me:</p>
 
 <p><strong>AI increases the slope of your trajectory — it doesn’t change its direction.</strong></p>
+
+<p>This echoes ideas I explored years ago in <a href="https://www.romenrg.com/blog/2018/12/29/what-makes-a-great-software-engineer/">What Makes a Great Software Engineer</a>, long before AI entered the picture. The core qualities haven’t changed — evergreen skills still matter. More than ever. What’s changed is how quickly their absence becomes visible.</p>
 
 <p>With the right context and constraints, AI feels less like autocomplete and more like leverage.</p>
 
@@ -112,19 +110,21 @@ For complex problems, I don’t ask for answers. I debate. We design. We break t
 <p>Vibe coding gets you a demo.<br/>
 Prompt engineering gets you a system you can live with.</p>
 
+<p>This is also why I’ve been skeptical of simplistic productivity narratives for years. In <a href="https://www.romenrg.com/blog/2024/12/31/on-software-engineers-productivity-beyond-misleading-metrics/">On Software Engineers, Productivity, and Misleading Metrics</a>, I argued that output alone is a poor proxy for impact — a problem that becomes even more visible when AI enters the picture.</p>
+
 <h3>Prompt Engineering Is Just Engineering</h3>
 
 <p>Good prompt engineering looks like good engineering: clear goals, explicit constraints, decomposition, validation. The interface changed. The fundamentals didn’t.</p>
 
-<hr />
+<h2>Context Makes a Huge Difference</h2>
 
-<h2>Context, MCPs, and Why Agents Are Getting Better Fast</h2>
+<p>This is also a key aspect. Without context, AI is mediocre. With context, it becomes genuinely powerful.</p>
 
-<h3>Context Is the Real Multiplier</h3>
+<p>In practice, the biggest gains I’ve seen come from integrations that eliminate friction and surface the <em>right</em> information at the right time.</p>
 
-<p>Without context, AI is mediocre. With context, it becomes genuinely powerful.</p>
+<h3>MCPs Are Key</h3>
 
-<p>In practice, the biggest gains I’ve seen come from integrations that eliminate friction and surface the <em>right</em> information at the right time. Connecting AI to Jira, Confluence, New Relic, and GitHub allows it to reason about real systems instead of abstractions.</p>
+<p>Connecting AI to Jira, Confluence, New Relic, and GitHub allows agents to reason about real systems instead of abstractions.</p>
 
 <p>Most “AI doesn’t work for us” complaints disappear once this level of context is in place.</p>
 
@@ -135,13 +135,11 @@ Prompt engineering gets you a system you can live with.</p>
 <ul>
 <li>An RFC-writing agent</li>
 <li>A product-manager-style agent focused on problem framing</li>
-<li>A senior software engineer agent biased toward best practices, maintainability, and risk</li>
+<li>A senior software engineer agent biased toward best practices, maintainability, and risk assessment</li>
 </ul>
 
 
 <p>These agents aren’t smarter models. They’re better <em>situated</em>. That turns out to matter more.</p>
-
-<hr />
 
 <h2>AI Code Reviews: Free Value, Today</h2>
 
@@ -153,9 +151,9 @@ Prompt engineering gets you a system you can live with.</p>
 
 <p>At Turo, AI acts as a first-pass reviewer. Humans spend more time on architecture, intent, and risk. The result is <strong>higher standards</strong>, not lower ones.</p>
 
-<hr />
-
 <h2>The Rise of the Technical Product Manager</h2>
+
+<p>This shift also connects closely to how I think about software as a discipline. Years ago, I wrote about <a href="https://www.romenrg.com/blog/2020/12/30/software-projects-vs-software-products/">the difference between building projects and building products</a>. What’s changing now is that AI makes it increasingly possible for a single engineer to operate with a product mindset end-to-end — from problem framing to delivery — without needing a large team tackling separate "projects" to bridge the gaps.</p>
 
 <h3>One Person, Small-Team Output</h3>
 
@@ -169,8 +167,6 @@ Prompt engineering gets you a system you can live with.</p>
 
 <p>I could see myself moving into this kind of role. Not away from engineering, but deeper into it—closer to product and outcomes, with AI doing the mechanical heavy lifting.</p>
 
-<hr />
-
 <h2>The Dark Side</h2>
 
 <h3>Fast Output, Slow Pain</h3>
@@ -181,19 +177,17 @@ Prompt engineering gets you a system you can live with.</p>
 
 <p>Experience shows up in what you reject, not what you accept. AI doesn’t remove responsibility. It amplifies it.</p>
 
-<hr />
-
 <h2>Conclusion: The Bar Is Going Up</h2>
 
 <p>AI isn’t replacing software engineers. It’s changing which ones matter.</p>
 
-<p>For engineers with strong fundamentals and product sense, this is an unprecedented leverage moment. For everyone else, it’s a trap.</p>
+<p>For engineers with strong foundations and product sense, this is an unprecedented leverage moment. For everyone else, it’s a trap.</p>
 
-<p>The future of software development belongs to those who can combine <strong>judgment, context, and intent</strong> with AI at scale.</p>
+<p>The future of software development belongs to those who can combine <strong>judgment, fundamentals, context, and intent</strong> with AI at scale.</p>
 
 <blockquote><p><strong>TL;DR:</strong> AI doesn’t replace engineers; it amplifies skill, judgment, and context — or the lack of them.</p></blockquote>
 
-<p><em>Oh, and yes — this article was prompt-engineered.</em></p>
+<p><em>Oh, and yes — this article was mostly prompt-engineered.</em></p>
 ]]></content>
   </entry>
   
