@@ -4,7 +4,7 @@
   <title><![CDATA[Blog @romenrg]]></title>
   <link href="https://www.romenrg.com/atom.xml" rel="self"/>
   <link href="https://www.romenrg.com/"/>
-  <updated>2025-12-25T21:35:21+00:00</updated>
+  <updated>2025-12-27T20:39:11+00:00</updated>
   <id>https://www.romenrg.com/</id>
   <author>
     <name><![CDATA[Romén Rodríguez-Gil]]></name>
@@ -33,21 +33,21 @@
 
 <p>The shift didn’t happen all at once.</p>
 
-<p>I first noticed it in July at <em>We Are Developers 2025</em> in Berlin. AI was clearly a trend there—present in many talks, widely discussed, but still framed as something emerging.</p>
+<p>I first noticed it in July at <a href="https://www.wearedevelopers.com/world-congress">WeAreDevelopers World Congress 2025</a> in Berlin. AI was clearly a trend there—present in many talks, widely discussed, but still framed as something emerging.</p>
 
-<p>Two months later, at <em>GOTO; Conf 2025</em> in Copenhagen, the tone had changed completely. AI was no longer a trend. It was a reality. And not just any conference—GOTO consistently attracts speakers who have been shaping this industry for decades. When that crowd converges on the same conclusion, it’s usually worth paying attention.</p>
+<p>Two months later, at <a href="https://gotocph.com/2025">GOTO; Conf 2025</a> in Copenhagen, the tone had changed completely. AI was no longer a trend. It was a reality. And not just any conference—GOTO consistently attracts speakers who have been shaping this industry for decades. When that crowd converges on the same conclusion, it’s usually worth paying attention.</p>
 
 <p>The question wasn’t whether AI mattered, but how to use it without creating long-term damage.</p>
 
-<p>At Turo, our engineering organization made an early and explicit bet on AI to <strong>increase engineer leverage</strong>. Not to replace people. Not to lower standards. But to turn strong engineers into force multipliers.</p>
+<p>At <a href="https://turo.com/">Turo</a>, our engineering organization made an early and explicit bet on AI to <strong>increase engineer leverage</strong>. Not to replace people. Not to lower standards. But to turn strong engineers into force multipliers.</p>
 
-<p><strong>AI doesn’t replace engineers. It reflects the quality of the thinking behind it.</strong></p>
+<p><strong>AI doesn’t replace engineers. It reflects—and amplifies—the quality of their thinking.</strong></p>
 
 <h2>How AI Is Already Changing How I Build Software</h2>
 
 <h3>The Tools I Actually Use</h3>
 
-<p>My setup is simple: Claude, Cursor, and ChatGPT. The value isn’t in the tools themselves, but in how deeply they’re embedded in the workflow.</p>
+<p>My AI setup is simple: Claude, Cursor, and ChatGPT. The value isn’t in the tools themselves, but in how deeply they’re embedded in the workflow — and, above all, in the quality of the prompts.</p>
 
 <p>I use them daily in real production work at Turo. This isn’t about side projects or demos. It’s about shipping code, reviewing pull requests, and making architectural decisions under real constraints. Organizational support made the difference between experimentation and real leverage.</p>
 
@@ -93,7 +93,7 @@ For complex problems, I don’t ask for answers. I debate. We design. We break t
 
 <p>A simple rule emerged for me:</p>
 
-<p><strong>AI increases the slope of your trajectory — it doesn’t change its direction.</strong></p>
+<p><strong>AI doesn’t steer the car; it just presses the accelerator.</strong></p>
 
 <p>This echoes ideas I explored years ago in <a href="https://www.romenrg.com/blog/2018/12/29/what-makes-a-great-software-engineer/">What Makes a Great Software Engineer</a>, long before AI entered the picture. The core qualities haven’t changed — evergreen skills still matter. More than ever. What’s changed is how quickly their absence becomes visible.</p>
 
@@ -101,7 +101,7 @@ For complex problems, I don’t ask for answers. I debate. We design. We break t
 
 <h3>Vibe Coding vs Prompt Engineering</h3>
 
-<p>This distinction matters.</p>
+<p>This distinction <em>really</em> matters.</p>
 
 <p><em>Vibe coding</em> is fast, intuitive, and chaotic. It’s great for prototypes and MVPs.</p>
 
@@ -109,6 +109,8 @@ For complex problems, I don’t ask for answers. I debate. We design. We break t
 
 <p>Vibe coding gets you a demo.<br/>
 Prompt engineering gets you a system you can live with.</p>
+
+<p>An early-stage startup might prioritize the former. An established software product, with real users and real consequences, <em>needs</em> the latter.</p>
 
 <p>This is also why I’ve been skeptical of simplistic productivity narratives for years. In <a href="https://www.romenrg.com/blog/2024/12/31/on-software-engineers-productivity-beyond-misleading-metrics/">On Software Engineers, Productivity, and Misleading Metrics</a>, I argued that output alone is a poor proxy for impact — a problem that becomes even more visible when AI enters the picture.</p>
 
@@ -179,7 +181,7 @@ Prompt engineering gets you a system you can live with.</p>
 
 <h2>Conclusion: The Bar Is Going Up</h2>
 
-<p>AI isn’t replacing software engineers. It’s changing which ones matter.</p>
+<p>AI isn’t replacing software engineers. It’s amplifying the talented ones, while making weak foundations harder to hide.</p>
 
 <p>For engineers with strong foundations and product sense, this is an unprecedented leverage moment. For everyone else, it’s a trap.</p>
 
@@ -188,6 +190,13 @@ Prompt engineering gets you a system you can live with.</p>
 <blockquote><p><strong>TL;DR:</strong> AI doesn’t replace engineers; it amplifies skill, judgment, and context — or the lack of them.</p></blockquote>
 
 <p><em>Oh, and yes — this article was mostly prompt-engineered.</em></p>
+
+<div class="revisions">
+  <h2>Significant revisions</h2>
+  <p><em>2025, Dec 27</em>: Rewrite of some key sentences, for clarity and style. Added some links.</p>
+  <p><em>2025, Dec 25</em>: Original draft published.</p>
+</div>
+
 ]]></content>
   </entry>
   
