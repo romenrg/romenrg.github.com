@@ -23,21 +23,21 @@ In 2025, AI stopped being an experiment and became **infrastructure** for how I 
 
 The shift didn’t happen all at once.
 
-I first noticed it in July at *We Are Developers 2025* in Berlin. AI was clearly a trend there—present in many talks, widely discussed, but still framed as something emerging.
+I first noticed it in July at [WeAreDevelopers World Congress 2025](https://www.wearedevelopers.com/world-congress) in Berlin. AI was clearly a trend there—present in many talks, widely discussed, but still framed as something emerging.
 
-Two months later, at *GOTO; Conf 2025* in Copenhagen, the tone had changed completely. AI was no longer a trend. It was a reality. And not just any conference—GOTO consistently attracts speakers who have been shaping this industry for decades. When that crowd converges on the same conclusion, it’s usually worth paying attention.
+Two months later, at [GOTO; Conf 2025](https://gotocph.com/2025) in Copenhagen, the tone had changed completely. AI was no longer a trend. It was a reality. And not just any conference—GOTO consistently attracts speakers who have been shaping this industry for decades. When that crowd converges on the same conclusion, it’s usually worth paying attention.
 
 The question wasn’t whether AI mattered, but how to use it without creating long-term damage.
 
-At Turo, our engineering organization made an early and explicit bet on AI to **increase engineer leverage**. Not to replace people. Not to lower standards. But to turn strong engineers into force multipliers.
+At [Turo](https://turo.com/), our engineering organization made an early and explicit bet on AI to **increase engineer leverage**. Not to replace people. Not to lower standards. But to turn strong engineers into force multipliers.
 
-**AI doesn’t replace engineers. It reflects the quality of the thinking behind it.**
+**AI doesn’t replace engineers. It reflects—and amplifies—the quality of their thinking.**
 
 ## How AI Is Already Changing How I Build Software
 
 ### The Tools I Actually Use
 
-My setup is simple: Claude, Cursor, and ChatGPT. The value isn’t in the tools themselves, but in how deeply they’re embedded in the workflow.
+My AI setup is simple: Claude, Cursor, and ChatGPT. The value isn’t in the tools themselves, but in how deeply they’re embedded in the workflow — and, above all, in the quality of the prompts.
 
 I use them daily in real production work at Turo. This isn’t about side projects or demos. It’s about shipping code, reviewing pull requests, and making architectural decisions under real constraints. Organizational support made the difference between experimentation and real leverage.
 
@@ -80,7 +80,7 @@ Strong engineers get faster and more precise. Weak foundations lead to faster ac
 
 A simple rule emerged for me:
 
-**AI increases the slope of your trajectory — it doesn’t change its direction.**
+**AI doesn’t steer the car; it just presses the accelerator.**
 
 This echoes ideas I explored years ago in [What Makes a Great Software Engineer](https://www.romenrg.com/blog/2018/12/29/what-makes-a-great-software-engineer/), long before AI entered the picture. The core qualities haven’t changed — evergreen skills still matter. More than ever. What’s changed is how quickly their absence becomes visible.
 
@@ -88,7 +88,7 @@ With the right context and constraints, AI feels less like autocomplete and more
 
 ### Vibe Coding vs Prompt Engineering
 
-This distinction matters.
+This distinction _really_ matters.
 
 *Vibe coding* is fast, intuitive, and chaotic. It’s great for prototypes and MVPs.
 
@@ -96,6 +96,8 @@ This distinction matters.
 
 Vibe coding gets you a demo.  
 Prompt engineering gets you a system you can live with.
+
+An early-stage startup might prioritize the former. An established software product, with real users and real consequences, _needs_ the latter.
 
 This is also why I’ve been skeptical of simplistic productivity narratives for years. In [On Software Engineers, Productivity, and Misleading Metrics](https://www.romenrg.com/blog/2024/12/31/on-software-engineers-productivity-beyond-misleading-metrics/), I argued that output alone is a poor proxy for impact — a problem that becomes even more visible when AI enters the picture.
 
@@ -163,7 +165,7 @@ Experience shows up in what you reject, not what you accept. AI doesn’t remove
 
 ## Conclusion: The Bar Is Going Up
 
-AI isn’t replacing software engineers. It’s changing which ones matter.
+AI isn’t replacing software engineers. It’s amplifying the talented ones, while making weak foundations harder to hide.
 
 For engineers with strong foundations and product sense, this is an unprecedented leverage moment. For everyone else, it’s a trap.
 
@@ -172,3 +174,10 @@ The future of software development belongs to those who can combine **judgment, 
 > **TL;DR:** AI doesn’t replace engineers; it amplifies skill, judgment, and context — or the lack of them.
 
 *Oh, and yes — this article was mostly prompt-engineered.*
+
+
+<div class="revisions">
+  <h2>Significant revisions</h2>
+  <p><em>2025, Dec 27</em>: Rewrite of some key sentences, for clarity and style. Added some links.</p>
+  <p><em>2025, Dec 25</em>: Original draft published.</p>
+</div>
